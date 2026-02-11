@@ -1,0 +1,5221 @@
+{
+  "metadata": {
+    "source": "NASA POWER API v2.0 (https://power.larc.nasa.gov/)",
+    "community": "Agroclimatology (AG)",
+    "temporal_resolution": "monthly",
+    "period": "2000-2023",
+    "parameters": {
+      "T2M": "Temperature at 2 Meters (°C) - monthly mean",
+      "T2M_MAX": "Temperature at 2 Meters Maximum (°C)",
+      "T2M_MIN": "Temperature at 2 Meters Minimum (°C)",
+      "PRECTOTCORR": "Precipitation Corrected (mm/day)",
+      "T2M_RANGE": "Temperature Range at 2 Meters (°C)",
+      "RH2M": "Relative Humidity at 2 Meters (%)",
+      "WS2M": "Wind Speed at 2 Meters (m/s)",
+      "ALLSKY_SFC_SW_DWN": "All Sky Surface Shortwave Downward Irradiance (kW-hr/m²/day)"
+    },
+    "generated_at": "2026-02-11T22:41:15.744648",
+    "notes": "PRECTOTCORR annual totals are converted from mm/day to mm/year using days-per-month weighting."
+  },
+  "zones": {
+    "SUB_HUMID": {
+      "zone_name": "Sub-humid",
+      "representative_point": {
+        "label": "Kénitra (Gharb plain)",
+        "lat": 34.26,
+        "lon": -6.58
+      },
+      "climate_profile": {
+        "monthly_climatology": {
+          "Jan": {
+            "T2M": {
+              "mean": 15.38,
+              "min": 14.03,
+              "max": 16.89,
+              "std": 0.76,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 18.61,
+              "min": 16.71,
+              "max": 22.1,
+              "std": 1.27,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 11.61,
+              "min": 8.35,
+              "max": 13.34,
+              "std": 1.24,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 2.08,
+              "min": 0.05,
+              "max": 5.26,
+              "std": 1.61,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 2.06,
+              "min": 1.63,
+              "max": 2.95,
+              "std": 0.33,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 75.65,
+              "min": 70.45,
+              "max": 79.74,
+              "std": 2.55,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 4.0,
+              "min": 2.97,
+              "max": 5.12,
+              "std": 0.64,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 10.35,
+              "min": 8.93,
+              "max": 11.68,
+              "std": 0.89,
+              "n_years": 24
+            }
+          },
+          "Feb": {
+            "T2M": {
+              "mean": 15.31,
+              "min": 13.64,
+              "max": 16.69,
+              "std": 0.95,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 19.01,
+              "min": 16.72,
+              "max": 21.48,
+              "std": 1.51,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 12.13,
+              "min": 9.21,
+              "max": 14.77,
+              "std": 1.38,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.7,
+              "min": 0.0,
+              "max": 4.84,
+              "std": 1.29,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 2.28,
+              "min": 1.57,
+              "max": 2.83,
+              "std": 0.37,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 77.04,
+              "min": 69.34,
+              "max": 83.01,
+              "std": 3.26,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 4.19,
+              "min": 3.02,
+              "max": 6.21,
+              "std": 0.66,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 13.65,
+              "min": 11.26,
+              "max": 16.14,
+              "std": 1.23,
+              "n_years": 24
+            }
+          },
+          "Mar": {
+            "T2M": {
+              "mean": 16.09,
+              "min": 14.96,
+              "max": 17.14,
+              "std": 0.58,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 21.3,
+              "min": 17.19,
+              "max": 26.05,
+              "std": 2.04,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 12.8,
+              "min": 10.31,
+              "max": 14.69,
+              "std": 1.01,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.68,
+              "min": 0.06,
+              "max": 6.25,
+              "std": 1.43,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 2.46,
+              "min": 1.64,
+              "max": 3.38,
+              "std": 0.43,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 78.45,
+              "min": 73.56,
+              "max": 82.69,
+              "std": 2.77,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 4.2,
+              "min": 3.49,
+              "max": 6.15,
+              "std": 0.62,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 17.97,
+              "min": 15.58,
+              "max": 19.64,
+              "std": 1.24,
+              "n_years": 24
+            }
+          },
+          "Apr": {
+            "T2M": {
+              "mean": 17.17,
+              "min": 15.67,
+              "max": 18.84,
+              "std": 0.73,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 22.02,
+              "min": 19.71,
+              "max": 26.74,
+              "std": 1.91,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 14.3,
+              "min": 12.62,
+              "max": 15.99,
+              "std": 0.82,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.16,
+              "min": 0.03,
+              "max": 2.73,
+              "std": 0.88,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 2.25,
+              "min": 1.55,
+              "max": 3.01,
+              "std": 0.4,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 79.26,
+              "min": 73.76,
+              "max": 83.19,
+              "std": 2.34,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 4.29,
+              "min": 3.4,
+              "max": 5.21,
+              "std": 0.52,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 22.21,
+              "min": 20.75,
+              "max": 23.8,
+              "std": 0.89,
+              "n_years": 24
+            }
+          },
+          "May": {
+            "T2M": {
+              "mean": 19.1,
+              "min": 17.37,
+              "max": 20.71,
+              "std": 0.88,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 25.66,
+              "min": 20.63,
+              "max": 33.26,
+              "std": 3.24,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 15.86,
+              "min": 14.26,
+              "max": 17.64,
+              "std": 0.88,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.52,
+              "min": 0.03,
+              "max": 1.61,
+              "std": 0.44,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 2.4,
+              "min": 1.54,
+              "max": 3.31,
+              "std": 0.45,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 79.67,
+              "min": 75.78,
+              "max": 82.88,
+              "std": 1.79,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 4.04,
+              "min": 3.43,
+              "max": 4.84,
+              "std": 0.33,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 25.18,
+              "min": 22.79,
+              "max": 27.3,
+              "std": 1.12,
+              "n_years": 24
+            }
+          },
+          "Jun": {
+            "T2M": {
+              "mean": 21.16,
+              "min": 19.06,
+              "max": 22.98,
+              "std": 0.93,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 27.6,
+              "min": 21.88,
+              "max": 34.17,
+              "std": 3.21,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 18.38,
+              "min": 16.48,
+              "max": 20.08,
+              "std": 0.87,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.08,
+              "min": 0.0,
+              "max": 0.38,
+              "std": 0.1,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 2.22,
+              "min": 1.43,
+              "max": 2.99,
+              "std": 0.4,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 80.75,
+              "min": 75.98,
+              "max": 84.33,
+              "std": 1.88,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 3.71,
+              "min": 3.18,
+              "max": 4.08,
+              "std": 0.21,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 27.01,
+              "min": 24.77,
+              "max": 28.77,
+              "std": 1.05,
+              "n_years": 24
+            }
+          },
+          "Jul": {
+            "T2M": {
+              "mean": 22.58,
+              "min": 21.06,
+              "max": 23.95,
+              "std": 0.76,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 28.64,
+              "min": 22.77,
+              "max": 35.39,
+              "std": 3.39,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 20.01,
+              "min": 18.57,
+              "max": 21.46,
+              "std": 0.59,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.05,
+              "min": 0.0,
+              "max": 0.24,
+              "std": 0.07,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 2.11,
+              "min": 1.36,
+              "max": 2.65,
+              "std": 0.35,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 82.66,
+              "min": 79.03,
+              "max": 87.17,
+              "std": 1.66,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 3.56,
+              "min": 3.1,
+              "max": 4.13,
+              "std": 0.25,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 26.73,
+              "min": 25.3,
+              "max": 27.72,
+              "std": 0.71,
+              "n_years": 24
+            }
+          },
+          "Aug": {
+            "T2M": {
+              "mean": 23.36,
+              "min": 22.05,
+              "max": 24.7,
+              "std": 0.68,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 28.49,
+              "min": 24.97,
+              "max": 34.97,
+              "std": 2.66,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 20.95,
+              "min": 19.81,
+              "max": 22.25,
+              "std": 0.54,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.06,
+              "min": 0.0,
+              "max": 0.24,
+              "std": 0.06,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 2.13,
+              "min": 1.67,
+              "max": 2.92,
+              "std": 0.32,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 82.69,
+              "min": 79.07,
+              "max": 86.13,
+              "std": 1.63,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 3.4,
+              "min": 2.81,
+              "max": 3.87,
+              "std": 0.23,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 24.3,
+              "min": 22.63,
+              "max": 25.34,
+              "std": 0.72,
+              "n_years": 24
+            }
+          },
+          "Sep": {
+            "T2M": {
+              "mean": 22.64,
+              "min": 21.65,
+              "max": 23.26,
+              "std": 0.42,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 27.25,
+              "min": 24.53,
+              "max": 30.62,
+              "std": 1.88,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 20.27,
+              "min": 19.0,
+              "max": 21.22,
+              "std": 0.64,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.67,
+              "min": 0.02,
+              "max": 6.06,
+              "std": 1.28,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 2.01,
+              "min": 1.51,
+              "max": 2.51,
+              "std": 0.24,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 80.94,
+              "min": 77.64,
+              "max": 83.7,
+              "std": 1.6,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 3.35,
+              "min": 2.72,
+              "max": 3.75,
+              "std": 0.28,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 20.03,
+              "min": 18.53,
+              "max": 21.56,
+              "std": 0.69,
+              "n_years": 24
+            }
+          },
+          "Oct": {
+            "T2M": {
+              "mean": 21.32,
+              "min": 19.65,
+              "max": 22.9,
+              "std": 0.78,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 26.01,
+              "min": 22.98,
+              "max": 29.85,
+              "std": 1.94,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 18.12,
+              "min": 15.57,
+              "max": 19.99,
+              "std": 1.15,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.76,
+              "min": 0.09,
+              "max": 5.27,
+              "std": 1.5,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 2.23,
+              "min": 1.72,
+              "max": 3.21,
+              "std": 0.35,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 78.73,
+              "min": 73.8,
+              "max": 82.13,
+              "std": 1.76,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 3.53,
+              "min": 2.88,
+              "max": 4.44,
+              "std": 0.37,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 14.89,
+              "min": 11.94,
+              "max": 16.34,
+              "std": 1.06,
+              "n_years": 24
+            }
+          },
+          "Nov": {
+            "T2M": {
+              "mean": 18.53,
+              "min": 16.74,
+              "max": 20.22,
+              "std": 0.81,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 22.68,
+              "min": 19.42,
+              "max": 25.35,
+              "std": 1.37,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 14.8,
+              "min": 12.55,
+              "max": 16.59,
+              "std": 1.03,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 2.97,
+              "min": 0.16,
+              "max": 8.2,
+              "std": 2.41,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 2.09,
+              "min": 1.57,
+              "max": 2.61,
+              "std": 0.28,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 74.87,
+              "min": 70.19,
+              "max": 78.27,
+              "std": 2.33,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 4.08,
+              "min": 3.26,
+              "max": 5.11,
+              "std": 0.54,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 11.05,
+              "min": 9.28,
+              "max": 12.62,
+              "std": 0.8,
+              "n_years": 24
+            }
+          },
+          "Dec": {
+            "T2M": {
+              "mean": 16.72,
+              "min": 15.13,
+              "max": 18.67,
+              "std": 0.86,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 19.93,
+              "min": 18.04,
+              "max": 21.93,
+              "std": 1.2,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 13.01,
+              "min": 11.3,
+              "max": 15.89,
+              "std": 1.13,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 2.49,
+              "min": 0.02,
+              "max": 7.55,
+              "std": 1.91,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 2.13,
+              "min": 1.68,
+              "max": 2.7,
+              "std": 0.26,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 75.53,
+              "min": 70.93,
+              "max": 78.96,
+              "std": 2.3,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 4.16,
+              "min": 2.66,
+              "max": 5.59,
+              "std": 0.71,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 9.19,
+              "min": 8.01,
+              "max": 9.98,
+              "std": 0.59,
+              "n_years": 24
+            }
+          }
+        },
+        "annual_summary": {
+          "T2M_annual_mean": {
+            "mean": 19.11,
+            "min": 18.27,
+            "max": 20.23,
+            "std": 0.4
+          },
+          "T2M_MAX_annual_mean": {
+            "mean": 23.93,
+            "min": 22.04,
+            "max": 24.82,
+            "std": 0.76
+          },
+          "T2M_MIN_annual_mean": {
+            "mean": 16.02,
+            "min": 15.18,
+            "max": 16.94,
+            "std": 0.44
+          },
+          "PRECTOTCORR_annual_total_mm": {
+            "mean": 461.98,
+            "min": 186.26,
+            "max": 839.3,
+            "std": 171.44
+          },
+          "T2M_RANGE_annual_mean": {
+            "mean": 2.2,
+            "min": 1.85,
+            "max": 2.47,
+            "std": 0.13
+          },
+          "RH2M_annual_mean": {
+            "mean": 78.85,
+            "min": 77.29,
+            "max": 80.26,
+            "std": 0.75
+          },
+          "WS2M_annual_mean": {
+            "mean": 3.87,
+            "min": 3.62,
+            "max": 4.3,
+            "std": 0.19
+          },
+          "ALLSKY_SFC_SW_DWN_annual_mean": {
+            "mean": 18.55,
+            "min": 17.84,
+            "max": 19.1,
+            "std": 0.36
+          }
+        },
+        "yearly_data": {
+          "2000": {
+            "T2M_monthly_mean": 18.96,
+            "T2M_MAX_monthly_mean": 24.75,
+            "T2M_MIN_monthly_mean": 15.93,
+            "PRECTOTCORR_annual_total_mm": 458.9,
+            "PRECTOTCORR_monthly_mean": 1.24,
+            "T2M_RANGE_monthly_mean": 2.47,
+            "RH2M_monthly_mean": 78.36,
+            "WS2M_monthly_mean": 3.88,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.86
+          },
+          "2001": {
+            "T2M_monthly_mean": 19.0,
+            "T2M_MAX_monthly_mean": 23.86,
+            "T2M_MIN_monthly_mean": 15.93,
+            "PRECTOTCORR_annual_total_mm": 364.1,
+            "PRECTOTCORR_monthly_mean": 0.99,
+            "T2M_RANGE_monthly_mean": 2.3,
+            "RH2M_monthly_mean": 79.13,
+            "WS2M_monthly_mean": 4.07,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.95
+          },
+          "2002": {
+            "T2M_monthly_mean": 18.91,
+            "T2M_MAX_monthly_mean": 23.66,
+            "T2M_MIN_monthly_mean": 16.01,
+            "PRECTOTCORR_annual_total_mm": 560.1,
+            "PRECTOTCORR_monthly_mean": 1.54,
+            "T2M_RANGE_monthly_mean": 2.18,
+            "RH2M_monthly_mean": 79.91,
+            "WS2M_monthly_mean": 4.03,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.44
+          },
+          "2003": {
+            "T2M_monthly_mean": 19.19,
+            "T2M_MAX_monthly_mean": 24.38,
+            "T2M_MIN_monthly_mean": 16.04,
+            "PRECTOTCORR_annual_total_mm": 533.8,
+            "PRECTOTCORR_monthly_mean": 1.46,
+            "T2M_RANGE_monthly_mean": 2.23,
+            "RH2M_monthly_mean": 79.05,
+            "WS2M_monthly_mean": 4.18,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.32
+          },
+          "2004": {
+            "T2M_monthly_mean": 19.11,
+            "T2M_MAX_monthly_mean": 24.47,
+            "T2M_MIN_monthly_mean": 15.81,
+            "PRECTOTCORR_annual_total_mm": 401.2,
+            "PRECTOTCORR_monthly_mean": 1.1,
+            "T2M_RANGE_monthly_mean": 2.21,
+            "RH2M_monthly_mean": 77.98,
+            "WS2M_monthly_mean": 3.8,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.19
+          },
+          "2005": {
+            "T2M_monthly_mean": 18.91,
+            "T2M_MAX_monthly_mean": 24.38,
+            "T2M_MIN_monthly_mean": 15.54,
+            "PRECTOTCORR_annual_total_mm": 261.9,
+            "PRECTOTCORR_monthly_mean": 0.73,
+            "T2M_RANGE_monthly_mean": 2.3,
+            "RH2M_monthly_mean": 77.29,
+            "WS2M_monthly_mean": 3.77,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.77
+          },
+          "2006": {
+            "T2M_monthly_mean": 19.09,
+            "T2M_MAX_monthly_mean": 24.18,
+            "T2M_MIN_monthly_mean": 16.02,
+            "PRECTOTCORR_annual_total_mm": 477.2,
+            "PRECTOTCORR_monthly_mean": 1.31,
+            "T2M_RANGE_monthly_mean": 2.18,
+            "RH2M_monthly_mean": 79.06,
+            "WS2M_monthly_mean": 3.87,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 17.93
+          },
+          "2007": {
+            "T2M_monthly_mean": 18.7,
+            "T2M_MAX_monthly_mean": 23.09,
+            "T2M_MIN_monthly_mean": 15.83,
+            "PRECTOTCORR_annual_total_mm": 391.3,
+            "PRECTOTCORR_monthly_mean": 1.08,
+            "T2M_RANGE_monthly_mean": 2.24,
+            "RH2M_monthly_mean": 78.18,
+            "WS2M_monthly_mean": 3.74,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.81
+          },
+          "2008": {
+            "T2M_monthly_mean": 18.75,
+            "T2M_MAX_monthly_mean": 22.7,
+            "T2M_MIN_monthly_mean": 15.72,
+            "PRECTOTCORR_annual_total_mm": 593.7,
+            "PRECTOTCORR_monthly_mean": 1.62,
+            "T2M_RANGE_monthly_mean": 2.15,
+            "RH2M_monthly_mean": 78.91,
+            "WS2M_monthly_mean": 4.08,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.56
+          },
+          "2009": {
+            "T2M_monthly_mean": 19.2,
+            "T2M_MAX_monthly_mean": 24.36,
+            "T2M_MIN_monthly_mean": 16.08,
+            "PRECTOTCORR_annual_total_mm": 660.7,
+            "PRECTOTCORR_monthly_mean": 1.82,
+            "T2M_RANGE_monthly_mean": 2.12,
+            "RH2M_monthly_mean": 79.73,
+            "WS2M_monthly_mean": 4.03,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.39
+          },
+          "2010": {
+            "T2M_monthly_mean": 19.43,
+            "T2M_MAX_monthly_mean": 24.25,
+            "T2M_MIN_monthly_mean": 16.24,
+            "PRECTOTCORR_annual_total_mm": 839.3,
+            "PRECTOTCORR_monthly_mean": 2.31,
+            "T2M_RANGE_monthly_mean": 2.18,
+            "RH2M_monthly_mean": 79.03,
+            "WS2M_monthly_mean": 4.3,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 17.84
+          },
+          "2011": {
+            "T2M_monthly_mean": 19.32,
+            "T2M_MAX_monthly_mean": 24.82,
+            "T2M_MIN_monthly_mean": 16.11,
+            "PRECTOTCORR_annual_total_mm": 581.0,
+            "PRECTOTCORR_monthly_mean": 1.6,
+            "T2M_RANGE_monthly_mean": 2.38,
+            "RH2M_monthly_mean": 78.48,
+            "WS2M_monthly_mean": 3.72,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.63
+          },
+          "2012": {
+            "T2M_monthly_mean": 18.71,
+            "T2M_MAX_monthly_mean": 24.49,
+            "T2M_MIN_monthly_mean": 15.32,
+            "PRECTOTCORR_annual_total_mm": 486.2,
+            "PRECTOTCORR_monthly_mean": 1.33,
+            "T2M_RANGE_monthly_mean": 2.25,
+            "RH2M_monthly_mean": 77.71,
+            "WS2M_monthly_mean": 3.9,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.06
+          },
+          "2013": {
+            "T2M_monthly_mean": 18.85,
+            "T2M_MAX_monthly_mean": 22.83,
+            "T2M_MIN_monthly_mean": 15.32,
+            "PRECTOTCORR_annual_total_mm": 433.0,
+            "PRECTOTCORR_monthly_mean": 1.19,
+            "T2M_RANGE_monthly_mean": 2.23,
+            "RH2M_monthly_mean": 78.3,
+            "WS2M_monthly_mean": 4.13,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.54
+          },
+          "2014": {
+            "T2M_monthly_mean": 19.1,
+            "T2M_MAX_monthly_mean": 24.09,
+            "T2M_MIN_monthly_mean": 16.19,
+            "PRECTOTCORR_annual_total_mm": 610.4,
+            "PRECTOTCORR_monthly_mean": 1.68,
+            "T2M_RANGE_monthly_mean": 2.06,
+            "RH2M_monthly_mean": 78.61,
+            "WS2M_monthly_mean": 4.0,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.5
+          },
+          "2015": {
+            "T2M_monthly_mean": 19.2,
+            "T2M_MAX_monthly_mean": 24.34,
+            "T2M_MIN_monthly_mean": 16.39,
+            "PRECTOTCORR_annual_total_mm": 253.5,
+            "PRECTOTCORR_monthly_mean": 0.69,
+            "T2M_RANGE_monthly_mean": 2.12,
+            "RH2M_monthly_mean": 79.18,
+            "WS2M_monthly_mean": 3.62,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.42
+          },
+          "2016": {
+            "T2M_monthly_mean": 19.24,
+            "T2M_MAX_monthly_mean": 24.47,
+            "T2M_MIN_monthly_mean": 16.21,
+            "PRECTOTCORR_annual_total_mm": 513.6,
+            "PRECTOTCORR_monthly_mean": 1.42,
+            "T2M_RANGE_monthly_mean": 2.13,
+            "RH2M_monthly_mean": 78.08,
+            "WS2M_monthly_mean": 3.94,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.45
+          },
+          "2017": {
+            "T2M_monthly_mean": 19.21,
+            "T2M_MAX_monthly_mean": 24.3,
+            "T2M_MIN_monthly_mean": 15.98,
+            "PRECTOTCORR_annual_total_mm": 320.8,
+            "PRECTOTCORR_monthly_mean": 0.89,
+            "T2M_RANGE_monthly_mean": 2.34,
+            "RH2M_monthly_mean": 78.28,
+            "WS2M_monthly_mean": 3.67,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.94
+          },
+          "2018": {
+            "T2M_monthly_mean": 18.27,
+            "T2M_MAX_monthly_mean": 22.04,
+            "T2M_MIN_monthly_mean": 15.18,
+            "PRECTOTCORR_annual_total_mm": 806.8,
+            "PRECTOTCORR_monthly_mean": 2.21,
+            "T2M_RANGE_monthly_mean": 1.85,
+            "RH2M_monthly_mean": 80.26,
+            "WS2M_monthly_mean": 3.74,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 17.84
+          },
+          "2019": {
+            "T2M_monthly_mean": 18.77,
+            "T2M_MAX_monthly_mean": 22.71,
+            "T2M_MIN_monthly_mean": 15.73,
+            "PRECTOTCORR_annual_total_mm": 225.2,
+            "PRECTOTCORR_monthly_mean": 0.62,
+            "T2M_RANGE_monthly_mean": 2.07,
+            "RH2M_monthly_mean": 79.25,
+            "WS2M_monthly_mean": 3.71,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.1
+          },
+          "2020": {
+            "T2M_monthly_mean": 19.53,
+            "T2M_MAX_monthly_mean": 24.25,
+            "T2M_MIN_monthly_mean": 16.55,
+            "PRECTOTCORR_annual_total_mm": 500.5,
+            "PRECTOTCORR_monthly_mean": 1.37,
+            "T2M_RANGE_monthly_mean": 2.19,
+            "RH2M_monthly_mean": 79.47,
+            "WS2M_monthly_mean": 3.72,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.85
+          },
+          "2021": {
+            "T2M_monthly_mean": 19.19,
+            "T2M_MAX_monthly_mean": 23.18,
+            "T2M_MIN_monthly_mean": 16.58,
+            "PRECTOTCORR_annual_total_mm": 354.8,
+            "PRECTOTCORR_monthly_mean": 0.97,
+            "T2M_RANGE_monthly_mean": 2.05,
+            "RH2M_monthly_mean": 80.11,
+            "WS2M_monthly_mean": 3.68,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.45
+          },
+          "2022": {
+            "T2M_monthly_mean": 19.89,
+            "T2M_MAX_monthly_mean": 24.28,
+            "T2M_MIN_monthly_mean": 16.94,
+            "PRECTOTCORR_annual_total_mm": 272.9,
+            "PRECTOTCORR_monthly_mean": 0.74,
+            "T2M_RANGE_monthly_mean": 2.27,
+            "RH2M_monthly_mean": 79.13,
+            "WS2M_monthly_mean": 3.71,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.33
+          },
+          "2023": {
+            "T2M_monthly_mean": 20.23,
+            "T2M_MAX_monthly_mean": 24.56,
+            "T2M_MIN_monthly_mean": 16.83,
+            "PRECTOTCORR_annual_total_mm": 186.3,
+            "PRECTOTCORR_monthly_mean": 0.51,
+            "T2M_RANGE_monthly_mean": 2.21,
+            "RH2M_monthly_mean": 78.95,
+            "WS2M_monthly_mean": 3.72,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.94
+          }
+        },
+        "variability": {
+          "precipitation": {
+            "cv": 0.371,
+            "drought_frequency": 0.208,
+            "drought_threshold_mm": 290.5,
+            "wet_frequency": 0.125,
+            "wet_threshold_mm": 633.4
+          },
+          "temperature": {
+            "jan_mean_std": 0.76,
+            "jul_mean_std": 0.76,
+            "thermal_amplitude_mean": 7.2
+          }
+        }
+      }
+    },
+    "SEMI_ARID_WARM": {
+      "zone_name": "Semi-arid warm",
+      "representative_point": {
+        "label": "Meknès (Saïs plain)",
+        "lat": 33.89,
+        "lon": -5.55
+      },
+      "climate_profile": {
+        "monthly_climatology": {
+          "Jan": {
+            "T2M": {
+              "mean": 10.84,
+              "min": 8.67,
+              "max": 13.26,
+              "std": 1.2,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 23.4,
+              "min": 19.92,
+              "max": 26.11,
+              "std": 1.73,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 2.11,
+              "min": -3.54,
+              "max": 5.66,
+              "std": 2.05,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 2.48,
+              "min": 0.09,
+              "max": 6.37,
+              "std": 1.93,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 10.87,
+              "min": 8.17,
+              "max": 13.1,
+              "std": 1.33,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 71.95,
+              "min": 59.95,
+              "max": 83.59,
+              "std": 6.57,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.0,
+              "min": 1.32,
+              "max": 2.79,
+              "std": 0.35,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 11.54,
+              "min": 9.39,
+              "max": 13.17,
+              "std": 1.08,
+              "n_years": 24
+            }
+          },
+          "Feb": {
+            "T2M": {
+              "mean": 12.07,
+              "min": 8.81,
+              "max": 15.48,
+              "std": 1.91,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 24.91,
+              "min": 20.02,
+              "max": 29.39,
+              "std": 2.61,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 3.0,
+              "min": -1.52,
+              "max": 7.19,
+              "std": 2.42,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 2.25,
+              "min": 0.01,
+              "max": 6.04,
+              "std": 1.57,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 12.03,
+              "min": 8.4,
+              "max": 14.9,
+              "std": 1.56,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 70.11,
+              "min": 58.6,
+              "max": 81.91,
+              "std": 6.5,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.15,
+              "min": 1.59,
+              "max": 3.47,
+              "std": 0.38,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 14.61,
+              "min": 11.3,
+              "max": 17.3,
+              "std": 1.57,
+              "n_years": 24
+            }
+          },
+          "Mar": {
+            "T2M": {
+              "mean": 14.43,
+              "min": 12.07,
+              "max": 16.97,
+              "std": 1.21,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 30.07,
+              "min": 25.01,
+              "max": 34.49,
+              "std": 2.49,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 3.76,
+              "min": -0.07,
+              "max": 7.3,
+              "std": 1.93,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 2.38,
+              "min": 0.04,
+              "max": 8.6,
+              "std": 2.15,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 12.85,
+              "min": 9.45,
+              "max": 14.94,
+              "std": 1.36,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 68.49,
+              "min": 56.74,
+              "max": 79.77,
+              "std": 5.43,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.25,
+              "min": 1.79,
+              "max": 3.71,
+              "std": 0.41,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 18.58,
+              "min": 15.85,
+              "max": 21.02,
+              "std": 1.45,
+              "n_years": 24
+            }
+          },
+          "Apr": {
+            "T2M": {
+              "mean": 16.71,
+              "min": 13.6,
+              "max": 21.11,
+              "std": 1.66,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 31.9,
+              "min": 28.46,
+              "max": 38.89,
+              "std": 2.44,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 6.49,
+              "min": 3.76,
+              "max": 9.28,
+              "std": 1.62,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.87,
+              "min": 0.05,
+              "max": 4.88,
+              "std": 1.43,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 13.47,
+              "min": 11.74,
+              "max": 16.61,
+              "std": 1.25,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 67.0,
+              "min": 51.98,
+              "max": 75.69,
+              "std": 5.53,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.37,
+              "min": 1.88,
+              "max": 3.08,
+              "std": 0.32,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 22.0,
+              "min": 19.31,
+              "max": 25.1,
+              "std": 1.6,
+              "n_years": 24
+            }
+          },
+          "May": {
+            "T2M": {
+              "mean": 20.31,
+              "min": 16.94,
+              "max": 23.31,
+              "std": 1.85,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 36.71,
+              "min": 30.09,
+              "max": 42.1,
+              "std": 3.02,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 8.79,
+              "min": 6.0,
+              "max": 12.1,
+              "std": 1.69,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.06,
+              "min": 0.09,
+              "max": 3.23,
+              "std": 0.81,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 14.52,
+              "min": 12.09,
+              "max": 16.64,
+              "std": 1.33,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 61.79,
+              "min": 51.04,
+              "max": 74.11,
+              "std": 5.73,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.31,
+              "min": 1.88,
+              "max": 2.67,
+              "std": 0.19,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 24.85,
+              "min": 20.09,
+              "max": 28.61,
+              "std": 1.77,
+              "n_years": 24
+            }
+          },
+          "Jun": {
+            "T2M": {
+              "mean": 24.38,
+              "min": 20.26,
+              "max": 27.86,
+              "std": 1.91,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 40.96,
+              "min": 35.68,
+              "max": 45.35,
+              "std": 2.73,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 12.44,
+              "min": 9.23,
+              "max": 15.17,
+              "std": 1.46,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.21,
+              "min": 0.0,
+              "max": 0.95,
+              "std": 0.24,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 16.02,
+              "min": 13.37,
+              "max": 18.45,
+              "std": 1.21,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 54.81,
+              "min": 39.65,
+              "max": 71.78,
+              "std": 7.19,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.32,
+              "min": 1.87,
+              "max": 2.72,
+              "std": 0.19,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 27.86,
+              "min": 25.15,
+              "max": 30.42,
+              "std": 1.26,
+              "n_years": 24
+            }
+          },
+          "Jul": {
+            "T2M": {
+              "mean": 27.9,
+              "min": 23.35,
+              "max": 31.94,
+              "std": 1.79,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 43.91,
+              "min": 35.05,
+              "max": 47.21,
+              "std": 2.74,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 15.48,
+              "min": 12.68,
+              "max": 17.86,
+              "std": 1.39,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.07,
+              "min": 0.0,
+              "max": 0.27,
+              "std": 0.08,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 17.29,
+              "min": 14.97,
+              "max": 18.22,
+              "std": 0.74,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 45.51,
+              "min": 34.12,
+              "max": 64.08,
+              "std": 6.52,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.35,
+              "min": 1.84,
+              "max": 2.66,
+              "std": 0.2,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 27.74,
+              "min": 26.16,
+              "max": 28.93,
+              "std": 0.66,
+              "n_years": 24
+            }
+          },
+          "Aug": {
+            "T2M": {
+              "mean": 28.6,
+              "min": 25.29,
+              "max": 31.48,
+              "std": 1.29,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 44.67,
+              "min": 41.46,
+              "max": 47.92,
+              "std": 1.54,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 16.54,
+              "min": 15.05,
+              "max": 18.62,
+              "std": 0.85,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.17,
+              "min": 0.01,
+              "max": 0.9,
+              "std": 0.19,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 16.8,
+              "min": 15.72,
+              "max": 17.9,
+              "std": 0.5,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 43.48,
+              "min": 33.87,
+              "max": 50.57,
+              "std": 4.25,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.42,
+              "min": 2.17,
+              "max": 2.65,
+              "std": 0.14,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 25.16,
+              "min": 23.23,
+              "max": 26.29,
+              "std": 0.88,
+              "n_years": 24
+            }
+          },
+          "Sep": {
+            "T2M": {
+              "mean": 24.75,
+              "min": 22.57,
+              "max": 26.24,
+              "std": 1.0,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 40.19,
+              "min": 35.43,
+              "max": 44.5,
+              "std": 2.18,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 14.6,
+              "min": 12.66,
+              "max": 16.34,
+              "std": 1.1,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.7,
+              "min": 0.03,
+              "max": 3.41,
+              "std": 0.9,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 14.35,
+              "min": 11.99,
+              "max": 16.08,
+              "std": 1.0,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 52.88,
+              "min": 44.8,
+              "max": 62.9,
+              "std": 5.4,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.29,
+              "min": 2.06,
+              "max": 2.62,
+              "std": 0.15,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 20.79,
+              "min": 17.76,
+              "max": 22.55,
+              "std": 1.07,
+              "n_years": 24
+            }
+          },
+          "Oct": {
+            "T2M": {
+              "mean": 21.07,
+              "min": 17.51,
+              "max": 24.45,
+              "std": 1.86,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 35.28,
+              "min": 29.91,
+              "max": 39.33,
+              "std": 2.12,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 10.58,
+              "min": 4.6,
+              "max": 13.69,
+              "std": 2.16,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 2.04,
+              "min": 0.05,
+              "max": 7.31,
+              "std": 1.7,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 12.8,
+              "min": 10.72,
+              "max": 14.72,
+              "std": 1.1,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 57.13,
+              "min": 38.94,
+              "max": 71.86,
+              "std": 8.83,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.15,
+              "min": 1.76,
+              "max": 2.49,
+              "std": 0.21,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 16.03,
+              "min": 14.14,
+              "max": 17.87,
+              "std": 1.06,
+              "n_years": 24
+            }
+          },
+          "Nov": {
+            "T2M": {
+              "mean": 15.06,
+              "min": 12.04,
+              "max": 18.09,
+              "std": 1.46,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 28.76,
+              "min": 23.93,
+              "max": 31.2,
+              "std": 2.01,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 5.77,
+              "min": 2.21,
+              "max": 8.5,
+              "std": 1.66,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 3.12,
+              "min": 0.22,
+              "max": 6.79,
+              "std": 2.23,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 11.03,
+              "min": 9.18,
+              "max": 12.91,
+              "std": 1.18,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 67.0,
+              "min": 43.45,
+              "max": 77.56,
+              "std": 8.14,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.18,
+              "min": 1.66,
+              "max": 2.71,
+              "std": 0.31,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 12.06,
+              "min": 9.83,
+              "max": 13.93,
+              "std": 1.05,
+              "n_years": 24
+            }
+          },
+          "Dec": {
+            "T2M": {
+              "mean": 12.33,
+              "min": 9.78,
+              "max": 15.47,
+              "std": 1.52,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 24.26,
+              "min": 20.97,
+              "max": 28.46,
+              "std": 2.38,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 3.55,
+              "min": -0.92,
+              "max": 8.16,
+              "std": 2.08,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 2.65,
+              "min": 0.0,
+              "max": 6.95,
+              "std": 1.87,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 10.71,
+              "min": 9.03,
+              "max": 12.88,
+              "std": 1.07,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 70.71,
+              "min": 46.29,
+              "max": 81.41,
+              "std": 6.99,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.1,
+              "min": 1.43,
+              "max": 3.08,
+              "std": 0.43,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 10.46,
+              "min": 9.14,
+              "max": 12.26,
+              "std": 0.94,
+              "n_years": 24
+            }
+          }
+        },
+        "annual_summary": {
+          "T2M_annual_mean": {
+            "mean": 19.04,
+            "min": 17.36,
+            "max": 20.85,
+            "std": 0.77
+          },
+          "T2M_MAX_annual_mean": {
+            "mean": 33.75,
+            "min": 31.02,
+            "max": 36.6,
+            "std": 1.12
+          },
+          "T2M_MIN_annual_mean": {
+            "mean": 8.59,
+            "min": 7.41,
+            "max": 10.17,
+            "std": 0.72
+          },
+          "PRECTOTCORR_annual_total_mm": {
+            "mean": 576.79,
+            "min": 273.76,
+            "max": 1117.72,
+            "std": 221.1
+          },
+          "T2M_RANGE_annual_mean": {
+            "mean": 13.56,
+            "min": 12.15,
+            "max": 14.41,
+            "std": 0.61
+          },
+          "RH2M_annual_mean": {
+            "mean": 60.9,
+            "min": 54.27,
+            "max": 69.41,
+            "std": 3.51
+          },
+          "WS2M_annual_mean": {
+            "mean": 2.24,
+            "min": 2.08,
+            "max": 2.45,
+            "std": 0.09
+          },
+          "ALLSKY_SFC_SW_DWN_annual_mean": {
+            "mean": 19.31,
+            "min": 18.23,
+            "max": 20.25,
+            "std": 0.5
+          }
+        },
+        "yearly_data": {
+          "2000": {
+            "T2M_monthly_mean": 19.13,
+            "T2M_MAX_monthly_mean": 33.99,
+            "T2M_MIN_monthly_mean": 8.85,
+            "PRECTOTCORR_annual_total_mm": 519.7,
+            "PRECTOTCORR_monthly_mean": 1.41,
+            "T2M_RANGE_monthly_mean": 14.2,
+            "RH2M_monthly_mean": 58.07,
+            "WS2M_monthly_mean": 2.31,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.49
+          },
+          "2001": {
+            "T2M_monthly_mean": 19.23,
+            "T2M_MAX_monthly_mean": 34.32,
+            "T2M_MIN_monthly_mean": 8.58,
+            "PRECTOTCORR_annual_total_mm": 374.3,
+            "PRECTOTCORR_monthly_mean": 1.02,
+            "T2M_RANGE_monthly_mean": 14.1,
+            "RH2M_monthly_mean": 59.35,
+            "WS2M_monthly_mean": 2.31,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.9
+          },
+          "2002": {
+            "T2M_monthly_mean": 18.76,
+            "T2M_MAX_monthly_mean": 33.77,
+            "T2M_MIN_monthly_mean": 8.53,
+            "PRECTOTCORR_annual_total_mm": 599.2,
+            "PRECTOTCORR_monthly_mean": 1.64,
+            "T2M_RANGE_monthly_mean": 13.72,
+            "RH2M_monthly_mean": 61.72,
+            "WS2M_monthly_mean": 2.23,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.63
+          },
+          "2003": {
+            "T2M_monthly_mean": 19.13,
+            "T2M_MAX_monthly_mean": 33.49,
+            "T2M_MIN_monthly_mean": 8.79,
+            "PRECTOTCORR_annual_total_mm": 645.2,
+            "PRECTOTCORR_monthly_mean": 1.76,
+            "T2M_RANGE_monthly_mean": 13.23,
+            "RH2M_monthly_mean": 62.68,
+            "WS2M_monthly_mean": 2.28,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.01
+          },
+          "2004": {
+            "T2M_monthly_mean": 18.82,
+            "T2M_MAX_monthly_mean": 33.2,
+            "T2M_MIN_monthly_mean": 7.57,
+            "PRECTOTCORR_annual_total_mm": 485.1,
+            "PRECTOTCORR_monthly_mean": 1.33,
+            "T2M_RANGE_monthly_mean": 13.26,
+            "RH2M_monthly_mean": 61.49,
+            "WS2M_monthly_mean": 2.18,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.7
+          },
+          "2005": {
+            "T2M_monthly_mean": 19.08,
+            "T2M_MAX_monthly_mean": 34.44,
+            "T2M_MIN_monthly_mean": 7.82,
+            "PRECTOTCORR_annual_total_mm": 315.0,
+            "PRECTOTCORR_monthly_mean": 0.87,
+            "T2M_RANGE_monthly_mean": 14.23,
+            "RH2M_monthly_mean": 56.85,
+            "WS2M_monthly_mean": 2.17,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.56
+          },
+          "2006": {
+            "T2M_monthly_mean": 18.91,
+            "T2M_MAX_monthly_mean": 33.74,
+            "T2M_MIN_monthly_mean": 8.73,
+            "PRECTOTCORR_annual_total_mm": 548.3,
+            "PRECTOTCORR_monthly_mean": 1.52,
+            "T2M_RANGE_monthly_mean": 13.31,
+            "RH2M_monthly_mean": 61.88,
+            "WS2M_monthly_mean": 2.16,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.63
+          },
+          "2007": {
+            "T2M_monthly_mean": 18.28,
+            "T2M_MAX_monthly_mean": 33.15,
+            "T2M_MIN_monthly_mean": 8.05,
+            "PRECTOTCORR_annual_total_mm": 467.1,
+            "PRECTOTCORR_monthly_mean": 1.29,
+            "T2M_RANGE_monthly_mean": 13.81,
+            "RH2M_monthly_mean": 59.75,
+            "WS2M_monthly_mean": 2.11,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.52
+          },
+          "2008": {
+            "T2M_monthly_mean": 18.28,
+            "T2M_MAX_monthly_mean": 32.54,
+            "T2M_MIN_monthly_mean": 7.72,
+            "PRECTOTCORR_annual_total_mm": 767.8,
+            "PRECTOTCORR_monthly_mean": 2.1,
+            "T2M_RANGE_monthly_mean": 13.46,
+            "RH2M_monthly_mean": 61.97,
+            "WS2M_monthly_mean": 2.33,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.38
+          },
+          "2009": {
+            "T2M_monthly_mean": 18.85,
+            "T2M_MAX_monthly_mean": 33.16,
+            "T2M_MIN_monthly_mean": 9.2,
+            "PRECTOTCORR_annual_total_mm": 817.4,
+            "PRECTOTCORR_monthly_mean": 2.25,
+            "T2M_RANGE_monthly_mean": 12.73,
+            "RH2M_monthly_mean": 64.7,
+            "WS2M_monthly_mean": 2.34,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.99
+          },
+          "2010": {
+            "T2M_monthly_mean": 18.86,
+            "T2M_MAX_monthly_mean": 33.76,
+            "T2M_MIN_monthly_mean": 8.76,
+            "PRECTOTCORR_annual_total_mm": 1117.7,
+            "PRECTOTCORR_monthly_mean": 3.07,
+            "T2M_RANGE_monthly_mean": 12.24,
+            "RH2M_monthly_mean": 66.57,
+            "WS2M_monthly_mean": 2.45,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.23
+          },
+          "2011": {
+            "T2M_monthly_mean": 18.83,
+            "T2M_MAX_monthly_mean": 32.74,
+            "T2M_MIN_monthly_mean": 8.59,
+            "PRECTOTCORR_annual_total_mm": 756.7,
+            "PRECTOTCORR_monthly_mean": 2.09,
+            "T2M_RANGE_monthly_mean": 13.22,
+            "RH2M_monthly_mean": 62.88,
+            "WS2M_monthly_mean": 2.08,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.22
+          },
+          "2012": {
+            "T2M_monthly_mean": 18.51,
+            "T2M_MAX_monthly_mean": 34.16,
+            "T2M_MIN_monthly_mean": 7.41,
+            "PRECTOTCORR_annual_total_mm": 596.7,
+            "PRECTOTCORR_monthly_mean": 1.64,
+            "T2M_RANGE_monthly_mean": 13.78,
+            "RH2M_monthly_mean": 59.97,
+            "WS2M_monthly_mean": 2.21,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.44
+          },
+          "2013": {
+            "T2M_monthly_mean": 18.14,
+            "T2M_MAX_monthly_mean": 32.45,
+            "T2M_MIN_monthly_mean": 7.72,
+            "PRECTOTCORR_annual_total_mm": 730.7,
+            "PRECTOTCORR_monthly_mean": 2.0,
+            "T2M_RANGE_monthly_mean": 13.04,
+            "RH2M_monthly_mean": 64.49,
+            "WS2M_monthly_mean": 2.29,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.57
+          },
+          "2014": {
+            "T2M_monthly_mean": 18.68,
+            "T2M_MAX_monthly_mean": 33.5,
+            "T2M_MIN_monthly_mean": 8.88,
+            "PRECTOTCORR_annual_total_mm": 633.8,
+            "PRECTOTCORR_monthly_mean": 1.75,
+            "T2M_RANGE_monthly_mean": 13.3,
+            "RH2M_monthly_mean": 62.71,
+            "WS2M_monthly_mean": 2.28,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.39
+          },
+          "2015": {
+            "T2M_monthly_mean": 19.19,
+            "T2M_MAX_monthly_mean": 33.56,
+            "T2M_MIN_monthly_mean": 9.38,
+            "PRECTOTCORR_annual_total_mm": 353.2,
+            "PRECTOTCORR_monthly_mean": 0.97,
+            "T2M_RANGE_monthly_mean": 13.48,
+            "RH2M_monthly_mean": 60.92,
+            "WS2M_monthly_mean": 2.12,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.09
+          },
+          "2016": {
+            "T2M_monthly_mean": 19.4,
+            "T2M_MAX_monthly_mean": 33.76,
+            "T2M_MIN_monthly_mean": 8.71,
+            "PRECTOTCORR_annual_total_mm": 614.2,
+            "PRECTOTCORR_monthly_mean": 1.69,
+            "T2M_RANGE_monthly_mean": 13.67,
+            "RH2M_monthly_mean": 59.14,
+            "WS2M_monthly_mean": 2.35,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.38
+          },
+          "2017": {
+            "T2M_monthly_mean": 20.03,
+            "T2M_MAX_monthly_mean": 34.82,
+            "T2M_MIN_monthly_mean": 8.63,
+            "PRECTOTCORR_annual_total_mm": 358.6,
+            "PRECTOTCORR_monthly_mean": 0.99,
+            "T2M_RANGE_monthly_mean": 14.35,
+            "RH2M_monthly_mean": 54.27,
+            "WS2M_monthly_mean": 2.17,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.83
+          },
+          "2018": {
+            "T2M_monthly_mean": 17.36,
+            "T2M_MAX_monthly_mean": 31.02,
+            "T2M_MIN_monthly_mean": 7.55,
+            "PRECTOTCORR_annual_total_mm": 1081.9,
+            "PRECTOTCORR_monthly_mean": 2.96,
+            "T2M_RANGE_monthly_mean": 12.15,
+            "RH2M_monthly_mean": 69.41,
+            "WS2M_monthly_mean": 2.22,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.25
+          },
+          "2019": {
+            "T2M_monthly_mean": 18.75,
+            "T2M_MAX_monthly_mean": 32.98,
+            "T2M_MIN_monthly_mean": 8.52,
+            "PRECTOTCORR_annual_total_mm": 353.3,
+            "PRECTOTCORR_monthly_mean": 0.97,
+            "T2M_RANGE_monthly_mean": 13.96,
+            "RH2M_monthly_mean": 60.16,
+            "WS2M_monthly_mean": 2.24,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.25
+          },
+          "2020": {
+            "T2M_monthly_mean": 19.89,
+            "T2M_MAX_monthly_mean": 34.3,
+            "T2M_MIN_monthly_mean": 9.17,
+            "PRECTOTCORR_annual_total_mm": 553.8,
+            "PRECTOTCORR_monthly_mean": 1.5,
+            "T2M_RANGE_monthly_mean": 14.04,
+            "RH2M_monthly_mean": 58.62,
+            "WS2M_monthly_mean": 2.24,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.63
+          },
+          "2021": {
+            "T2M_monthly_mean": 19.2,
+            "T2M_MAX_monthly_mean": 34.86,
+            "T2M_MIN_monthly_mean": 9.04,
+            "PRECTOTCORR_annual_total_mm": 486.7,
+            "PRECTOTCORR_monthly_mean": 1.33,
+            "T2M_RANGE_monthly_mean": 13.6,
+            "RH2M_monthly_mean": 62.6,
+            "WS2M_monthly_mean": 2.17,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.27
+          },
+          "2022": {
+            "T2M_monthly_mean": 20.85,
+            "T2M_MAX_monthly_mean": 35.69,
+            "T2M_MIN_monthly_mean": 10.17,
+            "PRECTOTCORR_annual_total_mm": 392.8,
+            "PRECTOTCORR_monthly_mean": 1.07,
+            "T2M_RANGE_monthly_mean": 14.23,
+            "RH2M_monthly_mean": 55.65,
+            "WS2M_monthly_mean": 2.35,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.13
+          },
+          "2023": {
+            "T2M_monthly_mean": 20.71,
+            "T2M_MAX_monthly_mean": 36.6,
+            "T2M_MIN_monthly_mean": 9.85,
+            "PRECTOTCORR_annual_total_mm": 273.8,
+            "PRECTOTCORR_monthly_mean": 0.75,
+            "T2M_RANGE_monthly_mean": 14.41,
+            "RH2M_monthly_mean": 55.82,
+            "WS2M_monthly_mean": 2.21,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.87
+          }
+        },
+        "variability": {
+          "precipitation": {
+            "cv": 0.383,
+            "drought_frequency": 0.167,
+            "drought_threshold_mm": 355.7,
+            "wet_frequency": 0.125,
+            "wet_threshold_mm": 797.9
+          },
+          "temperature": {
+            "jan_mean_std": 1.2,
+            "jul_mean_std": 1.79,
+            "thermal_amplitude_mean": 17.06
+          }
+        }
+      }
+    },
+    "SEMI_ARID_COOL": {
+      "zone_name": "Semi-arid cool",
+      "representative_point": {
+        "label": "Oujda (Oriental)",
+        "lat": 34.68,
+        "lon": -1.91
+      },
+      "climate_profile": {
+        "monthly_climatology": {
+          "Jan": {
+            "T2M": {
+              "mean": 6.83,
+              "min": 4.66,
+              "max": 9.29,
+              "std": 1.14,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 19.87,
+              "min": 14.6,
+              "max": 23.71,
+              "std": 1.88,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": -2.36,
+              "min": -6.76,
+              "max": 0.78,
+              "std": 1.45,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.77,
+              "min": 0.04,
+              "max": 4.92,
+              "std": 1.25,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 11.31,
+              "min": 7.38,
+              "max": 13.99,
+              "std": 1.58,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 71.77,
+              "min": 60.05,
+              "max": 87.24,
+              "std": 6.74,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.76,
+              "min": 2.17,
+              "max": 3.64,
+              "std": 0.47,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 11.14,
+              "min": 8.98,
+              "max": 12.8,
+              "std": 1.01,
+              "n_years": 24
+            }
+          },
+          "Feb": {
+            "T2M": {
+              "mean": 8.2,
+              "min": 4.11,
+              "max": 12.02,
+              "std": 2.0,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 21.43,
+              "min": 16.07,
+              "max": 27.07,
+              "std": 2.8,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": -1.11,
+              "min": -6.57,
+              "max": 3.24,
+              "std": 2.59,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.41,
+              "min": 0.0,
+              "max": 2.87,
+              "std": 0.82,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 12.33,
+              "min": 9.39,
+              "max": 15.35,
+              "std": 1.48,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 68.47,
+              "min": 54.92,
+              "max": 78.96,
+              "std": 7.42,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.92,
+              "min": 2.07,
+              "max": 4.04,
+              "std": 0.56,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 14.31,
+              "min": 11.97,
+              "max": 17.57,
+              "std": 1.37,
+              "n_years": 24
+            }
+          },
+          "Mar": {
+            "T2M": {
+              "mean": 11.0,
+              "min": 9.06,
+              "max": 13.88,
+              "std": 1.16,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 25.96,
+              "min": 22.09,
+              "max": 29.93,
+              "std": 2.07,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": -0.86,
+              "min": -4.15,
+              "max": 3.27,
+              "std": 2.02,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.51,
+              "min": 0.08,
+              "max": 4.66,
+              "std": 1.07,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 13.29,
+              "min": 10.72,
+              "max": 15.65,
+              "std": 1.21,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 65.05,
+              "min": 51.79,
+              "max": 74.73,
+              "std": 5.59,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.86,
+              "min": 2.1,
+              "max": 4.32,
+              "std": 0.51,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 18.56,
+              "min": 14.6,
+              "max": 20.73,
+              "std": 1.4,
+              "n_years": 24
+            }
+          },
+          "Apr": {
+            "T2M": {
+              "mean": 13.97,
+              "min": 10.91,
+              "max": 17.57,
+              "std": 1.62,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 29.32,
+              "min": 23.74,
+              "max": 35.31,
+              "std": 2.08,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 2.95,
+              "min": -0.22,
+              "max": 7.39,
+              "std": 2.07,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.72,
+              "min": 0.07,
+              "max": 4.68,
+              "std": 1.16,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 14.02,
+              "min": 11.79,
+              "max": 16.42,
+              "std": 1.16,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 62.1,
+              "min": 40.53,
+              "max": 72.2,
+              "std": 6.89,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.81,
+              "min": 2.34,
+              "max": 3.34,
+              "std": 0.27,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 22.45,
+              "min": 18.28,
+              "max": 24.68,
+              "std": 1.63,
+              "n_years": 24
+            }
+          },
+          "May": {
+            "T2M": {
+              "mean": 17.98,
+              "min": 14.15,
+              "max": 20.67,
+              "std": 1.83,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 33.06,
+              "min": 28.55,
+              "max": 36.83,
+              "std": 2.25,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 6.0,
+              "min": 2.55,
+              "max": 9.3,
+              "std": 1.77,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.23,
+              "min": 0.13,
+              "max": 3.32,
+              "std": 0.89,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 14.63,
+              "min": 12.43,
+              "max": 16.37,
+              "std": 1.09,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 57.07,
+              "min": 46.0,
+              "max": 72.07,
+              "std": 6.25,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.65,
+              "min": 2.26,
+              "max": 2.94,
+              "std": 0.17,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 25.47,
+              "min": 22.3,
+              "max": 27.83,
+              "std": 1.53,
+              "n_years": 24
+            }
+          },
+          "Jun": {
+            "T2M": {
+              "mean": 22.87,
+              "min": 20.03,
+              "max": 25.69,
+              "std": 1.59,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 37.46,
+              "min": 33.68,
+              "max": 39.69,
+              "std": 1.49,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 10.36,
+              "min": 7.7,
+              "max": 14.16,
+              "std": 1.78,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.34,
+              "min": 0.0,
+              "max": 1.64,
+              "std": 0.38,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 15.68,
+              "min": 14.08,
+              "max": 17.75,
+              "std": 0.81,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 48.62,
+              "min": 38.0,
+              "max": 58.56,
+              "std": 5.72,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.51,
+              "min": 2.22,
+              "max": 2.96,
+              "std": 0.19,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 28.04,
+              "min": 26.05,
+              "max": 30.13,
+              "std": 1.06,
+              "n_years": 24
+            }
+          },
+          "Jul": {
+            "T2M": {
+              "mean": 26.97,
+              "min": 24.76,
+              "max": 30.54,
+              "std": 1.3,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 39.77,
+              "min": 36.78,
+              "max": 43.08,
+              "std": 1.45,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 15.38,
+              "min": 11.05,
+              "max": 18.9,
+              "std": 1.93,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.28,
+              "min": 0.01,
+              "max": 2.14,
+              "std": 0.45,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 16.08,
+              "min": 14.86,
+              "max": 16.92,
+              "std": 0.6,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 40.37,
+              "min": 28.05,
+              "max": 54.25,
+              "std": 5.35,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.45,
+              "min": 2.12,
+              "max": 2.7,
+              "std": 0.15,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 27.69,
+              "min": 26.17,
+              "max": 28.71,
+              "std": 0.6,
+              "n_years": 24
+            }
+          },
+          "Aug": {
+            "T2M": {
+              "mean": 26.59,
+              "min": 24.12,
+              "max": 28.88,
+              "std": 1.17,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 39.33,
+              "min": 37.31,
+              "max": 42.1,
+              "std": 1.24,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 15.76,
+              "min": 12.77,
+              "max": 18.0,
+              "std": 1.24,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.59,
+              "min": 0.01,
+              "max": 2.23,
+              "std": 0.55,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 15.31,
+              "min": 14.2,
+              "max": 16.41,
+              "std": 0.54,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 42.85,
+              "min": 29.47,
+              "max": 51.59,
+              "std": 6.28,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.44,
+              "min": 2.23,
+              "max": 2.66,
+              "std": 0.12,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 25.15,
+              "min": 23.45,
+              "max": 26.95,
+              "std": 0.84,
+              "n_years": 24
+            }
+          },
+          "Sep": {
+            "T2M": {
+              "mean": 21.86,
+              "min": 19.02,
+              "max": 23.53,
+              "std": 1.03,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 35.52,
+              "min": 31.94,
+              "max": 38.29,
+              "std": 1.6,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 11.27,
+              "min": 9.03,
+              "max": 14.24,
+              "std": 1.44,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.13,
+              "min": 0.12,
+              "max": 3.9,
+              "std": 0.84,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 13.66,
+              "min": 10.79,
+              "max": 14.91,
+              "std": 0.95,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 54.98,
+              "min": 47.56,
+              "max": 70.68,
+              "std": 5.3,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.4,
+              "min": 2.07,
+              "max": 2.65,
+              "std": 0.13,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 20.46,
+              "min": 18.6,
+              "max": 22.02,
+              "std": 0.95,
+              "n_years": 24
+            }
+          },
+          "Oct": {
+            "T2M": {
+              "mean": 17.48,
+              "min": 14.28,
+              "max": 20.56,
+              "std": 1.55,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 30.82,
+              "min": 26.93,
+              "max": 33.91,
+              "std": 1.74,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 6.75,
+              "min": 0.39,
+              "max": 11.63,
+              "std": 2.3,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.79,
+              "min": 0.06,
+              "max": 6.3,
+              "std": 1.55,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 12.85,
+              "min": 10.55,
+              "max": 14.38,
+              "std": 1.01,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 58.36,
+              "min": 44.66,
+              "max": 72.74,
+              "std": 7.46,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.49,
+              "min": 1.99,
+              "max": 3.31,
+              "std": 0.31,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 15.99,
+              "min": 14.09,
+              "max": 18.0,
+              "std": 1.04,
+              "n_years": 24
+            }
+          },
+          "Nov": {
+            "T2M": {
+              "mean": 11.12,
+              "min": 8.04,
+              "max": 14.56,
+              "std": 1.48,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 24.79,
+              "min": 19.58,
+              "max": 27.83,
+              "std": 2.09,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 1.05,
+              "min": -3.41,
+              "max": 4.24,
+              "std": 1.98,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 2.14,
+              "min": 0.14,
+              "max": 6.86,
+              "std": 1.46,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 11.33,
+              "min": 9.67,
+              "max": 13.59,
+              "std": 1.02,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 68.36,
+              "min": 53.31,
+              "max": 79.5,
+              "std": 6.85,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.85,
+              "min": 2.14,
+              "max": 3.68,
+              "std": 0.44,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 11.69,
+              "min": 9.63,
+              "max": 13.3,
+              "std": 0.99,
+              "n_years": 24
+            }
+          },
+          "Dec": {
+            "T2M": {
+              "mean": 8.17,
+              "min": 5.79,
+              "max": 11.23,
+              "std": 1.55,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 20.74,
+              "min": 16.01,
+              "max": 25.92,
+              "std": 2.72,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": -1.29,
+              "min": -4.85,
+              "max": 2.43,
+              "std": 1.72,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.59,
+              "min": 0.0,
+              "max": 4.04,
+              "std": 1.11,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 10.83,
+              "min": 8.74,
+              "max": 13.16,
+              "std": 1.07,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 72.45,
+              "min": 53.07,
+              "max": 84.24,
+              "std": 6.92,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.82,
+              "min": 2.14,
+              "max": 3.77,
+              "std": 0.52,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 9.98,
+              "min": 8.91,
+              "max": 11.6,
+              "std": 0.69,
+              "n_years": 24
+            }
+          }
+        },
+        "annual_summary": {
+          "T2M_annual_mean": {
+            "mean": 16.09,
+            "min": 14.77,
+            "max": 17.93,
+            "std": 0.77
+          },
+          "T2M_MAX_annual_mean": {
+            "mean": 29.84,
+            "min": 28.32,
+            "max": 32.05,
+            "std": 0.92
+          },
+          "T2M_MIN_annual_mean": {
+            "mean": 5.33,
+            "min": 3.9,
+            "max": 6.42,
+            "std": 0.71
+          },
+          "PRECTOTCORR_annual_total_mm": {
+            "mean": 471.33,
+            "min": 209.88,
+            "max": 729.05,
+            "std": 135.64
+          },
+          "T2M_RANGE_annual_mean": {
+            "mean": 13.44,
+            "min": 12.45,
+            "max": 14.36,
+            "std": 0.52
+          },
+          "RH2M_annual_mean": {
+            "mean": 59.2,
+            "min": 50.78,
+            "max": 65.17,
+            "std": 4.05
+          },
+          "WS2M_annual_mean": {
+            "mean": 2.66,
+            "min": 2.46,
+            "max": 2.89,
+            "std": 0.11
+          },
+          "ALLSKY_SFC_SW_DWN_annual_mean": {
+            "mean": 19.25,
+            "min": 18.53,
+            "max": 19.83,
+            "std": 0.37
+          }
+        },
+        "yearly_data": {
+          "2000": {
+            "T2M_monthly_mean": 16.14,
+            "T2M_MAX_monthly_mean": 30.13,
+            "T2M_MIN_monthly_mean": 5.49,
+            "PRECTOTCORR_annual_total_mm": 302.9,
+            "PRECTOTCORR_monthly_mean": 0.83,
+            "T2M_RANGE_monthly_mean": 14.36,
+            "RH2M_monthly_mean": 54.97,
+            "WS2M_monthly_mean": 2.71,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.74
+          },
+          "2001": {
+            "T2M_monthly_mean": 16.46,
+            "T2M_MAX_monthly_mean": 31.03,
+            "T2M_MIN_monthly_mean": 5.49,
+            "PRECTOTCORR_annual_total_mm": 432.9,
+            "PRECTOTCORR_monthly_mean": 1.19,
+            "T2M_RANGE_monthly_mean": 13.67,
+            "RH2M_monthly_mean": 57.15,
+            "WS2M_monthly_mean": 2.64,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.59
+          },
+          "2002": {
+            "T2M_monthly_mean": 15.91,
+            "T2M_MAX_monthly_mean": 30.18,
+            "T2M_MIN_monthly_mean": 5.15,
+            "PRECTOTCORR_annual_total_mm": 447.1,
+            "PRECTOTCORR_monthly_mean": 1.22,
+            "T2M_RANGE_monthly_mean": 13.92,
+            "RH2M_monthly_mean": 58.13,
+            "WS2M_monthly_mean": 2.66,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.68
+          },
+          "2003": {
+            "T2M_monthly_mean": 15.91,
+            "T2M_MAX_monthly_mean": 29.91,
+            "T2M_MIN_monthly_mean": 4.88,
+            "PRECTOTCORR_annual_total_mm": 664.3,
+            "PRECTOTCORR_monthly_mean": 1.82,
+            "T2M_RANGE_monthly_mean": 13.05,
+            "RH2M_monthly_mean": 63.32,
+            "WS2M_monthly_mean": 2.6,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.82
+          },
+          "2004": {
+            "T2M_monthly_mean": 15.37,
+            "T2M_MAX_monthly_mean": 28.84,
+            "T2M_MIN_monthly_mean": 4.21,
+            "PRECTOTCORR_annual_total_mm": 610.9,
+            "PRECTOTCORR_monthly_mean": 1.67,
+            "T2M_RANGE_monthly_mean": 13.01,
+            "RH2M_monthly_mean": 64.08,
+            "WS2M_monthly_mean": 2.52,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.01
+          },
+          "2005": {
+            "T2M_monthly_mean": 15.53,
+            "T2M_MAX_monthly_mean": 29.28,
+            "T2M_MIN_monthly_mean": 4.39,
+            "PRECTOTCORR_annual_total_mm": 394.9,
+            "PRECTOTCORR_monthly_mean": 1.09,
+            "T2M_RANGE_monthly_mean": 13.73,
+            "RH2M_monthly_mean": 59.9,
+            "WS2M_monthly_mean": 2.46,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.3
+          },
+          "2006": {
+            "T2M_monthly_mean": 16.12,
+            "T2M_MAX_monthly_mean": 29.85,
+            "T2M_MIN_monthly_mean": 5.99,
+            "PRECTOTCORR_annual_total_mm": 447.1,
+            "PRECTOTCORR_monthly_mean": 1.23,
+            "T2M_RANGE_monthly_mean": 13.09,
+            "RH2M_monthly_mean": 60.84,
+            "WS2M_monthly_mean": 2.57,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.66
+          },
+          "2007": {
+            "T2M_monthly_mean": 15.29,
+            "T2M_MAX_monthly_mean": 29.04,
+            "T2M_MIN_monthly_mean": 4.88,
+            "PRECTOTCORR_annual_total_mm": 575.4,
+            "PRECTOTCORR_monthly_mean": 1.58,
+            "T2M_RANGE_monthly_mean": 13.59,
+            "RH2M_monthly_mean": 60.85,
+            "WS2M_monthly_mean": 2.54,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.12
+          },
+          "2008": {
+            "T2M_monthly_mean": 15.25,
+            "T2M_MAX_monthly_mean": 28.47,
+            "T2M_MIN_monthly_mean": 4.53,
+            "PRECTOTCORR_annual_total_mm": 729.0,
+            "PRECTOTCORR_monthly_mean": 1.99,
+            "T2M_RANGE_monthly_mean": 12.94,
+            "RH2M_monthly_mean": 63.45,
+            "WS2M_monthly_mean": 2.71,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.05
+          },
+          "2009": {
+            "T2M_monthly_mean": 15.57,
+            "T2M_MAX_monthly_mean": 29.39,
+            "T2M_MIN_monthly_mean": 5.92,
+            "PRECTOTCORR_annual_total_mm": 516.8,
+            "PRECTOTCORR_monthly_mean": 1.42,
+            "T2M_RANGE_monthly_mean": 12.63,
+            "RH2M_monthly_mean": 64.98,
+            "WS2M_monthly_mean": 2.8,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.22
+          },
+          "2010": {
+            "T2M_monthly_mean": 15.86,
+            "T2M_MAX_monthly_mean": 29.85,
+            "T2M_MIN_monthly_mean": 4.85,
+            "PRECTOTCORR_annual_total_mm": 574.8,
+            "PRECTOTCORR_monthly_mean": 1.58,
+            "T2M_RANGE_monthly_mean": 12.45,
+            "RH2M_monthly_mean": 64.81,
+            "WS2M_monthly_mean": 2.89,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.53
+          },
+          "2011": {
+            "T2M_monthly_mean": 15.9,
+            "T2M_MAX_monthly_mean": 28.66,
+            "T2M_MIN_monthly_mean": 5.74,
+            "PRECTOTCORR_annual_total_mm": 563.4,
+            "PRECTOTCORR_monthly_mean": 1.55,
+            "T2M_RANGE_monthly_mean": 13.22,
+            "RH2M_monthly_mean": 60.37,
+            "WS2M_monthly_mean": 2.57,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.99
+          },
+          "2012": {
+            "T2M_monthly_mean": 15.8,
+            "T2M_MAX_monthly_mean": 30.16,
+            "T2M_MIN_monthly_mean": 4.56,
+            "PRECTOTCORR_annual_total_mm": 591.5,
+            "PRECTOTCORR_monthly_mean": 1.63,
+            "T2M_RANGE_monthly_mean": 13.35,
+            "RH2M_monthly_mean": 59.38,
+            "WS2M_monthly_mean": 2.55,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.24
+          },
+          "2013": {
+            "T2M_monthly_mean": 14.77,
+            "T2M_MAX_monthly_mean": 28.32,
+            "T2M_MIN_monthly_mean": 3.9,
+            "PRECTOTCORR_annual_total_mm": 578.9,
+            "PRECTOTCORR_monthly_mean": 1.58,
+            "T2M_RANGE_monthly_mean": 12.84,
+            "RH2M_monthly_mean": 65.17,
+            "WS2M_monthly_mean": 2.78,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.39
+          },
+          "2014": {
+            "T2M_monthly_mean": 15.86,
+            "T2M_MAX_monthly_mean": 29.28,
+            "T2M_MIN_monthly_mean": 5.65,
+            "PRECTOTCORR_annual_total_mm": 480.9,
+            "PRECTOTCORR_monthly_mean": 1.32,
+            "T2M_RANGE_monthly_mean": 13.0,
+            "RH2M_monthly_mean": 59.48,
+            "WS2M_monthly_mean": 2.79,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.34
+          },
+          "2015": {
+            "T2M_monthly_mean": 16.25,
+            "T2M_MAX_monthly_mean": 30.03,
+            "T2M_MIN_monthly_mean": 6.14,
+            "PRECTOTCORR_annual_total_mm": 412.5,
+            "PRECTOTCORR_monthly_mean": 1.13,
+            "T2M_RANGE_monthly_mean": 13.42,
+            "RH2M_monthly_mean": 58.08,
+            "WS2M_monthly_mean": 2.59,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.37
+          },
+          "2016": {
+            "T2M_monthly_mean": 16.32,
+            "T2M_MAX_monthly_mean": 30.07,
+            "T2M_MIN_monthly_mean": 5.11,
+            "PRECTOTCORR_annual_total_mm": 462.6,
+            "PRECTOTCORR_monthly_mean": 1.27,
+            "T2M_RANGE_monthly_mean": 13.59,
+            "RH2M_monthly_mean": 57.35,
+            "WS2M_monthly_mean": 2.73,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.39
+          },
+          "2017": {
+            "T2M_monthly_mean": 16.59,
+            "T2M_MAX_monthly_mean": 29.69,
+            "T2M_MIN_monthly_mean": 5.62,
+            "PRECTOTCORR_annual_total_mm": 326.5,
+            "PRECTOTCORR_monthly_mean": 0.89,
+            "T2M_RANGE_monthly_mean": 14.08,
+            "RH2M_monthly_mean": 54.64,
+            "WS2M_monthly_mean": 2.57,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.72
+          },
+          "2018": {
+            "T2M_monthly_mean": 15.25,
+            "T2M_MAX_monthly_mean": 29.44,
+            "T2M_MIN_monthly_mean": 5.02,
+            "PRECTOTCORR_annual_total_mm": 657.3,
+            "PRECTOTCORR_monthly_mean": 1.8,
+            "T2M_RANGE_monthly_mean": 12.95,
+            "RH2M_monthly_mean": 62.44,
+            "WS2M_monthly_mean": 2.76,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.91
+          },
+          "2019": {
+            "T2M_monthly_mean": 16.18,
+            "T2M_MAX_monthly_mean": 29.56,
+            "T2M_MIN_monthly_mean": 5.33,
+            "PRECTOTCORR_annual_total_mm": 357.5,
+            "PRECTOTCORR_monthly_mean": 0.98,
+            "T2M_RANGE_monthly_mean": 13.95,
+            "RH2M_monthly_mean": 56.82,
+            "WS2M_monthly_mean": 2.7,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.83
+          },
+          "2020": {
+            "T2M_monthly_mean": 17.12,
+            "T2M_MAX_monthly_mean": 30.45,
+            "T2M_MIN_monthly_mean": 6.08,
+            "PRECTOTCORR_annual_total_mm": 313.0,
+            "PRECTOTCORR_monthly_mean": 0.85,
+            "T2M_RANGE_monthly_mean": 13.74,
+            "RH2M_monthly_mean": 55.35,
+            "WS2M_monthly_mean": 2.63,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.7
+          },
+          "2021": {
+            "T2M_monthly_mean": 16.92,
+            "T2M_MAX_monthly_mean": 31.28,
+            "T2M_MIN_monthly_mean": 6.42,
+            "PRECTOTCORR_annual_total_mm": 335.0,
+            "PRECTOTCORR_monthly_mean": 0.91,
+            "T2M_RANGE_monthly_mean": 13.9,
+            "RH2M_monthly_mean": 56.6,
+            "WS2M_monthly_mean": 2.7,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.13
+          },
+          "2022": {
+            "T2M_monthly_mean": 17.93,
+            "T2M_MAX_monthly_mean": 31.21,
+            "T2M_MIN_monthly_mean": 6.41,
+            "PRECTOTCORR_annual_total_mm": 326.6,
+            "PRECTOTCORR_monthly_mean": 0.89,
+            "T2M_RANGE_monthly_mean": 13.92,
+            "RH2M_monthly_mean": 51.92,
+            "WS2M_monthly_mean": 2.8,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 18.66
+          },
+          "2023": {
+            "T2M_monthly_mean": 17.79,
+            "T2M_MAX_monthly_mean": 32.05,
+            "T2M_MIN_monthly_mean": 6.06,
+            "PRECTOTCORR_annual_total_mm": 209.9,
+            "PRECTOTCORR_monthly_mean": 0.58,
+            "T2M_RANGE_monthly_mean": 14.21,
+            "RH2M_monthly_mean": 50.78,
+            "WS2M_monthly_mean": 2.64,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.53
+          }
+        },
+        "variability": {
+          "precipitation": {
+            "cv": 0.288,
+            "drought_frequency": 0.25,
+            "drought_threshold_mm": 335.7,
+            "wet_frequency": 0.167,
+            "wet_threshold_mm": 607.0
+          },
+          "temperature": {
+            "jan_mean_std": 1.14,
+            "jul_mean_std": 1.3,
+            "thermal_amplitude_mean": 20.14
+          }
+        }
+      }
+    },
+    "ARID": {
+      "zone_name": "Arid",
+      "representative_point": {
+        "label": "Ouarzazate",
+        "lat": 30.92,
+        "lon": -6.9
+      },
+      "climate_profile": {
+        "monthly_climatology": {
+          "Jan": {
+            "T2M": {
+              "mean": 6.6,
+              "min": 3.72,
+              "max": 9.46,
+              "std": 1.43,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 20.2,
+              "min": 17.08,
+              "max": 22.58,
+              "std": 1.5,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": -3.52,
+              "min": -7.63,
+              "max": 0.09,
+              "std": 1.89,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.55,
+              "min": 0.01,
+              "max": 1.69,
+              "std": 0.48,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 13.56,
+              "min": 11.94,
+              "max": 14.81,
+              "std": 0.84,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 50.22,
+              "min": 42.2,
+              "max": 63.51,
+              "std": 5.93,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.26,
+              "min": 1.62,
+              "max": 3.28,
+              "std": 0.51,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 14.84,
+              "min": 13.23,
+              "max": 15.88,
+              "std": 0.7,
+              "n_years": 24
+            }
+          },
+          "Feb": {
+            "T2M": {
+              "mean": 8.1,
+              "min": 4.92,
+              "max": 12.05,
+              "std": 1.83,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 21.37,
+              "min": 17.0,
+              "max": 24.87,
+              "std": 2.36,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": -2.24,
+              "min": -6.42,
+              "max": 1.41,
+              "std": 2.12,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.71,
+              "min": 0.0,
+              "max": 2.55,
+              "std": 0.65,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 14.14,
+              "min": 11.24,
+              "max": 15.83,
+              "std": 1.14,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 48.31,
+              "min": 30.51,
+              "max": 63.33,
+              "std": 8.92,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.56,
+              "min": 1.46,
+              "max": 3.66,
+              "std": 0.54,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 17.85,
+              "min": 14.88,
+              "max": 19.51,
+              "std": 1.25,
+              "n_years": 24
+            }
+          },
+          "Mar": {
+            "T2M": {
+              "mean": 11.49,
+              "min": 9.32,
+              "max": 15.19,
+              "std": 1.32,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 25.61,
+              "min": 21.79,
+              "max": 29.33,
+              "std": 1.94,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": -0.51,
+              "min": -3.82,
+              "max": 2.33,
+              "std": 1.63,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.89,
+              "min": 0.01,
+              "max": 3.28,
+              "std": 0.77,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 15.21,
+              "min": 13.12,
+              "max": 16.66,
+              "std": 0.79,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 44.68,
+              "min": 37.12,
+              "max": 56.86,
+              "std": 5.73,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.86,
+              "min": 2.11,
+              "max": 4.34,
+              "std": 0.52,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 22.33,
+              "min": 20.09,
+              "max": 24.35,
+              "std": 1.12,
+              "n_years": 24
+            }
+          },
+          "Apr": {
+            "T2M": {
+              "mean": 15.03,
+              "min": 11.72,
+              "max": 18.61,
+              "std": 1.84,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 28.85,
+              "min": 26.32,
+              "max": 32.66,
+              "std": 1.72,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 1.9,
+              "min": -0.92,
+              "max": 6.61,
+              "std": 2.09,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.62,
+              "min": 0.0,
+              "max": 2.82,
+              "std": 0.7,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 16.09,
+              "min": 14.02,
+              "max": 18.33,
+              "std": 0.96,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 41.17,
+              "min": 30.73,
+              "max": 54.06,
+              "std": 6.1,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 3.22,
+              "min": 2.27,
+              "max": 4.17,
+              "std": 0.45,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 26.12,
+              "min": 24.33,
+              "max": 27.57,
+              "std": 0.84,
+              "n_years": 24
+            }
+          },
+          "May": {
+            "T2M": {
+              "mean": 19.12,
+              "min": 15.19,
+              "max": 21.84,
+              "std": 1.8,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 32.85,
+              "min": 28.76,
+              "max": 35.65,
+              "std": 1.7,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 4.19,
+              "min": 0.86,
+              "max": 8.4,
+              "std": 2.25,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.42,
+              "min": 0.0,
+              "max": 2.09,
+              "std": 0.53,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 16.48,
+              "min": 13.41,
+              "max": 17.97,
+              "std": 0.87,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 35.91,
+              "min": 26.9,
+              "max": 50.96,
+              "std": 5.28,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 3.28,
+              "min": 2.63,
+              "max": 4.31,
+              "std": 0.4,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 27.89,
+              "min": 23.83,
+              "max": 29.95,
+              "std": 1.3,
+              "n_years": 24
+            }
+          },
+          "Jun": {
+            "T2M": {
+              "mean": 24.13,
+              "min": 22.47,
+              "max": 26.17,
+              "std": 1.24,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 36.83,
+              "min": 34.06,
+              "max": 38.46,
+              "std": 0.95,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 10.18,
+              "min": 6.8,
+              "max": 13.72,
+              "std": 1.83,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.29,
+              "min": 0.0,
+              "max": 2.45,
+              "std": 0.52,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 17.13,
+              "min": 15.11,
+              "max": 18.67,
+              "std": 0.98,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 28.92,
+              "min": 19.74,
+              "max": 38.87,
+              "std": 4.96,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 3.12,
+              "min": 2.6,
+              "max": 3.63,
+              "std": 0.31,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 28.86,
+              "min": 26.04,
+              "max": 31.23,
+              "std": 1.53,
+              "n_years": 24
+            }
+          },
+          "Jul": {
+            "T2M": {
+              "mean": 28.21,
+              "min": 27.14,
+              "max": 29.59,
+              "std": 0.64,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 38.64,
+              "min": 37.4,
+              "max": 39.81,
+              "std": 0.61,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 15.49,
+              "min": 9.87,
+              "max": 18.74,
+              "std": 2.0,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.21,
+              "min": 0.0,
+              "max": 1.11,
+              "std": 0.3,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 16.26,
+              "min": 14.99,
+              "max": 17.78,
+              "std": 0.84,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 21.21,
+              "min": 17.24,
+              "max": 27.97,
+              "std": 2.63,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.92,
+              "min": 2.49,
+              "max": 3.37,
+              "std": 0.24,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 27.0,
+              "min": 25.38,
+              "max": 29.08,
+              "std": 1.07,
+              "n_years": 24
+            }
+          },
+          "Aug": {
+            "T2M": {
+              "mean": 27.35,
+              "min": 25.59,
+              "max": 29.23,
+              "std": 0.84,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 38.05,
+              "min": 36.8,
+              "max": 40.26,
+              "std": 0.74,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 15.29,
+              "min": 12.04,
+              "max": 17.45,
+              "std": 1.81,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.32,
+              "min": 0.0,
+              "max": 0.99,
+              "std": 0.24,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 15.28,
+              "min": 13.94,
+              "max": 16.64,
+              "std": 0.71,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 24.98,
+              "min": 19.44,
+              "max": 33.84,
+              "std": 3.25,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.76,
+              "min": 2.41,
+              "max": 3.24,
+              "std": 0.21,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 24.64,
+              "min": 22.92,
+              "max": 26.31,
+              "std": 1.04,
+              "n_years": 24
+            }
+          },
+          "Sep": {
+            "T2M": {
+              "mean": 22.46,
+              "min": 19.77,
+              "max": 24.17,
+              "std": 1.12,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 35.0,
+              "min": 33.3,
+              "max": 36.45,
+              "std": 0.9,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 10.64,
+              "min": 7.46,
+              "max": 14.32,
+              "std": 1.68,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.65,
+              "min": 0.02,
+              "max": 1.94,
+              "std": 0.63,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 14.8,
+              "min": 11.9,
+              "max": 16.24,
+              "std": 1.01,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 34.29,
+              "min": 25.02,
+              "max": 47.66,
+              "std": 6.2,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.76,
+              "min": 2.14,
+              "max": 3.2,
+              "std": 0.27,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 21.79,
+              "min": 19.35,
+              "max": 23.79,
+              "std": 1.19,
+              "n_years": 24
+            }
+          },
+          "Oct": {
+            "T2M": {
+              "mean": 17.19,
+              "min": 13.66,
+              "max": 19.17,
+              "std": 1.45,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 29.79,
+              "min": 26.27,
+              "max": 33.72,
+              "std": 1.79,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 5.58,
+              "min": 0.52,
+              "max": 8.85,
+              "std": 2.43,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.64,
+              "min": 0.08,
+              "max": 1.43,
+              "std": 0.4,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 13.48,
+              "min": 12.28,
+              "max": 15.14,
+              "std": 0.81,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 42.53,
+              "min": 31.39,
+              "max": 57.36,
+              "std": 7.54,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.39,
+              "min": 1.7,
+              "max": 2.86,
+              "std": 0.31,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 18.09,
+              "min": 16.7,
+              "max": 19.56,
+              "std": 0.84,
+              "n_years": 24
+            }
+          },
+          "Nov": {
+            "T2M": {
+              "mean": 11.09,
+              "min": 7.62,
+              "max": 14.67,
+              "std": 1.6,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 24.37,
+              "min": 19.5,
+              "max": 27.97,
+              "std": 1.97,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 0.07,
+              "min": -3.1,
+              "max": 4.19,
+              "std": 2.02,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.88,
+              "min": 0.01,
+              "max": 5.11,
+              "std": 1.03,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 13.21,
+              "min": 11.16,
+              "max": 14.53,
+              "std": 1.07,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 49.2,
+              "min": 26.1,
+              "max": 66.29,
+              "std": 9.39,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.38,
+              "min": 1.67,
+              "max": 3.25,
+              "std": 0.44,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 15.05,
+              "min": 13.44,
+              "max": 16.23,
+              "std": 0.82,
+              "n_years": 24
+            }
+          },
+          "Dec": {
+            "T2M": {
+              "mean": 7.69,
+              "min": 4.8,
+              "max": 10.05,
+              "std": 1.54,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 20.67,
+              "min": 17.53,
+              "max": 25.1,
+              "std": 1.85,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": -1.86,
+              "min": -5.03,
+              "max": 1.69,
+              "std": 1.75,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.58,
+              "min": 0.0,
+              "max": 1.37,
+              "std": 0.42,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 13.22,
+              "min": 12.05,
+              "max": 14.99,
+              "std": 0.72,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 53.76,
+              "min": 34.63,
+              "max": 67.47,
+              "std": 7.62,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.07,
+              "min": 1.17,
+              "max": 3.03,
+              "std": 0.47,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 13.38,
+              "min": 11.89,
+              "max": 14.51,
+              "std": 0.68,
+              "n_years": 24
+            }
+          }
+        },
+        "annual_summary": {
+          "T2M_annual_mean": {
+            "mean": 16.54,
+            "min": 15.51,
+            "max": 17.84,
+            "std": 0.58
+          },
+          "T2M_MAX_annual_mean": {
+            "mean": 29.35,
+            "min": 28.3,
+            "max": 30.68,
+            "std": 0.63
+          },
+          "T2M_MIN_annual_mean": {
+            "mean": 4.6,
+            "min": 3.33,
+            "max": 5.97,
+            "std": 0.71
+          },
+          "PRECTOTCORR_annual_total_mm": {
+            "mean": 205.53,
+            "min": 100.69,
+            "max": 334.62,
+            "std": 59.4
+          },
+          "T2M_RANGE_annual_mean": {
+            "mean": 14.91,
+            "min": 14.24,
+            "max": 15.49,
+            "std": 0.34
+          },
+          "RH2M_annual_mean": {
+            "mean": 39.6,
+            "min": 35.3,
+            "max": 44.93,
+            "std": 2.57
+          },
+          "WS2M_annual_mean": {
+            "mean": 2.71,
+            "min": 2.39,
+            "max": 3.08,
+            "std": 0.17
+          },
+          "ALLSKY_SFC_SW_DWN_annual_mean": {
+            "mean": 21.49,
+            "min": 20.69,
+            "max": 22.16,
+            "std": 0.35
+          }
+        },
+        "yearly_data": {
+          "2000": {
+            "T2M_monthly_mean": 16.2,
+            "T2M_MAX_monthly_mean": 28.9,
+            "T2M_MIN_monthly_mean": 4.02,
+            "PRECTOTCORR_annual_total_mm": 108.6,
+            "PRECTOTCORR_monthly_mean": 0.29,
+            "T2M_RANGE_monthly_mean": 15.23,
+            "RH2M_monthly_mean": 36.57,
+            "WS2M_monthly_mean": 2.67,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.5
+          },
+          "2001": {
+            "T2M_monthly_mean": 17.15,
+            "T2M_MAX_monthly_mean": 29.77,
+            "T2M_MIN_monthly_mean": 4.66,
+            "PRECTOTCORR_annual_total_mm": 100.7,
+            "PRECTOTCORR_monthly_mean": 0.27,
+            "T2M_RANGE_monthly_mean": 15.49,
+            "RH2M_monthly_mean": 35.71,
+            "WS2M_monthly_mean": 2.94,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.95
+          },
+          "2002": {
+            "T2M_monthly_mean": 16.64,
+            "T2M_MAX_monthly_mean": 29.67,
+            "T2M_MIN_monthly_mean": 3.94,
+            "PRECTOTCORR_annual_total_mm": 213.2,
+            "PRECTOTCORR_monthly_mean": 0.58,
+            "T2M_RANGE_monthly_mean": 15.27,
+            "RH2M_monthly_mean": 38.6,
+            "WS2M_monthly_mean": 2.77,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.96
+          },
+          "2003": {
+            "T2M_monthly_mean": 16.75,
+            "T2M_MAX_monthly_mean": 29.89,
+            "T2M_MIN_monthly_mean": 4.52,
+            "PRECTOTCORR_annual_total_mm": 175.6,
+            "PRECTOTCORR_monthly_mean": 0.48,
+            "T2M_RANGE_monthly_mean": 14.85,
+            "RH2M_monthly_mean": 39.56,
+            "WS2M_monthly_mean": 2.79,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.56
+          },
+          "2004": {
+            "T2M_monthly_mean": 15.91,
+            "T2M_MAX_monthly_mean": 28.47,
+            "T2M_MIN_monthly_mean": 4.19,
+            "PRECTOTCORR_annual_total_mm": 214.6,
+            "PRECTOTCORR_monthly_mean": 0.59,
+            "T2M_RANGE_monthly_mean": 14.73,
+            "RH2M_monthly_mean": 39.75,
+            "WS2M_monthly_mean": 2.76,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.37
+          },
+          "2005": {
+            "T2M_monthly_mean": 16.6,
+            "T2M_MAX_monthly_mean": 29.47,
+            "T2M_MIN_monthly_mean": 4.33,
+            "PRECTOTCORR_annual_total_mm": 147.9,
+            "PRECTOTCORR_monthly_mean": 0.41,
+            "T2M_RANGE_monthly_mean": 14.86,
+            "RH2M_monthly_mean": 38.35,
+            "WS2M_monthly_mean": 2.62,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.21
+          },
+          "2006": {
+            "T2M_monthly_mean": 16.15,
+            "T2M_MAX_monthly_mean": 29.08,
+            "T2M_MIN_monthly_mean": 4.65,
+            "PRECTOTCORR_annual_total_mm": 243.8,
+            "PRECTOTCORR_monthly_mean": 0.67,
+            "T2M_RANGE_monthly_mean": 14.33,
+            "RH2M_monthly_mean": 41.97,
+            "WS2M_monthly_mean": 2.77,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.13
+          },
+          "2007": {
+            "T2M_monthly_mean": 15.96,
+            "T2M_MAX_monthly_mean": 28.89,
+            "T2M_MIN_monthly_mean": 3.99,
+            "PRECTOTCORR_annual_total_mm": 235.7,
+            "PRECTOTCORR_monthly_mean": 0.65,
+            "T2M_RANGE_monthly_mean": 15.2,
+            "RH2M_monthly_mean": 39.75,
+            "WS2M_monthly_mean": 2.65,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 22.16
+          },
+          "2008": {
+            "T2M_monthly_mean": 15.83,
+            "T2M_MAX_monthly_mean": 28.3,
+            "T2M_MIN_monthly_mean": 3.76,
+            "PRECTOTCORR_annual_total_mm": 214.8,
+            "PRECTOTCORR_monthly_mean": 0.59,
+            "T2M_RANGE_monthly_mean": 14.82,
+            "RH2M_monthly_mean": 41.74,
+            "WS2M_monthly_mean": 2.85,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.3
+          },
+          "2009": {
+            "T2M_monthly_mean": 16.21,
+            "T2M_MAX_monthly_mean": 28.46,
+            "T2M_MIN_monthly_mean": 5.26,
+            "PRECTOTCORR_annual_total_mm": 243.2,
+            "PRECTOTCORR_monthly_mean": 0.67,
+            "T2M_RANGE_monthly_mean": 14.54,
+            "RH2M_monthly_mean": 42.46,
+            "WS2M_monthly_mean": 2.88,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.5
+          },
+          "2010": {
+            "T2M_monthly_mean": 16.77,
+            "T2M_MAX_monthly_mean": 29.78,
+            "T2M_MIN_monthly_mean": 4.81,
+            "PRECTOTCORR_annual_total_mm": 235.1,
+            "PRECTOTCORR_monthly_mean": 0.65,
+            "T2M_RANGE_monthly_mean": 14.65,
+            "RH2M_monthly_mean": 43.67,
+            "WS2M_monthly_mean": 3.08,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.99
+          },
+          "2011": {
+            "T2M_monthly_mean": 16.04,
+            "T2M_MAX_monthly_mean": 28.95,
+            "T2M_MIN_monthly_mean": 4.17,
+            "PRECTOTCORR_annual_total_mm": 280.2,
+            "PRECTOTCORR_monthly_mean": 0.76,
+            "T2M_RANGE_monthly_mean": 14.24,
+            "RH2M_monthly_mean": 41.15,
+            "WS2M_monthly_mean": 2.53,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.09
+          },
+          "2012": {
+            "T2M_monthly_mean": 16.06,
+            "T2M_MAX_monthly_mean": 28.6,
+            "T2M_MIN_monthly_mean": 3.71,
+            "PRECTOTCORR_annual_total_mm": 219.2,
+            "PRECTOTCORR_monthly_mean": 0.6,
+            "T2M_RANGE_monthly_mean": 14.67,
+            "RH2M_monthly_mean": 38.58,
+            "WS2M_monthly_mean": 2.67,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.46
+          },
+          "2013": {
+            "T2M_monthly_mean": 16.16,
+            "T2M_MAX_monthly_mean": 29.37,
+            "T2M_MIN_monthly_mean": 4.07,
+            "PRECTOTCORR_annual_total_mm": 134.6,
+            "PRECTOTCORR_monthly_mean": 0.37,
+            "T2M_RANGE_monthly_mean": 15.34,
+            "RH2M_monthly_mean": 38.9,
+            "WS2M_monthly_mean": 2.93,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 22.06
+          },
+          "2014": {
+            "T2M_monthly_mean": 16.37,
+            "T2M_MAX_monthly_mean": 29.22,
+            "T2M_MIN_monthly_mean": 4.45,
+            "PRECTOTCORR_annual_total_mm": 334.6,
+            "PRECTOTCORR_monthly_mean": 0.92,
+            "T2M_RANGE_monthly_mean": 14.92,
+            "RH2M_monthly_mean": 41.69,
+            "WS2M_monthly_mean": 2.88,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.43
+          },
+          "2015": {
+            "T2M_monthly_mean": 16.27,
+            "T2M_MAX_monthly_mean": 29.35,
+            "T2M_MIN_monthly_mean": 5.16,
+            "PRECTOTCORR_annual_total_mm": 179.2,
+            "PRECTOTCORR_monthly_mean": 0.49,
+            "T2M_RANGE_monthly_mean": 14.64,
+            "RH2M_monthly_mean": 42.19,
+            "WS2M_monthly_mean": 2.6,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.45
+          },
+          "2016": {
+            "T2M_monthly_mean": 16.55,
+            "T2M_MAX_monthly_mean": 29.38,
+            "T2M_MIN_monthly_mean": 4.46,
+            "PRECTOTCORR_annual_total_mm": 204.0,
+            "PRECTOTCORR_monthly_mean": 0.56,
+            "T2M_RANGE_monthly_mean": 15.12,
+            "RH2M_monthly_mean": 39.94,
+            "WS2M_monthly_mean": 2.69,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.69
+          },
+          "2017": {
+            "T2M_monthly_mean": 17.3,
+            "T2M_MAX_monthly_mean": 29.63,
+            "T2M_MIN_monthly_mean": 5.8,
+            "PRECTOTCORR_annual_total_mm": 118.5,
+            "PRECTOTCORR_monthly_mean": 0.33,
+            "T2M_RANGE_monthly_mean": 15.08,
+            "RH2M_monthly_mean": 35.3,
+            "WS2M_monthly_mean": 2.39,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.53
+          },
+          "2018": {
+            "T2M_monthly_mean": 15.51,
+            "T2M_MAX_monthly_mean": 28.73,
+            "T2M_MIN_monthly_mean": 3.33,
+            "PRECTOTCORR_annual_total_mm": 296.7,
+            "PRECTOTCORR_monthly_mean": 0.81,
+            "T2M_RANGE_monthly_mean": 14.59,
+            "RH2M_monthly_mean": 44.93,
+            "WS2M_monthly_mean": 2.83,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.46
+          },
+          "2019": {
+            "T2M_monthly_mean": 17.05,
+            "T2M_MAX_monthly_mean": 29.84,
+            "T2M_MIN_monthly_mean": 4.83,
+            "PRECTOTCORR_annual_total_mm": 176.7,
+            "PRECTOTCORR_monthly_mean": 0.48,
+            "T2M_RANGE_monthly_mean": 15.38,
+            "RH2M_monthly_mean": 35.96,
+            "WS2M_monthly_mean": 2.59,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.93
+          },
+          "2020": {
+            "T2M_monthly_mean": 17.11,
+            "T2M_MAX_monthly_mean": 30.24,
+            "T2M_MIN_monthly_mean": 5.38,
+            "PRECTOTCORR_annual_total_mm": 265.9,
+            "PRECTOTCORR_monthly_mean": 0.72,
+            "T2M_RANGE_monthly_mean": 14.83,
+            "RH2M_monthly_mean": 39.6,
+            "WS2M_monthly_mean": 2.57,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.45
+          },
+          "2021": {
+            "T2M_monthly_mean": 17.1,
+            "T2M_MAX_monthly_mean": 30.5,
+            "T2M_MIN_monthly_mean": 5.09,
+            "PRECTOTCORR_annual_total_mm": 165.6,
+            "PRECTOTCORR_monthly_mean": 0.46,
+            "T2M_RANGE_monthly_mean": 15.32,
+            "RH2M_monthly_mean": 38.81,
+            "WS2M_monthly_mean": 2.7,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.23
+          },
+          "2022": {
+            "T2M_monthly_mean": 17.35,
+            "T2M_MAX_monthly_mean": 29.27,
+            "T2M_MIN_monthly_mean": 5.86,
+            "PRECTOTCORR_annual_total_mm": 239.0,
+            "PRECTOTCORR_monthly_mean": 0.66,
+            "T2M_RANGE_monthly_mean": 14.67,
+            "RH2M_monthly_mean": 39.31,
+            "WS2M_monthly_mean": 2.56,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.69
+          },
+          "2023": {
+            "T2M_monthly_mean": 17.84,
+            "T2M_MAX_monthly_mean": 30.68,
+            "T2M_MIN_monthly_mean": 5.97,
+            "PRECTOTCORR_annual_total_mm": 185.3,
+            "PRECTOTCORR_monthly_mean": 0.52,
+            "T2M_RANGE_monthly_mean": 14.97,
+            "RH2M_monthly_mean": 35.88,
+            "WS2M_monthly_mean": 2.41,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.55
+          }
+        },
+        "variability": {
+          "precipitation": {
+            "cv": 0.289,
+            "drought_frequency": 0.167,
+            "drought_threshold_mm": 146.1,
+            "wet_frequency": 0.167,
+            "wet_threshold_mm": 264.9
+          },
+          "temperature": {
+            "jan_mean_std": 1.43,
+            "jul_mean_std": 0.64,
+            "thermal_amplitude_mean": 21.61
+          }
+        }
+      }
+    },
+    "SAHARAN": {
+      "zone_name": "Saharan / Oasis",
+      "representative_point": {
+        "label": "Errachidia (Drâa-Tafilalet)",
+        "lat": 31.93,
+        "lon": -4.43
+      },
+      "error": "The read operation timed out"
+    },
+    "IRRIGATED_SOUSS": {
+      "zone_name": "Souss-Massa (Irrigated)",
+      "representative_point": {
+        "label": "Agadir (Souss plain)",
+        "lat": 30.43,
+        "lon": -9.6
+      },
+      "climate_profile": {
+        "monthly_climatology": {
+          "Jan": {
+            "T2M": {
+              "mean": 13.88,
+              "min": 11.82,
+              "max": 16.32,
+              "std": 1.18,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 25.12,
+              "min": 21.2,
+              "max": 27.61,
+              "std": 1.55,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 5.44,
+              "min": 1.83,
+              "max": 8.14,
+              "std": 1.69,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.86,
+              "min": 0.0,
+              "max": 2.99,
+              "std": 0.88,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 11.39,
+              "min": 9.7,
+              "max": 12.77,
+              "std": 0.8,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 58.26,
+              "min": 45.93,
+              "max": 70.86,
+              "std": 6.63,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.27,
+              "min": 1.9,
+              "max": 2.84,
+              "std": 0.26,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 13.94,
+              "min": 12.49,
+              "max": 15.17,
+              "std": 0.71,
+              "n_years": 24
+            }
+          },
+          "Feb": {
+            "T2M": {
+              "mean": 15.14,
+              "min": 12.41,
+              "max": 18.76,
+              "std": 1.7,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 26.43,
+              "min": 21.67,
+              "max": 29.33,
+              "std": 1.88,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 6.92,
+              "min": 3.68,
+              "max": 10.64,
+              "std": 2.03,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.2,
+              "min": 0.0,
+              "max": 5.34,
+              "std": 1.5,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 11.72,
+              "min": 8.44,
+              "max": 13.31,
+              "std": 1.25,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 56.49,
+              "min": 38.82,
+              "max": 76.24,
+              "std": 9.03,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.45,
+              "min": 1.96,
+              "max": 2.97,
+              "std": 0.27,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 16.97,
+              "min": 14.05,
+              "max": 18.9,
+              "std": 1.35,
+              "n_years": 24
+            }
+          },
+          "Mar": {
+            "T2M": {
+              "mean": 17.54,
+              "min": 15.54,
+              "max": 21.16,
+              "std": 1.38,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 30.89,
+              "min": 27.53,
+              "max": 35.63,
+              "std": 2.08,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 7.57,
+              "min": 4.45,
+              "max": 9.92,
+              "std": 1.42,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.05,
+              "min": 0.0,
+              "max": 4.33,
+              "std": 1.11,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 12.28,
+              "min": 10.05,
+              "max": 13.59,
+              "std": 0.94,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 54.76,
+              "min": 40.61,
+              "max": 73.25,
+              "std": 8.45,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.53,
+              "min": 2.02,
+              "max": 3.06,
+              "std": 0.26,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 21.46,
+              "min": 19.41,
+              "max": 23.0,
+              "std": 0.91,
+              "n_years": 24
+            }
+          },
+          "Apr": {
+            "T2M": {
+              "mean": 19.16,
+              "min": 16.74,
+              "max": 22.65,
+              "std": 1.48,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 32.55,
+              "min": 29.74,
+              "max": 36.25,
+              "std": 2.03,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 9.53,
+              "min": 7.12,
+              "max": 13.07,
+              "std": 1.45,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.6,
+              "min": 0.01,
+              "max": 1.84,
+              "std": 0.58,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 12.58,
+              "min": 11.04,
+              "max": 14.17,
+              "std": 0.82,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 55.98,
+              "min": 40.06,
+              "max": 64.44,
+              "std": 6.46,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.68,
+              "min": 1.93,
+              "max": 3.18,
+              "std": 0.37,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 24.96,
+              "min": 23.06,
+              "max": 27.25,
+              "std": 0.98,
+              "n_years": 24
+            }
+          },
+          "May": {
+            "T2M": {
+              "mean": 22.31,
+              "min": 18.86,
+              "max": 25.18,
+              "std": 1.65,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 36.69,
+              "min": 31.25,
+              "max": 41.17,
+              "std": 2.35,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 11.16,
+              "min": 9.19,
+              "max": 13.29,
+              "std": 1.34,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.34,
+              "min": 0.0,
+              "max": 3.04,
+              "std": 0.7,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 13.24,
+              "min": 10.46,
+              "max": 14.55,
+              "std": 0.89,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 50.8,
+              "min": 41.04,
+              "max": 63.75,
+              "std": 6.07,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.77,
+              "min": 2.28,
+              "max": 3.82,
+              "std": 0.37,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 27.07,
+              "min": 22.89,
+              "max": 29.12,
+              "std": 1.27,
+              "n_years": 24
+            }
+          },
+          "Jun": {
+            "T2M": {
+              "mean": 25.47,
+              "min": 22.12,
+              "max": 28.24,
+              "std": 1.73,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 39.81,
+              "min": 32.54,
+              "max": 44.34,
+              "std": 2.8,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 14.49,
+              "min": 13.07,
+              "max": 16.9,
+              "std": 1.19,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.09,
+              "min": 0.0,
+              "max": 0.58,
+              "std": 0.16,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 13.94,
+              "min": 12.13,
+              "max": 15.51,
+              "std": 0.72,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 47.15,
+              "min": 34.7,
+              "max": 57.66,
+              "std": 5.79,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.65,
+              "min": 2.15,
+              "max": 3.23,
+              "std": 0.28,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 27.75,
+              "min": 26.15,
+              "max": 29.74,
+              "std": 0.84,
+              "n_years": 24
+            }
+          },
+          "Jul": {
+            "T2M": {
+              "mean": 29.59,
+              "min": 25.82,
+              "max": 32.31,
+              "std": 1.76,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 43.19,
+              "min": 37.63,
+              "max": 46.13,
+              "std": 2.27,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 17.64,
+              "min": 15.45,
+              "max": 21.88,
+              "std": 1.36,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.04,
+              "min": 0.0,
+              "max": 0.18,
+              "std": 0.06,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 14.26,
+              "min": 13.41,
+              "max": 15.12,
+              "std": 0.46,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 36.68,
+              "min": 28.3,
+              "max": 48.49,
+              "std": 5.57,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.27,
+              "min": 2.03,
+              "max": 2.58,
+              "std": 0.14,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 26.75,
+              "min": 25.4,
+              "max": 28.15,
+              "std": 0.77,
+              "n_years": 24
+            }
+          },
+          "Aug": {
+            "T2M": {
+              "mean": 29.34,
+              "min": 25.92,
+              "max": 32.11,
+              "std": 1.67,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 42.49,
+              "min": 38.51,
+              "max": 47.19,
+              "std": 2.45,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 18.13,
+              "min": 15.89,
+              "max": 20.16,
+              "std": 1.07,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.13,
+              "min": 0.0,
+              "max": 1.07,
+              "std": 0.23,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 13.28,
+              "min": 12.44,
+              "max": 14.7,
+              "std": 0.51,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 39.5,
+              "min": 27.21,
+              "max": 51.34,
+              "std": 6.19,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.2,
+              "min": 1.96,
+              "max": 2.57,
+              "std": 0.16,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 24.57,
+              "min": 22.97,
+              "max": 25.66,
+              "std": 0.6,
+              "n_years": 24
+            }
+          },
+          "Sep": {
+            "T2M": {
+              "mean": 25.26,
+              "min": 22.8,
+              "max": 27.6,
+              "std": 1.37,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 38.13,
+              "min": 34.52,
+              "max": 41.88,
+              "std": 2.35,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 15.93,
+              "min": 14.58,
+              "max": 17.94,
+              "std": 0.87,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.27,
+              "min": 0.02,
+              "max": 1.31,
+              "std": 0.34,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 12.12,
+              "min": 10.82,
+              "max": 13.66,
+              "std": 0.71,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 50.59,
+              "min": 40.12,
+              "max": 63.43,
+              "std": 6.58,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.17,
+              "min": 1.87,
+              "max": 2.54,
+              "std": 0.21,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 21.7,
+              "min": 19.69,
+              "max": 23.06,
+              "std": 0.86,
+              "n_years": 24
+            }
+          },
+          "Oct": {
+            "T2M": {
+              "mean": 22.81,
+              "min": 19.83,
+              "max": 25.5,
+              "std": 1.46,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 35.32,
+              "min": 31.01,
+              "max": 40.11,
+              "std": 1.97,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 13.31,
+              "min": 10.27,
+              "max": 16.12,
+              "std": 1.55,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 0.69,
+              "min": 0.0,
+              "max": 3.57,
+              "std": 0.81,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 11.14,
+              "min": 9.44,
+              "max": 12.62,
+              "std": 0.9,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 50.74,
+              "min": 35.11,
+              "max": 65.72,
+              "std": 8.52,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.12,
+              "min": 1.8,
+              "max": 2.62,
+              "std": 0.2,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 17.6,
+              "min": 16.12,
+              "max": 18.94,
+              "std": 0.74,
+              "n_years": 24
+            }
+          },
+          "Nov": {
+            "T2M": {
+              "mean": 18.2,
+              "min": 15.26,
+              "max": 21.27,
+              "std": 1.42,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 30.15,
+              "min": 26.62,
+              "max": 34.35,
+              "std": 1.88,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 9.39,
+              "min": 6.53,
+              "max": 12.58,
+              "std": 1.64,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.73,
+              "min": 0.01,
+              "max": 10.99,
+              "std": 2.33,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 10.68,
+              "min": 8.12,
+              "max": 12.26,
+              "std": 0.95,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 54.52,
+              "min": 35.6,
+              "max": 70.49,
+              "std": 8.62,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.25,
+              "min": 1.84,
+              "max": 2.77,
+              "std": 0.26,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 14.29,
+              "min": 12.35,
+              "max": 15.5,
+              "std": 0.87,
+              "n_years": 24
+            }
+          },
+          "Dec": {
+            "T2M": {
+              "mean": 15.2,
+              "min": 12.82,
+              "max": 16.95,
+              "std": 1.23,
+              "n_years": 24
+            },
+            "T2M_MAX": {
+              "mean": 25.84,
+              "min": 22.53,
+              "max": 29.14,
+              "std": 1.71,
+              "n_years": 24
+            },
+            "T2M_MIN": {
+              "mean": 7.45,
+              "min": 3.99,
+              "max": 11.11,
+              "std": 1.79,
+              "n_years": 24
+            },
+            "PRECTOTCORR": {
+              "mean": 1.24,
+              "min": 0.0,
+              "max": 5.3,
+              "std": 1.26,
+              "n_years": 24
+            },
+            "T2M_RANGE": {
+              "mean": 10.74,
+              "min": 8.85,
+              "max": 12.28,
+              "std": 0.91,
+              "n_years": 24
+            },
+            "RH2M": {
+              "mean": 58.52,
+              "min": 45.49,
+              "max": 71.63,
+              "std": 6.58,
+              "n_years": 24
+            },
+            "WS2M": {
+              "mean": 2.24,
+              "min": 1.81,
+              "max": 2.83,
+              "std": 0.28,
+              "n_years": 24
+            },
+            "ALLSKY_SFC_SW_DWN": {
+              "mean": 12.36,
+              "min": 10.5,
+              "max": 13.92,
+              "std": 0.92,
+              "n_years": 24
+            }
+          }
+        },
+        "annual_summary": {
+          "T2M_annual_mean": {
+            "mean": 21.16,
+            "min": 19.99,
+            "max": 22.46,
+            "std": 0.58
+          },
+          "T2M_MAX_annual_mean": {
+            "mean": 33.89,
+            "min": 32.19,
+            "max": 35.91,
+            "std": 0.79
+          },
+          "T2M_MIN_annual_mean": {
+            "mean": 11.41,
+            "min": 10.38,
+            "max": 12.57,
+            "std": 0.58
+          },
+          "PRECTOTCORR_annual_total_mm": {
+            "mean": 249.31,
+            "min": 94.48,
+            "max": 523.46,
+            "std": 111.13
+          },
+          "T2M_RANGE_annual_mean": {
+            "mean": 12.28,
+            "min": 11.46,
+            "max": 12.82,
+            "std": 0.33
+          },
+          "RH2M_annual_mean": {
+            "mean": 51.17,
+            "min": 45.73,
+            "max": 57.52,
+            "std": 3.08
+          },
+          "WS2M_annual_mean": {
+            "mean": 2.38,
+            "min": 2.16,
+            "max": 2.54,
+            "std": 0.09
+          },
+          "ALLSKY_SFC_SW_DWN_annual_mean": {
+            "mean": 20.79,
+            "min": 19.96,
+            "max": 21.42,
+            "std": 0.32
+          }
+        },
+        "yearly_data": {
+          "2000": {
+            "T2M_monthly_mean": 21.17,
+            "T2M_MAX_monthly_mean": 34.11,
+            "T2M_MIN_monthly_mean": 11.58,
+            "PRECTOTCORR_annual_total_mm": 155.4,
+            "PRECTOTCORR_monthly_mean": 0.42,
+            "T2M_RANGE_monthly_mean": 12.71,
+            "RH2M_monthly_mean": 48.45,
+            "WS2M_monthly_mean": 2.38,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.79
+          },
+          "2001": {
+            "T2M_monthly_mean": 21.61,
+            "T2M_MAX_monthly_mean": 34.24,
+            "T2M_MIN_monthly_mean": 11.58,
+            "PRECTOTCORR_annual_total_mm": 143.4,
+            "PRECTOTCORR_monthly_mean": 0.39,
+            "T2M_RANGE_monthly_mean": 12.75,
+            "RH2M_monthly_mean": 48.14,
+            "WS2M_monthly_mean": 2.45,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.96
+          },
+          "2002": {
+            "T2M_monthly_mean": 21.03,
+            "T2M_MAX_monthly_mean": 34.1,
+            "T2M_MIN_monthly_mean": 11.57,
+            "PRECTOTCORR_annual_total_mm": 288.1,
+            "PRECTOTCORR_monthly_mean": 0.79,
+            "T2M_RANGE_monthly_mean": 12.41,
+            "RH2M_monthly_mean": 52.18,
+            "WS2M_monthly_mean": 2.42,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.7
+          },
+          "2003": {
+            "T2M_monthly_mean": 21.22,
+            "T2M_MAX_monthly_mean": 33.41,
+            "T2M_MIN_monthly_mean": 11.56,
+            "PRECTOTCORR_annual_total_mm": 210.8,
+            "PRECTOTCORR_monthly_mean": 0.58,
+            "T2M_RANGE_monthly_mean": 12.08,
+            "RH2M_monthly_mean": 52.93,
+            "WS2M_monthly_mean": 2.32,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.62
+          },
+          "2004": {
+            "T2M_monthly_mean": 20.98,
+            "T2M_MAX_monthly_mean": 33.46,
+            "T2M_MIN_monthly_mean": 10.85,
+            "PRECTOTCORR_annual_total_mm": 197.5,
+            "PRECTOTCORR_monthly_mean": 0.55,
+            "T2M_RANGE_monthly_mean": 12.02,
+            "RH2M_monthly_mean": 50.66,
+            "WS2M_monthly_mean": 2.54,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.28
+          },
+          "2005": {
+            "T2M_monthly_mean": 20.91,
+            "T2M_MAX_monthly_mean": 33.91,
+            "T2M_MIN_monthly_mean": 11.24,
+            "PRECTOTCORR_annual_total_mm": 219.6,
+            "PRECTOTCORR_monthly_mean": 0.61,
+            "T2M_RANGE_monthly_mean": 12.28,
+            "RH2M_monthly_mean": 51.62,
+            "WS2M_monthly_mean": 2.33,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.73
+          },
+          "2006": {
+            "T2M_monthly_mean": 20.7,
+            "T2M_MAX_monthly_mean": 33.25,
+            "T2M_MIN_monthly_mean": 11.18,
+            "PRECTOTCORR_annual_total_mm": 229.5,
+            "PRECTOTCORR_monthly_mean": 0.63,
+            "T2M_RANGE_monthly_mean": 11.76,
+            "RH2M_monthly_mean": 54.15,
+            "WS2M_monthly_mean": 2.4,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.49
+          },
+          "2007": {
+            "T2M_monthly_mean": 20.62,
+            "T2M_MAX_monthly_mean": 33.18,
+            "T2M_MIN_monthly_mean": 10.79,
+            "PRECTOTCORR_annual_total_mm": 195.7,
+            "PRECTOTCORR_monthly_mean": 0.54,
+            "T2M_RANGE_monthly_mean": 12.48,
+            "RH2M_monthly_mean": 50.42,
+            "WS2M_monthly_mean": 2.39,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.09
+          },
+          "2008": {
+            "T2M_monthly_mean": 20.78,
+            "T2M_MAX_monthly_mean": 33.04,
+            "T2M_MIN_monthly_mean": 11.02,
+            "PRECTOTCORR_annual_total_mm": 236.4,
+            "PRECTOTCORR_monthly_mean": 0.65,
+            "T2M_RANGE_monthly_mean": 12.31,
+            "RH2M_monthly_mean": 51.16,
+            "WS2M_monthly_mean": 2.53,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.86
+          },
+          "2009": {
+            "T2M_monthly_mean": 21.18,
+            "T2M_MAX_monthly_mean": 33.16,
+            "T2M_MIN_monthly_mean": 11.75,
+            "PRECTOTCORR_annual_total_mm": 431.9,
+            "PRECTOTCORR_monthly_mean": 1.2,
+            "T2M_RANGE_monthly_mean": 12.03,
+            "RH2M_monthly_mean": 53.71,
+            "WS2M_monthly_mean": 2.51,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.0
+          },
+          "2010": {
+            "T2M_monthly_mean": 21.12,
+            "T2M_MAX_monthly_mean": 34.06,
+            "T2M_MIN_monthly_mean": 11.64,
+            "PRECTOTCORR_annual_total_mm": 485.5,
+            "PRECTOTCORR_monthly_mean": 1.35,
+            "T2M_RANGE_monthly_mean": 11.46,
+            "RH2M_monthly_mean": 57.52,
+            "WS2M_monthly_mean": 2.48,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 19.96
+          },
+          "2011": {
+            "T2M_monthly_mean": 20.84,
+            "T2M_MAX_monthly_mean": 33.76,
+            "T2M_MIN_monthly_mean": 11.03,
+            "PRECTOTCORR_annual_total_mm": 412.6,
+            "PRECTOTCORR_monthly_mean": 1.12,
+            "T2M_RANGE_monthly_mean": 11.91,
+            "RH2M_monthly_mean": 53.66,
+            "WS2M_monthly_mean": 2.33,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.46
+          },
+          "2012": {
+            "T2M_monthly_mean": 21.29,
+            "T2M_MAX_monthly_mean": 34.54,
+            "T2M_MIN_monthly_mean": 10.58,
+            "PRECTOTCORR_annual_total_mm": 249.4,
+            "PRECTOTCORR_monthly_mean": 0.68,
+            "T2M_RANGE_monthly_mean": 12.41,
+            "RH2M_monthly_mean": 47.9,
+            "WS2M_monthly_mean": 2.43,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.05
+          },
+          "2013": {
+            "T2M_monthly_mean": 20.72,
+            "T2M_MAX_monthly_mean": 33.48,
+            "T2M_MIN_monthly_mean": 10.67,
+            "PRECTOTCORR_annual_total_mm": 250.8,
+            "PRECTOTCORR_monthly_mean": 0.69,
+            "T2M_RANGE_monthly_mean": 12.35,
+            "RH2M_monthly_mean": 52.12,
+            "WS2M_monthly_mean": 2.42,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.07
+          },
+          "2014": {
+            "T2M_monthly_mean": 20.72,
+            "T2M_MAX_monthly_mean": 33.12,
+            "T2M_MIN_monthly_mean": 11.5,
+            "PRECTOTCORR_annual_total_mm": 523.5,
+            "PRECTOTCORR_monthly_mean": 1.44,
+            "T2M_RANGE_monthly_mean": 12.1,
+            "RH2M_monthly_mean": 53.32,
+            "WS2M_monthly_mean": 2.43,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.95
+          },
+          "2015": {
+            "T2M_monthly_mean": 20.52,
+            "T2M_MAX_monthly_mean": 33.78,
+            "T2M_MIN_monthly_mean": 11.37,
+            "PRECTOTCORR_annual_total_mm": 200.9,
+            "PRECTOTCORR_monthly_mean": 0.54,
+            "T2M_RANGE_monthly_mean": 12.17,
+            "RH2M_monthly_mean": 55.27,
+            "WS2M_monthly_mean": 2.3,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.76
+          },
+          "2016": {
+            "T2M_monthly_mean": 21.02,
+            "T2M_MAX_monthly_mean": 33.49,
+            "T2M_MIN_monthly_mean": 11.35,
+            "PRECTOTCORR_annual_total_mm": 305.8,
+            "PRECTOTCORR_monthly_mean": 0.84,
+            "T2M_RANGE_monthly_mean": 12.15,
+            "RH2M_monthly_mean": 52.52,
+            "WS2M_monthly_mean": 2.34,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.6
+          },
+          "2017": {
+            "T2M_monthly_mean": 21.93,
+            "T2M_MAX_monthly_mean": 35.21,
+            "T2M_MIN_monthly_mean": 12.23,
+            "PRECTOTCORR_annual_total_mm": 174.2,
+            "PRECTOTCORR_monthly_mean": 0.5,
+            "T2M_RANGE_monthly_mean": 12.7,
+            "RH2M_monthly_mean": 47.79,
+            "WS2M_monthly_mean": 2.16,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.89
+          },
+          "2018": {
+            "T2M_monthly_mean": 19.99,
+            "T2M_MAX_monthly_mean": 32.19,
+            "T2M_MIN_monthly_mean": 10.38,
+            "PRECTOTCORR_annual_total_mm": 284.3,
+            "PRECTOTCORR_monthly_mean": 0.79,
+            "T2M_RANGE_monthly_mean": 12.05,
+            "RH2M_monthly_mean": 55.51,
+            "WS2M_monthly_mean": 2.43,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.71
+          },
+          "2019": {
+            "T2M_monthly_mean": 21.26,
+            "T2M_MAX_monthly_mean": 34.73,
+            "T2M_MIN_monthly_mean": 11.29,
+            "PRECTOTCORR_annual_total_mm": 94.5,
+            "PRECTOTCORR_monthly_mean": 0.26,
+            "T2M_RANGE_monthly_mean": 12.82,
+            "RH2M_monthly_mean": 47.81,
+            "WS2M_monthly_mean": 2.3,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.42
+          },
+          "2020": {
+            "T2M_monthly_mean": 21.96,
+            "T2M_MAX_monthly_mean": 34.45,
+            "T2M_MIN_monthly_mean": 12.57,
+            "PRECTOTCORR_annual_total_mm": 200.5,
+            "PRECTOTCORR_monthly_mean": 0.55,
+            "T2M_RANGE_monthly_mean": 12.42,
+            "RH2M_monthly_mean": 48.03,
+            "WS2M_monthly_mean": 2.29,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.12
+          },
+          "2021": {
+            "T2M_monthly_mean": 21.35,
+            "T2M_MAX_monthly_mean": 34.64,
+            "T2M_MIN_monthly_mean": 11.48,
+            "PRECTOTCORR_annual_total_mm": 187.7,
+            "PRECTOTCORR_monthly_mean": 0.52,
+            "T2M_RANGE_monthly_mean": 12.55,
+            "RH2M_monthly_mean": 50.47,
+            "WS2M_monthly_mean": 2.33,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.93
+          },
+          "2022": {
+            "T2M_monthly_mean": 22.46,
+            "T2M_MAX_monthly_mean": 34.01,
+            "T2M_MIN_monthly_mean": 12.48,
+            "PRECTOTCORR_annual_total_mm": 183.5,
+            "PRECTOTCORR_monthly_mean": 0.5,
+            "T2M_RANGE_monthly_mean": 12.35,
+            "RH2M_monthly_mean": 45.73,
+            "WS2M_monthly_mean": 2.38,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 20.42
+          },
+          "2023": {
+            "T2M_monthly_mean": 22.41,
+            "T2M_MAX_monthly_mean": 35.91,
+            "T2M_MIN_monthly_mean": 12.28,
+            "PRECTOTCORR_annual_total_mm": 122.0,
+            "PRECTOTCORR_monthly_mean": 0.34,
+            "T2M_RANGE_monthly_mean": 12.49,
+            "RH2M_monthly_mean": 46.95,
+            "WS2M_monthly_mean": 2.32,
+            "ALLSKY_SFC_SW_DWN_monthly_mean": 21.0
+          }
+        },
+        "variability": {
+          "precipitation": {
+            "cv": 0.446,
+            "drought_frequency": 0.083,
+            "drought_threshold_mm": 138.2,
+            "wet_frequency": 0.167,
+            "wet_threshold_mm": 360.4
+          },
+          "temperature": {
+            "jan_mean_std": 1.18,
+            "jul_mean_std": 1.76,
+            "thermal_amplitude_mean": 15.71
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "country": "Morocco",
+    "classification": "Emberger Bioclimatic Stages",
+    "reference": "Emberger L. (1955) - Afrique du Nord-Ouest. In: UNESCO, Plant Ecology: Reviews of Research",
+    "coordinate_system": "WGS84 (EPSG:4326)",
+    "num_zones": 6,
+    "climate_data_source": "See data/climate_profiles.json (NASA POWER / ERA5)"
+  },
+  "zones": {
+    "SUB_HUMID": {
+      "name": "Sub-humid",
+      "emberger_stage": "Sub-humide",
+      "description": "Atlantic and Rif coastal lowlands with reliable rainfall. Morocco's breadbasket for rainfed cereals, sugarcane, and rice.",
+      "regions": ["Gharb", "Loukkos", "Rif occidental", "Tangier-Tétouan"],
+      "representative_point": {
+        "label": "Kénitra (Gharb plain)",
+        "lat": 34.26,
+        "lon": -6.58
+      },
+      "bounding_box": {
+        "lat_min": 33.5,
+        "lat_max": 35.9,
+        "lon_min": -6.8,
+        "lon_max": -4.5
+      },
+      "soil_types": ["vertisol", "fluvisol", "luvisol"],
+      "dominant_soil": "vertisol",
+      "viable_crops": ["soft_wheat", "durum_wheat", "rice", "sugarcane", "sugar_beet", "sunflower", "fava_beans", "citrus", "potatoes"],
+      "agriculture_type": "rainfed + supplemental irrigation"
+    },
+
+    "SEMI_ARID_WARM": {
+      "name": "Semi-arid warm",
+      "emberger_stage": "Semi-aride chaud",
+      "description": "Interior plains with moderate rainfall and hot summers. Key cereal and olive production zones.",
+      "regions": ["Saïs (Fès-Meknès)", "Haouz (Marrakech)", "Tadla (Béni Mellal)", "Chaouia (Casablanca-Settat)"],
+      "representative_point": {
+        "label": "Meknès (Saïs plain)",
+        "lat": 33.89,
+        "lon": -5.55
+      },
+      "bounding_box": {
+        "lat_min": 31.5,
+        "lat_max": 34.2,
+        "lon_min": -8.0,
+        "lon_max": -4.0
+      },
+      "soil_types": ["calcisol", "vertisol", "cambisol"],
+      "dominant_soil": "calcisol",
+      "viable_crops": ["durum_wheat", "soft_wheat", "barley", "chickpeas", "lentils", "fava_beans", "olives", "grapes", "potatoes"],
+      "agriculture_type": "rainfed dominant"
+    },
+
+    "SEMI_ARID_COOL": {
+      "name": "Semi-arid cool",
+      "emberger_stage": "Semi-aride frais",
+      "description": "High plateaus and Oriental region with cold winters and hot summers. Extensive cereal farming and pastoralism.",
+      "regions": ["Oriental", "Hauts Plateaux", "Middle Atlas margins"],
+      "representative_point": {
+        "label": "Oujda (Oriental)",
+        "lat": 34.68,
+        "lon": -1.91
+      },
+      "bounding_box": {
+        "lat_min": 33.0,
+        "lat_max": 35.0,
+        "lon_min": -3.5,
+        "lon_max": -1.2
+      },
+      "soil_types": ["calcisol", "leptosol", "cambisol"],
+      "dominant_soil": "calcisol",
+      "viable_crops": ["barley", "durum_wheat", "chickpeas", "lentils", "almonds", "sorghum"],
+      "agriculture_type": "rainfed + pastoral"
+    },
+
+    "ARID": {
+      "name": "Arid",
+      "emberger_stage": "Aride",
+      "description": "Pre-Atlas and southern margins with low, erratic rainfall. Agriculture limited to drought-tolerant crops and localized irrigation.",
+      "regions": ["Souss hinterland", "Anti-Atlas foothills", "Pre-Saharan margins"],
+      "representative_point": {
+        "label": "Ouarzazate",
+        "lat": 30.92,
+        "lon": -6.90
+      },
+      "bounding_box": {
+        "lat_min": 30.0,
+        "lat_max": 32.5,
+        "lon_min": -9.0,
+        "lon_max": -4.0
+      },
+      "soil_types": ["calcisol", "leptosol", "arenosol"],
+      "dominant_soil": "leptosol",
+      "viable_crops": ["barley", "sorghum", "almonds", "date_palms", "watermelon", "cumin"],
+      "agriculture_type": "rainfed marginal + localized irrigation"
+    },
+
+    "SAHARAN": {
+      "name": "Saharan / Oasis",
+      "emberger_stage": "Saharien",
+      "description": "Saharan zone with negligible rainfall. Agriculture exclusively in oases with traditional irrigation (khettara/foggara) or modern drip systems.",
+      "regions": ["Drâa-Tafilalet", "Errachidia", "Zagora", "Figuig", "Tata"],
+      "representative_point": {
+        "label": "Errachidia (Drâa-Tafilalet)",
+        "lat": 31.93,
+        "lon": -4.43
+      },
+      "bounding_box": {
+        "lat_min": 29.0,
+        "lat_max": 32.5,
+        "lon_min": -6.5,
+        "lon_max": -1.5
+      },
+      "soil_types": ["arenosol", "calcisol", "fluvisol"],
+      "dominant_soil": "arenosol",
+      "viable_crops": ["date_palms", "henna", "cumin", "watermelon", "barley"],
+      "agriculture_type": "oasis irrigation (khettara / drip)"
+    },
+
+    "IRRIGATED_SOUSS": {
+      "name": "Souss-Massa (Irrigated)",
+      "emberger_stage": "Aride (with intensive irrigation)",
+      "description": "Bioclimatically arid but transformed by intensive irrigation into Morocco's top export agriculture zone. Citrus, tomatoes, and early vegetables for European markets.",
+      "regions": ["Souss-Massa", "Agadir", "Taroudant", "Tiznit"],
+      "representative_point": {
+        "label": "Agadir (Souss plain)",
+        "lat": 30.43,
+        "lon": -9.60
+      },
+      "bounding_box": {
+        "lat_min": 29.5,
+        "lat_max": 31.0,
+        "lon_min": -10.0,
+        "lon_max": -8.5
+      },
+      "soil_types": ["fluvisol", "calcisol", "arenosol"],
+      "dominant_soil": "fluvisol",
+      "viable_crops": ["tomatoes", "citrus", "potatoes", "watermelon", "bananas", "avocados", "green_beans"],
+      "agriculture_type": "intensive irrigated (drip + greenhouse)",
+      "note": "Bioclimatically arid but irrigation transforms agricultural potential"
+    }
+  }
+}
