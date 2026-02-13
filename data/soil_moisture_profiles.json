@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "source": "morocco_soilmoisture.csv",
+    "zones_source": "zones.json",
+    "sm_column": "rzsm_1"
+  },
+  "zones": {
+    "SUB_HUMID": {
+      "mean": 0.1981,
+      "std": 0.0591,
+      "n_points": 8640
+    },
+    "SEMI_ARID_WARM": {
+      "mean": 0.1764,
+      "std": 0.0481,
+      "n_points": 23424
+    },
+    "SEMI_ARID_COOL": {
+      "mean": 0.1898,
+      "std": 0.0414,
+      "n_points": 10107
+    },
+    "ARID": {
+      "mean": 0.1492,
+      "std": 0.0416,
+      "n_points": 28210
+    },
+    "SAHARAN": {
+      "mean": 0.1234,
+      "std": 0.0446,
+      "n_points": 39025
+    },
+    "IRRIGATED_SOUSS": {
+      "mean": 0.1245,
+      "std": 0.0298,
+      "n_points": 4174
+    }
+  }
+}

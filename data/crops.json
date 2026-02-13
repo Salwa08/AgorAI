@@ -1,6 +1,6 @@
 {
     "metadata": {
-      "num_crops": 15,
+      "num_crops": 23,
       "sources": {
         "ecological_requirements": "FAO EcoCrop Database (gaez.fao.org/pages/ecocrop) via OpenCLIM/ecocrop CSV (github.com/OpenCLIM/ecocrop)",
         "yield_baselines": "FAOSTAT Crop Production Statistics - Morocco (fao.org/faostat), 2018-2022 averages",
@@ -372,6 +372,94 @@
         "ideal_zones": ["SUB_HUMID"],
         "ideal_soils": ["vertisol", "fluvisol"],
         "notes": "Concentrated in Gharb, Loukkos and Tadla (irrigated). Requires deep, fertile soils and reliable water supply. Part of Morocco's sugar self-sufficiency program."
+      },
+      "rice": {
+        "name": "Rice",
+        "scientific_name": "Oryza sativa",
+        "category": "cereal",
+        "ecocrop": {"temp_opt_min_C": 22, "temp_opt_max_C": 30, "temp_abs_min_C": 10, "temp_abs_max_C": 38, "precip_opt_min_mm": 1000, "precip_opt_max_mm": 2000, "precip_abs_min_mm": 500, "precip_abs_max_mm": 3000, "cycle_min_days": 90, "cycle_max_days": 180},
+        "base_yield_t_ha": 5.5,
+        "water_need": "high",
+        "growth_season": "spring-summer",
+        "ideal_zones": ["SUB_HUMID"],
+        "ideal_soils": ["vertisol", "fluvisol"]
+      },
+      "sugarcane": {
+        "name": "Sugarcane",
+        "scientific_name": "Saccharum officinarum",
+        "category": "cereal",
+        "ecocrop": {"temp_opt_min_C": 22, "temp_opt_max_C": 30, "temp_abs_min_C": 15, "temp_abs_max_C": 38, "precip_opt_min_mm": 1200, "precip_opt_max_mm": 2500, "precip_abs_min_mm": 800, "precip_abs_max_mm": 3500, "cycle_min_days": 300, "cycle_max_days": 365},
+        "base_yield_t_ha": 80,
+        "water_need": "high",
+        "growth_season": "perennial",
+        "ideal_zones": ["SUB_HUMID"],
+        "ideal_soils": ["vertisol", "fluvisol"]
+      },
+      "sunflower": {
+        "name": "Sunflower",
+        "scientific_name": "Helianthus annuus",
+        "category": "oilseed",
+        "ecocrop": {"temp_opt_min_C": 18, "temp_opt_max_C": 28, "temp_abs_min_C": 8, "temp_abs_max_C": 38, "precip_opt_min_mm": 500, "precip_opt_max_mm": 800, "precip_abs_min_mm": 350, "precip_abs_max_mm": 1500, "cycle_min_days": 90, "cycle_max_days": 120},
+        "base_yield_t_ha": 1.5,
+        "water_need": "medium",
+        "growth_season": "spring-summer",
+        "ideal_zones": ["SUB_HUMID"],
+        "ideal_soils": ["vertisol", "cambisol"]
+      },
+      "grapes": {
+        "name": "Grapes",
+        "scientific_name": "Vitis vinifera",
+        "category": "tree_crop",
+        "ecocrop": {"temp_opt_min_C": 18, "temp_opt_max_C": 28, "temp_abs_min_C": 5, "temp_abs_max_C": 38, "precip_opt_min_mm": 500, "precip_opt_max_mm": 800, "precip_abs_min_mm": 300, "precip_abs_max_mm": 1500, "cycle_min_days": 150, "cycle_max_days": 200},
+        "base_yield_t_ha": 8,
+        "water_need": "low",
+        "growth_season": "perennial",
+        "ideal_zones": ["SEMI_ARID_WARM"],
+        "ideal_soils": ["calcisol", "cambisol"]
+      },
+      "cumin": {
+        "name": "Cumin",
+        "scientific_name": "Cuminum cyminum",
+        "category": "spice",
+        "ecocrop": {"temp_opt_min_C": 22, "temp_opt_max_C": 30, "temp_abs_min_C": 12, "temp_abs_max_C": 38, "precip_opt_min_mm": 200, "precip_opt_max_mm": 500, "precip_abs_min_mm": 100, "precip_abs_max_mm": 800, "cycle_min_days": 100, "cycle_max_days": 120},
+        "base_yield_t_ha": 0.6,
+        "water_need": "low",
+        "growth_season": "spring-summer",
+        "ideal_zones": ["ARID", "SAHARAN"],
+        "ideal_soils": ["calcisol", "arenosol"]
+      },
+      "bananas": {
+        "name": "Bananas",
+        "scientific_name": "Musa acuminata",
+        "category": "tree_crop",
+        "ecocrop": {"temp_opt_min_C": 24, "temp_opt_max_C": 32, "temp_abs_min_C": 15, "temp_abs_max_C": 38, "precip_opt_min_mm": 1500, "precip_opt_max_mm": 2500, "precip_abs_min_mm": 800, "precip_abs_max_mm": 3500, "cycle_min_days": 270, "cycle_max_days": 365},
+        "base_yield_t_ha": 25,
+        "water_need": "high",
+        "growth_season": "perennial",
+        "ideal_zones": ["IRRIGATED_SOUSS"],
+        "ideal_soils": ["fluvisol"]
+      },
+      "avocados": {
+        "name": "Avocados",
+        "scientific_name": "Persea americana",
+        "category": "tree_crop",
+        "ecocrop": {"temp_opt_min_C": 20, "temp_opt_max_C": 28, "temp_abs_min_C": 10, "temp_abs_max_C": 35, "precip_opt_min_mm": 1000, "precip_opt_max_mm": 1800, "precip_abs_min_mm": 600, "precip_abs_max_mm": 2500, "cycle_min_days": 200, "cycle_max_days": 365},
+        "base_yield_t_ha": 8,
+        "water_need": "medium",
+        "growth_season": "perennial",
+        "ideal_zones": ["IRRIGATED_SOUSS"],
+        "ideal_soils": ["fluvisol", "cambisol"]
+      },
+      "green_beans": {
+        "name": "Green Beans",
+        "scientific_name": "Phaseolus vulgaris",
+        "category": "vegetable",
+        "ecocrop": {"temp_opt_min_C": 18, "temp_opt_max_C": 26, "temp_abs_min_C": 10, "temp_abs_max_C": 32, "precip_opt_min_mm": 500, "precip_opt_max_mm": 1000, "precip_abs_min_mm": 350, "precip_abs_max_mm": 1500, "cycle_min_days": 60, "cycle_max_days": 90},
+        "base_yield_t_ha": 12,
+        "water_need": "medium",
+        "growth_season": "spring-summer",
+        "ideal_zones": ["IRRIGATED_SOUSS"],
+        "ideal_soils": ["fluvisol", "cambisol"]
       }
     }
   }
