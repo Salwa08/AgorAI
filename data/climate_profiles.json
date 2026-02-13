@@ -4180,18 +4180,18 @@
       "climate_profile": {
         "source": "ESTIMATED - filled from nearby ARID zone and typical Saharan values (placeholder). Recommended: re-run NASA POWER / ERA5 for authoritative data.",
         "monthly_climatology": {
-          "Jan": {"T2M_mean_C": 13.5, "PRECTOTCORR_mm": 5.0},
-          "Feb": {"T2M_mean_C": 15.0, "PRECTOTCORR_mm": 6.0},
-          "Mar": {"T2M_mean_C": 18.0, "PRECTOTCORR_mm": 4.0},
-          "Apr": {"T2M_mean_C": 23.0, "PRECTOTCORR_mm": 3.0},
-          "May": {"T2M_mean_C": 28.0, "PRECTOTCORR_mm": 1.0},
-          "Jun": {"T2M_mean_C": 33.0, "PRECTOTCORR_mm": 0.5},
-          "Jul": {"T2M_mean_C": 36.0, "PRECTOTCORR_mm": 0.0},
-          "Aug": {"T2M_mean_C": 35.0, "PRECTOTCORR_mm": 0.0},
-          "Sep": {"T2M_mean_C": 31.0, "PRECTOTCORR_mm": 0.5},
-          "Oct": {"T2M_mean_C": 26.0, "PRECTOTCORR_mm": 4.0},
-          "Nov": {"T2M_mean_C": 18.0, "PRECTOTCORR_mm": 6.0},
-          "Dec": {"T2M_mean_C": 14.0, "PRECTOTCORR_mm": 6.0}
+          "Jan": {"T2M": {"mean": 13.5}, "PRECTOTCORR": {"mean": 0.17}, "T2M_RANGE": {"mean": 15.0}},
+          "Feb": {"T2M": {"mean": 15.0}, "PRECTOTCORR": {"mean": 0.20}, "T2M_RANGE": {"mean": 15.5}},
+          "Mar": {"T2M": {"mean": 18.0}, "PRECTOTCORR": {"mean": 0.13}, "T2M_RANGE": {"mean": 16.0}},
+          "Apr": {"T2M": {"mean": 23.0}, "PRECTOTCORR": {"mean": 0.10}, "T2M_RANGE": {"mean": 16.5}},
+          "May": {"T2M": {"mean": 28.0}, "PRECTOTCORR": {"mean": 0.03}, "T2M_RANGE": {"mean": 17.0}},
+          "Jun": {"T2M": {"mean": 33.0}, "PRECTOTCORR": {"mean": 0.02}, "T2M_RANGE": {"mean": 17.5}},
+          "Jul": {"T2M": {"mean": 36.0}, "PRECTOTCORR": {"mean": 0.00}, "T2M_RANGE": {"mean": 18.0}},
+          "Aug": {"T2M": {"mean": 35.0}, "PRECTOTCORR": {"mean": 0.00}, "T2M_RANGE": {"mean": 17.5}},
+          "Sep": {"T2M": {"mean": 31.0}, "PRECTOTCORR": {"mean": 0.02}, "T2M_RANGE": {"mean": 16.0}},
+          "Oct": {"T2M": {"mean": 26.0}, "PRECTOTCORR": {"mean": 0.13}, "T2M_RANGE": {"mean": 15.0}},
+          "Nov": {"T2M": {"mean": 18.0}, "PRECTOTCORR": {"mean": 0.20}, "T2M_RANGE": {"mean": 14.5}},
+          "Dec": {"T2M": {"mean": 14.0}, "PRECTOTCORR": {"mean": 0.20}, "T2M_RANGE": {"mean": 14.0}}
         },
         "annual_summary": {
           "T2M_annual_mean": {"mean": 22.5, "std": 1.2},
