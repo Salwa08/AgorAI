@@ -373,6 +373,30 @@
         "ideal_soils": ["vertisol", "fluvisol"],
         "notes": "Concentrated in Gharb, Loukkos and Tadla (irrigated). Requires deep, fertile soils and reliable water supply. Part of Morocco's sugar self-sufficiency program."
       }
+      ,
+      "rice": {
+        "name": "Rice",
+        "scientific_name": "Oryza sativa",
+        "category": "cereal",
+        "ecocrop": {
+          "temp_opt_min_C": 20,
+          "temp_opt_max_C": 30,
+          "temp_abs_min_C": 15,
+          "temp_abs_max_C": 35,
+          "precip_opt_min_mm": 1200,
+          "precip_opt_max_mm": 2000,
+          "precip_abs_min_mm": 800,
+          "precip_abs_max_mm": 3000,
+          "cycle_min_days": 120,
+          "cycle_max_days": 160
+        },
+        "base_yield_t_ha": 4.0,
+        "water_need": "high",
+        "growth_season": "spring-summer (paddy)",
+        "ideal_zones": ["SUB_HUMID", "IRRIGATED_SOUSS"],
+        "ideal_soils": ["fluvisol", "luvisol"],
+        "notes": "Irrigated paddy rice in Gharb and other irrigated plains. Placeholder parameters—adjust with local FAOSTAT/EcoCrop data if higher fidelity required."
+      }
     }
   }
   

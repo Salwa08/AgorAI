@@ -4177,7 +4177,32 @@
         "lat": 31.93,
         "lon": -4.43
       },
-      "error": "The read operation timed out"
+      "climate_profile": {
+        "source": "ESTIMATED - filled from nearby ARID zone and typical Saharan values (placeholder). Recommended: re-run NASA POWER / ERA5 for authoritative data.",
+        "monthly_climatology": {
+          "Jan": {"T2M_mean_C": 13.5, "PRECTOTCORR_mm": 5.0},
+          "Feb": {"T2M_mean_C": 15.0, "PRECTOTCORR_mm": 6.0},
+          "Mar": {"T2M_mean_C": 18.0, "PRECTOTCORR_mm": 4.0},
+          "Apr": {"T2M_mean_C": 23.0, "PRECTOTCORR_mm": 3.0},
+          "May": {"T2M_mean_C": 28.0, "PRECTOTCORR_mm": 1.0},
+          "Jun": {"T2M_mean_C": 33.0, "PRECTOTCORR_mm": 0.5},
+          "Jul": {"T2M_mean_C": 36.0, "PRECTOTCORR_mm": 0.0},
+          "Aug": {"T2M_mean_C": 35.0, "PRECTOTCORR_mm": 0.0},
+          "Sep": {"T2M_mean_C": 31.0, "PRECTOTCORR_mm": 0.5},
+          "Oct": {"T2M_mean_C": 26.0, "PRECTOTCORR_mm": 4.0},
+          "Nov": {"T2M_mean_C": 18.0, "PRECTOTCORR_mm": 6.0},
+          "Dec": {"T2M_mean_C": 14.0, "PRECTOTCORR_mm": 6.0}
+        },
+        "annual_summary": {
+          "T2M_annual_mean": {"mean": 22.5, "std": 1.2},
+          "PRECTOTCORR_annual_total_mm": {"mean": 60.0, "std": 20.0},
+          "ALLSKY_SFC_SW_DWN_annual_mean": {"mean": 22.0}
+        },
+        "variability": {
+          "precipitation": {"wet_threshold_mm": 50.0, "note": "Low and highly variable; oasis irrigation dominates agriculture"},
+          "note": "Values are estimated placeholders. For modeling fidelity re-run dataset fetch from NASA POWER or ERA5." 
+        }
+      }
     },
     "IRRIGATED_SOUSS": {
       "zone_name": "Souss-Massa (Irrigated)",
