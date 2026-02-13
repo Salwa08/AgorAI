@@ -27,7 +27,10 @@
       "soil_types": ["vertisol", "fluvisol", "luvisol"],
       "dominant_soil": "vertisol",
       "viable_crops": ["soft_wheat", "durum_wheat", "rice", "sugarcane", "sugar_beet", "sunflower", "fava_beans", "citrus", "potatoes"],
-      "agriculture_type": "rainfed + supplemental irrigation"
+      "agriculture_type": "rainfed + supplemental irrigation",
+      "irrigation_type": "supplemental",
+      "budget_range": [8000, 35000],
+      "water_price": 0.15
     },
 
     "SEMI_ARID_WARM": {
@@ -49,7 +52,10 @@
       "soil_types": ["calcisol", "vertisol", "cambisol"],
       "dominant_soil": "calcisol",
       "viable_crops": ["durum_wheat", "soft_wheat", "barley", "chickpeas", "lentils", "fava_beans", "olives", "grapes", "potatoes"],
-      "agriculture_type": "rainfed dominant"
+      "agriculture_type": "rainfed dominant",
+      "irrigation_type": "rainfed",
+      "budget_range": [5000, 20000],
+      "water_price": 0.2
     },
 
     "SEMI_ARID_COOL": {
@@ -71,7 +77,10 @@
       "soil_types": ["calcisol", "leptosol", "cambisol"],
       "dominant_soil": "calcisol",
       "viable_crops": ["barley", "durum_wheat", "chickpeas", "lentils", "almonds", "sorghum"],
-      "agriculture_type": "rainfed + pastoral"
+      "agriculture_type": "rainfed + pastoral",
+      "irrigation_type": "rainfed",
+      "budget_range": [4000, 15000],
+      "water_price": 0.2
     },
 
     "ARID": {
@@ -93,7 +102,10 @@
       "soil_types": ["calcisol", "leptosol", "arenosol"],
       "dominant_soil": "leptosol",
       "viable_crops": ["barley", "sorghum", "almonds", "date_palms", "watermelon", "cumin"],
-      "agriculture_type": "rainfed marginal + localized irrigation"
+      "agriculture_type": "rainfed marginal + localized irrigation",
+      "irrigation_type": "localized",
+      "budget_range": [3000, 12000],
+      "water_price": 0.35
     },
 
     "SAHARAN": {
@@ -115,7 +127,10 @@
       "soil_types": ["arenosol", "calcisol", "fluvisol"],
       "dominant_soil": "arenosol",
       "viable_crops": ["date_palms", "henna", "cumin", "watermelon", "barley"],
-      "agriculture_type": "oasis irrigation (khettara / drip)"
+      "agriculture_type": "oasis irrigation (khettara / drip)",
+      "irrigation_type": "oasis",
+      "budget_range": [2000, 10000],
+      "water_price": 0.5
     },
 
     "IRRIGATED_SOUSS": {
@@ -138,7 +153,10 @@
       "dominant_soil": "fluvisol",
       "viable_crops": ["tomatoes", "citrus", "potatoes", "watermelon", "bananas", "avocados", "green_beans"],
       "agriculture_type": "intensive irrigated (drip + greenhouse)",
-      "note": "Bioclimatically arid but irrigation transforms agricultural potential"
+      "note": "Bioclimatically arid but irrigation transforms agricultural potential",
+      "irrigation_type": "drip",
+      "budget_range": [15000, 80000],
+      "water_price": 0.25
     }
   }
 }
