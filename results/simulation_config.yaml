@@ -1,0 +1,90 @@
+analysis:
+  metrics:
+  - mean_yield
+  - mean_profit
+  - profit_variance
+  - strategy_advantage
+  - adopt_rate
+  - cooperation_index
+  output_format: csv
+  save_aggregate_metrics: true
+  save_config: true
+  save_detailed_results: true
+  save_plots: true
+data:
+  climate_file: ./data/climate_profiles.json
+  costs_file: null
+  crops_file: ./data/crops.json
+  farmer_profiles_file: null
+  market_dynamics_file: null
+  pest_profiles_file: null
+  soil_moisture_file: ./data/soil_moisture_profiles.json
+  zones_file: ./data/zones.json
+experiment:
+  description: Baseline simulation comparing INDIVIDUAL vs SHARED strategies
+  name: baseline_run
+  num_seeds: 5
+  run_multiple_seeds: false
+  scenarios: {}
+finance:
+  credit_availability: 0.55
+  enable_detailed_costing: true
+  individual_cost_efficiency: 0.9
+  individual_post_harvest_loss: 0.15
+  input_cost_inflation: 0.02
+  market_shock_probability: 0.05
+  price_volatility: 0.15
+  shared_cost_efficiency: 0.7
+  shared_post_harvest_loss: 0.05
+  shared_price_premium: 0.2
+learning:
+  individual_weight: 0.25
+  learning_speed_individual: 0.3
+  learning_speed_shared: 0.9
+  memory_length: 20
+  shared_weight: 0.75
+  zone_specific_learning: true
+logging:
+  display_progress_bar: true
+  log_agent_decisions: false
+  log_file: logs/simulation.log
+  log_format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+simulation:
+  initial_shared_ratio: 0.7
+  log_level: INFO
+  n_agents: 100
+  n_timesteps: 30
+  random_seed: 42
+  verbose: true
+suitability:
+  climate_weight: 0.25
+  moisture_weight: 0.6
+  soil_weight: 0.25
+  zone_weight: 0.4
+visualization:
+  dashboard_port: 8000
+  enable_web_dashboard: true
+  fig_dpi: 100
+  fig_size_height: 6
+  fig_size_width: 12
+  plot_style: seaborn
+  plots:
+    crop_adoption: true
+    learning_convergence: true
+    profit_timeseries: true
+    strategy_comparison: true
+    yield_distribution: true
+    zone_performance: true
+yield:
+  drought_years_probability: 0.15
+  flood_probability: 0.08
+  pest_pressure_baseline: 0.4
+  suitability_impact: 1.0
+  variability_max: 1.15
+  variability_min: 0.85
+  water_stress_threshold: 0.6
+zones:
+  climate_variability_factor: 1.0
+  enable_irrigation_option: false
+  selected_zones:
+  - null

@@ -1,0 +1,162 @@
+# Agricultural Agent-Based Simulation Configuration
+# Last updated: 2026-02-14
+
+# ============================================================================
+# SIMULATION PARAMETERS
+# ============================================================================
+simulation:
+  n_agents: 100                          # Number of farmer agents
+  n_timesteps: 30                        # More seasons = SHARED learns better
+  random_seed: 42                        # For reproducibility
+  verbose: true                          # Enable detailed logging
+  log_level: "INFO"                      # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  initial_shared_ratio: 0.7              # 70% SHARED, 30% INDIVIDUAL
+
+# ============================================================================
+# SUITABILITY WEIGHTS (How decisions are made)
+# ============================================================================
+suitability:
+  zone_weight: 0.4                       # Zone compatibility importance (40%)
+  soil_weight: 0.25                      # Soil type importance (25%)
+  climate_weight: 0.25                   # Climate importance (25%)
+  moisture_weight: 0.1                   # Soil moisture importance (10%)
+
+# ============================================================================
+# LEARNING & STRATEGY PARAMETERS
+# ============================================================================
+learning:
+  individual_weight: 0.25                # SHARED blending: 25% individual score
+  shared_weight: 0.75                    # SHARED blending: 75% community knowledge
+  zone_specific_learning: true
+  memory_length: 20                      # Remember more history for better convergence
+  learning_speed_individual: 0.3         # How fast INDIVIDUAL farmers adapt (0-1)
+  learning_speed_shared: 0.9             # Fast community adaptation
+
+# ============================================================================
+# YIELD & PRODUCTION PARAMETERS
+# ============================================================================
+yield:
+  variability_min: 0.85                  # Less noise = clearer learning signal
+  variability_max: 1.15                  # Less noise = clearer learning signal
+  suitability_impact: 1.0                # How much suitability affects yield
+  
+  # Environmental stress factors
+  water_stress_threshold: 0.6            # Wilting point as % of optimal
+  drought_years_probability: 0.15        # Annual drought probability (15%)
+  flood_probability: 0.08                # Annual flood probability (8%)
+  pest_pressure_baseline: 0.4            # Baseline pest pressure (0-1)
+
+# ============================================================================
+# FINANCIAL PARAMETERS
+# ============================================================================
+finance:
+  enable_detailed_costing: true          # Detailed costing enabled
+  price_volatility: 0.15                 # 15% price variance
+  market_shock_probability: 0.05         # 5% chance of market disruption
+  credit_availability: 0.55              # % of farmers with credit access
+  input_cost_inflation: 0.02             # 2% annual input cost increase
+  
+  # SHARED strategy economic advantages (cooperative economics)
+  shared_price_premium: 0.20             # +20% better prices (cooperative selling)
+  shared_cost_efficiency: 0.70           # 30% lower costs (bulk purchasing)
+  shared_post_harvest_loss: 0.05         # Only 5% post-harvest loss (shared storage)
+  
+  # INDIVIDUAL strategy economics
+  individual_cost_efficiency: 0.90       # Higher individual costs
+  individual_post_harvest_loss: 0.15     # 15% post-harvest loss (no shared infrastructure)
+
+# ============================================================================
+# ZONE CONFIGURATION
+# ============================================================================
+zones:
+  selected_zones:                        # null  use all zones; or specify: ["SUB_HUMID", "SEMI_ARID_WARM"]
+    - null
+  climate_variability_factor: 1.0        # Multiplier for climate uncertainty (1.0 = baseline)
+  enable_irrigation_option: false        # Allow farmers to adopt irrigation
+
+# ============================================================================
+# ANALYSIS & OUTPUT
+# ============================================================================
+analysis:
+  save_detailed_results: true            # Save all agent histories
+  save_aggregate_metrics: true           # Calculate zone/strategy summaries
+  save_plots: true                       # Generate visualization
+  save_config: true                      # save this config with results
+  output_format: "csv"                   # csv, parquet, sqlite
+  
+  # Metrics to calculate
+  metrics:
+    - "mean_yield"
+    - "mean_profit"
+    - "profit_variance"
+    - "strategy_advantage"
+    - "adopt_rate"
+    - "cooperation_index"
+
+# ============================================================================
+# VISUALIZATION
+# ============================================================================
+visualization:
+  # Notebook visualizations
+  plot_style: "seaborn"                  # seaborn, ggplot, default
+  fig_dpi: 100
+  fig_size_width: 12
+  fig_size_height: 6
+  
+  # Web dashboard (Solara)
+  enable_web_dashboard: true             # Launch interactive Solara dashboard
+  dashboard_port: 8000
+  
+  # Specific plots
+  plots:
+    strategy_comparison: true             # INDIVIDUAL vs SHARED boxplots
+    yield_distribution: true              # Violin plots
+    profit_timeseries: true               # Yield over time
+    zone_performance: true                # Performance by zone
+    crop_adoption: true                   # Crop choice trends
+    learning_convergence: true            # Strategy convergence
+
+# ============================================================================
+# EXPERIMENT CONFIGURATION
+# ============================================================================
+experiment:
+  name: "baseline_run"                   # Experiment identifier
+  description: "Baseline simulation comparing INDIVIDUAL vs SHARED strategies"
+  run_multiple_seeds: false              # Run with different random seeds
+  num_seeds: 5
+  
+  # Scenario variations to test
+  scenarios: {}
+  # Example:
+  #   drought_scenario:
+  #     yield:
+  #       variability_min: 0.5
+  #       variability_max: 0.9
+  #   high_cooperation:
+  #     learning:
+  #       individual weight: 0.3
+  #       shared_weight: 0.7
+
+# ============================================================================
+# DATA PATHS
+# ============================================================================
+data:
+  zones_file: "./data/zones.json"
+  crops_file: "./data/crops.json"
+  climate_file: "./data/climate_profiles.json"
+  soil_moisture_file: "./data/soil_moisture_profiles.json"
+  
+  # Optional enhanced data files (add when available)
+  costs_file: null                       # "./data/crop_costs.json"
+  pest_profiles_file: null               # "./data/pest_disease_profiles.json"
+  farmer_profiles_file: null             # "./data/farmer_profiles.json"
+  market_dynamics_file: null             # "./data/market_dynamics.json"
+
+# ============================================================================
+# LOGGING
+# ============================================================================
+logging:
+  log_file: "logs/simulation.log"        # Log output file
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  display_progress_bar: true
+  log_agent_decisions: false             # Very verbose - log every farmer decision

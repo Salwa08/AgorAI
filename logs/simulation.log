@@ -1,0 +1,1892 @@
+2026-02-14 03:19:51,946 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 03:19:51,949 - agroai_sim - INFO - ============================================================
+2026-02-14 03:19:51,963 - agroai_sim - INFO - Agents: 100
+2026-02-14 03:19:51,970 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 03:19:51,972 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 03:19:51,977 - agroai_sim - INFO - ============================================================
+2026-02-14 03:19:52,194 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:19:52,195 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 03:19:52,200 - agroai_sim - INFO - ============================================================
+2026-02-14 03:19:52,249 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 03:19:52,358 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 03:19:52,566 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 03:19:52,664 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 03:19:52,673 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 03:19:52,678 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 03:19:52,678 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 03:19:52,681 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 25.41           50.88     
+2026-02-14 03:19:52,681 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  1.07            3.23      
+2026-02-14 03:19:52,681 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 22.68           173.87    
+2026-02-14 03:19:52,681 - agroai_sim - INFO - 3     SHARED       SAHARAN         5.30            25.44     
+2026-02-14 03:19:52,691 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.50            4.45      
+2026-02-14 03:19:52,779 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:19:52,781 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 03:19:52,781 - agroai_sim - INFO - ============================================================
+2026-02-14 03:19:52,817 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 03:19:52,819 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 03:19:52,819 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 03:19:52,819 - agroai_sim - INFO -   Average Yield (All): 7.001 t/ha
+2026-02-14 03:19:52,825 - agroai_sim - INFO -   Average Yield (SHARED): 6.542 t/ha
+2026-02-14 03:19:52,828 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.610 t/ha
+2026-02-14 03:19:52,839 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:19:52,841 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 03:19:52,844 - agroai_sim - INFO - ============================================================
+2026-02-14 03:22:30,783 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 03:22:30,791 - agroai_sim - INFO - ============================================================
+2026-02-14 03:22:30,816 - agroai_sim - INFO - Agents: 100
+2026-02-14 03:22:30,822 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 03:22:30,832 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 03:22:30,836 - agroai_sim - INFO - ============================================================
+2026-02-14 03:22:31,135 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:22:31,139 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 03:22:31,142 - agroai_sim - INFO - ============================================================
+2026-02-14 03:22:31,202 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 03:22:31,295 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 03:22:31,387 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 03:22:31,460 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 03:22:31,473 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 03:22:31,477 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 03:22:31,477 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 03:22:31,481 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 20.12           40.27     
+2026-02-14 03:22:31,482 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  0.93            2.79      
+2026-02-14 03:22:31,485 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 22.55           172.86    
+2026-02-14 03:22:31,488 - agroai_sim - INFO - 3     SHARED       SAHARAN         4.57            21.90     
+2026-02-14 03:22:31,489 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.45            4.30      
+2026-02-14 03:22:31,594 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:22:31,594 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 03:22:31,594 - agroai_sim - INFO - ============================================================
+2026-02-14 03:22:31,622 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 03:22:31,624 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 03:22:31,627 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 03:22:31,629 - agroai_sim - INFO -   Average Yield (All): 7.009 t/ha
+2026-02-14 03:22:31,634 - agroai_sim - INFO -   Average Yield (SHARED): 6.531 t/ha
+2026-02-14 03:22:31,635 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.642 t/ha
+2026-02-14 03:22:31,644 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:22:31,646 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 03:22:31,651 - agroai_sim - INFO - ============================================================
+2026-02-14 03:24:24,435 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 03:24:24,435 - agroai_sim - INFO - ============================================================
+2026-02-14 03:24:24,446 - agroai_sim - INFO - Agents: 100
+2026-02-14 03:24:24,450 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 03:24:24,455 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 03:24:24,455 - agroai_sim - INFO - ============================================================
+2026-02-14 03:24:24,659 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:24:24,661 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 03:24:24,664 - agroai_sim - INFO - ============================================================
+2026-02-14 03:24:24,717 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 03:24:24,861 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 03:24:25,031 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 03:24:25,151 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 03:24:25,160 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 03:24:25,162 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 03:24:25,163 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 03:24:25,166 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 27.26           54.58     
+2026-02-14 03:24:25,169 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  1.18            3.55      
+2026-02-14 03:24:25,172 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 19.49           149.42    
+2026-02-14 03:24:25,174 - agroai_sim - INFO - 3     SHARED       SAHARAN         5.37            25.75     
+2026-02-14 03:24:25,178 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.37            4.08      
+2026-02-14 03:24:25,276 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:24:25,279 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 03:24:25,281 - agroai_sim - INFO - ============================================================
+2026-02-14 03:24:25,303 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 03:24:25,305 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 03:24:25,308 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 03:24:25,308 - agroai_sim - INFO -   Average Yield (All): 7.037 t/ha
+2026-02-14 03:24:25,313 - agroai_sim - INFO -   Average Yield (SHARED): 6.574 t/ha
+2026-02-14 03:24:25,315 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.650 t/ha
+2026-02-14 03:24:25,325 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:24:25,325 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 03:24:25,329 - agroai_sim - INFO - ============================================================
+2026-02-14 03:25:53,673 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 03:25:53,677 - agroai_sim - INFO - ============================================================
+2026-02-14 03:25:53,704 - agroai_sim - INFO - Agents: 100
+2026-02-14 03:25:53,708 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 03:25:53,717 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 03:25:53,724 - agroai_sim - INFO - ============================================================
+2026-02-14 03:25:54,015 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:25:54,015 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 03:25:54,025 - agroai_sim - INFO - ============================================================
+2026-02-14 03:25:54,067 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 03:25:54,162 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 03:25:54,316 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 03:25:54,546 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 03:25:54,566 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 03:25:54,566 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 03:25:54,566 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 03:25:54,583 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 19.22           38.47     
+2026-02-14 03:25:54,590 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  1.15            3.47      
+2026-02-14 03:25:54,594 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 19.49           149.42    
+2026-02-14 03:25:54,602 - agroai_sim - INFO - 3     SHARED       SAHARAN         5.83            27.98     
+2026-02-14 03:25:54,610 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.84            5.46      
+2026-02-14 03:25:54,851 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:25:54,855 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 03:25:54,856 - agroai_sim - INFO - ============================================================
+2026-02-14 03:25:54,926 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 03:25:54,928 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 03:25:54,932 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 03:25:54,935 - agroai_sim - INFO -   Average Yield (All): 6.938 t/ha
+2026-02-14 03:25:54,939 - agroai_sim - INFO -   Average Yield (SHARED): 6.459 t/ha
+2026-02-14 03:25:54,939 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.571 t/ha
+2026-02-14 03:25:54,963 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:25:54,972 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 03:25:54,976 - agroai_sim - INFO - ============================================================
+2026-02-14 03:27:03,699 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 03:27:03,705 - agroai_sim - INFO - ============================================================
+2026-02-14 03:27:03,720 - agroai_sim - INFO - Agents: 100
+2026-02-14 03:27:03,722 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 03:27:03,731 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 03:27:03,734 - agroai_sim - INFO - ============================================================
+2026-02-14 03:27:03,943 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:27:03,950 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 03:27:03,954 - agroai_sim - INFO - ============================================================
+2026-02-14 03:27:04,015 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 03:27:04,102 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 03:27:04,175 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 03:27:04,268 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 03:27:04,280 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 03:27:04,282 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 03:27:04,287 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 03:27:04,287 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 24.49           49.03     
+2026-02-14 03:27:04,287 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  1.06            3.18      
+2026-02-14 03:27:04,294 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 20.10           154.10    
+2026-02-14 03:27:04,297 - agroai_sim - INFO - 3     SHARED       SAHARAN         5.51            26.42     
+2026-02-14 03:27:04,297 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.62            4.81      
+2026-02-14 03:27:04,458 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:27:04,460 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 03:27:04,494 - agroai_sim - INFO - ============================================================
+2026-02-14 03:27:04,525 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 03:27:04,530 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 03:27:04,534 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 03:27:04,536 - agroai_sim - INFO -   Average Yield (All): 7.015 t/ha
+2026-02-14 03:27:04,540 - agroai_sim - INFO -   Average Yield (SHARED): 6.537 t/ha
+2026-02-14 03:27:04,542 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.648 t/ha
+2026-02-14 03:27:04,601 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:27:04,605 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 03:27:04,607 - agroai_sim - INFO - ============================================================
+2026-02-14 03:29:59,916 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 03:29:59,920 - agroai_sim - INFO - ============================================================
+2026-02-14 03:29:59,940 - agroai_sim - INFO - Agents: 100
+2026-02-14 03:29:59,948 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 03:29:59,956 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 03:29:59,962 - agroai_sim - INFO - ============================================================
+2026-02-14 03:30:00,236 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:30:00,237 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 03:30:00,239 - agroai_sim - INFO - ============================================================
+2026-02-14 03:30:00,292 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 03:30:00,406 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 03:30:00,644 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 03:30:00,753 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 03:30:00,767 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 03:30:00,770 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 03:30:00,774 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 03:30:00,777 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 26.92           53.90     
+2026-02-14 03:30:00,779 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  1.09            3.26      
+2026-02-14 03:30:00,787 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 25.38           194.56    
+2026-02-14 03:30:00,788 - agroai_sim - INFO - 3     SHARED       SAHARAN         5.37            25.78     
+2026-02-14 03:30:00,792 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.84            5.46      
+2026-02-14 03:30:01,293 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:30:01,297 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 03:30:01,299 - agroai_sim - INFO - ============================================================
+2026-02-14 03:30:01,316 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 03:30:01,316 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 03:30:01,324 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 03:30:01,328 - agroai_sim - INFO -   Average Yield (All): 7.013 t/ha
+2026-02-14 03:30:01,332 - agroai_sim - INFO -   Average Yield (SHARED): 6.505 t/ha
+2026-02-14 03:30:01,335 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.687 t/ha
+2026-02-14 03:30:01,343 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:30:01,344 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 03:30:01,350 - agroai_sim - INFO - ============================================================
+2026-02-14 03:33:39,611 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 03:33:39,611 - agroai_sim - INFO - ============================================================
+2026-02-14 03:33:39,690 - agroai_sim - INFO - Agents: 100
+2026-02-14 03:33:39,695 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 03:33:39,699 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 03:33:39,712 - agroai_sim - INFO - ============================================================
+2026-02-14 03:33:54,234 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:33:54,246 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 03:33:54,252 - agroai_sim - INFO - ============================================================
+2026-02-14 03:33:54,323 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 03:33:54,390 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 03:33:54,469 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 03:33:54,563 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 03:33:54,576 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 03:33:54,579 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 03:33:54,583 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 03:33:54,585 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 18.86           37.76     
+2026-02-14 03:33:54,588 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  1.29            3.87      
+2026-02-14 03:33:54,590 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 21.92           168.07    
+2026-02-14 03:33:54,592 - agroai_sim - INFO - 3     SHARED       SAHARAN         5.44            26.09     
+2026-02-14 03:33:54,597 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.43            4.23      
+2026-02-14 03:33:58,698 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:33:58,700 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 03:33:58,704 - agroai_sim - INFO - ============================================================
+2026-02-14 03:33:58,723 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 03:33:58,723 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 03:33:58,730 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 03:33:58,735 - agroai_sim - INFO -   Average Yield (All): 7.020 t/ha
+2026-02-14 03:33:58,737 - agroai_sim - INFO -   Average Yield (SHARED): 6.537 t/ha
+2026-02-14 03:33:58,742 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.661 t/ha
+2026-02-14 03:33:58,752 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:33:58,755 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 03:33:58,755 - agroai_sim - INFO - ============================================================
+2026-02-14 03:40:01,072 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:40:01,077 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 03:40:01,083 - agroai_sim - INFO - ============================================================
+2026-02-14 03:40:01,121 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 03:40:01,127 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 03:40:01,131 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 03:40:01,136 - agroai_sim - INFO -   Average Yield (All): 7.020 t/ha
+2026-02-14 03:40:01,140 - agroai_sim - INFO -   Average Yield (SHARED): 6.537 t/ha
+2026-02-14 03:40:01,146 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.661 t/ha
+2026-02-14 03:40:01,164 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:40:01,170 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 03:40:01,175 - agroai_sim - INFO - ============================================================
+2026-02-14 03:40:08,139 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:40:08,143 - agroai_sim - INFO - ALL RESULTS SAVED TO: ./results/ 
+2026-02-14 03:40:08,147 - agroai_sim - INFO - ============================================================
+2026-02-14 03:46:24,979 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 03:46:24,979 - agroai_sim - INFO - ============================================================
+2026-02-14 03:46:24,987 - agroai_sim - INFO - Agents: 100
+2026-02-14 03:46:24,993 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 03:46:24,995 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 03:46:24,995 - agroai_sim - INFO - ============================================================
+2026-02-14 03:46:25,130 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:46:25,133 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 03:46:25,134 - agroai_sim - INFO - ============================================================
+2026-02-14 03:46:25,163 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 03:46:25,251 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 03:46:25,330 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 03:46:25,403 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 03:46:25,412 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 03:46:25,413 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 03:46:25,415 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 03:46:25,416 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 23.99           48.02     
+2026-02-14 03:46:25,420 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  1.07            3.23      
+2026-02-14 03:46:25,420 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 22.55           172.89    
+2026-02-14 03:46:25,420 - agroai_sim - INFO - 3     SHARED       SAHARAN         6.06            29.08     
+2026-02-14 03:46:25,424 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.59            4.71      
+2026-02-14 03:46:26,165 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:46:26,170 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 03:46:26,177 - agroai_sim - INFO - ============================================================
+2026-02-14 03:46:26,214 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 03:46:26,214 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 03:46:26,222 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 03:46:26,223 - agroai_sim - INFO -   Average Yield (All): 6.985 t/ha
+2026-02-14 03:46:26,229 - agroai_sim - INFO -   Average Yield (SHARED): 6.505 t/ha
+2026-02-14 03:46:26,229 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.621 t/ha
+2026-02-14 03:46:26,240 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:46:26,240 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 03:46:26,247 - agroai_sim - INFO - ============================================================
+2026-02-14 03:46:32,772 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:46:32,775 - agroai_sim - INFO - ALL RESULTS SAVED TO: ./results/ 
+2026-02-14 03:46:32,777 - agroai_sim - INFO - ============================================================
+2026-02-14 03:48:33,526 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:48:33,537 - agroai_sim - INFO - ============================================================
+2026-02-14 03:48:33,570 - agroai_sim - INFO - 
+2026-02-14 03:48:33,579 - agroai_sim - INFO -     - Interactive plots with filtering
+2026-02-14 03:48:33,582 - agroai_sim - INFO -     - Performance metrics overview
+2026-02-14 03:48:33,582 - agroai_sim - INFO -     - Zone analysis and distributions
+2026-02-14 03:48:33,584 - agroai_sim - INFO -     - Raw data explorer
+2026-02-14 03:48:33,587 - agroai_sim - INFO - 
+2026-02-14 03:48:33,595 - agroai_sim - INFO -    solara run dashboard_solara.py
+2026-02-14 03:48:33,598 - agroai_sim - INFO - 
+2026-02-14 03:48:33,606 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:48:33,617 - agroai_sim - INFO - ============================================================
+2026-02-14 03:48:33,619 - agroai_sim - INFO - 
+2026-02-14 03:48:33,627 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 03:48:33,627 - agroai_sim - INFO -    • SHARED Strategy: 57 farmers (57.0%)
+2026-02-14 03:48:33,634 - agroai_sim - INFO -    • Average Yield: 6.985 t/ha
+2026-02-14 03:48:33,637 - agroai_sim - INFO -    • SHARED Advantage: -1.116 t/ha
+2026-02-14 03:48:33,637 - agroai_sim - INFO - 
+2026-02-14 03:48:33,647 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 03:48:33,647 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 03:48:33,653 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 03:48:33,657 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 03:48:33,661 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 03:48:33,665 - agroai_sim - INFO - 
+2026-02-14 03:48:33,677 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 03:48:33,679 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 03:48:33,686 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 03:48:33,689 - agroai_sim - INFO - 
+2026-02-14 03:48:33,700 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 03:48:33,702 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 03:48:33,706 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 03:48:33,706 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 03:48:33,711 - agroai_sim - INFO - 
+2026-02-14 03:48:33,711 - agroai_sim - INFO - ============================================================
+2026-02-14 03:48:50,220 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:48:50,234 - agroai_sim - INFO - ============================================================
+2026-02-14 03:48:50,265 - agroai_sim - INFO - 
+2026-02-14 03:48:50,276 - agroai_sim - INFO -     - Interactive plots with filtering
+2026-02-14 03:48:50,279 - agroai_sim - INFO -     - Performance metrics overview
+2026-02-14 03:48:50,283 - agroai_sim - INFO -     - Zone analysis and distributions
+2026-02-14 03:48:50,289 - agroai_sim - INFO -     - Raw data explorer
+2026-02-14 03:48:50,293 - agroai_sim - INFO - 
+2026-02-14 03:48:50,304 - agroai_sim - INFO -    solara run dashboard_solara.py
+2026-02-14 03:48:50,306 - agroai_sim - INFO - 
+2026-02-14 03:48:50,319 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:48:50,334 - agroai_sim - INFO - ============================================================
+2026-02-14 03:48:50,334 - agroai_sim - INFO - 
+2026-02-14 03:48:50,352 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 03:48:50,354 - agroai_sim - INFO -    • SHARED Strategy: 57 farmers (57.0%)
+2026-02-14 03:48:50,358 - agroai_sim - INFO -    • Average Yield: 6.985 t/ha
+2026-02-14 03:48:50,358 - agroai_sim - INFO -    • SHARED Advantage: -1.116 t/ha
+2026-02-14 03:48:50,362 - agroai_sim - INFO - 
+2026-02-14 03:48:50,371 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 03:48:50,379 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 03:48:50,382 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 03:48:50,387 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 03:48:50,390 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 03:48:50,396 - agroai_sim - INFO - 
+2026-02-14 03:48:50,409 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 03:48:50,413 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 03:48:50,417 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 03:48:50,420 - agroai_sim - INFO - 
+2026-02-14 03:48:50,432 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 03:48:50,450 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 03:48:50,454 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 03:48:50,459 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 03:48:50,462 - agroai_sim - INFO - 
+2026-02-14 03:48:50,469 - agroai_sim - INFO - ============================================================
+2026-02-14 03:48:54,054 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:48:54,078 - agroai_sim - INFO - ============================================================
+2026-02-14 03:48:54,128 - agroai_sim - INFO - 
+2026-02-14 03:48:54,144 - agroai_sim - INFO -     - Interactive plots with filtering
+2026-02-14 03:48:54,149 - agroai_sim - INFO -     - Performance metrics overview
+2026-02-14 03:48:54,152 - agroai_sim - INFO -     - Zone analysis and distributions
+2026-02-14 03:48:54,156 - agroai_sim - INFO -     - Raw data explorer
+2026-02-14 03:48:54,161 - agroai_sim - INFO - 
+2026-02-14 03:48:54,169 - agroai_sim - INFO -    solara run dashboard_solara.py
+2026-02-14 03:48:54,171 - agroai_sim - INFO - 
+2026-02-14 03:48:54,179 - agroai_sim - INFO - 
+============================================================
+2026-02-14 03:48:54,188 - agroai_sim - INFO - ============================================================
+2026-02-14 03:48:54,188 - agroai_sim - INFO - 
+2026-02-14 03:48:54,199 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 03:48:54,201 - agroai_sim - INFO -    • SHARED Strategy: 57 farmers (57.0%)
+2026-02-14 03:48:54,205 - agroai_sim - INFO -    • Average Yield: 6.985 t/ha
+2026-02-14 03:48:54,209 - agroai_sim - INFO -    • SHARED Advantage: -1.116 t/ha
+2026-02-14 03:48:54,211 - agroai_sim - INFO - 
+2026-02-14 03:48:54,222 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 03:48:54,224 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 03:48:54,228 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 03:48:54,232 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 03:48:54,234 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 03:48:54,234 - agroai_sim - INFO - 
+2026-02-14 03:48:54,244 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 03:48:54,244 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 03:48:54,249 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 03:48:54,250 - agroai_sim - INFO - 
+2026-02-14 03:48:54,260 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 03:48:54,262 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 03:48:54,264 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 03:48:54,267 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 03:48:54,267 - agroai_sim - INFO - 
+2026-02-14 03:48:54,269 - agroai_sim - INFO - ============================================================
+2026-02-14 04:17:39,005 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 04:17:39,019 - agroai_sim - INFO - ============================================================
+2026-02-14 04:17:39,026 - agroai_sim - INFO - Agents: 100
+2026-02-14 04:17:39,029 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 04:17:39,029 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 04:17:39,029 - agroai_sim - INFO - ============================================================
+2026-02-14 04:17:39,204 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:17:39,208 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 04:17:39,210 - agroai_sim - INFO - ============================================================
+2026-02-14 04:17:39,234 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 04:17:39,276 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 04:17:39,326 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 04:17:39,367 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 04:17:39,373 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 04:17:39,375 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 04:17:39,376 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 04:17:39,377 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 24.49           49.03     
+2026-02-14 04:17:39,378 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  1.32            3.97      
+2026-02-14 04:17:39,380 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 22.81           174.83    
+2026-02-14 04:17:39,381 - agroai_sim - INFO - 3     SHARED       SAHARAN         5.60            26.87     
+2026-02-14 04:17:39,382 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.59            4.71      
+2026-02-14 04:17:39,433 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:17:39,434 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 04:17:39,435 - agroai_sim - INFO - ============================================================
+2026-02-14 04:17:39,446 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 04:17:39,446 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 04:17:39,446 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 04:17:39,449 - agroai_sim - INFO -   Average Yield (All): 7.037 t/ha
+2026-02-14 04:17:39,449 - agroai_sim - INFO -   Average Yield (SHARED): 6.574 t/ha
+2026-02-14 04:17:39,450 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.651 t/ha
+2026-02-14 04:17:39,456 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:17:39,458 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 04:17:39,460 - agroai_sim - INFO - ============================================================
+2026-02-14 04:17:42,053 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:17:42,054 - agroai_sim - INFO - ALL RESULTS SAVED TO: ./results/ 
+2026-02-14 04:17:42,056 - agroai_sim - INFO - ============================================================
+2026-02-14 04:17:42,081 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:17:42,087 - agroai_sim - INFO - ============================================================
+2026-02-14 04:17:42,100 - agroai_sim - INFO - 
+2026-02-14 04:17:42,105 - agroai_sim - INFO -     - Interactive plots with filtering
+2026-02-14 04:17:42,107 - agroai_sim - INFO -     - Performance metrics overview
+2026-02-14 04:17:42,108 - agroai_sim - INFO -     - Zone analysis and distributions
+2026-02-14 04:17:42,110 - agroai_sim - INFO -     - Raw data explorer
+2026-02-14 04:17:42,110 - agroai_sim - INFO - 
+2026-02-14 04:17:42,113 - agroai_sim - INFO -    solara run dashboard_solara.py
+2026-02-14 04:17:42,115 - agroai_sim - INFO - 
+2026-02-14 04:17:42,122 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:17:42,127 - agroai_sim - INFO - ============================================================
+2026-02-14 04:17:42,130 - agroai_sim - INFO - 
+2026-02-14 04:17:42,135 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 04:17:42,135 - agroai_sim - INFO -    • SHARED Strategy: 57 farmers (57.0%)
+2026-02-14 04:17:42,138 - agroai_sim - INFO -    • Average Yield: 7.037 t/ha
+2026-02-14 04:17:42,143 - agroai_sim - INFO -    • SHARED Advantage: -1.077 t/ha
+2026-02-14 04:17:42,145 - agroai_sim - INFO - 
+2026-02-14 04:17:42,150 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 04:17:42,151 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 04:17:42,152 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 04:17:42,154 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 04:17:42,157 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 04:17:42,159 - agroai_sim - INFO - 
+2026-02-14 04:17:42,163 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 04:17:42,164 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 04:17:42,165 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 04:17:42,166 - agroai_sim - INFO - 
+2026-02-14 04:17:42,170 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 04:17:42,172 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 04:17:42,175 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 04:17:42,176 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 04:17:42,178 - agroai_sim - INFO - 
+2026-02-14 04:17:42,179 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:00,413 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 04:19:00,415 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:00,424 - agroai_sim - INFO - Agents: 100
+2026-02-14 04:19:00,426 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 04:19:00,426 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 04:19:00,426 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:00,660 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:19:00,664 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 04:19:00,664 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:00,691 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 04:19:00,768 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 04:19:00,837 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 04:19:00,927 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 04:19:00,934 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 04:19:00,935 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 04:19:00,939 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 04:19:00,942 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 18.86           37.76     
+2026-02-14 04:19:00,945 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  1.03            3.11      
+2026-02-14 04:19:00,948 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 21.92           168.07    
+2026-02-14 04:19:00,950 - agroai_sim - INFO - 3     SHARED       SAHARAN         6.35            30.48     
+2026-02-14 04:19:00,953 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.45            4.30      
+2026-02-14 04:19:01,033 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:19:01,036 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 04:19:01,040 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:01,061 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 04:19:01,064 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 04:19:01,067 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 04:19:01,069 - agroai_sim - INFO -   Average Yield (All): 6.987 t/ha
+2026-02-14 04:19:01,074 - agroai_sim - INFO -   Average Yield (SHARED): 6.486 t/ha
+2026-02-14 04:19:01,078 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.652 t/ha
+2026-02-14 04:19:01,085 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:19:01,086 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 04:19:01,090 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:03,679 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:19:03,679 - agroai_sim - INFO - ALL RESULTS SAVED TO: ./results/ 
+2026-02-14 04:19:03,679 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:03,703 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:19:03,711 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:03,719 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:19:03,723 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:03,725 - agroai_sim - INFO - 
+2026-02-14 04:19:03,732 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 04:19:03,734 - agroai_sim - INFO -    • SHARED Strategy: 57 farmers (57.0%)
+2026-02-14 04:19:03,735 - agroai_sim - INFO -    • Average Yield: 6.987 t/ha
+2026-02-14 04:19:03,737 - agroai_sim - INFO -    • SHARED Advantage: -1.167 t/ha
+2026-02-14 04:19:03,739 - agroai_sim - INFO - 
+2026-02-14 04:19:03,747 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 04:19:03,747 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 04:19:03,747 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 04:19:03,747 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 04:19:03,747 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 04:19:03,753 - agroai_sim - INFO - 
+2026-02-14 04:19:03,757 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 04:19:03,758 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 04:19:03,759 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 04:19:03,762 - agroai_sim - INFO - 
+2026-02-14 04:19:03,766 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 04:19:03,767 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 04:19:03,768 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 04:19:03,768 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 04:19:03,770 - agroai_sim - INFO - 
+2026-02-14 04:19:03,774 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:47,589 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 04:19:47,589 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:47,616 - agroai_sim - INFO - Agents: 100
+2026-02-14 04:19:47,616 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 04:19:47,620 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 04:19:47,620 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:59,287 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:19:59,287 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 04:19:59,292 - agroai_sim - INFO - ============================================================
+2026-02-14 04:19:59,315 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 04:19:59,357 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 04:19:59,401 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 04:19:59,440 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 04:19:59,449 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 04:19:59,451 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 04:19:59,453 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 04:19:59,454 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 21.50           43.05     
+2026-02-14 04:19:59,455 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  1.12            3.36      
+2026-02-14 04:19:59,459 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 18.87           144.68    
+2026-02-14 04:19:59,459 - agroai_sim - INFO - 3     SHARED       SAHARAN         5.97            28.66     
+2026-02-14 04:19:59,460 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.28            3.79      
+2026-02-14 04:20:08,143 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:20:08,148 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 04:20:08,148 - agroai_sim - INFO - ============================================================
+2026-02-14 04:20:08,162 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 04:20:08,163 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 04:20:08,165 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 04:20:08,166 - agroai_sim - INFO -   Average Yield (All): 6.986 t/ha
+2026-02-14 04:20:08,169 - agroai_sim - INFO -   Average Yield (SHARED): 6.512 t/ha
+2026-02-14 04:20:08,172 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.613 t/ha
+2026-02-14 04:20:08,178 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:20:08,179 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 04:20:08,180 - agroai_sim - INFO - ============================================================
+2026-02-14 04:20:11,303 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:20:11,305 - agroai_sim - INFO - ALL RESULTS SAVED TO: ./results/ 
+2026-02-14 04:20:11,308 - agroai_sim - INFO - ============================================================
+2026-02-14 04:20:11,330 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:20:11,341 - agroai_sim - INFO - ============================================================
+2026-02-14 04:20:11,365 - agroai_sim - INFO - 
+2026-02-14 04:20:11,372 - agroai_sim - INFO -     - Interactive plots with filtering
+2026-02-14 04:20:11,372 - agroai_sim - INFO -     - Performance metrics overview
+2026-02-14 04:20:11,372 - agroai_sim - INFO -     - Zone analysis and distributions
+2026-02-14 04:20:11,372 - agroai_sim - INFO -     - Raw data explorer
+2026-02-14 04:20:11,372 - agroai_sim - INFO - 
+2026-02-14 04:20:11,382 - agroai_sim - INFO -    solara run dashboard_solara.py
+2026-02-14 04:20:11,383 - agroai_sim - INFO - 
+2026-02-14 04:20:11,391 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:20:11,395 - agroai_sim - INFO - ============================================================
+2026-02-14 04:20:11,397 - agroai_sim - INFO - 
+2026-02-14 04:20:11,402 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 04:20:11,404 - agroai_sim - INFO -    • SHARED Strategy: 57 farmers (57.0%)
+2026-02-14 04:20:11,404 - agroai_sim - INFO -    • Average Yield: 6.986 t/ha
+2026-02-14 04:20:11,404 - agroai_sim - INFO -    • SHARED Advantage: -1.100 t/ha
+2026-02-14 04:20:11,409 - agroai_sim - INFO - 
+2026-02-14 04:20:11,413 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 04:20:11,415 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 04:20:11,415 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 04:20:11,417 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 04:20:11,420 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 04:20:11,423 - agroai_sim - INFO - 
+2026-02-14 04:20:11,425 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 04:20:11,425 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 04:20:11,425 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 04:20:11,432 - agroai_sim - INFO - 
+2026-02-14 04:20:11,437 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 04:20:11,437 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 04:20:11,437 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 04:20:11,442 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 04:20:11,443 - agroai_sim - INFO - 
+2026-02-14 04:20:11,444 - agroai_sim - INFO - ============================================================
+2026-02-14 04:32:08,779 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 04:32:08,781 - agroai_sim - INFO - ============================================================
+2026-02-14 04:32:08,785 - agroai_sim - INFO - Agents: 100
+2026-02-14 04:32:08,787 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 04:32:08,788 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 04:32:08,789 - agroai_sim - INFO - ============================================================
+2026-02-14 04:32:08,928 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:32:08,932 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 04:32:08,934 - agroai_sim - INFO - ============================================================
+2026-02-14 04:32:08,959 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 04:32:09,004 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 04:32:09,045 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 04:32:09,171 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 04:32:09,176 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 04:32:09,177 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 04:32:09,177 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 04:32:09,178 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 27.50           55.05     
+2026-02-14 04:32:09,181 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  1.04            3.12      
+2026-02-14 04:32:09,182 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 21.86           167.58    
+2026-02-14 04:32:09,183 - agroai_sim - INFO - 3     SHARED       SAHARAN         6.02            28.89     
+2026-02-14 04:32:09,183 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.79            5.32      
+2026-02-14 04:32:09,250 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:32:09,251 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 04:32:09,253 - agroai_sim - INFO - ============================================================
+2026-02-14 04:32:09,264 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 04:32:09,266 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 04:32:09,268 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 04:32:09,269 - agroai_sim - INFO -   Average Yield (All): 6.981 t/ha
+2026-02-14 04:32:09,270 - agroai_sim - INFO -   Average Yield (SHARED): 6.452 t/ha
+2026-02-14 04:32:09,270 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.681 t/ha
+2026-02-14 04:32:09,275 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:32:09,277 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 04:32:09,278 - agroai_sim - INFO - ============================================================
+2026-02-14 04:32:11,761 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:32:11,762 - agroai_sim - INFO - ALL RESULTS SAVED TO: ./results/ 
+2026-02-14 04:32:11,765 - agroai_sim - INFO - ============================================================
+2026-02-14 04:32:11,790 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:32:11,794 - agroai_sim - INFO - ============================================================
+2026-02-14 04:32:11,808 - agroai_sim - INFO - 
+2026-02-14 04:32:11,814 - agroai_sim - INFO -     - Interactive plots with filtering
+2026-02-14 04:32:11,818 - agroai_sim - INFO -     - Performance metrics overview
+2026-02-14 04:32:11,820 - agroai_sim - INFO -     - Zone analysis and distributions
+2026-02-14 04:32:11,821 - agroai_sim - INFO -     - Raw data explorer
+2026-02-14 04:32:11,823 - agroai_sim - INFO - 
+2026-02-14 04:32:11,830 - agroai_sim - INFO -    solara run dashboard_solara.py
+2026-02-14 04:32:11,832 - agroai_sim - INFO - 
+2026-02-14 04:32:11,838 - agroai_sim - INFO - 
+============================================================
+2026-02-14 04:32:11,842 - agroai_sim - INFO - ============================================================
+2026-02-14 04:32:11,844 - agroai_sim - INFO - 
+2026-02-14 04:32:11,850 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 04:32:11,852 - agroai_sim - INFO -    • SHARED Strategy: 57 farmers (57.0%)
+2026-02-14 04:32:11,852 - agroai_sim - INFO -    • Average Yield: 6.981 t/ha
+2026-02-14 04:32:11,853 - agroai_sim - INFO -    • SHARED Advantage: -1.229 t/ha
+2026-02-14 04:32:11,854 - agroai_sim - INFO - 
+2026-02-14 04:32:11,857 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 04:32:11,859 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 04:32:11,860 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 04:32:11,865 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 04:32:11,867 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 04:32:11,868 - agroai_sim - INFO - 
+2026-02-14 04:32:11,871 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 04:32:11,872 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 04:32:11,873 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 04:32:11,874 - agroai_sim - INFO - 
+2026-02-14 04:32:11,881 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 04:32:11,882 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 04:32:11,882 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 04:32:11,884 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 04:32:11,885 - agroai_sim - INFO - 
+2026-02-14 04:32:11,886 - agroai_sim - INFO - ============================================================
+2026-02-14 05:42:40,290 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 05:42:40,292 - agroai_sim - INFO - ============================================================
+2026-02-14 05:42:40,306 - agroai_sim - INFO - Agents: 100
+2026-02-14 05:42:40,308 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 05:42:40,309 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 05:42:40,310 - agroai_sim - INFO - ============================================================
+2026-02-14 05:42:40,471 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:42:40,473 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 05:42:40,474 - agroai_sim - INFO - ============================================================
+2026-02-14 05:42:40,506 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 05:42:40,546 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 05:42:40,585 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 05:42:40,622 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 05:42:40,631 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 05:42:40,633 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 05:42:40,635 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 05:42:40,635 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 26.57           53.19     
+2026-02-14 05:42:40,637 - agroai_sim - INFO - 1     SHARED       SEMI_ARID_WARM  0.96            2.89      
+2026-02-14 05:42:40,639 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 23.80           182.47    
+2026-02-14 05:42:40,641 - agroai_sim - INFO - 3     SHARED       SAHARAN         5.46            26.17     
+2026-02-14 05:42:40,643 - agroai_sim - INFO - 4     SHARED       SUB_HUMID       1.41            4.18      
+2026-02-14 05:42:40,785 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:42:40,787 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 05:42:40,789 - agroai_sim - INFO - ============================================================
+2026-02-14 05:42:40,859 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 05:42:40,863 - agroai_sim - INFO -   SHARED Strategy: 57 agents (57.0%)
+2026-02-14 05:42:40,869 - agroai_sim - INFO -   INDIVIDUAL Strategy: 43 agents (43.0%)
+2026-02-14 05:42:40,871 - agroai_sim - INFO -   Average Yield (All): 7.004 t/ha
+2026-02-14 05:42:40,873 - agroai_sim - INFO -   Average Yield (SHARED): 6.600 t/ha
+2026-02-14 05:42:40,874 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.540 t/ha
+2026-02-14 05:42:40,880 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:42:40,884 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 05:42:40,887 - agroai_sim - INFO - ============================================================
+2026-02-14 05:42:43,812 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:42:43,812 - agroai_sim - INFO - ALL RESULTS SAVED TO: ./results/ 
+2026-02-14 05:42:43,813 - agroai_sim - INFO - ============================================================
+2026-02-14 05:42:43,840 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:42:43,847 - agroai_sim - INFO - ============================================================
+2026-02-14 05:42:43,866 - agroai_sim - INFO - 
+2026-02-14 05:42:43,876 - agroai_sim - INFO -     - Interactive plots with filtering
+2026-02-14 05:42:43,879 - agroai_sim - INFO -     - Performance metrics overview
+2026-02-14 05:42:43,882 - agroai_sim - INFO -     - Zone analysis and distributions
+2026-02-14 05:42:43,885 - agroai_sim - INFO -     - Raw data explorer
+2026-02-14 05:42:43,889 - agroai_sim - INFO - 
+2026-02-14 05:42:43,894 - agroai_sim - INFO -    solara run dashboard_solara.py
+2026-02-14 05:42:43,896 - agroai_sim - INFO - 
+2026-02-14 05:42:43,903 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:42:43,912 - agroai_sim - INFO - ============================================================
+2026-02-14 05:42:43,914 - agroai_sim - INFO - 
+2026-02-14 05:42:43,922 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 05:42:43,924 - agroai_sim - INFO -    • SHARED Strategy: 57 farmers (57.0%)
+2026-02-14 05:42:43,925 - agroai_sim - INFO -    • Average Yield: 7.004 t/ha
+2026-02-14 05:42:43,926 - agroai_sim - INFO -    • SHARED Advantage: -0.940 t/ha
+2026-02-14 05:42:43,927 - agroai_sim - INFO - 
+2026-02-14 05:42:43,933 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 05:42:43,934 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 05:42:43,935 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 05:42:43,937 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 05:42:43,939 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 05:42:43,941 - agroai_sim - INFO - 
+2026-02-14 05:42:43,946 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 05:42:43,947 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 05:42:43,948 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 05:42:43,952 - agroai_sim - INFO - 
+2026-02-14 05:42:43,958 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 05:42:43,959 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 05:42:43,961 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 05:42:43,962 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 05:42:43,963 - agroai_sim - INFO - 
+2026-02-14 05:42:43,964 - agroai_sim - INFO - ============================================================
+2026-02-14 05:46:45,831 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 05:46:45,833 - agroai_sim - INFO - ============================================================
+2026-02-14 05:46:45,838 - agroai_sim - INFO - Agents: 100
+2026-02-14 05:46:45,843 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 05:46:45,843 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 05:46:45,847 - agroai_sim - INFO - ============================================================
+2026-02-14 05:46:45,956 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:46:45,958 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 05:46:45,959 - agroai_sim - INFO - ============================================================
+2026-02-14 05:46:45,987 - agroai_sim - INFO -   Completed timestep 1/10
+2026-02-14 05:46:46,148 - agroai_sim - INFO -   Completed timestep 4/10
+2026-02-14 05:46:46,216 - agroai_sim - INFO -   Completed timestep 7/10
+2026-02-14 05:46:46,252 - agroai_sim - INFO -   Completed timestep 10/10
+2026-02-14 05:46:46,260 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 05:46:46,262 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 05:46:46,262 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 05:46:46,263 - agroai_sim - INFO - 0     INDIVIDUAL   IRRIGATED_SOUSS 24.54           49.14     
+2026-02-14 05:46:46,267 - agroai_sim - INFO - 1     INDIVIDUAL   SEMI_ARID_WARM  1.23            3.70      
+2026-02-14 05:46:46,268 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 19.91           152.61    
+2026-02-14 05:46:46,269 - agroai_sim - INFO - 3     SHARED       SAHARAN         4.87            23.37     
+2026-02-14 05:46:46,271 - agroai_sim - INFO - 4     SHARED       SEMI_ARID_WARM  1.16            3.58      
+2026-02-14 05:46:46,309 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:46:46,315 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 05:46:46,318 - agroai_sim - INFO - ============================================================
+2026-02-14 05:46:46,325 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 05:46:46,325 - agroai_sim - INFO -   SHARED Strategy: 67 agents (67.0%)
+2026-02-14 05:46:46,331 - agroai_sim - INFO -   INDIVIDUAL Strategy: 33 agents (33.0%)
+2026-02-14 05:46:46,332 - agroai_sim - INFO -   Average Yield (All): 5.882 t/ha
+2026-02-14 05:46:46,334 - agroai_sim - INFO -   Average Yield (SHARED): 6.333 t/ha
+2026-02-14 05:46:46,335 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 4.964 t/ha
+2026-02-14 05:46:46,341 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:46:46,341 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 05:46:46,343 - agroai_sim - INFO - ============================================================
+2026-02-14 05:46:48,663 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:46:48,665 - agroai_sim - INFO - ALL RESULTS SAVED TO: ./results/ 
+2026-02-14 05:46:48,666 - agroai_sim - INFO - ============================================================
+2026-02-14 05:46:48,695 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:46:48,703 - agroai_sim - INFO - ============================================================
+2026-02-14 05:46:48,715 - agroai_sim - INFO - 
+2026-02-14 05:46:48,720 - agroai_sim - INFO -     - Interactive plots with filtering
+2026-02-14 05:46:48,720 - agroai_sim - INFO -     - Performance metrics overview
+2026-02-14 05:46:48,720 - agroai_sim - INFO -     - Zone analysis and distributions
+2026-02-14 05:46:48,720 - agroai_sim - INFO -     - Raw data explorer
+2026-02-14 05:46:48,720 - agroai_sim - INFO - 
+2026-02-14 05:46:48,730 - agroai_sim - INFO -    solara run dashboard_solara.py
+2026-02-14 05:46:48,731 - agroai_sim - INFO - 
+2026-02-14 05:46:48,735 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:46:48,739 - agroai_sim - INFO - ============================================================
+2026-02-14 05:46:48,739 - agroai_sim - INFO - 
+2026-02-14 05:46:48,742 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 05:46:48,746 - agroai_sim - INFO -    • SHARED Strategy: 67 farmers (67.0%)
+2026-02-14 05:46:48,747 - agroai_sim - INFO -    • Average Yield: 5.882 t/ha
+2026-02-14 05:46:48,748 - agroai_sim - INFO -    • SHARED Advantage: 1.369 t/ha
+2026-02-14 05:46:48,748 - agroai_sim - INFO - 
+2026-02-14 05:46:48,756 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 05:46:48,756 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 05:46:48,756 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 05:46:48,758 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 05:46:48,759 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 05:46:48,760 - agroai_sim - INFO - 
+2026-02-14 05:46:48,765 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 05:46:48,765 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 05:46:48,765 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 05:46:48,768 - agroai_sim - INFO - 
+2026-02-14 05:46:48,774 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 05:46:48,774 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 05:46:48,775 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 05:46:48,775 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 05:46:48,777 - agroai_sim - INFO - 
+2026-02-14 05:46:48,778 - agroai_sim - INFO - ============================================================
+2026-02-14 05:54:31,225 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 05:54:31,226 - agroai_sim - INFO - ============================================================
+2026-02-14 05:54:31,232 - agroai_sim - INFO - Agents: 100
+2026-02-14 05:54:31,233 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 05:54:31,234 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 05:54:31,235 - agroai_sim - INFO - ============================================================
+2026-02-14 05:55:01,526 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:55:01,529 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 05:55:01,532 - agroai_sim - INFO - ============================================================
+2026-02-14 05:55:01,535 - agroai_sim - INFO -   Paired design: 50 SHARED + 50 INDIVIDUAL
+2026-02-14 05:55:01,536 - agroai_sim - INFO -   Total land — SHARED: 253.4 ha, INDIVIDUAL: 253.4 ha (equal)
+2026-02-14 05:56:07,429 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 05:56:07,431 - agroai_sim - INFO - ============================================================
+2026-02-14 05:56:07,439 - agroai_sim - INFO - Agents: 100
+2026-02-14 05:56:07,442 - agroai_sim - INFO - Timesteps: 10
+2026-02-14 05:56:07,445 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 05:56:07,448 - agroai_sim - INFO - ============================================================
+2026-02-14 05:56:07,632 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:56:07,635 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 05:56:07,637 - agroai_sim - INFO - ============================================================
+2026-02-14 05:56:07,641 - agroai_sim - INFO -   Paired design: 50 SHARED + 50 INDIVIDUAL
+2026-02-14 05:56:07,644 - agroai_sim - INFO -   Total land — SHARED: 253.4 ha, INDIVIDUAL: 253.4 ha (equal)
+2026-02-14 05:56:27,832 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:56:27,834 - agroai_sim - INFO - Starting simulation: 100 agents × 10 timesteps
+2026-02-14 05:56:27,838 - agroai_sim - INFO - ============================================================
+2026-02-14 05:56:27,839 - agroai_sim - INFO -   Paired design: 50 SHARED + 50 INDIVIDUAL
+2026-02-14 05:56:27,843 - agroai_sim - INFO -   Total land — SHARED: 302.4 ha, INDIVIDUAL: 302.4 ha (equal)
+2026-02-14 05:58:00,342 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 05:58:00,358 - agroai_sim - INFO - ============================================================
+2026-02-14 05:58:00,439 - agroai_sim - INFO - Agents: 100
+2026-02-14 05:58:00,441 - agroai_sim - INFO - Timesteps: 30
+2026-02-14 05:58:00,450 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 05:58:00,455 - agroai_sim - INFO - ============================================================
+2026-02-14 05:58:57,363 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 05:58:57,366 - agroai_sim - INFO - ============================================================
+2026-02-14 05:58:57,369 - agroai_sim - INFO - Agricultural Agent-Based Simulation
+2026-02-14 05:58:57,372 - agroai_sim - INFO - Agents: 100
+2026-02-14 05:58:57,374 - agroai_sim - INFO - Timesteps: 30
+2026-02-14 05:58:57,380 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 05:58:57,382 - agroai_sim - INFO - ============================================================
+2026-02-14 05:58:57,395 - agroai_sim - INFO - Loaded 6 zones
+2026-02-14 05:58:57,398 - agroai_sim - INFO - Loaded 30 crops
+2026-02-14 05:58:57,400 - agroai_sim - INFO - Loaded climate profiles for all zones
+2026-02-14 05:58:57,403 - agroai_sim - INFO - Loaded soil moisture data
+2026-02-14 05:59:11,861 - agroai_sim - INFO - 
+============================================================
+2026-02-14 05:59:11,863 - agroai_sim - INFO - Starting simulation: 100 agents × 30 timesteps
+2026-02-14 05:59:11,865 - agroai_sim - INFO - ============================================================
+2026-02-14 05:59:11,870 - agroai_sim - INFO -   Paired design: 50 SHARED + 50 INDIVIDUAL
+2026-02-14 05:59:11,870 - agroai_sim - INFO -   Total land — SHARED: 253.4 ha, INDIVIDUAL: 253.4 ha (equal)
+2026-02-14 06:00:42,483 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 06:00:42,485 - agroai_sim - INFO - ============================================================
+2026-02-14 06:00:42,488 - agroai_sim - INFO - Agricultural Agent-Based Simulation
+2026-02-14 06:00:42,490 - agroai_sim - INFO - Agents: 100
+2026-02-14 06:00:42,491 - agroai_sim - INFO - Timesteps: 30
+2026-02-14 06:00:42,493 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 06:00:42,495 - agroai_sim - INFO - ============================================================
+2026-02-14 06:00:42,511 - agroai_sim - INFO - Loaded 6 zones
+2026-02-14 06:00:42,511 - agroai_sim - INFO - Loaded 30 crops
+2026-02-14 06:00:42,520 - agroai_sim - INFO - Loaded climate profiles for all zones
+2026-02-14 06:00:42,523 - agroai_sim - INFO - Loaded soil moisture data
+2026-02-14 06:00:42,707 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:00:42,709 - agroai_sim - INFO - Starting simulation: 100 agents × 30 timesteps
+2026-02-14 06:00:42,712 - agroai_sim - INFO - ============================================================
+2026-02-14 06:00:42,717 - agroai_sim - INFO -   Paired design: 50 SHARED + 50 INDIVIDUAL
+2026-02-14 06:00:42,717 - agroai_sim - INFO -   Total land — SHARED: 253.4 ha, INDIVIDUAL: 253.4 ha (equal)
+2026-02-14 06:00:43,170 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:00:43,175 - agroai_sim - INFO - Starting simulation: 100 agents × 30 timesteps
+2026-02-14 06:00:43,179 - agroai_sim - INFO - ============================================================
+2026-02-14 06:00:43,184 - agroai_sim - INFO -   Paired design: 50 SHARED + 50 INDIVIDUAL
+2026-02-14 06:00:43,187 - agroai_sim - INFO -   Total land — SHARED: 302.4 ha, INDIVIDUAL: 302.4 ha (equal)
+2026-02-14 06:01:34,617 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 06:01:34,618 - agroai_sim - INFO - ============================================================
+2026-02-14 06:01:34,621 - agroai_sim - INFO - Agricultural Agent-Based Simulation
+2026-02-14 06:01:34,624 - agroai_sim - INFO - Agents: 100
+2026-02-14 06:01:34,626 - agroai_sim - INFO - Timesteps: 30
+2026-02-14 06:01:34,627 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 06:01:34,627 - agroai_sim - INFO - ============================================================
+2026-02-14 06:02:37,942 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 06:02:37,945 - agroai_sim - INFO - ============================================================
+2026-02-14 06:02:37,949 - agroai_sim - INFO - Agricultural Agent-Based Simulation
+2026-02-14 06:02:37,953 - agroai_sim - INFO - Agents: 100
+2026-02-14 06:02:37,958 - agroai_sim - INFO - Timesteps: 30
+2026-02-14 06:02:37,958 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 06:02:37,961 - agroai_sim - INFO - ============================================================
+2026-02-14 06:02:37,978 - agroai_sim - INFO - Loaded 6 zones
+2026-02-14 06:02:37,981 - agroai_sim - INFO - Loaded 24 crops
+2026-02-14 06:02:37,982 - agroai_sim - INFO - Loaded climate profiles for all zones
+2026-02-14 06:02:37,985 - agroai_sim - INFO - Loaded soil moisture data
+2026-02-14 06:02:52,392 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:02:52,397 - agroai_sim - INFO - Starting simulation: 100 agents × 30 timesteps
+2026-02-14 06:02:52,405 - agroai_sim - INFO - ============================================================
+2026-02-14 06:02:52,414 - agroai_sim - INFO -   Paired design: 50 SHARED + 50 INDIVIDUAL
+2026-02-14 06:02:52,414 - agroai_sim - INFO -   Total land — SHARED: 253.4 ha, INDIVIDUAL: 253.4 ha (equal)
+2026-02-14 06:06:36,438 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 06:06:36,438 - agroai_sim - INFO - ============================================================
+2026-02-14 06:06:36,449 - agroai_sim - INFO - Agricultural Agent-Based Simulation
+2026-02-14 06:06:36,452 - agroai_sim - INFO - Agents: 100
+2026-02-14 06:06:36,456 - agroai_sim - INFO - Timesteps: 30
+2026-02-14 06:06:36,459 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 06:06:36,463 - agroai_sim - INFO - ============================================================
+2026-02-14 06:06:36,486 - agroai_sim - INFO - Loaded 6 zones
+2026-02-14 06:06:36,488 - agroai_sim - INFO - Loaded 24 crops
+2026-02-14 06:06:36,490 - agroai_sim - INFO - Loaded climate profiles for all zones
+2026-02-14 06:06:36,495 - agroai_sim - INFO - Loaded soil moisture data
+2026-02-14 06:06:36,665 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:06:36,667 - agroai_sim - INFO - Starting simulation: 100 agents × 30 timesteps
+2026-02-14 06:06:36,672 - agroai_sim - INFO - ============================================================
+2026-02-14 06:06:36,678 - agroai_sim - INFO -   Paired design: 50 SHARED + 50 INDIVIDUAL
+2026-02-14 06:06:36,678 - agroai_sim - INFO -   Total land — SHARED: 253.4 ha, INDIVIDUAL: 253.4 ha (equal)
+2026-02-14 06:06:36,771 - agroai_sim - INFO -   Completed timestep 1/30
+2026-02-14 06:06:36,958 - agroai_sim - INFO -   Completed timestep 4/30
+2026-02-14 06:06:37,171 - agroai_sim - INFO -   Completed timestep 7/30
+2026-02-14 06:06:37,375 - agroai_sim - INFO -   Completed timestep 10/30
+2026-02-14 06:06:37,717 - agroai_sim - INFO -   Completed timestep 13/30
+2026-02-14 06:06:37,931 - agroai_sim - INFO -   Completed timestep 16/30
+2026-02-14 06:06:38,108 - agroai_sim - INFO -   Completed timestep 19/30
+2026-02-14 06:06:38,344 - agroai_sim - INFO -   Completed timestep 22/30
+2026-02-14 06:06:38,632 - agroai_sim - INFO -   Completed timestep 25/30
+2026-02-14 06:06:39,065 - agroai_sim - INFO -   Completed timestep 28/30
+2026-02-14 06:06:39,264 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 06:06:39,268 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 06:06:39,270 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 06:06:39,274 - agroai_sim - INFO - 0     SHARED       IRRIGATED_SOUSS 15.71           67.83     
+2026-02-14 06:06:39,278 - agroai_sim - INFO - 1     INDIVIDUAL   IRRIGATED_SOUSS 17.76           64.70     
+2026-02-14 06:06:39,280 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 16.11           138.55    
+2026-02-14 06:06:39,284 - agroai_sim - INFO - 3     INDIVIDUAL   IRRIGATED_SOUSS 18.13           100.46    
+2026-02-14 06:06:39,288 - agroai_sim - INFO - 4     SHARED       SEMI_ARID_WARM  0.80            3.33      
+2026-02-14 06:06:44,542 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:06:44,542 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 06:06:44,546 - agroai_sim - INFO - ============================================================
+2026-02-14 06:06:44,600 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 06:06:44,602 - agroai_sim - INFO -   SHARED Strategy: 50 agents (50.0%)
+2026-02-14 06:06:44,608 - agroai_sim - INFO -   INDIVIDUAL Strategy: 50 agents (50.0%)
+2026-02-14 06:06:44,610 - agroai_sim - INFO -   --- YIELD ---
+2026-02-14 06:06:44,610 - agroai_sim - INFO -   Average Yield (All): 7.273 t/ha
+2026-02-14 06:06:44,615 - agroai_sim - INFO -   Average Yield (SHARED): 7.266 t/ha
+2026-02-14 06:06:44,617 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.280 t/ha
+2026-02-14 06:06:44,627 - agroai_sim - INFO -   --- PROFIT ---
+2026-02-14 06:06:44,628 - agroai_sim - INFO -   Average Profit (All): 68.02
+2026-02-14 06:06:44,633 - agroai_sim - INFO -   Average Profit (SHARED): 78.45
+2026-02-14 06:06:44,635 - agroai_sim - INFO -   Average Profit (INDIVIDUAL): 57.60
+2026-02-14 06:06:44,657 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:06:44,659 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 06:06:44,662 - agroai_sim - INFO - ============================================================
+2026-02-14 06:06:44,771 - agroai_sim - INFO - 
+ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 06:06:44,779 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 06:06:44,784 - agroai_sim - INFO - 0     SHARED       IRRIGATED_SOUSS 16.84           75.71     
+2026-02-14 06:06:44,784 - agroai_sim - INFO - 1     INDIVIDUAL   IRRIGATED_SOUSS 17.13           56.49     
+2026-02-14 06:06:44,789 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 17.08           134.77    
+2026-02-14 06:06:44,791 - agroai_sim - INFO - 3     INDIVIDUAL   IRRIGATED_SOUSS 16.92           95.17     
+2026-02-14 06:06:44,795 - agroai_sim - INFO - 4     SHARED       SEMI_ARID_WARM  0.88            3.69      
+2026-02-14 06:06:44,797 - agroai_sim - INFO - 5     INDIVIDUAL   SEMI_ARID_WARM  0.89            2.35      
+2026-02-14 06:06:44,799 - agroai_sim - INFO - 6     SHARED       SUB_HUMID       1.10            15.27     
+2026-02-14 06:06:44,802 - agroai_sim - INFO - 7     INDIVIDUAL   SUB_HUMID       1.06            9.54      
+2026-02-14 06:06:44,805 - agroai_sim - INFO - 8     SHARED       SAHARAN         16.85           68.32     
+2026-02-14 06:06:44,810 - agroai_sim - INFO - 9     INDIVIDUAL   SAHARAN         16.25           48.74     
+2026-02-14 06:06:44,813 - agroai_sim - INFO - 10    SHARED       ARID            0.73            1.77      
+2026-02-14 06:06:44,815 - agroai_sim - INFO - 11    INDIVIDUAL   ARID            0.72            0.99      
+2026-02-14 06:06:44,819 - agroai_sim - INFO - 12    SHARED       SUB_HUMID       1.06            6.14      
+2026-02-14 06:06:44,821 - agroai_sim - INFO - 13    INDIVIDUAL   SUB_HUMID       1.09            4.21      
+2026-02-14 06:06:44,825 - agroai_sim - INFO - 14    SHARED       SAHARAN         16.36           240.19    
+2026-02-14 06:06:44,827 - agroai_sim - INFO - 15    INDIVIDUAL   SAHARAN         17.48           186.72    
+2026-02-14 06:06:44,829 - agroai_sim - INFO - 16    SHARED       SAHARAN         16.88           104.82    
+2026-02-14 06:06:44,829 - agroai_sim - INFO - 17    INDIVIDUAL   SAHARAN         16.77           78.21     
+2026-02-14 06:06:44,833 - agroai_sim - INFO - 18    SHARED       IRRIGATED_SOUSS 16.96           286.94    
+2026-02-14 06:06:44,837 - agroai_sim - INFO - 19    INDIVIDUAL   IRRIGATED_SOUSS 16.59           200.59    
+2026-02-14 06:06:44,839 - agroai_sim - INFO - 20    SHARED       ARID            0.73            3.93      
+2026-02-14 06:06:44,839 - agroai_sim - INFO - 21    INDIVIDUAL   ARID            0.72            2.28      
+2026-02-14 06:06:44,847 - agroai_sim - INFO - 22    SHARED       SAHARAN         16.55           132.65    
+2026-02-14 06:06:44,847 - agroai_sim - INFO - 23    INDIVIDUAL   SAHARAN         16.75           98.09     
+2026-02-14 06:06:44,852 - agroai_sim - INFO - 24    SHARED       SUB_HUMID       1.07            16.23     
+2026-02-14 06:06:44,855 - agroai_sim - INFO - 25    INDIVIDUAL   SUB_HUMID       1.10            11.20     
+2026-02-14 06:06:44,858 - agroai_sim - INFO - 26    SHARED       SEMI_ARID_WARM  0.91            12.86     
+2026-02-14 06:06:44,862 - agroai_sim - INFO - 27    INDIVIDUAL   SEMI_ARID_WARM  0.90            7.87      
+2026-02-14 06:06:44,862 - agroai_sim - INFO - 28    SHARED       SEMI_ARID_COOL  0.91            6.07      
+2026-02-14 06:06:44,866 - agroai_sim - INFO - 29    INDIVIDUAL   SEMI_ARID_COOL  0.92            4.00      
+2026-02-14 06:06:44,866 - agroai_sim - INFO - 30    SHARED       SEMI_ARID_WARM  0.90            16.53     
+2026-02-14 06:06:44,871 - agroai_sim - INFO - 31    INDIVIDUAL   SEMI_ARID_WARM  0.87            9.82      
+2026-02-14 06:06:44,875 - agroai_sim - INFO - 32    SHARED       SEMI_ARID_COOL  0.89            3.23      
+2026-02-14 06:06:44,879 - agroai_sim - INFO - 33    INDIVIDUAL   SEMI_ARID_COOL  0.89            2.12      
+2026-02-14 06:06:44,881 - agroai_sim - INFO - 34    SHARED       ARID            0.74            2.53      
+2026-02-14 06:06:44,884 - agroai_sim - INFO - 35    INDIVIDUAL   ARID            0.74            1.49      
+2026-02-14 06:06:44,888 - agroai_sim - INFO - 36    SHARED       SEMI_ARID_COOL  0.90            10.89     
+2026-02-14 06:06:44,890 - agroai_sim - INFO - 37    INDIVIDUAL   SEMI_ARID_COOL  0.89            6.54      
+2026-02-14 06:06:44,890 - agroai_sim - INFO - 38    SHARED       SUB_HUMID       1.10            16.83     
+2026-02-14 06:06:44,898 - agroai_sim - INFO - 39    INDIVIDUAL   SUB_HUMID       1.07            10.17     
+2026-02-14 06:06:44,901 - agroai_sim - INFO - 40    SHARED       SAHARAN         16.83           80.68     
+2026-02-14 06:06:44,906 - agroai_sim - INFO - 41    INDIVIDUAL   SAHARAN         16.61           58.85     
+2026-02-14 06:06:44,906 - agroai_sim - INFO - 42    SHARED       ARID            0.73            2.20      
+2026-02-14 06:06:44,912 - agroai_sim - INFO - 43    INDIVIDUAL   ARID            0.73            1.30      
+2026-02-14 06:06:44,915 - agroai_sim - INFO - 44    SHARED       SEMI_ARID_COOL  0.89            14.05     
+2026-02-14 06:06:44,919 - agroai_sim - INFO - 45    INDIVIDUAL   SEMI_ARID_COOL  0.87            8.69      
+2026-02-14 06:06:44,922 - agroai_sim - INFO - 46    SHARED       SAHARAN         17.11           354.60    
+2026-02-14 06:06:44,924 - agroai_sim - INFO - 47    INDIVIDUAL   SAHARAN         17.20           259.82    
+2026-02-14 06:06:44,927 - agroai_sim - INFO - 48    SHARED       SEMI_ARID_COOL  0.89            10.55     
+2026-02-14 06:06:44,931 - agroai_sim - INFO - 49    INDIVIDUAL   SEMI_ARID_COOL  0.91            6.88      
+2026-02-14 06:06:44,934 - agroai_sim - INFO - 50    SHARED       IRRIGATED_SOUSS 16.74           61.23     
+2026-02-14 06:06:44,935 - agroai_sim - INFO - 51    INDIVIDUAL   IRRIGATED_SOUSS 16.69           45.82     
+2026-02-14 06:06:44,941 - agroai_sim - INFO - 52    SHARED       IRRIGATED_SOUSS 16.56           114.86    
+2026-02-14 06:06:44,944 - agroai_sim - INFO - 53    INDIVIDUAL   IRRIGATED_SOUSS 16.70           84.11     
+2026-02-14 06:06:44,946 - agroai_sim - INFO - 54    SHARED       SEMI_ARID_COOL  0.89            16.75     
+2026-02-14 06:06:44,949 - agroai_sim - INFO - 55    INDIVIDUAL   SEMI_ARID_COOL  0.90            10.37     
+2026-02-14 06:06:44,949 - agroai_sim - INFO - 56    SHARED       SEMI_ARID_WARM  0.92            15.40     
+2026-02-14 06:06:44,955 - agroai_sim - INFO - 57    INDIVIDUAL   SEMI_ARID_WARM  0.89            9.65      
+2026-02-14 06:06:44,958 - agroai_sim - INFO - 58    SHARED       ARID            0.72            4.48      
+2026-02-14 06:06:44,961 - agroai_sim - INFO - 59    INDIVIDUAL   ARID            0.71            2.54      
+2026-02-14 06:06:44,963 - agroai_sim - INFO - 60    SHARED       IRRIGATED_SOUSS 16.96           333.71    
+2026-02-14 06:06:44,963 - agroai_sim - INFO - 61    INDIVIDUAL   IRRIGATED_SOUSS 17.20           245.45    
+2026-02-14 06:06:44,971 - agroai_sim - INFO - 62    SHARED       SEMI_ARID_WARM  0.87            7.08      
+2026-02-14 06:06:44,973 - agroai_sim - INFO - 63    INDIVIDUAL   SEMI_ARID_WARM  0.89            4.77      
+2026-02-14 06:06:44,977 - agroai_sim - INFO - 64    SHARED       SEMI_ARID_WARM  0.90            11.73     
+2026-02-14 06:06:44,979 - agroai_sim - INFO - 65    INDIVIDUAL   SEMI_ARID_WARM  0.90            7.66      
+2026-02-14 06:06:44,985 - agroai_sim - INFO - 66    SHARED       IRRIGATED_SOUSS 17.01           362.81    
+2026-02-14 06:06:44,988 - agroai_sim - INFO - 67    INDIVIDUAL   IRRIGATED_SOUSS 16.90           266.16    
+2026-02-14 06:06:44,994 - agroai_sim - INFO - 68    SHARED       IRRIGATED_SOUSS 17.05           61.77     
+2026-02-14 06:06:44,997 - agroai_sim - INFO - 69    INDIVIDUAL   IRRIGATED_SOUSS 17.66           49.09     
+2026-02-14 06:06:44,999 - agroai_sim - INFO - 70    SHARED       IRRIGATED_SOUSS 16.96           97.89     
+2026-02-14 06:06:45,003 - agroai_sim - INFO - 71    INDIVIDUAL   IRRIGATED_SOUSS 16.54           70.22     
+2026-02-14 06:06:45,005 - agroai_sim - INFO - 72    SHARED       IRRIGATED_SOUSS 16.94           123.88    
+2026-02-14 06:06:45,010 - agroai_sim - INFO - 73    INDIVIDUAL   IRRIGATED_SOUSS 17.00           90.20     
+2026-02-14 06:06:45,013 - agroai_sim - INFO - 74    SHARED       ARID            0.72            5.76      
+2026-02-14 06:06:45,013 - agroai_sim - INFO - 75    INDIVIDUAL   ARID            0.72            3.43      
+2026-02-14 06:06:45,019 - agroai_sim - INFO - 76    SHARED       IRRIGATED_SOUSS 16.69           261.27    
+2026-02-14 06:06:45,023 - agroai_sim - INFO - 77    INDIVIDUAL   IRRIGATED_SOUSS 16.42           201.97    
+2026-02-14 06:06:45,026 - agroai_sim - INFO - 78    SHARED       SEMI_ARID_WARM  0.90            11.83     
+2026-02-14 06:06:45,030 - agroai_sim - INFO - 79    INDIVIDUAL   SEMI_ARID_WARM  0.89            7.82      
+2026-02-14 06:06:45,032 - agroai_sim - INFO - 80    SHARED       SUB_HUMID       1.10            6.83      
+2026-02-14 06:06:45,034 - agroai_sim - INFO - 81    INDIVIDUAL   SUB_HUMID       1.09            4.31      
+2026-02-14 06:06:45,036 - agroai_sim - INFO - 82    SHARED       SUB_HUMID       1.07            16.94     
+2026-02-14 06:06:45,041 - agroai_sim - INFO - 83    INDIVIDUAL   SUB_HUMID       1.06            10.92     
+2026-02-14 06:06:45,044 - agroai_sim - INFO - 84    SHARED       ARID            0.72            4.43      
+2026-02-14 06:06:45,044 - agroai_sim - INFO - 85    INDIVIDUAL   ARID            0.73            2.69      
+2026-02-14 06:06:45,044 - agroai_sim - INFO - 86    SHARED       SEMI_ARID_WARM  0.90            15.47     
+2026-02-14 06:06:45,044 - agroai_sim - INFO - 87    INDIVIDUAL   SEMI_ARID_WARM  0.89            9.76      
+2026-02-14 06:06:45,051 - agroai_sim - INFO - 88    SHARED       SAHARAN         16.82           335.37    
+2026-02-14 06:06:45,056 - agroai_sim - INFO - 89    INDIVIDUAL   SAHARAN         16.98           255.64    
+2026-02-14 06:06:45,059 - agroai_sim - INFO - 90    SHARED       SEMI_ARID_COOL  0.89            4.93      
+2026-02-14 06:06:45,061 - agroai_sim - INFO - 91    INDIVIDUAL   SEMI_ARID_COOL  0.90            3.04      
+2026-02-14 06:06:45,061 - agroai_sim - INFO - 92    SHARED       ARID            0.71            5.83      
+2026-02-14 06:06:45,061 - agroai_sim - INFO - 93    INDIVIDUAL   ARID            0.72            3.69      
+2026-02-14 06:06:45,066 - agroai_sim - INFO - 94    SHARED       IRRIGATED_SOUSS 16.96           193.49    
+2026-02-14 06:06:45,071 - agroai_sim - INFO - 95    INDIVIDUAL   IRRIGATED_SOUSS 17.09           145.54    
+2026-02-14 06:06:45,075 - agroai_sim - INFO - 96    SHARED       SEMI_ARID_COOL  0.87            3.70      
+2026-02-14 06:06:45,078 - agroai_sim - INFO - 97    INDIVIDUAL   SEMI_ARID_COOL  0.89            2.36      
+2026-02-14 06:06:45,078 - agroai_sim - INFO - 98    SHARED       IRRIGATED_SOUSS 16.57           223.83    
+2026-02-14 06:06:45,078 - agroai_sim - INFO - 99    INDIVIDUAL   IRRIGATED_SOUSS 16.55           170.44    
+2026-02-14 06:06:49,318 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:06:49,330 - agroai_sim - INFO - ============================================================
+2026-02-14 06:06:49,362 - agroai_sim - INFO - 
+2026-02-14 06:06:49,376 - agroai_sim - INFO -     - Interactive plots with filtering
+2026-02-14 06:06:49,391 - agroai_sim - INFO -     - Performance metrics overview
+2026-02-14 06:06:49,399 - agroai_sim - INFO -     - Zone analysis and distributions
+2026-02-14 06:06:49,401 - agroai_sim - INFO -     - Raw data explorer
+2026-02-14 06:06:49,403 - agroai_sim - INFO - 
+2026-02-14 06:06:49,418 - agroai_sim - INFO -    solara run dashboard_solara.py
+2026-02-14 06:06:49,424 - agroai_sim - INFO - 
+2026-02-14 06:06:49,434 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:06:49,445 - agroai_sim - INFO - ============================================================
+2026-02-14 06:06:49,449 - agroai_sim - INFO - 
+2026-02-14 06:06:49,456 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 06:06:49,460 - agroai_sim - INFO -    • SHARED Strategy: 50 farmers (50.0%)
+2026-02-14 06:06:49,463 - agroai_sim - INFO -    • Average Yield: 7.273 t/ha
+2026-02-14 06:06:49,464 - agroai_sim - INFO -    • SHARED Advantage: -0.014 t/ha
+2026-02-14 06:06:49,467 - agroai_sim - INFO - 
+2026-02-14 06:06:49,476 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 06:06:49,480 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 06:06:49,482 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 06:06:49,485 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 06:06:49,491 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 06:06:49,493 - agroai_sim - INFO - 
+2026-02-14 06:06:49,507 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 06:06:49,507 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 06:06:49,513 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 06:06:49,516 - agroai_sim - INFO - 
+2026-02-14 06:06:49,529 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 06:06:49,532 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 06:06:49,533 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 06:06:49,537 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 06:06:49,539 - agroai_sim - INFO - 
+2026-02-14 06:06:49,542 - agroai_sim - INFO - ============================================================
+2026-02-14 06:07:02,619 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:07:02,623 - agroai_sim - INFO - Starting simulation: 100 agents × 30 timesteps
+2026-02-14 06:07:02,626 - agroai_sim - INFO - ============================================================
+2026-02-14 06:07:02,631 - agroai_sim - INFO -   Paired design: 50 SHARED + 50 INDIVIDUAL
+2026-02-14 06:07:02,633 - agroai_sim - INFO -   Total land — SHARED: 275.2 ha, INDIVIDUAL: 275.2 ha (equal)
+2026-02-14 06:07:02,713 - agroai_sim - INFO -   Completed timestep 1/30
+2026-02-14 06:07:02,912 - agroai_sim - INFO -   Completed timestep 4/30
+2026-02-14 06:07:03,128 - agroai_sim - INFO -   Completed timestep 7/30
+2026-02-14 06:07:03,311 - agroai_sim - INFO -   Completed timestep 10/30
+2026-02-14 06:07:03,510 - agroai_sim - INFO -   Completed timestep 13/30
+2026-02-14 06:07:03,723 - agroai_sim - INFO -   Completed timestep 16/30
+2026-02-14 06:07:03,934 - agroai_sim - INFO -   Completed timestep 19/30
+2026-02-14 06:07:04,154 - agroai_sim - INFO -   Completed timestep 22/30
+2026-02-14 06:07:04,521 - agroai_sim - INFO -   Completed timestep 25/30
+2026-02-14 06:07:04,921 - agroai_sim - INFO -   Completed timestep 28/30
+2026-02-14 06:07:05,217 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 06:07:05,225 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 06:07:05,231 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 06:07:05,237 - agroai_sim - INFO - 0     SHARED       SEMI_ARID_COOL  0.81            1.90      
+2026-02-14 06:07:05,245 - agroai_sim - INFO - 1     INDIVIDUAL   SEMI_ARID_COOL  0.86            1.09      
+2026-02-14 06:07:05,251 - agroai_sim - INFO - 2     SHARED       SEMI_ARID_WARM  0.87            12.84     
+2026-02-14 06:07:05,255 - agroai_sim - INFO - 3     INDIVIDUAL   SEMI_ARID_WARM  0.99            9.37      
+2026-02-14 06:07:05,262 - agroai_sim - INFO - 4     SHARED       SEMI_ARID_COOL  0.97            15.66     
+2026-02-14 06:07:09,482 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:07:09,483 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 06:07:09,485 - agroai_sim - INFO - ============================================================
+2026-02-14 06:07:09,506 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 06:07:09,508 - agroai_sim - INFO -   SHARED Strategy: 50 agents (50.0%)
+2026-02-14 06:07:09,512 - agroai_sim - INFO -   INDIVIDUAL Strategy: 50 agents (50.0%)
+2026-02-14 06:07:09,512 - agroai_sim - INFO -   --- YIELD ---
+2026-02-14 06:07:09,512 - agroai_sim - INFO -   Average Yield (All): 6.924 t/ha
+2026-02-14 06:07:09,516 - agroai_sim - INFO -   Average Yield (SHARED): 6.921 t/ha
+2026-02-14 06:07:09,519 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 6.927 t/ha
+2026-02-14 06:07:09,529 - agroai_sim - INFO -   --- PROFIT ---
+2026-02-14 06:07:09,533 - agroai_sim - INFO -   Average Profit (All): 75.10
+2026-02-14 06:07:09,536 - agroai_sim - INFO -   Average Profit (SHARED): 86.47
+2026-02-14 06:07:09,538 - agroai_sim - INFO -   Average Profit (INDIVIDUAL): 63.73
+2026-02-14 06:07:09,556 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:07:09,560 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 06:07:09,563 - agroai_sim - INFO - ============================================================
+2026-02-14 06:07:09,600 - agroai_sim - INFO - 
+ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 06:07:09,602 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 06:07:09,606 - agroai_sim - INFO - 0     SHARED       SEMI_ARID_COOL  0.88            2.09      
+2026-02-14 06:07:09,608 - agroai_sim - INFO - 1     INDIVIDUAL   SEMI_ARID_COOL  0.88            1.27      
+2026-02-14 06:07:09,612 - agroai_sim - INFO - 2     SHARED       SEMI_ARID_WARM  0.92            14.77     
+2026-02-14 06:07:09,617 - agroai_sim - INFO - 3     INDIVIDUAL   SEMI_ARID_WARM  0.90            8.73      
+2026-02-14 06:07:09,619 - agroai_sim - INFO - 4     SHARED       SEMI_ARID_COOL  0.90            16.46     
+2026-02-14 06:07:09,619 - agroai_sim - INFO - 5     INDIVIDUAL   SEMI_ARID_COOL  0.88            10.13     
+2026-02-14 06:07:09,624 - agroai_sim - INFO - 6     SHARED       SEMI_ARID_COOL  0.91            7.05      
+2026-02-14 06:07:09,627 - agroai_sim - INFO - 7     INDIVIDUAL   SEMI_ARID_COOL  0.88            4.31      
+2026-02-14 06:07:09,632 - agroai_sim - INFO - 8     SHARED       SAHARAN         16.99           300.90    
+2026-02-14 06:07:09,633 - agroai_sim - INFO - 9     INDIVIDUAL   SAHARAN         16.67           218.66    
+2026-02-14 06:07:09,636 - agroai_sim - INFO - 10    SHARED       SAHARAN         16.99           123.26    
+2026-02-14 06:07:09,640 - agroai_sim - INFO - 11    INDIVIDUAL   SAHARAN         17.12           91.11     
+2026-02-14 06:07:09,641 - agroai_sim - INFO - 12    SHARED       SAHARAN         16.74           61.10     
+2026-02-14 06:07:09,647 - agroai_sim - INFO - 13    INDIVIDUAL   SAHARAN         16.75           45.62     
+2026-02-14 06:07:09,650 - agroai_sim - INFO - 14    SHARED       SAHARAN         17.04           296.37    
+2026-02-14 06:07:09,654 - agroai_sim - INFO - 15    INDIVIDUAL   SAHARAN         16.73           221.86    
+2026-02-14 06:07:09,656 - agroai_sim - INFO - 16    SHARED       SAHARAN         16.89           112.42    
+2026-02-14 06:07:09,657 - agroai_sim - INFO - 17    INDIVIDUAL   SAHARAN         17.09           84.51     
+2026-02-14 06:07:09,663 - agroai_sim - INFO - 18    SHARED       SEMI_ARID_WARM  0.90            16.78     
+2026-02-14 06:07:09,663 - agroai_sim - INFO - 19    INDIVIDUAL   SEMI_ARID_WARM  0.88            10.31     
+2026-02-14 06:07:09,667 - agroai_sim - INFO - 20    SHARED       SEMI_ARID_WARM  0.89            15.12     
+2026-02-14 06:07:09,669 - agroai_sim - INFO - 21    INDIVIDUAL   SEMI_ARID_WARM  0.88            9.24      
+2026-02-14 06:07:09,669 - agroai_sim - INFO - 22    SHARED       SAHARAN         16.61           40.01     
+2026-02-14 06:07:09,674 - agroai_sim - INFO - 23    INDIVIDUAL   SAHARAN         16.85           29.51     
+2026-02-14 06:07:09,682 - agroai_sim - INFO - 24    SHARED       IRRIGATED_SOUSS 16.66           71.89     
+2026-02-14 06:07:09,684 - agroai_sim - INFO - 25    INDIVIDUAL   IRRIGATED_SOUSS 16.56           52.23     
+2026-02-14 06:07:09,686 - agroai_sim - INFO - 26    SHARED       SEMI_ARID_WARM  0.88            15.27     
+2026-02-14 06:07:09,688 - agroai_sim - INFO - 27    INDIVIDUAL   SEMI_ARID_WARM  0.92            10.58     
+2026-02-14 06:07:09,692 - agroai_sim - INFO - 28    SHARED       IRRIGATED_SOUSS 16.42           197.70    
+2026-02-14 06:07:09,697 - agroai_sim - INFO - 29    INDIVIDUAL   IRRIGATED_SOUSS 16.69           152.31    
+2026-02-14 06:07:09,699 - agroai_sim - INFO - 30    SHARED       IRRIGATED_SOUSS 16.63           234.53    
+2026-02-14 06:07:09,716 - agroai_sim - INFO - 31    INDIVIDUAL   IRRIGATED_SOUSS 17.10           180.43    
+2026-02-14 06:07:09,718 - agroai_sim - INFO - 32    SHARED       ARID            0.72            9.30      
+2026-02-14 06:07:09,721 - agroai_sim - INFO - 33    INDIVIDUAL   ARID            0.71            5.07      
+2026-02-14 06:07:09,723 - agroai_sim - INFO - 34    SHARED       SUB_HUMID       1.08            5.67      
+2026-02-14 06:07:09,727 - agroai_sim - INFO - 35    INDIVIDUAL   SUB_HUMID       1.08            3.70      
+2026-02-14 06:07:09,728 - agroai_sim - INFO - 36    SHARED       SEMI_ARID_COOL  0.88            15.95     
+2026-02-14 06:07:09,734 - agroai_sim - INFO - 37    INDIVIDUAL   SEMI_ARID_COOL  0.93            11.12     
+2026-02-14 06:07:09,736 - agroai_sim - INFO - 38    SHARED       ARID            0.72            3.96      
+2026-02-14 06:07:09,739 - agroai_sim - INFO - 39    INDIVIDUAL   ARID            0.73            2.30      
+2026-02-14 06:07:09,739 - agroai_sim - INFO - 40    SHARED       SEMI_ARID_WARM  0.90            7.78      
+2026-02-14 06:07:09,745 - agroai_sim - INFO - 41    INDIVIDUAL   SEMI_ARID_WARM  0.89            4.86      
+2026-02-14 06:07:09,750 - agroai_sim - INFO - 42    SHARED       SEMI_ARID_COOL  0.89            3.61      
+2026-02-14 06:07:09,754 - agroai_sim - INFO - 43    INDIVIDUAL   SEMI_ARID_COOL  0.90            2.31      
+2026-02-14 06:07:09,756 - agroai_sim - INFO - 44    SHARED       SUB_HUMID       1.09            11.89     
+2026-02-14 06:07:09,757 - agroai_sim - INFO - 45    INDIVIDUAL   SUB_HUMID       1.09            7.97      
+2026-02-14 06:07:09,763 - agroai_sim - INFO - 46    SHARED       ARID            0.74            10.67     
+2026-02-14 06:07:09,766 - agroai_sim - INFO - 47    INDIVIDUAL   ARID            0.72            5.91      
+2026-02-14 06:07:09,770 - agroai_sim - INFO - 48    SHARED       IRRIGATED_SOUSS 16.51           134.92    
+2026-02-14 06:07:09,772 - agroai_sim - INFO - 49    INDIVIDUAL   IRRIGATED_SOUSS 16.73           99.32     
+2026-02-14 06:07:09,776 - agroai_sim - INFO - 50    SHARED       IRRIGATED_SOUSS 16.73           52.21     
+2026-02-14 06:07:09,776 - agroai_sim - INFO - 51    INDIVIDUAL   IRRIGATED_SOUSS 16.93           38.75     
+2026-02-14 06:07:09,781 - agroai_sim - INFO - 52    SHARED       SEMI_ARID_COOL  0.91            9.35      
+2026-02-14 06:07:09,784 - agroai_sim - INFO - 53    INDIVIDUAL   SEMI_ARID_COOL  0.91            6.01      
+2026-02-14 06:07:09,788 - agroai_sim - INFO - 54    SHARED       ARID            0.73            4.48      
+2026-02-14 06:07:09,788 - agroai_sim - INFO - 55    INDIVIDUAL   ARID            0.71            2.66      
+2026-02-14 06:07:09,792 - agroai_sim - INFO - 56    SHARED       SAHARAN         16.93           286.32    
+2026-02-14 06:07:09,797 - agroai_sim - INFO - 57    INDIVIDUAL   SAHARAN         17.03           219.17    
+2026-02-14 06:07:09,799 - agroai_sim - INFO - 58    SHARED       IRRIGATED_SOUSS 17.38           391.98    
+2026-02-14 06:07:09,801 - agroai_sim - INFO - 59    INDIVIDUAL   IRRIGATED_SOUSS 16.74           279.80    
+2026-02-14 06:07:09,805 - agroai_sim - INFO - 60    SHARED       ARID            0.73            4.09      
+2026-02-14 06:07:09,807 - agroai_sim - INFO - 61    INDIVIDUAL   ARID            0.71            2.28      
+2026-02-14 06:07:09,813 - agroai_sim - INFO - 62    SHARED       ARID            0.74            4.96      
+2026-02-14 06:07:09,817 - agroai_sim - INFO - 63    INDIVIDUAL   ARID            0.71            2.64      
+2026-02-14 06:07:09,820 - agroai_sim - INFO - 64    SHARED       ARID            0.70            3.38      
+2026-02-14 06:07:09,824 - agroai_sim - INFO - 65    INDIVIDUAL   ARID            0.69            1.87      
+2026-02-14 06:07:09,826 - agroai_sim - INFO - 66    SHARED       SUB_HUMID       1.09            19.26     
+2026-02-14 06:07:09,830 - agroai_sim - INFO - 67    INDIVIDUAL   SUB_HUMID       1.06            11.85     
+2026-02-14 06:07:09,830 - agroai_sim - INFO - 68    SHARED       ARID            0.71            12.51     
+2026-02-14 06:07:09,838 - agroai_sim - INFO - 69    INDIVIDUAL   ARID            0.73            7.62      
+2026-02-14 06:07:09,840 - agroai_sim - INFO - 70    SHARED       SEMI_ARID_COOL  0.91            4.55      
+2026-02-14 06:07:09,843 - agroai_sim - INFO - 71    INDIVIDUAL   SEMI_ARID_COOL  0.91            2.79      
+2026-02-14 06:07:09,849 - agroai_sim - INFO - 72    SHARED       IRRIGATED_SOUSS 17.05           210.93    
+2026-02-14 06:07:09,851 - agroai_sim - INFO - 73    INDIVIDUAL   IRRIGATED_SOUSS 16.86           153.82    
+2026-02-14 06:07:09,854 - agroai_sim - INFO - 74    SHARED       SUB_HUMID       1.07            9.35      
+2026-02-14 06:07:09,856 - agroai_sim - INFO - 75    INDIVIDUAL   SUB_HUMID       1.10            6.48      
+2026-02-14 06:07:09,862 - agroai_sim - INFO - 76    SHARED       SAHARAN         16.76           255.43    
+2026-02-14 06:07:09,866 - agroai_sim - INFO - 77    INDIVIDUAL   SAHARAN         17.13           198.91    
+2026-02-14 06:07:09,871 - agroai_sim - INFO - 78    SHARED       SUB_HUMID       1.07            4.41      
+2026-02-14 06:07:09,874 - agroai_sim - INFO - 79    INDIVIDUAL   SUB_HUMID       1.07            2.99      
+2026-02-14 06:07:09,879 - agroai_sim - INFO - 80    SHARED       ARID            0.71            6.01      
+2026-02-14 06:07:09,881 - agroai_sim - INFO - 81    INDIVIDUAL   ARID            0.70            3.34      
+2026-02-14 06:07:09,886 - agroai_sim - INFO - 82    SHARED       SAHARAN         16.62           369.91    
+2026-02-14 06:07:09,888 - agroai_sim - INFO - 83    INDIVIDUAL   SAHARAN         16.64           271.56    
+2026-02-14 06:07:09,892 - agroai_sim - INFO - 84    SHARED       IRRIGATED_SOUSS 17.24           361.98    
+2026-02-14 06:07:09,896 - agroai_sim - INFO - 85    INDIVIDUAL   IRRIGATED_SOUSS 16.69           260.03    
+2026-02-14 06:07:09,900 - agroai_sim - INFO - 86    SHARED       SEMI_ARID_WARM  0.88            2.63      
+2026-02-14 06:07:09,900 - agroai_sim - INFO - 87    INDIVIDUAL   SEMI_ARID_WARM  0.90            1.68      
+2026-02-14 06:07:09,904 - agroai_sim - INFO - 88    SHARED       SEMI_ARID_WARM  0.88            6.68      
+2026-02-14 06:07:09,908 - agroai_sim - INFO - 89    INDIVIDUAL   SEMI_ARID_WARM  0.92            4.69      
+2026-02-14 06:07:09,912 - agroai_sim - INFO - 90    SHARED       SAHARAN         16.25           311.85    
+2026-02-14 06:07:09,915 - agroai_sim - INFO - 91    INDIVIDUAL   SAHARAN         17.10           247.99    
+2026-02-14 06:07:09,918 - agroai_sim - INFO - 92    SHARED       ARID            0.72            2.77      
+2026-02-14 06:07:09,921 - agroai_sim - INFO - 93    INDIVIDUAL   ARID            0.74            1.64      
+2026-02-14 06:07:09,924 - agroai_sim - INFO - 94    SHARED       ARID            0.71            9.56      
+2026-02-14 06:07:09,929 - agroai_sim - INFO - 95    INDIVIDUAL   ARID            0.72            5.85      
+2026-02-14 06:07:09,930 - agroai_sim - INFO - 96    SHARED       SEMI_ARID_COOL  0.94            14.01     
+2026-02-14 06:07:09,934 - agroai_sim - INFO - 97    INDIVIDUAL   SEMI_ARID_COOL  0.90            8.14      
+2026-02-14 06:07:09,936 - agroai_sim - INFO - 98    SHARED       SAHARAN         16.79           235.52    
+2026-02-14 06:07:09,938 - agroai_sim - INFO - 99    INDIVIDUAL   SAHARAN         16.21           170.64    
+2026-02-14 06:07:29,560 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:07:29,571 - agroai_sim - INFO - ============================================================
+2026-02-14 06:07:29,603 - agroai_sim - INFO - 
+2026-02-14 06:07:29,618 - agroai_sim - INFO -     - Interactive plots with filtering
+2026-02-14 06:07:29,620 - agroai_sim - INFO -     - Performance metrics overview
+2026-02-14 06:07:29,622 - agroai_sim - INFO -     - Zone analysis and distributions
+2026-02-14 06:07:29,624 - agroai_sim - INFO -     - Raw data explorer
+2026-02-14 06:07:29,626 - agroai_sim - INFO - 
+2026-02-14 06:07:29,639 - agroai_sim - INFO -    solara run dashboard_solara.py
+2026-02-14 06:07:29,641 - agroai_sim - INFO - 
+2026-02-14 06:07:29,652 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:07:29,664 - agroai_sim - INFO - ============================================================
+2026-02-14 06:07:29,666 - agroai_sim - INFO - 
+2026-02-14 06:07:29,677 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 06:07:29,677 - agroai_sim - INFO -    • SHARED Strategy: 50 farmers (50.0%)
+2026-02-14 06:07:29,681 - agroai_sim - INFO -    • Average Yield: 6.924 t/ha
+2026-02-14 06:07:29,683 - agroai_sim - INFO -    • SHARED Advantage: -0.006 t/ha
+2026-02-14 06:07:29,686 - agroai_sim - INFO - 
+2026-02-14 06:07:29,696 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 06:07:29,697 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 06:07:29,699 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 06:07:29,699 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 06:07:29,704 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 06:07:29,706 - agroai_sim - INFO - 
+2026-02-14 06:07:29,716 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 06:07:29,720 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 06:07:29,720 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 06:07:29,725 - agroai_sim - INFO - 
+2026-02-14 06:07:29,738 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 06:07:29,743 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 06:07:29,747 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 06:07:29,750 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 06:07:29,754 - agroai_sim - INFO - 
+2026-02-14 06:07:29,755 - agroai_sim - INFO - ============================================================
+2026-02-14 06:27:40,881 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:27:40,882 - agroai_sim - INFO - Starting simulation: 100 agents × 30 timesteps
+2026-02-14 06:27:40,891 - agroai_sim - INFO - ============================================================
+2026-02-14 06:27:40,900 - agroai_sim - INFO -   Paired design: 50 SHARED + 50 INDIVIDUAL
+2026-02-14 06:27:40,904 - agroai_sim - INFO -   Total land — SHARED: 304.4 ha, INDIVIDUAL: 304.4 ha (equal)
+2026-02-14 06:27:41,063 - agroai_sim - INFO -   Completed timestep 1/30
+2026-02-14 06:27:41,453 - agroai_sim - INFO -   Completed timestep 4/30
+2026-02-14 06:27:41,741 - agroai_sim - INFO -   Completed timestep 7/30
+2026-02-14 06:27:41,954 - agroai_sim - INFO -   Completed timestep 10/30
+2026-02-14 06:27:42,226 - agroai_sim - INFO -   Completed timestep 13/30
+2026-02-14 06:27:42,408 - agroai_sim - INFO -   Completed timestep 16/30
+2026-02-14 06:27:42,640 - agroai_sim - INFO -   Completed timestep 19/30
+2026-02-14 06:27:42,810 - agroai_sim - INFO -   Completed timestep 22/30
+2026-02-14 06:27:43,147 - agroai_sim - INFO -   Completed timestep 25/30
+2026-02-14 06:27:43,557 - agroai_sim - INFO -   Completed timestep 28/30
+2026-02-14 06:27:43,851 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 06:27:43,859 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 06:27:43,865 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 06:27:43,878 - agroai_sim - INFO - 0     SHARED       SEMI_ARID_COOL  0.79            4.83      
+2026-02-14 06:27:43,883 - agroai_sim - INFO - 1     INDIVIDUAL   SEMI_ARID_COOL  1.02            6.28      
+2026-02-14 06:27:43,893 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 14.35           17.92     
+2026-02-14 06:27:43,902 - agroai_sim - INFO - 3     INDIVIDUAL   IRRIGATED_SOUSS 17.03           21.26     
+2026-02-14 06:27:43,910 - agroai_sim - INFO - 4     SHARED       SAHARAN         15.09           81.72     
+2026-02-14 06:27:48,386 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:27:48,388 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 06:27:48,391 - agroai_sim - INFO - ============================================================
+2026-02-14 06:27:48,423 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 06:27:48,427 - agroai_sim - INFO -   SHARED Strategy: 50 agents (50.0%)
+2026-02-14 06:27:48,434 - agroai_sim - INFO -   INDIVIDUAL Strategy: 50 agents (50.0%)
+2026-02-14 06:27:48,436 - agroai_sim - INFO -   --- YIELD ---
+2026-02-14 06:27:48,440 - agroai_sim - INFO -   Average Yield (All): 4.731 t/ha
+2026-02-14 06:27:48,442 - agroai_sim - INFO -   Average Yield (SHARED): 4.744 t/ha
+2026-02-14 06:27:48,444 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 4.719 t/ha
+2026-02-14 06:27:48,454 - agroai_sim - INFO -   --- PROFIT ---
+2026-02-14 06:27:48,456 - agroai_sim - INFO -   Average Profit (All): 25.41
+2026-02-14 06:27:48,461 - agroai_sim - INFO -   Average Profit (SHARED): 25.38
+2026-02-14 06:27:48,465 - agroai_sim - INFO -   Average Profit (INDIVIDUAL): 25.44
+2026-02-14 06:27:48,490 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:27:48,506 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 06:27:48,508 - agroai_sim - INFO - ============================================================
+2026-02-14 06:27:48,571 - agroai_sim - INFO - 
+ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 06:27:48,578 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 06:27:48,581 - agroai_sim - INFO - 0     SHARED       SEMI_ARID_COOL  0.89            5.48      
+2026-02-14 06:27:48,585 - agroai_sim - INFO - 1     INDIVIDUAL   SEMI_ARID_COOL  0.88            5.39      
+2026-02-14 06:27:48,589 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 17.12           21.37     
+2026-02-14 06:27:48,598 - agroai_sim - INFO - 3     INDIVIDUAL   IRRIGATED_SOUSS 16.58           20.70     
+2026-02-14 06:27:48,602 - agroai_sim - INFO - 4     SHARED       SAHARAN         17.16           92.96     
+2026-02-14 06:27:48,604 - agroai_sim - INFO - 5     INDIVIDUAL   SAHARAN         16.46           89.17     
+2026-02-14 06:27:48,616 - agroai_sim - INFO - 6     SHARED       IRRIGATED_SOUSS 16.63           131.01    
+2026-02-14 06:27:48,620 - agroai_sim - INFO - 7     INDIVIDUAL   IRRIGATED_SOUSS 16.67           131.39    
+2026-02-14 06:27:48,623 - agroai_sim - INFO - 8     SHARED       SEMI_ARID_WARM  0.90            8.89      
+2026-02-14 06:27:48,626 - agroai_sim - INFO - 9     INDIVIDUAL   SEMI_ARID_WARM  0.92            9.10      
+2026-02-14 06:27:48,629 - agroai_sim - INFO - 10    SHARED       SEMI_ARID_WARM  0.91            6.32      
+2026-02-14 06:27:48,633 - agroai_sim - INFO - 11    INDIVIDUAL   SEMI_ARID_WARM  0.91            6.32      
+2026-02-14 06:27:48,637 - agroai_sim - INFO - 12    SHARED       SEMI_ARID_COOL  0.92            5.37      
+2026-02-14 06:27:48,639 - agroai_sim - INFO - 13    INDIVIDUAL   SEMI_ARID_COOL  0.89            5.21      
+2026-02-14 06:27:48,643 - agroai_sim - INFO - 14    SHARED       IRRIGATED_SOUSS 17.11           64.02     
+2026-02-14 06:27:48,647 - agroai_sim - INFO - 15    INDIVIDUAL   IRRIGATED_SOUSS 16.53           61.86     
+2026-02-14 06:27:48,651 - agroai_sim - INFO - 16    SHARED       SEMI_ARID_WARM  0.91            5.60      
+2026-02-14 06:27:48,655 - agroai_sim - INFO - 17    INDIVIDUAL   SEMI_ARID_WARM  0.91            5.55      
+2026-02-14 06:27:48,659 - agroai_sim - INFO - 18    SHARED       SAHARAN         16.38           155.90    
+2026-02-14 06:27:48,661 - agroai_sim - INFO - 19    INDIVIDUAL   SAHARAN         17.15           163.21    
+2026-02-14 06:27:48,671 - agroai_sim - INFO - 20    SHARED       SEMI_ARID_WARM  0.90            7.09      
+2026-02-14 06:27:48,673 - agroai_sim - INFO - 21    INDIVIDUAL   SEMI_ARID_WARM  0.88            6.96      
+2026-02-14 06:27:48,676 - agroai_sim - INFO - 22    SHARED       IRRIGATED_SOUSS 16.71           104.98    
+2026-02-14 06:27:48,679 - agroai_sim - INFO - 23    INDIVIDUAL   IRRIGATED_SOUSS 16.34           102.64    
+2026-02-14 06:27:48,681 - agroai_sim - INFO - 24    SHARED       SUB_HUMID       1.06            10.31     
+2026-02-14 06:27:48,685 - agroai_sim - INFO - 25    INDIVIDUAL   SUB_HUMID       1.08            10.49     
+2026-02-14 06:27:48,689 - agroai_sim - INFO - 26    SHARED       SUB_HUMID       1.08            8.00      
+2026-02-14 06:27:48,693 - agroai_sim - INFO - 27    INDIVIDUAL   SUB_HUMID       1.09            8.05      
+2026-02-14 06:27:48,697 - agroai_sim - INFO - 28    SHARED       SEMI_ARID_COOL  0.93            5.87      
+2026-02-14 06:27:48,701 - agroai_sim - INFO - 29    INDIVIDUAL   SEMI_ARID_COOL  0.92            5.79      
+2026-02-14 06:27:48,705 - agroai_sim - INFO - 30    SHARED       SUB_HUMID       1.08            7.08      
+2026-02-14 06:27:48,707 - agroai_sim - INFO - 31    INDIVIDUAL   SUB_HUMID       1.05            6.88      
+2026-02-14 06:27:48,711 - agroai_sim - INFO - 32    SHARED       SAHARAN         16.34           77.19     
+2026-02-14 06:27:48,715 - agroai_sim - INFO - 33    INDIVIDUAL   SAHARAN         16.38           77.36     
+2026-02-14 06:27:48,721 - agroai_sim - INFO - 34    SHARED       SEMI_ARID_WARM  0.93            7.03      
+2026-02-14 06:27:48,726 - agroai_sim - INFO - 35    INDIVIDUAL   SEMI_ARID_WARM  0.90            6.81      
+2026-02-14 06:27:48,730 - agroai_sim - INFO - 36    SHARED       SEMI_ARID_WARM  0.89            8.69      
+2026-02-14 06:27:48,734 - agroai_sim - INFO - 37    INDIVIDUAL   SEMI_ARID_WARM  0.90            8.79      
+2026-02-14 06:27:48,738 - agroai_sim - INFO - 38    SHARED       SEMI_ARID_WARM  0.92            7.84      
+2026-02-14 06:27:48,745 - agroai_sim - INFO - 39    INDIVIDUAL   SEMI_ARID_WARM  0.90            7.71      
+2026-02-14 06:27:48,752 - agroai_sim - INFO - 40    SHARED       SUB_HUMID       1.05            7.19      
+2026-02-14 06:27:48,756 - agroai_sim - INFO - 41    INDIVIDUAL   SUB_HUMID       1.09            7.47      
+2026-02-14 06:27:48,760 - agroai_sim - INFO - 42    SHARED       ARID            0.72            5.41      
+2026-02-14 06:27:48,766 - agroai_sim - INFO - 43    INDIVIDUAL   ARID            0.73            5.49      
+2026-02-14 06:27:48,782 - agroai_sim - INFO - 44    SHARED       SEMI_ARID_COOL  0.88            1.58      
+2026-02-14 06:27:48,786 - agroai_sim - INFO - 45    INDIVIDUAL   SEMI_ARID_COOL  0.89            1.60      
+2026-02-14 06:27:48,790 - agroai_sim - INFO - 46    SHARED       ARID            0.72            4.43      
+2026-02-14 06:27:48,795 - agroai_sim - INFO - 47    INDIVIDUAL   ARID            0.71            4.40      
+2026-02-14 06:27:48,798 - agroai_sim - INFO - 48    SHARED       IRRIGATED_SOUSS 16.55           74.26     
+2026-02-14 06:27:48,802 - agroai_sim - INFO - 49    INDIVIDUAL   IRRIGATED_SOUSS 16.92           75.91     
+2026-02-14 06:27:48,806 - agroai_sim - INFO - 50    SHARED       ARID            0.72            3.19      
+2026-02-14 06:27:48,812 - agroai_sim - INFO - 51    INDIVIDUAL   ARID            0.72            3.19      
+2026-02-14 06:27:48,818 - agroai_sim - INFO - 52    SHARED       ARID            0.72            1.61      
+2026-02-14 06:27:48,820 - agroai_sim - INFO - 53    INDIVIDUAL   ARID            0.72            1.61      
+2026-02-14 06:27:48,824 - agroai_sim - INFO - 54    SHARED       SEMI_ARID_COOL  0.92            2.43      
+2026-02-14 06:27:48,828 - agroai_sim - INFO - 55    INDIVIDUAL   SEMI_ARID_COOL  0.89            2.35      
+2026-02-14 06:27:48,833 - agroai_sim - INFO - 56    SHARED       SEMI_ARID_COOL  0.88            3.69      
+2026-02-14 06:27:48,837 - agroai_sim - INFO - 57    INDIVIDUAL   SEMI_ARID_COOL  0.90            3.78      
+2026-02-14 06:27:48,842 - agroai_sim - INFO - 58    SHARED       IRRIGATED_SOUSS 16.90           82.36     
+2026-02-14 06:27:48,845 - agroai_sim - INFO - 59    INDIVIDUAL   IRRIGATED_SOUSS 16.94           82.53     
+2026-02-14 06:27:48,851 - agroai_sim - INFO - 60    SHARED       SEMI_ARID_COOL  0.91            5.01      
+2026-02-14 06:27:48,856 - agroai_sim - INFO - 61    INDIVIDUAL   SEMI_ARID_COOL  0.89            4.91      
+2026-02-14 06:27:48,860 - agroai_sim - INFO - 62    SHARED       SEMI_ARID_WARM  0.90            3.02      
+2026-02-14 06:27:48,868 - agroai_sim - INFO - 63    INDIVIDUAL   SEMI_ARID_WARM  0.90            3.03      
+2026-02-14 06:27:48,872 - agroai_sim - INFO - 64    SHARED       SEMI_ARID_WARM  0.90            2.74      
+2026-02-14 06:27:48,876 - agroai_sim - INFO - 65    INDIVIDUAL   SEMI_ARID_WARM  0.91            2.77      
+2026-02-14 06:27:48,882 - agroai_sim - INFO - 66    SHARED       IRRIGATED_SOUSS 17.20           115.20    
+2026-02-14 06:27:48,886 - agroai_sim - INFO - 67    INDIVIDUAL   IRRIGATED_SOUSS 17.33           116.09    
+2026-02-14 06:27:48,890 - agroai_sim - INFO - 68    SHARED       SEMI_ARID_COOL  0.92            4.66      
+2026-02-14 06:27:48,894 - agroai_sim - INFO - 69    INDIVIDUAL   SEMI_ARID_COOL  0.91            4.62      
+2026-02-14 06:27:48,896 - agroai_sim - INFO - 70    SHARED       SUB_HUMID       1.07            6.13      
+2026-02-14 06:27:48,901 - agroai_sim - INFO - 71    INDIVIDUAL   SUB_HUMID       1.08            6.15      
+2026-02-14 06:27:48,906 - agroai_sim - INFO - 72    SHARED       SUB_HUMID       1.10            9.76      
+2026-02-14 06:27:48,912 - agroai_sim - INFO - 73    INDIVIDUAL   SUB_HUMID       1.08            9.61      
+2026-02-14 06:27:48,916 - agroai_sim - INFO - 74    SHARED       SUB_HUMID       1.10            10.86     
+2026-02-14 06:27:48,921 - agroai_sim - INFO - 75    INDIVIDUAL   SUB_HUMID       1.06            10.46     
+2026-02-14 06:27:48,927 - agroai_sim - INFO - 76    SHARED       SUB_HUMID       1.06            7.61      
+2026-02-14 06:27:48,935 - agroai_sim - INFO - 77    INDIVIDUAL   SUB_HUMID       1.06            7.56      
+2026-02-14 06:27:48,940 - agroai_sim - INFO - 78    SHARED       SUB_HUMID       1.08            2.71      
+2026-02-14 06:27:48,945 - agroai_sim - INFO - 79    INDIVIDUAL   SUB_HUMID       1.04            2.62      
+2026-02-14 06:27:48,950 - agroai_sim - INFO - 80    SHARED       SAHARAN         17.08           19.01     
+2026-02-14 06:27:48,955 - agroai_sim - INFO - 81    INDIVIDUAL   SAHARAN         16.32           18.16     
+2026-02-14 06:27:48,962 - agroai_sim - INFO - 82    SHARED       SEMI_ARID_COOL  0.90            4.00      
+2026-02-14 06:27:48,967 - agroai_sim - INFO - 83    INDIVIDUAL   SEMI_ARID_COOL  0.92            4.11      
+2026-02-14 06:27:48,969 - agroai_sim - INFO - 84    SHARED       SUB_HUMID       1.10            8.99      
+2026-02-14 06:27:48,975 - agroai_sim - INFO - 85    INDIVIDUAL   SUB_HUMID       1.09            8.90      
+2026-02-14 06:27:48,982 - agroai_sim - INFO - 86    SHARED       SAHARAN         16.48           100.07    
+2026-02-14 06:27:48,986 - agroai_sim - INFO - 87    INDIVIDUAL   SAHARAN         16.92           102.70    
+2026-02-14 06:27:48,989 - agroai_sim - INFO - 88    SHARED       SUB_HUMID       1.04            10.01     
+2026-02-14 06:27:48,994 - agroai_sim - INFO - 89    INDIVIDUAL   SUB_HUMID       1.09            10.51     
+2026-02-14 06:27:48,997 - agroai_sim - INFO - 90    SHARED       SEMI_ARID_WARM  0.90            6.06      
+2026-02-14 06:27:49,002 - agroai_sim - INFO - 91    INDIVIDUAL   SEMI_ARID_WARM  0.89            6.01      
+2026-02-14 06:27:49,004 - agroai_sim - INFO - 92    SHARED       ARID            0.74            1.94      
+2026-02-14 06:27:49,007 - agroai_sim - INFO - 93    INDIVIDUAL   ARID            0.72            1.89      
+2026-02-14 06:27:49,012 - agroai_sim - INFO - 94    SHARED       SEMI_ARID_WARM  0.91            8.90      
+2026-02-14 06:27:49,016 - agroai_sim - INFO - 95    INDIVIDUAL   SEMI_ARID_WARM  0.90            8.82      
+2026-02-14 06:27:49,018 - agroai_sim - INFO - 96    SHARED       SUB_HUMID       1.08            9.57      
+2026-02-14 06:27:49,024 - agroai_sim - INFO - 97    INDIVIDUAL   SUB_HUMID       1.09            9.61      
+2026-02-14 06:27:49,026 - agroai_sim - INFO - 98    SHARED       SEMI_ARID_WARM  0.90            5.79      
+2026-02-14 06:27:49,026 - agroai_sim - INFO - 99    INDIVIDUAL   SEMI_ARID_WARM  0.92            5.87      
+2026-02-14 06:28:00,985 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 06:28:00,989 - agroai_sim - INFO - ============================================================
+2026-02-14 06:28:00,992 - agroai_sim - INFO - Agricultural Agent-Based Simulation
+2026-02-14 06:28:00,997 - agroai_sim - INFO - Agents: 100
+2026-02-14 06:28:00,999 - agroai_sim - INFO - Timesteps: 30
+2026-02-14 06:28:01,004 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 06:28:01,009 - agroai_sim - INFO - ============================================================
+2026-02-14 06:28:01,030 - agroai_sim - INFO - Loaded 6 zones
+2026-02-14 06:28:01,033 - agroai_sim - INFO - Loaded 24 crops
+2026-02-14 06:28:01,038 - agroai_sim - INFO - Loaded climate profiles for all zones
+2026-02-14 06:28:01,038 - agroai_sim - INFO - Loaded soil moisture data
+2026-02-14 06:28:01,195 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:28:01,195 - agroai_sim - INFO - Starting simulation: 100 agents × 30 timesteps
+2026-02-14 06:28:01,195 - agroai_sim - INFO - ============================================================
+2026-02-14 06:28:01,206 - agroai_sim - INFO -   Paired design: 50 SHARED + 50 INDIVIDUAL
+2026-02-14 06:28:01,208 - agroai_sim - INFO -   Total land — SHARED: 253.4 ha, INDIVIDUAL: 253.4 ha (equal)
+2026-02-14 06:28:01,298 - agroai_sim - INFO -   Completed timestep 1/30
+2026-02-14 06:28:01,537 - agroai_sim - INFO -   Completed timestep 4/30
+2026-02-14 06:28:01,714 - agroai_sim - INFO -   Completed timestep 7/30
+2026-02-14 06:28:01,931 - agroai_sim - INFO -   Completed timestep 10/30
+2026-02-14 06:28:02,272 - agroai_sim - INFO -   Completed timestep 13/30
+2026-02-14 06:28:02,599 - agroai_sim - INFO -   Completed timestep 16/30
+2026-02-14 06:28:02,870 - agroai_sim - INFO -   Completed timestep 19/30
+2026-02-14 06:28:03,147 - agroai_sim - INFO -   Completed timestep 22/30
+2026-02-14 06:28:03,339 - agroai_sim - INFO -   Completed timestep 25/30
+2026-02-14 06:28:03,556 - agroai_sim - INFO -   Completed timestep 28/30
+2026-02-14 06:28:03,853 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 06:28:03,860 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 06:28:03,867 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 06:28:03,879 - agroai_sim - INFO - 0     SHARED       IRRIGATED_SOUSS 15.62           31.26     
+2026-02-14 06:28:03,889 - agroai_sim - INFO - 1     INDIVIDUAL   IRRIGATED_SOUSS 18.74           37.52     
+2026-02-14 06:28:03,897 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 17.74           61.66     
+2026-02-14 06:28:03,905 - agroai_sim - INFO - 3     INDIVIDUAL   IRRIGATED_SOUSS 14.79           51.40     
+2026-02-14 06:28:03,914 - agroai_sim - INFO - 4     SHARED       SEMI_ARID_WARM  0.79            1.78      
+2026-02-14 06:28:04,032 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:28:04,034 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 06:28:04,037 - agroai_sim - INFO - ============================================================
+2026-02-14 06:28:04,056 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 06:28:04,056 - agroai_sim - INFO -   SHARED Strategy: 50 agents (50.0%)
+2026-02-14 06:28:04,066 - agroai_sim - INFO -   INDIVIDUAL Strategy: 50 agents (50.0%)
+2026-02-14 06:28:04,068 - agroai_sim - INFO -   --- YIELD ---
+2026-02-14 06:28:04,070 - agroai_sim - INFO -   Average Yield (All): 7.230 t/ha
+2026-02-14 06:28:04,073 - agroai_sim - INFO -   Average Yield (SHARED): 7.226 t/ha
+2026-02-14 06:28:04,075 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.233 t/ha
+2026-02-14 06:28:04,085 - agroai_sim - INFO -   --- PROFIT ---
+2026-02-14 06:28:04,088 - agroai_sim - INFO -   Average Profit (All): 34.93
+2026-02-14 06:28:04,089 - agroai_sim - INFO -   Average Profit (SHARED): 34.92
+2026-02-14 06:28:04,092 - agroai_sim - INFO -   Average Profit (INDIVIDUAL): 34.95
+2026-02-14 06:28:04,107 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:28:04,107 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 06:28:04,113 - agroai_sim - INFO - ============================================================
+2026-02-14 06:28:04,153 - agroai_sim - INFO - 
+ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 06:28:04,155 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 06:28:04,159 - agroai_sim - INFO - 0     SHARED       IRRIGATED_SOUSS 16.79           33.61     
+2026-02-14 06:28:04,164 - agroai_sim - INFO - 1     INDIVIDUAL   IRRIGATED_SOUSS 16.71           33.45     
+2026-02-14 06:28:04,166 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 16.82           58.46     
+2026-02-14 06:28:04,166 - agroai_sim - INFO - 3     INDIVIDUAL   IRRIGATED_SOUSS 16.75           58.22     
+2026-02-14 06:28:04,171 - agroai_sim - INFO - 4     SHARED       SEMI_ARID_WARM  0.89            2.02      
+2026-02-14 06:28:04,171 - agroai_sim - INFO - 5     INDIVIDUAL   SEMI_ARID_WARM  0.91            2.06      
+2026-02-14 06:28:04,177 - agroai_sim - INFO - 6     SHARED       SUB_HUMID       1.09            7.73      
+2026-02-14 06:28:04,179 - agroai_sim - INFO - 7     INDIVIDUAL   SUB_HUMID       1.07            7.62      
+2026-02-14 06:28:04,181 - agroai_sim - INFO - 8     SHARED       SAHARAN         16.75           29.85     
+2026-02-14 06:28:04,184 - agroai_sim - INFO - 9     INDIVIDUAL   SAHARAN         16.89           30.10     
+2026-02-14 06:28:04,186 - agroai_sim - INFO - 10    SHARED       ARID            0.74            0.96      
+2026-02-14 06:28:04,189 - agroai_sim - INFO - 11    INDIVIDUAL   ARID            0.71            0.92      
+2026-02-14 06:28:04,189 - agroai_sim - INFO - 12    SHARED       SUB_HUMID       1.11            3.28      
+2026-02-14 06:28:04,189 - agroai_sim - INFO - 13    INDIVIDUAL   SUB_HUMID       1.10            3.27      
+2026-02-14 06:28:04,196 - agroai_sim - INFO - 14    SHARED       SAHARAN         16.92           108.59    
+2026-02-14 06:28:04,199 - agroai_sim - INFO - 15    INDIVIDUAL   SAHARAN         17.07           109.54    
+2026-02-14 06:28:04,203 - agroai_sim - INFO - 16    SHARED       SAHARAN         16.87           47.07     
+2026-02-14 06:28:04,207 - agroai_sim - INFO - 17    INDIVIDUAL   SAHARAN         16.48           45.98     
+2026-02-14 06:28:04,208 - agroai_sim - INFO - 18    SHARED       IRRIGATED_SOUSS 16.31           119.28    
+2026-02-14 06:28:04,212 - agroai_sim - INFO - 19    INDIVIDUAL   IRRIGATED_SOUSS 16.89           123.51    
+2026-02-14 06:28:04,214 - agroai_sim - INFO - 20    SHARED       ARID            0.74            2.22      
+2026-02-14 06:28:04,214 - agroai_sim - INFO - 21    INDIVIDUAL   ARID            0.72            2.15      
+2026-02-14 06:28:04,220 - agroai_sim - INFO - 22    SHARED       SAHARAN         16.71           58.55     
+2026-02-14 06:28:04,221 - agroai_sim - INFO - 23    INDIVIDUAL   SAHARAN         16.22           56.83     
+2026-02-14 06:28:04,224 - agroai_sim - INFO - 24    SHARED       SUB_HUMID       1.08            8.42      
+2026-02-14 06:28:04,228 - agroai_sim - INFO - 25    INDIVIDUAL   SUB_HUMID       1.08            8.48      
+2026-02-14 06:28:04,231 - agroai_sim - INFO - 26    SHARED       SEMI_ARID_WARM  0.92            6.70      
+2026-02-14 06:28:04,231 - agroai_sim - INFO - 27    INDIVIDUAL   SEMI_ARID_WARM  0.91            6.63      
+2026-02-14 06:28:04,236 - agroai_sim - INFO - 28    SHARED       SEMI_ARID_COOL  0.92            3.22      
+2026-02-14 06:28:04,239 - agroai_sim - INFO - 29    INDIVIDUAL   SEMI_ARID_COOL  0.91            3.20      
+2026-02-14 06:28:04,242 - agroai_sim - INFO - 30    SHARED       SEMI_ARID_WARM  0.91            8.77      
+2026-02-14 06:28:04,243 - agroai_sim - INFO - 31    INDIVIDUAL   SEMI_ARID_WARM  0.90            8.68      
+2026-02-14 06:28:04,246 - agroai_sim - INFO - 32    SHARED       SEMI_ARID_COOL  0.89            1.71      
+2026-02-14 06:28:04,247 - agroai_sim - INFO - 33    INDIVIDUAL   SEMI_ARID_COOL  0.89            1.71      
+2026-02-14 06:28:04,250 - agroai_sim - INFO - 34    SHARED       ARID            0.73            1.37      
+2026-02-14 06:28:04,254 - agroai_sim - INFO - 35    INDIVIDUAL   ARID            0.72            1.34      
+2026-02-14 06:28:04,256 - agroai_sim - INFO - 36    SHARED       SEMI_ARID_COOL  0.90            5.76      
+2026-02-14 06:28:04,258 - agroai_sim - INFO - 37    INDIVIDUAL   SEMI_ARID_COOL  0.90            5.82      
+2026-02-14 06:28:04,261 - agroai_sim - INFO - 38    SHARED       SUB_HUMID       1.08            8.17      
+2026-02-14 06:28:04,266 - agroai_sim - INFO - 39    INDIVIDUAL   SUB_HUMID       1.07            8.13      
+2026-02-14 06:28:04,269 - agroai_sim - INFO - 40    SHARED       SAHARAN         15.95           33.88     
+2026-02-14 06:28:04,272 - agroai_sim - INFO - 41    INDIVIDUAL   SAHARAN         16.91           35.90     
+2026-02-14 06:28:04,274 - agroai_sim - INFO - 42    SHARED       ARID            0.72            1.23      
+2026-02-14 06:28:04,278 - agroai_sim - INFO - 43    INDIVIDUAL   ARID            0.73            1.25      
+2026-02-14 06:28:04,280 - agroai_sim - INFO - 44    SHARED       SEMI_ARID_COOL  0.89            7.56      
+2026-02-14 06:28:04,285 - agroai_sim - INFO - 45    INDIVIDUAL   SEMI_ARID_COOL  0.88            7.48      
+2026-02-14 06:28:04,287 - agroai_sim - INFO - 46    SHARED       SAHARAN         16.62           149.10    
+2026-02-14 06:28:04,291 - agroai_sim - INFO - 47    INDIVIDUAL   SAHARAN         16.56           148.53    
+2026-02-14 06:28:04,293 - agroai_sim - INFO - 48    SHARED       SEMI_ARID_COOL  0.90            5.60      
+2026-02-14 06:28:04,297 - agroai_sim - INFO - 49    INDIVIDUAL   SEMI_ARID_COOL  0.90            5.57      
+2026-02-14 06:28:04,297 - agroai_sim - INFO - 50    SHARED       IRRIGATED_SOUSS 16.57           26.95     
+2026-02-14 06:28:04,302 - agroai_sim - INFO - 51    INDIVIDUAL   IRRIGATED_SOUSS 17.13           27.85     
+2026-02-14 06:28:04,302 - agroai_sim - INFO - 52    SHARED       IRRIGATED_SOUSS 16.67           50.86     
+2026-02-14 06:28:04,302 - agroai_sim - INFO - 53    INDIVIDUAL   IRRIGATED_SOUSS 16.68           50.89     
+2026-02-14 06:28:04,309 - agroai_sim - INFO - 54    SHARED       SEMI_ARID_COOL  0.92            9.05      
+2026-02-14 06:28:04,312 - agroai_sim - INFO - 55    INDIVIDUAL   SEMI_ARID_COOL  0.92            9.07      
+2026-02-14 06:28:04,316 - agroai_sim - INFO - 56    SHARED       SEMI_ARID_WARM  0.89            7.83      
+2026-02-14 06:28:04,318 - agroai_sim - INFO - 57    INDIVIDUAL   SEMI_ARID_WARM  0.90            7.94      
+2026-02-14 06:28:04,322 - agroai_sim - INFO - 58    SHARED       ARID            0.71            2.49      
+2026-02-14 06:28:04,324 - agroai_sim - INFO - 59    INDIVIDUAL   ARID            0.72            2.54      
+2026-02-14 06:28:04,325 - agroai_sim - INFO - 60    SHARED       IRRIGATED_SOUSS 17.03           144.90    
+2026-02-14 06:28:04,331 - agroai_sim - INFO - 61    INDIVIDUAL   IRRIGATED_SOUSS 17.29           147.12    
+2026-02-14 06:28:04,333 - agroai_sim - INFO - 62    SHARED       SEMI_ARID_WARM  0.92            3.99      
+2026-02-14 06:28:04,335 - agroai_sim - INFO - 63    INDIVIDUAL   SEMI_ARID_WARM  0.90            3.91      
+2026-02-14 06:28:04,337 - agroai_sim - INFO - 64    SHARED       SEMI_ARID_WARM  0.88            6.21      
+2026-02-14 06:28:04,342 - agroai_sim - INFO - 65    INDIVIDUAL   SEMI_ARID_WARM  0.91            6.37      
+2026-02-14 06:28:04,344 - agroai_sim - INFO - 66    SHARED       IRRIGATED_SOUSS 16.91           159.46    
+2026-02-14 06:28:04,344 - agroai_sim - INFO - 67    INDIVIDUAL   IRRIGATED_SOUSS 16.73           157.80    
+2026-02-14 06:28:04,350 - agroai_sim - INFO - 68    SHARED       IRRIGATED_SOUSS 17.29           28.40     
+2026-02-14 06:28:04,352 - agroai_sim - INFO - 69    INDIVIDUAL   IRRIGATED_SOUSS 16.21           26.63     
+2026-02-14 06:28:04,356 - agroai_sim - INFO - 70    SHARED       IRRIGATED_SOUSS 16.68           42.38     
+2026-02-14 06:28:04,358 - agroai_sim - INFO - 71    INDIVIDUAL   IRRIGATED_SOUSS 16.65           42.31     
+2026-02-14 06:28:04,362 - agroai_sim - INFO - 72    SHARED       IRRIGATED_SOUSS 16.68           53.43     
+2026-02-14 06:28:04,364 - agroai_sim - INFO - 73    INDIVIDUAL   IRRIGATED_SOUSS 16.86           54.02     
+2026-02-14 06:28:04,366 - agroai_sim - INFO - 74    SHARED       ARID            0.72            3.19      
+2026-02-14 06:28:04,370 - agroai_sim - INFO - 75    INDIVIDUAL   ARID            0.73            3.22      
+2026-02-14 06:28:04,372 - agroai_sim - INFO - 76    SHARED       IRRIGATED_SOUSS 16.71           120.20    
+2026-02-14 06:28:04,375 - agroai_sim - INFO - 77    INDIVIDUAL   IRRIGATED_SOUSS 16.95           121.92    
+2026-02-14 06:28:04,375 - agroai_sim - INFO - 78    SHARED       SEMI_ARID_WARM  0.88            6.31      
+2026-02-14 06:28:04,380 - agroai_sim - INFO - 79    INDIVIDUAL   SEMI_ARID_WARM  0.91            6.49      
+2026-02-14 06:28:04,383 - agroai_sim - INFO - 80    SHARED       SUB_HUMID       1.05            3.23      
+2026-02-14 06:28:04,384 - agroai_sim - INFO - 81    INDIVIDUAL   SUB_HUMID       1.08            3.31      
+2026-02-14 06:28:04,385 - agroai_sim - INFO - 82    SHARED       SUB_HUMID       1.08            8.93      
+2026-02-14 06:28:04,387 - agroai_sim - INFO - 83    INDIVIDUAL   SUB_HUMID       1.11            9.15      
+2026-02-14 06:28:04,391 - agroai_sim - INFO - 84    SHARED       ARID            0.72            2.46      
+2026-02-14 06:28:04,391 - agroai_sim - INFO - 85    INDIVIDUAL   ARID            0.71            2.43      
+2026-02-14 06:28:04,397 - agroai_sim - INFO - 86    SHARED       SEMI_ARID_WARM  0.89            8.22      
+2026-02-14 06:28:04,400 - agroai_sim - INFO - 87    INDIVIDUAL   SEMI_ARID_WARM  0.89            8.16      
+2026-02-14 06:28:04,402 - agroai_sim - INFO - 88    SHARED       SAHARAN         16.72           148.62    
+2026-02-14 06:28:04,402 - agroai_sim - INFO - 89    INDIVIDUAL   SAHARAN         16.15           143.57    
+2026-02-14 06:28:04,408 - agroai_sim - INFO - 90    SHARED       SEMI_ARID_COOL  0.92            2.67      
+2026-02-14 06:28:04,408 - agroai_sim - INFO - 91    INDIVIDUAL   SEMI_ARID_COOL  0.90            2.63      
+2026-02-14 06:28:04,414 - agroai_sim - INFO - 92    SHARED       ARID            0.71            3.23      
+2026-02-14 06:28:04,416 - agroai_sim - INFO - 93    INDIVIDUAL   ARID            0.72            3.29      
+2026-02-14 06:28:04,418 - agroai_sim - INFO - 94    SHARED       IRRIGATED_SOUSS 16.84           86.38     
+2026-02-14 06:28:04,418 - agroai_sim - INFO - 95    INDIVIDUAL   IRRIGATED_SOUSS 16.93           86.83     
+2026-02-14 06:28:04,425 - agroai_sim - INFO - 96    SHARED       SEMI_ARID_COOL  0.90            2.04      
+2026-02-14 06:28:04,428 - agroai_sim - INFO - 97    INDIVIDUAL   SEMI_ARID_COOL  0.93            2.09      
+2026-02-14 06:28:04,431 - agroai_sim - INFO - 98    SHARED       IRRIGATED_SOUSS 16.73           101.27    
+2026-02-14 06:28:04,433 - agroai_sim - INFO - 99    INDIVIDUAL   IRRIGATED_SOUSS 16.81           101.72    
+2026-02-14 06:28:08,962 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:28:08,971 - agroai_sim - INFO - ============================================================
+2026-02-14 06:28:08,995 - agroai_sim - INFO - 
+2026-02-14 06:28:09,005 - agroai_sim - INFO -     - Interactive plots with filtering
+2026-02-14 06:28:09,005 - agroai_sim - INFO -     - Performance metrics overview
+2026-02-14 06:28:09,005 - agroai_sim - INFO -     - Zone analysis and distributions
+2026-02-14 06:28:09,005 - agroai_sim - INFO -     - Raw data explorer
+2026-02-14 06:28:09,005 - agroai_sim - INFO - 
+2026-02-14 06:28:09,021 - agroai_sim - INFO -    solara run dashboard_solara.py
+2026-02-14 06:28:09,021 - agroai_sim - INFO - 
+2026-02-14 06:28:09,032 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:28:09,039 - agroai_sim - INFO - ============================================================
+2026-02-14 06:28:09,039 - agroai_sim - INFO - 
+2026-02-14 06:28:09,049 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 06:28:09,054 - agroai_sim - INFO -    • SHARED Strategy: 50 farmers (50.0%)
+2026-02-14 06:28:09,058 - agroai_sim - INFO -    • Average Yield: 7.230 t/ha
+2026-02-14 06:28:09,063 - agroai_sim - INFO -    • SHARED Advantage: -0.007 t/ha
+2026-02-14 06:28:09,068 - agroai_sim - INFO - 
+2026-02-14 06:28:09,083 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 06:28:09,083 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 06:28:09,097 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 06:28:09,108 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 06:28:09,118 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 06:28:09,123 - agroai_sim - INFO - 
+2026-02-14 06:28:09,141 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 06:28:09,143 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 06:28:09,145 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 06:28:09,150 - agroai_sim - INFO - 
+2026-02-14 06:28:09,158 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 06:28:09,158 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 06:28:09,158 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 06:28:09,164 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 06:28:09,167 - agroai_sim - INFO - 
+2026-02-14 06:28:09,167 - agroai_sim - INFO - ============================================================
+2026-02-14 06:30:34,413 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 06:30:34,419 - agroai_sim - INFO - ============================================================
+2026-02-14 06:30:34,424 - agroai_sim - INFO - Agricultural Agent-Based Simulation
+2026-02-14 06:30:34,434 - agroai_sim - INFO - Agents: 100
+2026-02-14 06:30:34,435 - agroai_sim - INFO - Timesteps: 30
+2026-02-14 06:30:34,444 - agroai_sim - INFO - Random Seed: 42
+2026-02-14 06:30:34,449 - agroai_sim - INFO - ============================================================
+2026-02-14 06:30:34,479 - agroai_sim - INFO - Loaded 6 zones
+2026-02-14 06:30:34,484 - agroai_sim - INFO - Loaded 24 crops
+2026-02-14 06:30:34,485 - agroai_sim - INFO - Loaded climate profiles for all zones
+2026-02-14 06:30:34,492 - agroai_sim - INFO - Loaded soil moisture data
+2026-02-14 06:30:34,734 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:30:34,738 - agroai_sim - INFO - Starting simulation: 100 agents × 30 timesteps
+2026-02-14 06:30:34,741 - agroai_sim - INFO - ============================================================
+2026-02-14 06:30:34,746 - agroai_sim - INFO -   Paired design: 50 SHARED + 50 INDIVIDUAL
+2026-02-14 06:30:34,749 - agroai_sim - INFO -   Total land — SHARED: 253.4 ha, INDIVIDUAL: 253.4 ha (equal)
+2026-02-14 06:30:34,815 - agroai_sim - INFO -   Completed timestep 1/30
+2026-02-14 06:30:35,047 - agroai_sim - INFO -   Completed timestep 4/30
+2026-02-14 06:30:35,364 - agroai_sim - INFO -   Completed timestep 7/30
+2026-02-14 06:30:35,608 - agroai_sim - INFO -   Completed timestep 10/30
+2026-02-14 06:30:35,946 - agroai_sim - INFO -   Completed timestep 13/30
+2026-02-14 06:30:36,215 - agroai_sim - INFO -   Completed timestep 16/30
+2026-02-14 06:30:36,521 - agroai_sim - INFO -   Completed timestep 19/30
+2026-02-14 06:30:36,923 - agroai_sim - INFO -   Completed timestep 22/30
+2026-02-14 06:30:37,257 - agroai_sim - INFO -   Completed timestep 25/30
+2026-02-14 06:30:37,495 - agroai_sim - INFO -   Completed timestep 28/30
+2026-02-14 06:30:37,656 - agroai_sim - INFO - 
+Sample Agent Results:
+2026-02-14 06:30:37,659 - agroai_sim - INFO - ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 06:30:37,659 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 06:30:37,659 - agroai_sim - INFO - 0     SHARED       IRRIGATED_SOUSS 15.62           31.26     
+2026-02-14 06:30:37,663 - agroai_sim - INFO - 1     INDIVIDUAL   IRRIGATED_SOUSS 19.17           38.38     
+2026-02-14 06:30:37,666 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 15.29           53.12     
+2026-02-14 06:30:37,668 - agroai_sim - INFO - 3     INDIVIDUAL   IRRIGATED_SOUSS 18.53           64.41     
+2026-02-14 06:30:37,670 - agroai_sim - INFO - 4     SHARED       SEMI_ARID_WARM  1.00            2.27      
+2026-02-14 06:30:37,759 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:30:37,761 - agroai_sim - INFO - ANALYSIS & RESULTS
+2026-02-14 06:30:37,761 - agroai_sim - INFO - ============================================================
+2026-02-14 06:30:37,783 - agroai_sim - INFO -   Total Agents: 100
+2026-02-14 06:30:37,783 - agroai_sim - INFO -   SHARED Strategy: 50 agents (50.0%)
+2026-02-14 06:30:37,786 - agroai_sim - INFO -   INDIVIDUAL Strategy: 50 agents (50.0%)
+2026-02-14 06:30:37,789 - agroai_sim - INFO -   --- YIELD ---
+2026-02-14 06:30:37,792 - agroai_sim - INFO -   Average Yield (All): 7.230 t/ha
+2026-02-14 06:30:37,795 - agroai_sim - INFO -   Average Yield (SHARED): 7.270 t/ha
+2026-02-14 06:30:37,797 - agroai_sim - INFO -   Average Yield (INDIVIDUAL): 7.190 t/ha
+2026-02-14 06:30:37,804 - agroai_sim - INFO -   --- PROFIT ---
+2026-02-14 06:30:37,808 - agroai_sim - INFO -   Average Profit (All): 34.86
+2026-02-14 06:30:37,809 - agroai_sim - INFO -   Average Profit (SHARED): 35.09
+2026-02-14 06:30:37,811 - agroai_sim - INFO -   Average Profit (INDIVIDUAL): 34.62
+2026-02-14 06:30:37,829 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:30:37,830 - agroai_sim - INFO - STATISTICAL SUMMARY BY STRATEGY
+2026-02-14 06:30:37,832 - agroai_sim - INFO - ============================================================
+2026-02-14 06:30:37,859 - agroai_sim - INFO - 
+ID    Strategy     Zone            Yield (t/ha)    Profit    
+2026-02-14 06:30:37,859 - agroai_sim - INFO - ------------------------------------------------------------
+2026-02-14 06:30:37,859 - agroai_sim - INFO - 0     SHARED       IRRIGATED_SOUSS 16.87           33.78     
+2026-02-14 06:30:37,870 - agroai_sim - INFO - 1     INDIVIDUAL   IRRIGATED_SOUSS 17.18           34.39     
+2026-02-14 06:30:37,870 - agroai_sim - INFO - 2     SHARED       IRRIGATED_SOUSS 16.64           57.82     
+2026-02-14 06:30:37,875 - agroai_sim - INFO - 3     INDIVIDUAL   IRRIGATED_SOUSS 16.59           57.66     
+2026-02-14 06:30:37,878 - agroai_sim - INFO - 4     SHARED       SEMI_ARID_WARM  0.88            1.99      
+2026-02-14 06:30:37,878 - agroai_sim - INFO - 5     INDIVIDUAL   SEMI_ARID_WARM  0.92            2.08      
+2026-02-14 06:30:37,883 - agroai_sim - INFO - 6     SHARED       SUB_HUMID       1.08            7.67      
+2026-02-14 06:30:37,883 - agroai_sim - INFO - 7     INDIVIDUAL   SUB_HUMID       1.10            7.82      
+2026-02-14 06:30:37,888 - agroai_sim - INFO - 8     SHARED       SAHARAN         16.81           29.97     
+2026-02-14 06:30:37,888 - agroai_sim - INFO - 9     INDIVIDUAL   SAHARAN         16.65           29.69     
+2026-02-14 06:30:37,890 - agroai_sim - INFO - 10    SHARED       ARID            0.73            0.94      
+2026-02-14 06:30:37,894 - agroai_sim - INFO - 11    INDIVIDUAL   ARID            0.72            0.93      
+2026-02-14 06:30:37,894 - agroai_sim - INFO - 12    SHARED       SUB_HUMID       1.06            3.15      
+2026-02-14 06:30:37,900 - agroai_sim - INFO - 13    INDIVIDUAL   SUB_HUMID       1.07            3.19      
+2026-02-14 06:30:37,902 - agroai_sim - INFO - 14    SHARED       SAHARAN         16.74           107.42    
+2026-02-14 06:30:37,904 - agroai_sim - INFO - 15    INDIVIDUAL   SAHARAN         16.76           107.57    
+2026-02-14 06:30:37,908 - agroai_sim - INFO - 16    SHARED       SAHARAN         17.00           47.41     
+2026-02-14 06:30:37,911 - agroai_sim - INFO - 17    INDIVIDUAL   SAHARAN         16.45           45.88     
+2026-02-14 06:30:37,913 - agroai_sim - INFO - 18    SHARED       IRRIGATED_SOUSS 17.55           128.29    
+2026-02-14 06:30:37,917 - agroai_sim - INFO - 19    INDIVIDUAL   IRRIGATED_SOUSS 16.30           119.18    
+2026-02-14 06:30:37,919 - agroai_sim - INFO - 20    SHARED       ARID            0.73            2.17      
+2026-02-14 06:30:37,922 - agroai_sim - INFO - 21    INDIVIDUAL   ARID            0.72            2.14      
+2026-02-14 06:30:37,923 - agroai_sim - INFO - 22    SHARED       SAHARAN         16.68           58.46     
+2026-02-14 06:30:37,925 - agroai_sim - INFO - 23    INDIVIDUAL   SAHARAN         16.49           57.79     
+2026-02-14 06:30:37,929 - agroai_sim - INFO - 24    SHARED       SUB_HUMID       1.07            8.40      
+2026-02-14 06:30:37,931 - agroai_sim - INFO - 25    INDIVIDUAL   SUB_HUMID       1.07            8.38      
+2026-02-14 06:30:37,933 - agroai_sim - INFO - 26    SHARED       SEMI_ARID_WARM  0.91            6.64      
+2026-02-14 06:30:37,936 - agroai_sim - INFO - 27    INDIVIDUAL   SEMI_ARID_WARM  0.91            6.60      
+2026-02-14 06:30:37,939 - agroai_sim - INFO - 28    SHARED       SEMI_ARID_COOL  0.92            3.21      
+2026-02-14 06:30:37,942 - agroai_sim - INFO - 29    INDIVIDUAL   SEMI_ARID_COOL  0.89            3.12      
+2026-02-14 06:30:37,942 - agroai_sim - INFO - 30    SHARED       SEMI_ARID_WARM  0.91            8.75      
+2026-02-14 06:30:37,946 - agroai_sim - INFO - 31    INDIVIDUAL   SEMI_ARID_WARM  0.92            8.85      
+2026-02-14 06:30:37,950 - agroai_sim - INFO - 32    SHARED       SEMI_ARID_COOL  0.90            1.72      
+2026-02-14 06:30:37,952 - agroai_sim - INFO - 33    INDIVIDUAL   SEMI_ARID_COOL  0.90            1.72      
+2026-02-14 06:30:37,955 - agroai_sim - INFO - 34    SHARED       ARID            0.74            1.39      
+2026-02-14 06:30:37,959 - agroai_sim - INFO - 35    INDIVIDUAL   ARID            0.72            1.34      
+2026-02-14 06:30:37,961 - agroai_sim - INFO - 36    SHARED       SEMI_ARID_COOL  0.90            5.82      
+2026-02-14 06:30:37,961 - agroai_sim - INFO - 37    INDIVIDUAL   SEMI_ARID_COOL  0.92            5.92      
+2026-02-14 06:30:37,967 - agroai_sim - INFO - 38    SHARED       SUB_HUMID       1.07            8.13      
+2026-02-14 06:30:37,967 - agroai_sim - INFO - 39    INDIVIDUAL   SUB_HUMID       1.06            8.04      
+2026-02-14 06:30:37,971 - agroai_sim - INFO - 40    SHARED       SAHARAN         16.83           35.75     
+2026-02-14 06:30:37,973 - agroai_sim - INFO - 41    INDIVIDUAL   SAHARAN         16.79           35.66     
+2026-02-14 06:30:37,975 - agroai_sim - INFO - 42    SHARED       ARID            0.74            1.26      
+2026-02-14 06:30:37,975 - agroai_sim - INFO - 43    INDIVIDUAL   ARID            0.72            1.23      
+2026-02-14 06:30:37,982 - agroai_sim - INFO - 44    SHARED       SEMI_ARID_COOL  0.88            7.48      
+2026-02-14 06:30:37,984 - agroai_sim - INFO - 45    INDIVIDUAL   SEMI_ARID_COOL  0.92            7.77      
+2026-02-14 06:30:37,984 - agroai_sim - INFO - 46    SHARED       SAHARAN         16.74           150.14    
+2026-02-14 06:30:37,989 - agroai_sim - INFO - 47    INDIVIDUAL   SAHARAN         16.38           146.94    
+2026-02-14 06:30:37,989 - agroai_sim - INFO - 48    SHARED       SEMI_ARID_COOL  0.91            5.63      
+2026-02-14 06:30:37,993 - agroai_sim - INFO - 49    INDIVIDUAL   SEMI_ARID_COOL  0.89            5.54      
+2026-02-14 06:30:37,995 - agroai_sim - INFO - 50    SHARED       IRRIGATED_SOUSS 16.69           27.14     
+2026-02-14 06:30:37,999 - agroai_sim - INFO - 51    INDIVIDUAL   IRRIGATED_SOUSS 16.53           26.88     
+2026-02-14 06:30:38,001 - agroai_sim - INFO - 52    SHARED       IRRIGATED_SOUSS 16.96           51.75     
+2026-02-14 06:30:38,004 - agroai_sim - INFO - 53    INDIVIDUAL   IRRIGATED_SOUSS 16.75           51.12     
+2026-02-14 06:30:38,006 - agroai_sim - INFO - 54    SHARED       SEMI_ARID_COOL  0.92            9.04      
+2026-02-14 06:30:38,008 - agroai_sim - INFO - 55    INDIVIDUAL   SEMI_ARID_COOL  0.90            8.86      
+2026-02-14 06:30:38,009 - agroai_sim - INFO - 56    SHARED       SEMI_ARID_WARM  0.89            7.84      
+2026-02-14 06:30:38,012 - agroai_sim - INFO - 57    INDIVIDUAL   SEMI_ARID_WARM  0.87            7.69      
+2026-02-14 06:30:38,016 - agroai_sim - INFO - 58    SHARED       ARID            0.72            2.51      
+2026-02-14 06:30:38,019 - agroai_sim - INFO - 59    INDIVIDUAL   ARID            0.73            2.55      
+2026-02-14 06:30:38,021 - agroai_sim - INFO - 60    SHARED       IRRIGATED_SOUSS 16.61           141.28    
+2026-02-14 06:30:38,024 - agroai_sim - INFO - 61    INDIVIDUAL   IRRIGATED_SOUSS 16.04           136.41    
+2026-02-14 06:30:38,025 - agroai_sim - INFO - 62    SHARED       SEMI_ARID_WARM  0.91            3.95      
+2026-02-14 06:30:38,025 - agroai_sim - INFO - 63    INDIVIDUAL   SEMI_ARID_WARM  0.92            3.97      
+2026-02-14 06:30:38,031 - agroai_sim - INFO - 64    SHARED       SEMI_ARID_WARM  0.90            6.29      
+2026-02-14 06:30:38,035 - agroai_sim - INFO - 65    INDIVIDUAL   SEMI_ARID_WARM  0.93            6.52      
+2026-02-14 06:30:38,036 - agroai_sim - INFO - 66    SHARED       IRRIGATED_SOUSS 16.74           157.85    
+2026-02-14 06:30:38,038 - agroai_sim - INFO - 67    INDIVIDUAL   IRRIGATED_SOUSS 16.98           160.10    
+2026-02-14 06:30:38,042 - agroai_sim - INFO - 68    SHARED       IRRIGATED_SOUSS 16.74           27.50     
+2026-02-14 06:30:38,043 - agroai_sim - INFO - 69    INDIVIDUAL   IRRIGATED_SOUSS 16.88           27.73     
+2026-02-14 06:30:38,046 - agroai_sim - INFO - 70    SHARED       IRRIGATED_SOUSS 17.02           43.25     
+2026-02-14 06:30:38,049 - agroai_sim - INFO - 71    INDIVIDUAL   IRRIGATED_SOUSS 16.87           42.85     
+2026-02-14 06:30:38,052 - agroai_sim - INFO - 72    SHARED       IRRIGATED_SOUSS 16.94           54.27     
+2026-02-14 06:30:38,052 - agroai_sim - INFO - 73    INDIVIDUAL   IRRIGATED_SOUSS 16.97           54.37     
+2026-02-14 06:30:38,055 - agroai_sim - INFO - 74    SHARED       ARID            0.72            3.19      
+2026-02-14 06:30:38,059 - agroai_sim - INFO - 75    INDIVIDUAL   ARID            0.74            3.28      
+2026-02-14 06:30:38,059 - agroai_sim - INFO - 76    SHARED       IRRIGATED_SOUSS 16.65           119.79    
+2026-02-14 06:30:38,064 - agroai_sim - INFO - 77    INDIVIDUAL   IRRIGATED_SOUSS 16.96           122.03    
+2026-02-14 06:30:38,066 - agroai_sim - INFO - 78    SHARED       SEMI_ARID_WARM  0.89            6.37      
+2026-02-14 06:30:38,066 - agroai_sim - INFO - 79    INDIVIDUAL   SEMI_ARID_WARM  0.90            6.47      
+2026-02-14 06:30:38,070 - agroai_sim - INFO - 80    SHARED       SUB_HUMID       1.08            3.31      
+2026-02-14 06:30:38,072 - agroai_sim - INFO - 81    INDIVIDUAL   SUB_HUMID       1.08            3.31      
+2026-02-14 06:30:38,076 - agroai_sim - INFO - 82    SHARED       SUB_HUMID       1.07            8.85      
+2026-02-14 06:30:38,077 - agroai_sim - INFO - 83    INDIVIDUAL   SUB_HUMID       1.08            8.90      
+2026-02-14 06:30:38,078 - agroai_sim - INFO - 84    SHARED       ARID            0.71            2.42      
+2026-02-14 06:30:38,081 - agroai_sim - INFO - 85    INDIVIDUAL   ARID            0.71            2.44      
+2026-02-14 06:30:38,083 - agroai_sim - INFO - 86    SHARED       SEMI_ARID_WARM  0.90            8.27      
+2026-02-14 06:30:38,085 - agroai_sim - INFO - 87    INDIVIDUAL   SEMI_ARID_WARM  0.91            8.36      
+2026-02-14 06:30:38,089 - agroai_sim - INFO - 88    SHARED       SAHARAN         16.77           149.02    
+2026-02-14 06:30:38,091 - agroai_sim - INFO - 89    INDIVIDUAL   SAHARAN         16.70           148.40    
+2026-02-14 06:30:38,093 - agroai_sim - INFO - 90    SHARED       SEMI_ARID_COOL  0.91            2.65      
+2026-02-14 06:30:38,097 - agroai_sim - INFO - 91    INDIVIDUAL   SEMI_ARID_COOL  0.90            2.63      
+2026-02-14 06:30:38,100 - agroai_sim - INFO - 92    SHARED       ARID            0.71            3.25      
+2026-02-14 06:30:38,104 - agroai_sim - INFO - 93    INDIVIDUAL   ARID            0.73            3.35      
+2026-02-14 06:30:38,104 - agroai_sim - INFO - 94    SHARED       IRRIGATED_SOUSS 16.88           86.59     
+2026-02-14 06:30:38,109 - agroai_sim - INFO - 95    INDIVIDUAL   IRRIGATED_SOUSS 16.10           82.61     
+2026-02-14 06:30:38,109 - agroai_sim - INFO - 96    SHARED       SEMI_ARID_COOL  0.92            2.07      
+2026-02-14 06:30:38,114 - agroai_sim - INFO - 97    INDIVIDUAL   SEMI_ARID_COOL  0.91            2.05      
+2026-02-14 06:30:38,116 - agroai_sim - INFO - 98    SHARED       IRRIGATED_SOUSS 16.95           102.58    
+2026-02-14 06:30:38,117 - agroai_sim - INFO - 99    INDIVIDUAL   IRRIGATED_SOUSS 16.34           98.88     
+2026-02-14 06:30:42,063 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:30:42,070 - agroai_sim - INFO - ============================================================
+2026-02-14 06:30:42,090 - agroai_sim - INFO - 
+2026-02-14 06:30:42,098 - agroai_sim - INFO -     - Interactive plots with filtering
+2026-02-14 06:30:42,098 - agroai_sim - INFO -     - Performance metrics overview
+2026-02-14 06:30:42,098 - agroai_sim - INFO -     - Zone analysis and distributions
+2026-02-14 06:30:42,104 - agroai_sim - INFO -     - Raw data explorer
+2026-02-14 06:30:42,106 - agroai_sim - INFO - 
+2026-02-14 06:30:42,116 - agroai_sim - INFO -    solara run dashboard_solara.py
+2026-02-14 06:30:42,116 - agroai_sim - INFO - 
+2026-02-14 06:30:42,126 - agroai_sim - INFO - 
+============================================================
+2026-02-14 06:30:42,135 - agroai_sim - INFO - ============================================================
+2026-02-14 06:30:42,138 - agroai_sim - INFO - 
+2026-02-14 06:30:42,146 - agroai_sim - INFO -    • Total Farmers: 100
+2026-02-14 06:30:42,146 - agroai_sim - INFO -    • SHARED Strategy: 50 farmers (50.0%)
+2026-02-14 06:30:42,146 - agroai_sim - INFO -    • Average Yield: 7.230 t/ha
+2026-02-14 06:30:42,146 - agroai_sim - INFO -    • SHARED Advantage: 0.080 t/ha
+2026-02-14 06:30:42,155 - agroai_sim - INFO - 
+2026-02-14 06:30:42,164 - agroai_sim - INFO -    • Static plots: results/*.png
+2026-02-14 06:30:42,164 - agroai_sim - INFO -    • Agent data: results/agents_results.csv
+2026-02-14 06:30:42,164 - agroai_sim - INFO -    • Metrics: results/metrics.json
+2026-02-14 06:30:42,171 - agroai_sim - INFO -    • Config backup: results/simulation_config.yaml
+2026-02-14 06:30:42,173 - agroai_sim - INFO -    • Summary report: results/summary_report.txt
+2026-02-14 06:30:42,179 - agroai_sim - INFO - 
+2026-02-14 06:30:42,188 - agroai_sim - INFO -    • File: dashboard_solara.py
+2026-02-14 06:30:42,191 - agroai_sim - INFO -    • Launch: solara run dashboard_solara.py
+2026-02-14 06:30:42,194 - agroai_sim - INFO -    • Access: http://localhost:8000
+2026-02-14 06:30:42,194 - agroai_sim - INFO - 
+2026-02-14 06:30:42,208 - agroai_sim - INFO -    1. Review the static plots above
+2026-02-14 06:30:42,212 - agroai_sim - INFO -    2. Launch the Solara dashboard for interactive exploration
+2026-02-14 06:30:42,215 - agroai_sim - INFO -    3. Modify config.yaml for different experiments
+2026-02-14 06:30:42,217 - agroai_sim - INFO -    4. Re-run this notebook to compare results
+2026-02-14 06:30:42,219 - agroai_sim - INFO - 
+2026-02-14 06:30:42,223 - agroai_sim - INFO - ============================================================

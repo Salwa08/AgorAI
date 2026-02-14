@@ -1,0 +1,13 @@
+{
+  "total_agents": 100,
+  "shared_agents": 50,
+  "individual_agents": 50,
+  "avg_yield_all": 7.229914744501982,
+  "avg_profit_all": 34.8556592501523,
+  "avg_yield_shared": 7.269941613019986,
+  "avg_yield_individual": 7.189887875983979,
+  "yield_advantage_shared": 0.08005373703600682,
+  "avg_profit_shared": 35.08799094201645,
+  "avg_profit_individual": 34.62332755828815,
+  "profit_advantage_shared": 0.4646633837282934
+}

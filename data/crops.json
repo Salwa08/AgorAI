@@ -1,6 +1,6 @@
 {
     "metadata": {
-      "num_crops": 23,
+      "num_crops": 24,
       "sources": {
         "ecological_requirements": "FAO EcoCrop Database (gaez.fao.org/pages/ecocrop) via OpenCLIM/ecocrop CSV (github.com/OpenCLIM/ecocrop)",
         "yield_baselines": "FAOSTAT Crop Production Statistics - Morocco (fao.org/faostat), 2018-2022 averages",
@@ -377,12 +377,13 @@
         "name": "Rice",
         "scientific_name": "Oryza sativa",
         "category": "cereal",
-        "ecocrop": {"temp_opt_min_C": 22, "temp_opt_max_C": 30, "temp_abs_min_C": 10, "temp_abs_max_C": 38, "precip_opt_min_mm": 1000, "precip_opt_max_mm": 2000, "precip_abs_min_mm": 500, "precip_abs_max_mm": 3000, "cycle_min_days": 90, "cycle_max_days": 180},
+        "ecocrop": {"temp_opt_min_C": 22, "temp_opt_max_C": 30, "temp_abs_min_C": 10, "temp_abs_max_C": 38, "precip_opt_min_mm": 1000, "precip_opt_max_mm": 2000, "precip_abs_min_mm": 500, "precip_abs_max_mm": 3000, "cycle_min_days": 90, "cycle_max_days": 200},
         "base_yield_t_ha": 5.5,
         "water_need": "high",
         "growth_season": "spring-summer",
-        "ideal_zones": ["SUB_HUMID"],
-        "ideal_soils": ["vertisol", "fluvisol"]
+        "ideal_zones": ["SUB_HUMID", "IRRIGATED_SOUSS"],
+        "ideal_soils": ["vertisol", "fluvisol", "luvisol"],
+        "notes": "Irrigated paddy rice in Gharb and other irrigated plains. Requires flooded fields and warm temperatures."
       },
       "sugarcane": {
         "name": "Sugarcane",
@@ -473,14 +474,6 @@
         "ideal_zones": ["SAHARAN", "ARID"],
         "ideal_soils": ["arenosol", "calcisol"],
         "notes": "Traditional oasis crop used for dye and cosmetics. Extremely heat and drought tolerant."
-      },
-        "base_yield_t_ha": 4.0,
-        "water_need": "high",
-        "growth_season": "spring-summer (paddy)",
-        "ideal_zones": ["SUB_HUMID", "IRRIGATED_SOUSS"],
-        "ideal_soils": ["fluvisol", "luvisol"],
-        "notes": "Irrigated paddy rice in Gharb and other irrigated plains. Placeholder parameters—adjust with local FAOSTAT/EcoCrop data if higher fidelity required."
       }
- }
-  
-  
+    }
+  }
