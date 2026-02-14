@@ -1,4 +1,4 @@
-# 🌾 Agricultural Agent-Based Simulation System
+# 🌾 FarmSwarm: Network-based Collective Intelligence for Smart Agriculture
 
 A professional, production-ready agent-based model (ABM) for simulating farmer decision-making strategies in Morocco's agricultural system.
 
