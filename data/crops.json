@@ -1,479 +1,925 @@
 {
-    "metadata": {
-      "num_crops": 24,
-      "sources": {
-        "ecological_requirements": "FAO EcoCrop Database (gaez.fao.org/pages/ecocrop) via OpenCLIM/ecocrop CSV (github.com/OpenCLIM/ecocrop)",
-        "yield_baselines": "FAOSTAT Crop Production Statistics - Morocco (fao.org/faostat), 2018-2022 averages",
-        "water_requirements": "FAO Irrigation & Drainage Paper 56 (Allen et al., 1998)",
-        "crop_descriptions": "FAO Crop Information pages (fao.org/land-water/databases-and-software/crop-information)"
-      },
-      "notes": {
-        "ecocrop_parameters": "TOPMN/TOPMX = optimal temp range; TMIN/TMAX = absolute tolerance; ROPMN/ROPMX = optimal rainfall; RMIN/RMAX = absolute rainfall tolerance (all from EcoCrop DB)",
-        "base_yield": "Approximate Morocco national average yield (t/ha) from FAOSTAT 2018-2022. Actual yields vary by zone, irrigation, and year.",
-        "ideal_zones": "Zones where this crop is traditionally grown and ecologically well-suited in Morocco"
-      }
+  "metadata": {
+    "num_crops": 24,
+    "sources": {
+      "ecological_requirements": "FAO EcoCrop Database (gaez.fao.org/pages/ecocrop) via OpenCLIM/ecocrop CSV (github.com/OpenCLIM/ecocrop)",
+      "yield_baselines": "FAOSTAT Crop Production Statistics - Morocco (fao.org/faostat), 2018-2022 averages",
+      "water_requirements": "FAO Irrigation & Drainage Paper 56 (Allen et al., 1998)",
+      "crop_descriptions": "FAO Crop Information pages (fao.org/land-water/databases-and-software/crop-information)",
+      "market_prices": "FAOSTAT Producer Prices - Annual (fao.org/faostat/en/#data/PP), Morocco, CC BY-4.0. Bulk download Feb 2026.",
+      "labor_wage": "Morocco SMAG 2024: 84.37 MAD/day (Decree 2.23.993, emploi.gov.ma)",
+      "water_tariffs": "ORMVA official irrigation tariffs, ~0.30-0.50 MAD/m³",
+      "fertilizer_costs": "OCP Group domestic prices, FAO Agricultural Inputs database",
+      "cost_model": "Production costs are COMPUTED from physical parameters (labor × SMAG + water_need × tariff + fertilizer + seeds + mechanization). Not fixed values."
     },
-    "crops": {
-      "soft_wheat": {
-        "name": "Soft Wheat",
-        "scientific_name": "Triticum aestivum",
-        "category": "cereal",
-        "ecocrop": {
-          "temp_opt_min_C": 15,
-          "temp_opt_max_C": 23,
-          "temp_abs_min_C": 2,
-          "temp_abs_max_C": 35,
-          "precip_opt_min_mm": 500,
-          "precip_opt_max_mm": 900,
-          "precip_abs_min_mm": 300,
-          "precip_abs_max_mm": 1600,
-          "cycle_min_days": 100,
-          "cycle_max_days": 250
-        },
-        "base_yield_t_ha": 1.8,
-        "water_need": "medium",
-        "growth_season": "autumn-winter",
-        "ideal_zones": ["SUB_HUMID", "SEMI_ARID_WARM"],
-        "ideal_soils": ["vertisol", "fluvisol", "cambisol"],
-        "notes": "Morocco's primary bread wheat. Gharb and Saïs are main production regions. Yield highly sensitive to spring rainfall."
+    "notes": {
+      "ecocrop_parameters": "TOPMN/TOPMX = optimal temp range; TMIN/TMAX = absolute tolerance; ROPMN/ROPMX = optimal rainfall; RMIN/RMAX = absolute rainfall tolerance (all from EcoCrop DB)",
+      "base_yield": "Approximate Morocco national average yield (t/ha) from FAOSTAT 2018-2022. Actual yields vary by zone, irrigation, and year.",
+      "ideal_zones": "Zones where this crop is traditionally grown and ecologically well-suited in Morocco",
+      "faostat_price": "Farm-gate producer price in MAD/tonne from FAOSTAT. Year indicates most recent available data.",
+      "production_cost": "DERIVED cost per hectare based on cost model (labor × SMAG + inputs + water + mechanization). Varies by zone in simulation.",
+      "price_category": "regulated = government floor price (ONICL/COSUMAR); export = export-oriented pricing; market = free market; subsidized = government support"
+    }
+  },
+  "crops": {
+    "soft_wheat": {
+      "name": "Soft Wheat",
+      "scientific_name": "Triticum aestivum",
+      "category": "cereal",
+      "ecocrop": {
+        "temp_opt_min_C": 15,
+        "temp_opt_max_C": 23,
+        "temp_abs_min_C": 2,
+        "temp_abs_max_C": 35,
+        "precip_opt_min_mm": 500,
+        "precip_opt_max_mm": 900,
+        "precip_abs_min_mm": 300,
+        "precip_abs_max_mm": 1600,
+        "cycle_min_days": 100,
+        "cycle_max_days": 250
       },
-  
-      "durum_wheat": {
-        "name": "Durum Wheat",
-        "scientific_name": "Triticum turgidum subsp. durum",
-        "category": "cereal",
-        "ecocrop": {
-          "temp_opt_min_C": 15,
-          "temp_opt_max_C": 25,
-          "temp_abs_min_C": 5,
-          "temp_abs_max_C": 38,
-          "precip_opt_min_mm": 400,
-          "precip_opt_max_mm": 600,
-          "precip_abs_min_mm": 250,
-          "precip_abs_max_mm": 1000,
-          "cycle_min_days": 120,
-          "cycle_max_days": 180
-        },
-        "base_yield_t_ha": 1.5,
-        "water_need": "medium",
-        "growth_season": "autumn-winter",
-        "ideal_zones": ["SUB_HUMID", "SEMI_ARID_WARM", "SEMI_ARID_COOL"],
-        "ideal_soils": ["vertisol", "calcisol", "cambisol"],
-        "notes": "More drought-tolerant than soft wheat. Used for couscous and pasta. Grown across wider range of zones."
+      "base_yield_t_ha": 1.8,
+      "water_need": "medium",
+      "growth_season": "autumn-winter",
+      "ideal_zones": [
+        "SUB_HUMID",
+        "SEMI_ARID_WARM"
+      ],
+      "ideal_soils": [
+        "vertisol",
+        "fluvisol",
+        "cambisol"
+      ],
+      "notes": "Morocco's primary bread wheat. Gharb and Saïs are main production regions. Yield highly sensitive to spring rainfall.",
+      "moisture_preference": "medium",
+      "labor_days_per_ha": 20,
+      "price_category": "regulated",
+      "faostat_price_mad_per_ton": 4338,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Wheat",
+      "cost_category": "cereal"
+    },
+    "durum_wheat": {
+      "name": "Durum Wheat",
+      "scientific_name": "Triticum turgidum subsp. durum",
+      "category": "cereal",
+      "ecocrop": {
+        "temp_opt_min_C": 15,
+        "temp_opt_max_C": 25,
+        "temp_abs_min_C": 5,
+        "temp_abs_max_C": 38,
+        "precip_opt_min_mm": 400,
+        "precip_opt_max_mm": 600,
+        "precip_abs_min_mm": 250,
+        "precip_abs_max_mm": 1000,
+        "cycle_min_days": 120,
+        "cycle_max_days": 180
       },
-  
-      "barley": {
-        "name": "Barley",
-        "scientific_name": "Hordeum vulgare",
-        "category": "cereal",
-        "ecocrop": {
-          "temp_opt_min_C": 12,
-          "temp_opt_max_C": 22,
-          "temp_abs_min_C": 3,
-          "temp_abs_max_C": 35,
-          "precip_opt_min_mm": 500,
-          "precip_opt_max_mm": 1000,
-          "precip_abs_min_mm": 200,
-          "precip_abs_max_mm": 1500,
-          "cycle_min_days": 90,
-          "cycle_max_days": 130
-        },
-        "base_yield_t_ha": 1.2,
-        "water_need": "low",
-        "growth_season": "autumn-winter",
-        "ideal_zones": ["SEMI_ARID_WARM", "SEMI_ARID_COOL", "ARID"],
-        "ideal_soils": ["calcisol", "cambisol", "leptosol"],
-        "notes": "Most drought-tolerant cereal. Dominant crop in steppe and arid margins. Also used as animal feed. Can survive on as little as 200mm rainfall."
+      "base_yield_t_ha": 1.5,
+      "water_need": "medium",
+      "growth_season": "autumn-winter",
+      "ideal_zones": [
+        "SUB_HUMID",
+        "SEMI_ARID_WARM",
+        "SEMI_ARID_COOL"
+      ],
+      "ideal_soils": [
+        "vertisol",
+        "calcisol",
+        "cambisol"
+      ],
+      "notes": "More drought-tolerant than soft wheat. Used for couscous and pasta. Grown across wider range of zones.",
+      "moisture_preference": "medium",
+      "labor_days_per_ha": 20,
+      "price_category": "regulated",
+      "faostat_price_mad_per_ton": 4338,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Wheat",
+      "cost_category": "cereal"
+    },
+    "barley": {
+      "name": "Barley",
+      "scientific_name": "Hordeum vulgare",
+      "category": "cereal",
+      "ecocrop": {
+        "temp_opt_min_C": 12,
+        "temp_opt_max_C": 22,
+        "temp_abs_min_C": 3,
+        "temp_abs_max_C": 35,
+        "precip_opt_min_mm": 500,
+        "precip_opt_max_mm": 1000,
+        "precip_abs_min_mm": 200,
+        "precip_abs_max_mm": 1500,
+        "cycle_min_days": 90,
+        "cycle_max_days": 130
       },
-  
-      "chickpeas": {
-        "name": "Chickpeas",
-        "scientific_name": "Cicer arietinum",
-        "category": "legume",
-        "ecocrop": {
-          "temp_opt_min_C": 15,
-          "temp_opt_max_C": 25,
-          "temp_abs_min_C": 5,
-          "temp_abs_max_C": 35,
-          "precip_opt_min_mm": 600,
-          "precip_opt_max_mm": 1000,
-          "precip_abs_min_mm": 400,
-          "precip_abs_max_mm": 1800,
-          "cycle_min_days": 90,
-          "cycle_max_days": 180
-        },
-        "base_yield_t_ha": 0.8,
-        "water_need": "low",
-        "growth_season": "spring-summer",
-        "ideal_zones": ["SEMI_ARID_WARM", "SEMI_ARID_COOL"],
-        "ideal_soils": ["calcisol", "cambisol"],
-        "notes": "Important protein source and nitrogen fixer. Grown in rotation with cereals in Saïs and Oriental regions."
+      "base_yield_t_ha": 1.2,
+      "water_need": "low",
+      "growth_season": "autumn-winter",
+      "ideal_zones": [
+        "SEMI_ARID_WARM",
+        "SEMI_ARID_COOL",
+        "ARID"
+      ],
+      "ideal_soils": [
+        "calcisol",
+        "cambisol",
+        "leptosol"
+      ],
+      "notes": "Most drought-tolerant cereal. Dominant crop in steppe and arid margins. Also used as animal feed. Can survive on as little as 200mm rainfall.",
+      "moisture_preference": "low",
+      "labor_days_per_ha": 18,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 4540,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Barley",
+      "cost_category": "cereal"
+    },
+    "chickpeas": {
+      "name": "Chickpeas",
+      "scientific_name": "Cicer arietinum",
+      "category": "legume",
+      "ecocrop": {
+        "temp_opt_min_C": 15,
+        "temp_opt_max_C": 25,
+        "temp_abs_min_C": 5,
+        "temp_abs_max_C": 35,
+        "precip_opt_min_mm": 600,
+        "precip_opt_max_mm": 1000,
+        "precip_abs_min_mm": 400,
+        "precip_abs_max_mm": 1800,
+        "cycle_min_days": 90,
+        "cycle_max_days": 180
       },
-  
-      "lentils": {
-        "name": "Lentils",
-        "scientific_name": "Lens culinaris",
-        "category": "legume",
-        "ecocrop": {
-          "temp_opt_min_C": 15,
-          "temp_opt_max_C": 25,
-          "temp_abs_min_C": 5,
-          "temp_abs_max_C": 32,
-          "precip_opt_min_mm": 600,
-          "precip_opt_max_mm": 1200,
-          "precip_abs_min_mm": 280,
-          "precip_abs_max_mm": 2400,
-          "cycle_min_days": 80,
-          "cycle_max_days": 150
-        },
-        "base_yield_t_ha": 0.7,
-        "water_need": "low",
-        "growth_season": "autumn-winter",
-        "ideal_zones": ["SEMI_ARID_WARM", "SEMI_ARID_COOL"],
-        "ideal_soils": ["calcisol", "cambisol"],
-        "notes": "Staple pulse crop in Morocco. Grown in Saïs, Zaer, and Oriental. Tolerates poor soils but sensitive to waterlogging."
+      "base_yield_t_ha": 0.8,
+      "water_need": "low",
+      "growth_season": "spring-summer",
+      "ideal_zones": [
+        "SEMI_ARID_WARM",
+        "SEMI_ARID_COOL"
+      ],
+      "ideal_soils": [
+        "calcisol",
+        "cambisol"
+      ],
+      "notes": "Important protein source and nitrogen fixer. Grown in rotation with cereals in Saïs and Oriental regions.",
+      "moisture_preference": "low",
+      "labor_days_per_ha": 18,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 15409,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Chick peas",
+      "cost_category": "legume"
+    },
+    "lentils": {
+      "name": "Lentils",
+      "scientific_name": "Lens culinaris",
+      "category": "legume",
+      "ecocrop": {
+        "temp_opt_min_C": 15,
+        "temp_opt_max_C": 25,
+        "temp_abs_min_C": 5,
+        "temp_abs_max_C": 32,
+        "precip_opt_min_mm": 600,
+        "precip_opt_max_mm": 1200,
+        "precip_abs_min_mm": 280,
+        "precip_abs_max_mm": 2400,
+        "cycle_min_days": 80,
+        "cycle_max_days": 150
       },
-  
-      "fava_beans": {
-        "name": "Fava Beans",
-        "scientific_name": "Vicia faba",
-        "category": "legume",
-        "ecocrop": {
-          "temp_opt_min_C": 15,
-          "temp_opt_max_C": 20,
-          "temp_abs_min_C": 2,
-          "temp_abs_max_C": 30,
-          "precip_opt_min_mm": 650,
-          "precip_opt_max_mm": 1000,
-          "precip_abs_min_mm": 350,
-          "precip_abs_max_mm": 1500,
-          "cycle_min_days": 90,
-          "cycle_max_days": 220
-        },
-        "base_yield_t_ha": 1.2,
-        "water_need": "medium",
-        "growth_season": "autumn-winter",
-        "ideal_zones": ["SUB_HUMID", "SEMI_ARID_WARM"],
-        "ideal_soils": ["vertisol", "fluvisol", "cambisol"],
-        "notes": "Major food legume in Morocco (ful). Prefers heavier soils with good moisture. Key crop in Gharb, Doukkala, and Saïs."
+      "base_yield_t_ha": 0.7,
+      "water_need": "low",
+      "growth_season": "autumn-winter",
+      "ideal_zones": [
+        "SEMI_ARID_WARM",
+        "SEMI_ARID_COOL"
+      ],
+      "ideal_soils": [
+        "calcisol",
+        "cambisol"
+      ],
+      "notes": "Staple pulse crop in Morocco. Grown in Saïs, Zaer, and Oriental. Tolerates poor soils but sensitive to waterlogging.",
+      "moisture_preference": "low",
+      "labor_days_per_ha": 16,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 15247,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Lentils",
+      "cost_category": "legume"
+    },
+    "fava_beans": {
+      "name": "Fava Beans",
+      "scientific_name": "Vicia faba",
+      "category": "legume",
+      "ecocrop": {
+        "temp_opt_min_C": 15,
+        "temp_opt_max_C": 20,
+        "temp_abs_min_C": 2,
+        "temp_abs_max_C": 30,
+        "precip_opt_min_mm": 650,
+        "precip_opt_max_mm": 1000,
+        "precip_abs_min_mm": 350,
+        "precip_abs_max_mm": 1500,
+        "cycle_min_days": 90,
+        "cycle_max_days": 220
       },
-  
-      "olives": {
-        "name": "Olives",
-        "scientific_name": "Olea europaea",
-        "category": "tree_crop",
-        "ecocrop": {
-          "temp_opt_min_C": 16,
-          "temp_opt_max_C": 25,
-          "temp_abs_min_C": 4,
-          "temp_abs_max_C": 40,
-          "precip_opt_min_mm": 500,
-          "precip_opt_max_mm": 700,
-          "precip_abs_min_mm": 200,
-          "precip_abs_max_mm": 1700,
-          "cycle_min_days": 150,
-          "cycle_max_days": 360
-        },
-        "base_yield_t_ha": 2.0,
-        "water_need": "low",
-        "growth_season": "perennial",
-        "ideal_zones": ["SEMI_ARID_WARM"],
-        "ideal_soils": ["calcisol", "cambisol", "leptosol"],
-        "notes": "Morocco is a top-10 global olive producer. Concentrated in Fès-Meknès (Picholine marocaine variety). Very drought-tolerant once established."
+      "base_yield_t_ha": 1.2,
+      "water_need": "medium",
+      "growth_season": "autumn-winter",
+      "ideal_zones": [
+        "SUB_HUMID",
+        "SEMI_ARID_WARM"
+      ],
+      "ideal_soils": [
+        "vertisol",
+        "fluvisol",
+        "cambisol"
+      ],
+      "notes": "Major food legume in Morocco (ful). Prefers heavier soils with good moisture. Key crop in Gharb, Doukkala, and Saïs.",
+      "moisture_preference": "medium",
+      "labor_days_per_ha": 20,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 9920,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Broad beans, horse beans, dry",
+      "cost_category": "legume"
+    },
+    "olives": {
+      "name": "Olives",
+      "scientific_name": "Olea europaea",
+      "category": "tree_crop",
+      "ecocrop": {
+        "temp_opt_min_C": 16,
+        "temp_opt_max_C": 25,
+        "temp_abs_min_C": 4,
+        "temp_abs_max_C": 40,
+        "precip_opt_min_mm": 500,
+        "precip_opt_max_mm": 700,
+        "precip_abs_min_mm": 200,
+        "precip_abs_max_mm": 1700,
+        "cycle_min_days": 150,
+        "cycle_max_days": 360
       },
-  
-      "citrus": {
-        "name": "Citrus (Oranges)",
-        "scientific_name": "Citrus sinensis",
-        "category": "tree_crop",
-        "ecocrop": {
-          "temp_opt_min_C": 20,
-          "temp_opt_max_C": 30,
-          "temp_abs_min_C": 13,
-          "temp_abs_max_C": 38,
-          "precip_opt_min_mm": 1200,
-          "precip_opt_max_mm": 2000,
-          "precip_abs_min_mm": 450,
-          "precip_abs_max_mm": 2700,
-          "cycle_min_days": 180,
-          "cycle_max_days": 360
-        },
-        "base_yield_t_ha": 18.0,
-        "water_need": "high",
-        "growth_season": "perennial",
-        "ideal_zones": ["SUB_HUMID", "IRRIGATED_SOUSS"],
-        "ideal_soils": ["fluvisol", "luvisol"],
-        "notes": "Major export crop. Gharb and Souss-Massa are primary production zones. Requires irrigation in most Moroccan zones. Frost-sensitive."
+      "base_yield_t_ha": 2.0,
+      "water_need": "low",
+      "growth_season": "perennial",
+      "ideal_zones": [
+        "SEMI_ARID_WARM"
+      ],
+      "ideal_soils": [
+        "calcisol",
+        "cambisol",
+        "leptosol"
+      ],
+      "notes": "Morocco is a top-10 global olive producer. Concentrated in Fès-Meknès (Picholine marocaine variety). Very drought-tolerant once established.",
+      "moisture_preference": "low",
+      "labor_days_per_ha": 30,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 11100,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Olives",
+      "cost_category": "tree_crop"
+    },
+    "citrus": {
+      "name": "Citrus (Oranges)",
+      "scientific_name": "Citrus sinensis",
+      "category": "tree_crop",
+      "ecocrop": {
+        "temp_opt_min_C": 20,
+        "temp_opt_max_C": 30,
+        "temp_abs_min_C": 13,
+        "temp_abs_max_C": 38,
+        "precip_opt_min_mm": 1200,
+        "precip_opt_max_mm": 2000,
+        "precip_abs_min_mm": 450,
+        "precip_abs_max_mm": 2700,
+        "cycle_min_days": 180,
+        "cycle_max_days": 360
       },
-  
-      "potatoes": {
-        "name": "Potatoes",
-        "scientific_name": "Solanum tuberosum",
-        "category": "root_tuber",
-        "ecocrop": {
-          "temp_opt_min_C": 15,
-          "temp_opt_max_C": 20,
-          "temp_abs_min_C": 3,
-          "temp_abs_max_C": 30,
-          "precip_opt_min_mm": 500,
-          "precip_opt_max_mm": 800,
-          "precip_abs_min_mm": 300,
-          "precip_abs_max_mm": 2000,
-          "cycle_min_days": 90,
-          "cycle_max_days": 160
-        },
-        "base_yield_t_ha": 28.0,
-        "water_need": "medium",
-        "growth_season": "spring-summer",
-        "ideal_zones": ["SUB_HUMID", "SEMI_ARID_WARM", "IRRIGATED_SOUSS"],
-        "ideal_soils": ["fluvisol", "cambisol", "luvisol"],
-        "notes": "Grown in multiple seasons. Early potatoes from Souss-Massa exported to Europe. Needs well-drained soils."
+      "base_yield_t_ha": 18.0,
+      "water_need": "high",
+      "growth_season": "perennial",
+      "ideal_zones": [
+        "SUB_HUMID",
+        "IRRIGATED_SOUSS"
+      ],
+      "ideal_soils": [
+        "fluvisol",
+        "luvisol"
+      ],
+      "notes": "Major export crop. Gharb and Souss-Massa are primary production zones. Requires irrigation in most Moroccan zones. Frost-sensitive.",
+      "moisture_preference": "high",
+      "labor_days_per_ha": 25,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 5185,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Oranges",
+      "cost_category": "cereal"
+    },
+    "potatoes": {
+      "name": "Potatoes",
+      "scientific_name": "Solanum tuberosum",
+      "category": "root_tuber",
+      "ecocrop": {
+        "temp_opt_min_C": 15,
+        "temp_opt_max_C": 20,
+        "temp_abs_min_C": 3,
+        "temp_abs_max_C": 30,
+        "precip_opt_min_mm": 500,
+        "precip_opt_max_mm": 800,
+        "precip_abs_min_mm": 300,
+        "precip_abs_max_mm": 2000,
+        "cycle_min_days": 90,
+        "cycle_max_days": 160
       },
-  
-      "tomatoes": {
-        "name": "Tomatoes",
-        "scientific_name": "Solanum lycopersicum",
-        "category": "vegetable",
-        "ecocrop": {
-          "temp_opt_min_C": 18,
-          "temp_opt_max_C": 27,
-          "temp_abs_min_C": 7,
-          "temp_abs_max_C": 35,
-          "precip_opt_min_mm": 600,
-          "precip_opt_max_mm": 1300,
-          "precip_abs_min_mm": 400,
-          "precip_abs_max_mm": 2600,
-          "cycle_min_days": 70,
-          "cycle_max_days": 180
-        },
-        "base_yield_t_ha": 45.0,
-        "water_need": "high",
-        "growth_season": "spring-summer",
-        "ideal_zones": ["IRRIGATED_SOUSS"],
-        "ideal_soils": ["fluvisol", "cambisol"],
-        "notes": "Morocco's #1 vegetable export. Souss-Massa produces ~80% of export tomatoes, mostly under greenhouse/drip irrigation."
+      "base_yield_t_ha": 28.0,
+      "water_need": "medium",
+      "growth_season": "spring-summer",
+      "ideal_zones": [
+        "SUB_HUMID",
+        "SEMI_ARID_WARM",
+        "IRRIGATED_SOUSS"
+      ],
+      "ideal_soils": [
+        "fluvisol",
+        "cambisol",
+        "luvisol"
+      ],
+      "notes": "Grown in multiple seasons. Early potatoes from Souss-Massa exported to Europe. Needs well-drained soils.",
+      "moisture_preference": "medium",
+      "labor_days_per_ha": 50,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 3856,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Potatoes",
+      "cost_category": "vegetable"
+    },
+    "tomatoes": {
+      "name": "Tomatoes",
+      "scientific_name": "Solanum lycopersicum",
+      "category": "vegetable",
+      "ecocrop": {
+        "temp_opt_min_C": 18,
+        "temp_opt_max_C": 27,
+        "temp_abs_min_C": 7,
+        "temp_abs_max_C": 35,
+        "precip_opt_min_mm": 600,
+        "precip_opt_max_mm": 1300,
+        "precip_abs_min_mm": 400,
+        "precip_abs_max_mm": 2600,
+        "cycle_min_days": 70,
+        "cycle_max_days": 180
       },
-  
-      "date_palms": {
-        "name": "Date Palms",
-        "scientific_name": "Phoenix dactylifera",
-        "category": "tree_crop",
-        "ecocrop": {
-          "temp_opt_min_C": 28,
-          "temp_opt_max_C": 34,
-          "temp_abs_min_C": 10,
-          "temp_abs_max_C": 48,
-          "precip_opt_min_mm": 100,
-          "precip_opt_max_mm": 300,
-          "precip_abs_min_mm": 0,
-          "precip_abs_max_mm": 4000,
-          "cycle_min_days": 150,
-          "cycle_max_days": 365
-        },
-        "base_yield_t_ha": 6.5,
-        "water_need": "low",
-        "growth_season": "perennial",
-        "ideal_zones": ["ARID", "SAHARAN"],
-        "ideal_soils": ["arenosol", "fluvisol"],
-        "notes": "Oasis keystone crop. Drâa-Tafilalet produces most of Morocco's dates (Mejhoul, Boufeggous varieties). Relies on groundwater/khettara irrigation. Extremely heat-tolerant."
+      "base_yield_t_ha": 45.0,
+      "water_need": "high",
+      "growth_season": "spring-summer",
+      "ideal_zones": [
+        "IRRIGATED_SOUSS"
+      ],
+      "ideal_soils": [
+        "fluvisol",
+        "cambisol"
+      ],
+      "notes": "Morocco's #1 vegetable export. Souss-Massa produces ~80% of export tomatoes, mostly under greenhouse/drip irrigation.",
+      "moisture_preference": "high",
+      "labor_days_per_ha": 80,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 2046,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Tomatoes",
+      "cost_category": "vegetable"
+    },
+    "date_palms": {
+      "name": "Date Palms",
+      "scientific_name": "Phoenix dactylifera",
+      "category": "tree_crop",
+      "ecocrop": {
+        "temp_opt_min_C": 28,
+        "temp_opt_max_C": 34,
+        "temp_abs_min_C": 10,
+        "temp_abs_max_C": 48,
+        "precip_opt_min_mm": 100,
+        "precip_opt_max_mm": 300,
+        "precip_abs_min_mm": 0,
+        "precip_abs_max_mm": 4000,
+        "cycle_min_days": 150,
+        "cycle_max_days": 365
       },
-  
-      "almonds": {
-        "name": "Almonds",
-        "scientific_name": "Prunus dulcis",
-        "category": "tree_crop",
-        "ecocrop": {
-          "temp_opt_min_C": 15,
-          "temp_opt_max_C": 28,
-          "temp_abs_min_C": 4,
-          "temp_abs_max_C": 38,
-          "precip_opt_min_mm": 500,
-          "precip_opt_max_mm": 800,
-          "precip_abs_min_mm": 200,
-          "precip_abs_max_mm": 1500,
-          "cycle_min_days": 150,
-          "cycle_max_days": 240
-        },
-        "base_yield_t_ha": 0.8,
-        "water_need": "low",
-        "growth_season": "perennial",
-        "ideal_zones": ["SEMI_ARID_COOL", "ARID"],
-        "ideal_soils": ["calcisol", "leptosol"],
-        "notes": "Grown extensively in the Oriental and Anti-Atlas (Tafraout). Drought-tolerant but sensitive to late frost during flowering. Low-input crop."
+      "base_yield_t_ha": 6.5,
+      "water_need": "low",
+      "growth_season": "perennial",
+      "ideal_zones": [
+        "ARID",
+        "SAHARAN"
+      ],
+      "ideal_soils": [
+        "arenosol",
+        "fluvisol"
+      ],
+      "notes": "Oasis keystone crop. Drâa-Tafilalet produces most of Morocco's dates (Mejhoul, Boufeggous varieties). Relies on groundwater/khettara irrigation. Extremely heat-tolerant.",
+      "moisture_preference": "low",
+      "labor_days_per_ha": 25,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 31240,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Dates",
+      "cost_category": "cereal"
+    },
+    "almonds": {
+      "name": "Almonds",
+      "scientific_name": "Prunus dulcis",
+      "category": "tree_crop",
+      "ecocrop": {
+        "temp_opt_min_C": 15,
+        "temp_opt_max_C": 28,
+        "temp_abs_min_C": 4,
+        "temp_abs_max_C": 38,
+        "precip_opt_min_mm": 500,
+        "precip_opt_max_mm": 800,
+        "precip_abs_min_mm": 200,
+        "precip_abs_max_mm": 1500,
+        "cycle_min_days": 150,
+        "cycle_max_days": 240
       },
-  
-      "watermelon": {
-        "name": "Watermelon",
-        "scientific_name": "Citrullus lanatus",
-        "category": "vegetable",
-        "ecocrop": {
-          "temp_opt_min_C": 22,
-          "temp_opt_max_C": 30,
-          "temp_abs_min_C": 15,
-          "temp_abs_max_C": 38,
-          "precip_opt_min_mm": 500,
-          "precip_opt_max_mm": 1000,
-          "precip_abs_min_mm": 300,
-          "precip_abs_max_mm": 2500,
-          "cycle_min_days": 60,
-          "cycle_max_days": 120
-        },
-        "base_yield_t_ha": 30.0,
-        "water_need": "medium",
-        "growth_season": "spring-summer",
-        "ideal_zones": ["ARID", "SAHARAN", "IRRIGATED_SOUSS"],
-        "ideal_soils": ["arenosol", "fluvisol"],
-        "notes": "Grown in southern regions, especially Zagora and Souss. Well adapted to sandy soils and heat. Needs irrigation but tolerates dry air."
+      "base_yield_t_ha": 0.8,
+      "water_need": "low",
+      "growth_season": "perennial",
+      "ideal_zones": [
+        "SEMI_ARID_COOL",
+        "ARID"
+      ],
+      "ideal_soils": [
+        "calcisol",
+        "leptosol"
+      ],
+      "notes": "Grown extensively in the Oriental and Anti-Atlas (Tafraout). Drought-tolerant but sensitive to late frost during flowering. Low-input crop.",
+      "moisture_preference": "low",
+      "labor_days_per_ha": 25,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 21050,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Almonds, in shell",
+      "cost_category": "tree_crop"
+    },
+    "watermelon": {
+      "name": "Watermelon",
+      "scientific_name": "Citrullus lanatus",
+      "category": "vegetable",
+      "ecocrop": {
+        "temp_opt_min_C": 22,
+        "temp_opt_max_C": 30,
+        "temp_abs_min_C": 15,
+        "temp_abs_max_C": 38,
+        "precip_opt_min_mm": 500,
+        "precip_opt_max_mm": 1000,
+        "precip_abs_min_mm": 300,
+        "precip_abs_max_mm": 2500,
+        "cycle_min_days": 60,
+        "cycle_max_days": 120
       },
-  
-      "sorghum": {
-        "name": "Sorghum",
-        "scientific_name": "Sorghum bicolor",
-        "category": "cereal",
-        "ecocrop": {
-          "temp_opt_min_C": 24,
-          "temp_opt_max_C": 30,
-          "temp_abs_min_C": 10,
-          "temp_abs_max_C": 40,
-          "precip_opt_min_mm": 450,
-          "precip_opt_max_mm": 650,
-          "precip_abs_min_mm": 300,
-          "precip_abs_max_mm": 4000,
-          "cycle_min_days": 90,
-          "cycle_max_days": 200
-        },
-        "base_yield_t_ha": 0.8,
-        "water_need": "low",
-        "growth_season": "spring-summer",
-        "ideal_zones": ["SEMI_ARID_COOL", "ARID"],
-        "ideal_soils": ["calcisol", "leptosol", "arenosol"],
-        "notes": "Very drought-tolerant C4 cereal. Used for grain and fodder in arid margins. Less common than barley in Morocco but important in dry years."
+      "base_yield_t_ha": 30.0,
+      "water_need": "medium",
+      "growth_season": "spring-summer",
+      "ideal_zones": [
+        "ARID",
+        "SAHARAN",
+        "IRRIGATED_SOUSS"
+      ],
+      "ideal_soils": [
+        "arenosol",
+        "fluvisol"
+      ],
+      "notes": "Grown in southern regions, especially Zagora and Souss. Well adapted to sandy soils and heat. Needs irrigation but tolerates dry air.",
+      "moisture_preference": "medium",
+      "labor_days_per_ha": 35,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 3153,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Watermelons",
+      "cost_category": "vegetable"
+    },
+    "sorghum": {
+      "name": "Sorghum",
+      "scientific_name": "Sorghum bicolor",
+      "category": "cereal",
+      "ecocrop": {
+        "temp_opt_min_C": 24,
+        "temp_opt_max_C": 30,
+        "temp_abs_min_C": 10,
+        "temp_abs_max_C": 40,
+        "precip_opt_min_mm": 450,
+        "precip_opt_max_mm": 650,
+        "precip_abs_min_mm": 300,
+        "precip_abs_max_mm": 4000,
+        "cycle_min_days": 90,
+        "cycle_max_days": 200
       },
-  
-      "sugar_beet": {
-        "name": "Sugar Beet",
-        "scientific_name": "Beta vulgaris",
-        "category": "root_tuber",
-        "ecocrop": {
-          "temp_opt_min_C": 15,
-          "temp_opt_max_C": 25,
-          "temp_abs_min_C": 4,
-          "temp_abs_max_C": 35,
-          "precip_opt_min_mm": 600,
-          "precip_opt_max_mm": 800,
-          "precip_abs_min_mm": 500,
-          "precip_abs_max_mm": 1000,
-          "cycle_min_days": 160,
-          "cycle_max_days": 240
-        },
-        "base_yield_t_ha": 55.0,
-        "water_need": "high",
-        "growth_season": "autumn-winter",
-        "ideal_zones": ["SUB_HUMID"],
-        "ideal_soils": ["vertisol", "fluvisol"],
-        "notes": "Concentrated in Gharb, Loukkos and Tadla (irrigated). Requires deep, fertile soils and reliable water supply. Part of Morocco's sugar self-sufficiency program."
+      "base_yield_t_ha": 0.8,
+      "water_need": "low",
+      "growth_season": "spring-summer",
+      "ideal_zones": [
+        "SEMI_ARID_COOL",
+        "ARID"
+      ],
+      "ideal_soils": [
+        "calcisol",
+        "leptosol",
+        "arenosol"
+      ],
+      "notes": "Very drought-tolerant C4 cereal. Used for grain and fodder in arid margins. Less common than barley in Morocco but important in dry years.",
+      "moisture_preference": "low",
+      "labor_days_per_ha": 22,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 3800,
+      "faostat_price_year": 2020,
+      "faostat_item_name": "Sorghum",
+      "cost_category": "cereal"
+    },
+    "sugar_beet": {
+      "name": "Sugar Beet",
+      "scientific_name": "Beta vulgaris",
+      "category": "root_tuber",
+      "ecocrop": {
+        "temp_opt_min_C": 15,
+        "temp_opt_max_C": 25,
+        "temp_abs_min_C": 4,
+        "temp_abs_max_C": 35,
+        "precip_opt_min_mm": 600,
+        "precip_opt_max_mm": 800,
+        "precip_abs_min_mm": 500,
+        "precip_abs_max_mm": 1000,
+        "cycle_min_days": 160,
+        "cycle_max_days": 240
       },
-      "rice": {
-        "name": "Rice",
-        "scientific_name": "Oryza sativa",
-        "category": "cereal",
-        "ecocrop": {"temp_opt_min_C": 22, "temp_opt_max_C": 30, "temp_abs_min_C": 10, "temp_abs_max_C": 38, "precip_opt_min_mm": 1000, "precip_opt_max_mm": 2000, "precip_abs_min_mm": 500, "precip_abs_max_mm": 3000, "cycle_min_days": 90, "cycle_max_days": 200},
-        "base_yield_t_ha": 5.5,
-        "water_need": "high",
-        "growth_season": "spring-summer",
-        "ideal_zones": ["SUB_HUMID", "IRRIGATED_SOUSS"],
-        "ideal_soils": ["vertisol", "fluvisol", "luvisol"],
-        "notes": "Irrigated paddy rice in Gharb and other irrigated plains. Requires flooded fields and warm temperatures."
+      "base_yield_t_ha": 55.0,
+      "water_need": "high",
+      "growth_season": "autumn-winter",
+      "ideal_zones": [
+        "SUB_HUMID"
+      ],
+      "ideal_soils": [
+        "vertisol",
+        "fluvisol"
+      ],
+      "notes": "Concentrated in Gharb, Loukkos and Tadla (irrigated). Requires deep, fertile soils and reliable water supply. Part of Morocco's sugar self-sufficiency program.",
+      "moisture_preference": "high",
+      "labor_days_per_ha": 40,
+      "price_category": "regulated",
+      "faostat_price_mad_per_ton": 520,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Sugar beet",
+      "cost_category": "industrial"
+    },
+    "rice": {
+      "name": "Rice",
+      "scientific_name": "Oryza sativa",
+      "category": "cereal",
+      "ecocrop": {
+        "temp_opt_min_C": 22,
+        "temp_opt_max_C": 30,
+        "temp_abs_min_C": 10,
+        "temp_abs_max_C": 38,
+        "precip_opt_min_mm": 1000,
+        "precip_opt_max_mm": 2000,
+        "precip_abs_min_mm": 500,
+        "precip_abs_max_mm": 3000,
+        "cycle_min_days": 90,
+        "cycle_max_days": 200
       },
-      "sugarcane": {
-        "name": "Sugarcane",
-        "scientific_name": "Saccharum officinarum",
-        "category": "cereal",
-        "ecocrop": {"temp_opt_min_C": 22, "temp_opt_max_C": 30, "temp_abs_min_C": 15, "temp_abs_max_C": 38, "precip_opt_min_mm": 1200, "precip_opt_max_mm": 2500, "precip_abs_min_mm": 800, "precip_abs_max_mm": 3500, "cycle_min_days": 300, "cycle_max_days": 365},
-        "base_yield_t_ha": 80,
-        "water_need": "high",
-        "growth_season": "perennial",
-        "ideal_zones": ["SUB_HUMID"],
-        "ideal_soils": ["vertisol", "fluvisol"]
+      "base_yield_t_ha": 5.5,
+      "water_need": "high",
+      "growth_season": "spring-summer",
+      "ideal_zones": [
+        "SUB_HUMID",
+        "IRRIGATED_SOUSS"
+      ],
+      "ideal_soils": [
+        "vertisol",
+        "fluvisol",
+        "luvisol"
+      ],
+      "notes": "Irrigated paddy rice in Gharb and other irrigated plains. Requires flooded fields and warm temperatures.",
+      "moisture_preference": "high",
+      "labor_days_per_ha": 40,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 3800,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Rice",
+      "cost_category": "cereal"
+    },
+    "sugarcane": {
+      "name": "Sugarcane",
+      "scientific_name": "Saccharum officinarum",
+      "category": "cereal",
+      "ecocrop": {
+        "temp_opt_min_C": 22,
+        "temp_opt_max_C": 30,
+        "temp_abs_min_C": 15,
+        "temp_abs_max_C": 38,
+        "precip_opt_min_mm": 1200,
+        "precip_opt_max_mm": 2500,
+        "precip_abs_min_mm": 800,
+        "precip_abs_max_mm": 3500,
+        "cycle_min_days": 300,
+        "cycle_max_days": 365
       },
-      "sunflower": {
-        "name": "Sunflower",
-        "scientific_name": "Helianthus annuus",
-        "category": "oilseed",
-        "ecocrop": {"temp_opt_min_C": 18, "temp_opt_max_C": 28, "temp_abs_min_C": 8, "temp_abs_max_C": 38, "precip_opt_min_mm": 500, "precip_opt_max_mm": 800, "precip_abs_min_mm": 350, "precip_abs_max_mm": 1500, "cycle_min_days": 90, "cycle_max_days": 120},
-        "base_yield_t_ha": 1.5,
-        "water_need": "medium",
-        "growth_season": "spring-summer",
-        "ideal_zones": ["SUB_HUMID"],
-        "ideal_soils": ["vertisol", "cambisol"]
+      "base_yield_t_ha": 80,
+      "water_need": "high",
+      "growth_season": "perennial",
+      "ideal_zones": [
+        "SUB_HUMID"
+      ],
+      "ideal_soils": [
+        "vertisol",
+        "fluvisol"
+      ],
+      "moisture_preference": "high",
+      "labor_days_per_ha": 25,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 240,
+      "faostat_price_year": 2006,
+      "faostat_item_name": "Sugar cane",
+      "cost_category": "cereal"
+    },
+    "sunflower": {
+      "name": "Sunflower",
+      "scientific_name": "Helianthus annuus",
+      "category": "oilseed",
+      "ecocrop": {
+        "temp_opt_min_C": 18,
+        "temp_opt_max_C": 28,
+        "temp_abs_min_C": 8,
+        "temp_abs_max_C": 38,
+        "precip_opt_min_mm": 500,
+        "precip_opt_max_mm": 800,
+        "precip_abs_min_mm": 350,
+        "precip_abs_max_mm": 1500,
+        "cycle_min_days": 90,
+        "cycle_max_days": 120
       },
-      "grapes": {
-        "name": "Grapes",
-        "scientific_name": "Vitis vinifera",
-        "category": "tree_crop",
-        "ecocrop": {"temp_opt_min_C": 18, "temp_opt_max_C": 28, "temp_abs_min_C": 5, "temp_abs_max_C": 38, "precip_opt_min_mm": 500, "precip_opt_max_mm": 800, "precip_abs_min_mm": 300, "precip_abs_max_mm": 1500, "cycle_min_days": 150, "cycle_max_days": 200},
-        "base_yield_t_ha": 8,
-        "water_need": "low",
-        "growth_season": "perennial",
-        "ideal_zones": ["SEMI_ARID_WARM"],
-        "ideal_soils": ["calcisol", "cambisol"]
+      "base_yield_t_ha": 1.5,
+      "water_need": "medium",
+      "growth_season": "spring-summer",
+      "ideal_zones": [
+        "SUB_HUMID"
+      ],
+      "ideal_soils": [
+        "vertisol",
+        "cambisol"
+      ],
+      "moisture_preference": "medium",
+      "labor_days_per_ha": 20,
+      "price_category": "subsidized",
+      "faostat_price_mad_per_ton": 11407,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Sunflower seed",
+      "cost_category": "industrial"
+    },
+    "grapes": {
+      "name": "Grapes",
+      "scientific_name": "Vitis vinifera",
+      "category": "tree_crop",
+      "ecocrop": {
+        "temp_opt_min_C": 18,
+        "temp_opt_max_C": 28,
+        "temp_abs_min_C": 5,
+        "temp_abs_max_C": 38,
+        "precip_opt_min_mm": 500,
+        "precip_opt_max_mm": 800,
+        "precip_abs_min_mm": 300,
+        "precip_abs_max_mm": 1500,
+        "cycle_min_days": 150,
+        "cycle_max_days": 200
       },
-      "cumin": {
-        "name": "Cumin",
-        "scientific_name": "Cuminum cyminum",
-        "category": "spice",
-        "ecocrop": {"temp_opt_min_C": 22, "temp_opt_max_C": 30, "temp_abs_min_C": 12, "temp_abs_max_C": 38, "precip_opt_min_mm": 200, "precip_opt_max_mm": 500, "precip_abs_min_mm": 100, "precip_abs_max_mm": 800, "cycle_min_days": 100, "cycle_max_days": 120},
-        "base_yield_t_ha": 0.6,
-        "water_need": "low",
-        "growth_season": "spring-summer",
-        "ideal_zones": ["ARID", "SAHARAN"],
-        "ideal_soils": ["calcisol", "arenosol"]
+      "base_yield_t_ha": 8,
+      "water_need": "low",
+      "growth_season": "perennial",
+      "ideal_zones": [
+        "SEMI_ARID_WARM"
+      ],
+      "ideal_soils": [
+        "calcisol",
+        "cambisol"
+      ],
+      "moisture_preference": "low",
+      "labor_days_per_ha": 50,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 7253,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Grapes",
+      "cost_category": "tree_crop"
+    },
+    "cumin": {
+      "name": "Cumin",
+      "scientific_name": "Cuminum cyminum",
+      "category": "spice",
+      "ecocrop": {
+        "temp_opt_min_C": 22,
+        "temp_opt_max_C": 30,
+        "temp_abs_min_C": 12,
+        "temp_abs_max_C": 38,
+        "precip_opt_min_mm": 200,
+        "precip_opt_max_mm": 500,
+        "precip_abs_min_mm": 100,
+        "precip_abs_max_mm": 800,
+        "cycle_min_days": 100,
+        "cycle_max_days": 120
       },
-      "bananas": {
-        "name": "Bananas",
-        "scientific_name": "Musa acuminata",
-        "category": "tree_crop",
-        "ecocrop": {"temp_opt_min_C": 24, "temp_opt_max_C": 32, "temp_abs_min_C": 15, "temp_abs_max_C": 38, "precip_opt_min_mm": 1500, "precip_opt_max_mm": 2500, "precip_abs_min_mm": 800, "precip_abs_max_mm": 3500, "cycle_min_days": 270, "cycle_max_days": 365},
-        "base_yield_t_ha": 25,
-        "water_need": "high",
-        "growth_season": "perennial",
-        "ideal_zones": ["IRRIGATED_SOUSS"],
-        "ideal_soils": ["fluvisol"]
+      "base_yield_t_ha": 0.6,
+      "water_need": "low",
+      "growth_season": "spring-summer",
+      "ideal_zones": [
+        "ARID",
+        "SAHARAN"
+      ],
+      "ideal_soils": [
+        "calcisol",
+        "arenosol"
+      ],
+      "moisture_preference": "low",
+      "labor_days_per_ha": 25,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 35000,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Cumin",
+      "cost_category": "industrial"
+    },
+    "bananas": {
+      "name": "Bananas",
+      "scientific_name": "Musa acuminata",
+      "category": "tree_crop",
+      "ecocrop": {
+        "temp_opt_min_C": 24,
+        "temp_opt_max_C": 32,
+        "temp_abs_min_C": 15,
+        "temp_abs_max_C": 38,
+        "precip_opt_min_mm": 1500,
+        "precip_opt_max_mm": 2500,
+        "precip_abs_min_mm": 800,
+        "precip_abs_max_mm": 3500,
+        "cycle_min_days": 270,
+        "cycle_max_days": 365
       },
-      "avocados": {
-        "name": "Avocados",
-        "scientific_name": "Persea americana",
-        "category": "tree_crop",
-        "ecocrop": {"temp_opt_min_C": 20, "temp_opt_max_C": 28, "temp_abs_min_C": 10, "temp_abs_max_C": 35, "precip_opt_min_mm": 1000, "precip_opt_max_mm": 1800, "precip_abs_min_mm": 600, "precip_abs_max_mm": 2500, "cycle_min_days": 200, "cycle_max_days": 365},
-        "base_yield_t_ha": 8,
-        "water_need": "medium",
-        "growth_season": "perennial",
-        "ideal_zones": ["IRRIGATED_SOUSS"],
-        "ideal_soils": ["fluvisol", "cambisol"]
+      "base_yield_t_ha": 25,
+      "water_need": "high",
+      "growth_season": "perennial",
+      "ideal_zones": [
+        "IRRIGATED_SOUSS"
+      ],
+      "ideal_soils": [
+        "fluvisol"
+      ],
+      "moisture_preference": "high",
+      "labor_days_per_ha": 45,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 6514,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Bananas",
+      "cost_category": "tree_crop"
+    },
+    "avocados": {
+      "name": "Avocados",
+      "scientific_name": "Persea americana",
+      "category": "tree_crop",
+      "ecocrop": {
+        "temp_opt_min_C": 20,
+        "temp_opt_max_C": 28,
+        "temp_abs_min_C": 10,
+        "temp_abs_max_C": 35,
+        "precip_opt_min_mm": 1000,
+        "precip_opt_max_mm": 1800,
+        "precip_abs_min_mm": 600,
+        "precip_abs_max_mm": 2500,
+        "cycle_min_days": 200,
+        "cycle_max_days": 365
       },
-      "green_beans": {
-        "name": "Green Beans",
-        "scientific_name": "Phaseolus vulgaris",
-        "category": "vegetable",
-        "ecocrop": {"temp_opt_min_C": 18, "temp_opt_max_C": 26, "temp_abs_min_C": 10, "temp_abs_max_C": 32, "precip_opt_min_mm": 500, "precip_opt_max_mm": 1000, "precip_abs_min_mm": 350, "precip_abs_max_mm": 1500, "cycle_min_days": 60, "cycle_max_days": 90},
-        "base_yield_t_ha": 12,
-        "water_need": "medium",
-        "growth_season": "spring-summer",
-        "ideal_zones": ["IRRIGATED_SOUSS"],
-        "ideal_soils": ["fluvisol", "cambisol"]
-      }
-      ,
-      "henna": {
-        "name": "Henna",
-        "scientific_name": "Lawsonia inermis",
-        "category": "industrial_crop",
-        "ecocrop": {"temp_opt_min_C": 25, "temp_opt_max_C": 35, "temp_abs_min_C": 15, "temp_abs_max_C": 45, "precip_opt_min_mm": 200, "precip_opt_max_mm": 500, "precip_abs_min_mm": 100, "precip_abs_max_mm": 1000, "cycle_min_days": 150, "cycle_max_days": 365},
-        "base_yield_t_ha": 1.5,
-        "water_need": "low",
-        "growth_season": "perennial",
-        "ideal_zones": ["SAHARAN", "ARID"],
-        "ideal_soils": ["arenosol", "calcisol"],
-        "notes": "Traditional oasis crop used for dye and cosmetics. Extremely heat and drought tolerant."
-      }
+      "base_yield_t_ha": 8,
+      "water_need": "medium",
+      "growth_season": "perennial",
+      "ideal_zones": [
+        "IRRIGATED_SOUSS"
+      ],
+      "ideal_soils": [
+        "fluvisol",
+        "cambisol"
+      ],
+      "moisture_preference": "medium",
+      "labor_days_per_ha": 35,
+      "price_category": "export",
+      "faostat_price_mad_per_ton": 16000,
+      "faostat_price_year": 2020,
+      "faostat_item_name": "Avocados",
+      "cost_category": "tree_crop"
+    },
+    "green_beans": {
+      "name": "Green Beans",
+      "scientific_name": "Phaseolus vulgaris",
+      "category": "vegetable",
+      "ecocrop": {
+        "temp_opt_min_C": 18,
+        "temp_opt_max_C": 26,
+        "temp_abs_min_C": 10,
+        "temp_abs_max_C": 32,
+        "precip_opt_min_mm": 500,
+        "precip_opt_max_mm": 1000,
+        "precip_abs_min_mm": 350,
+        "precip_abs_max_mm": 1500,
+        "cycle_min_days": 60,
+        "cycle_max_days": 90
+      },
+      "base_yield_t_ha": 12,
+      "water_need": "medium",
+      "growth_season": "spring-summer",
+      "ideal_zones": [
+        "IRRIGATED_SOUSS"
+      ],
+      "ideal_soils": [
+        "fluvisol",
+        "cambisol"
+      ],
+      "moisture_preference": "medium",
+      "labor_days_per_ha": 45,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 6275,
+      "faostat_price_year": 2024,
+      "faostat_item_name": "Beans, green",
+      "cost_category": "vegetable"
+    },
+    "henna": {
+      "name": "Henna",
+      "scientific_name": "Lawsonia inermis",
+      "category": "industrial_crop",
+      "ecocrop": {
+        "temp_opt_min_C": 25,
+        "temp_opt_max_C": 35,
+        "temp_abs_min_C": 15,
+        "temp_abs_max_C": 45,
+        "precip_opt_min_mm": 200,
+        "precip_opt_max_mm": 500,
+        "precip_abs_min_mm": 100,
+        "precip_abs_max_mm": 1000,
+        "cycle_min_days": 150,
+        "cycle_max_days": 365
+      },
+      "base_yield_t_ha": 1.5,
+      "water_need": "low",
+      "growth_season": "perennial",
+      "ideal_zones": [
+        "SAHARAN",
+        "ARID"
+      ],
+      "ideal_soils": [
+        "arenosol",
+        "calcisol"
+      ],
+      "notes": "Traditional oasis crop used for dye and cosmetics. Extremely heat and drought tolerant.",
+      "moisture_preference": "low",
+      "labor_days_per_ha": 30,
+      "price_category": "market",
+      "faostat_price_mad_per_ton": 8000,
+      "faostat_price_year": 2023,
+      "faostat_item_name": "Henna",
+      "cost_category": "industrial"
+    }
+  },
+  "cost_model": {
+    "description": "Parameters for computing production costs dynamically in simulation",
+    "sources": {
+      "smag": "Morocco Decree 2.23.993 (Jan 2024) - Agricultural Minimum Wage",
+      "water_tariffs": "ORMVA (Offices Régionaux de Mise en Valeur Agricole) official tariffs",
+      "fertilizer": "OCP Group domestic prices / FAO Agricultural Inputs database",
+      "seeds": "Morocco seed market prices / SONACOS",
+      "mechanization": "Regional agricultural cooperatives survey data"
+    },
+    "smag_mad_per_day": 84.37,
+    "water_cost_mad_per_m3": 0.4,
+    "water_need_mm": {
+      "very_low": 200,
+      "low": 350,
+      "medium": 500,
+      "high": 700,
+      "very_high": 900
+    },
+    "fertilizer_npk_mad_per_ha": {
+      "cereal": 1800,
+      "legume": 1200,
+      "vegetable": 3500,
+      "tree_crop": 2500,
+      "industrial": 2200
+    },
+    "seeds_mad_per_ha": {
+      "cereal": 800,
+      "legume": 1200,
+      "vegetable": 2000,
+      "tree_crop": 0,
+      "industrial": 600
+    },
+    "mechanization_mad_per_ha": {
+      "cereal": 1200,
+      "legume": 900,
+      "vegetable": 1500,
+      "tree_crop": 800,
+      "industrial": 1100
     }
   }
+}

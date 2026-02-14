@@ -5,8 +5,8 @@
 # SIMULATION PARAMETERS
 # ============================================================================
 simulation:
-  n_agents: 100                          # Number of farmer agents
-  n_timesteps: 30                        # More seasons = SHARED learns better
+  n_agents: 200                          # Number of farmer agents
+  n_timesteps: 10                        # More seasons = SHARED learns better
   random_seed: 42                        # For reproducibility
   verbose: true                          # Enable detailed logging
   log_level: "INFO"                      # DEBUG, INFO, WARNING, ERROR, CRITICAL
@@ -25,12 +25,12 @@ suitability:
 # LEARNING & STRATEGY PARAMETERS
 # ============================================================================
 learning:
-  individual_weight: 0.25                # SHARED blending: 25% individual score
-  shared_weight: 0.75                    # SHARED blending: 75% community knowledge
+  individual_weight: 0.5                # SHARED blending: 25% individual score
+  shared_weight: 0.5                    # SHARED blending: 75% community knowledge
   zone_specific_learning: true
   memory_length: 20                      # Remember more history for better convergence
   learning_speed_individual: 0.3         # How fast INDIVIDUAL farmers adapt (0-1)
-  learning_speed_shared: 0.9             # Fast community adaptation
+  learning_speed_shared: 0.6             # Fast community adaptation
 
 # ============================================================================
 # YIELD & PRODUCTION PARAMETERS

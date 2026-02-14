@@ -38,11 +38,11 @@ finance:
   shared_post_harvest_loss: 0.05
   shared_price_premium: 0.2
 learning:
-  individual_weight: 0.25
+  individual_weight: 0.5
   learning_speed_individual: 0.3
-  learning_speed_shared: 0.9
+  learning_speed_shared: 0.6
   memory_length: 20
-  shared_weight: 0.75
+  shared_weight: 0.5
   zone_specific_learning: true
 logging:
   display_progress_bar: true
@@ -52,13 +52,13 @@ logging:
 simulation:
   initial_shared_ratio: 0.7
   log_level: INFO
-  n_agents: 100
-  n_timesteps: 30
+  n_agents: 200
+  n_timesteps: 10
   random_seed: 42
   verbose: true
 suitability:
   climate_weight: 0.25
-  moisture_weight: 0.6
+  moisture_weight: 0.1
   soil_weight: 0.25
   zone_weight: 0.4
 visualization:

@@ -1,0 +1,234 @@
+Area Code,M49 Code,Area
+2,'004,Afghanistan
+5100,'002,Africa
+3,'008,Albania
+4,'012,Algeria
+5200,'019,Americas
+7,'024,Angola
+8,'028,Antigua and Barbuda
+9,'032,Argentina
+1,'051,Armenia
+5300,'142,Asia
+10,'036,Australia
+5501,'053,Australia and New Zealand
+11,'040,Austria
+52,'031,Azerbaijan
+12,'044,Bahamas
+13,'048,Bahrain
+16,'050,Bangladesh
+14,'052,Barbados
+57,'112,Belarus
+255,'056,Belgium
+15,'058,Belgium-Luxembourg
+23,'084,Belize
+53,'204,Benin
+18,'064,Bhutan
+19,'068,Bolivia (Plurinational State of)
+80,'070,Bosnia and Herzegovina
+20,'072,Botswana
+21,'076,Brazil
+26,'096,Brunei Darussalam
+27,'100,Bulgaria
+233,'854,Burkina Faso
+29,'108,Burundi
+35,'132,Cabo Verde
+115,'116,Cambodia
+32,'120,Cameroon
+33,'124,Canada
+5206,'029,Caribbean
+37,'140,Central African Republic
+5204,'013,Central America
+5301,'143,Central Asia
+39,'148,Chad
+40,'152,Chile
+351,'159,China
+96,'344,China; Hong Kong SAR
+41,'156,China; mainland
+44,'170,Colombia
+45,'174,Comoros
+46,'178,Congo
+47,'184,Cook Islands
+48,'188,Costa Rica
+107,'384,Côte d'Ivoire
+98,'191,Croatia
+49,'192,Cuba
+50,'196,Cyprus
+167,'203,Czechia
+51,'200,Czechoslovakia
+116,'408,Democratic People's Republic of Korea
+250,'180,Democratic Republic of the Congo
+54,'208,Denmark
+55,'212,Dominica
+56,'214,Dominican Republic
+5101,'014,Eastern Africa
+5302,'030,Eastern Asia
+5401,'151,Eastern Europe
+58,'218,Ecuador
+59,'818,Egypt
+60,'222,El Salvador
+61,'226,Equatorial Guinea
+178,'232,Eritrea
+63,'233,Estonia
+209,'748,Eswatini
+238,'231,Ethiopia
+62,'230,Ethiopia PDR
+5400,'150,Europe
+5707,'097,European Union (27)
+66,'242,Fiji
+67,'246,Finland
+68,'250,France
+69,'254,French Guiana
+70,'258,French Polynesia
+74,'266,Gabon
+75,'270,Gambia
+73,'268,Georgia
+79,'276,Germany
+81,'288,Ghana
+84,'300,Greece
+86,'308,Grenada
+87,'312,Guadeloupe
+89,'320,Guatemala
+90,'324,Guinea
+175,'624,Guinea-Bissau
+91,'328,Guyana
+93,'332,Haiti
+95,'340,Honduras
+97,'348,Hungary
+99,'352,Iceland
+100,'356,India
+101,'360,Indonesia
+102,'364,Iran (Islamic Republic of)
+103,'368,Iraq
+104,'372,Ireland
+105,'376,Israel
+106,'380,Italy
+109,'388,Jamaica
+110,'392,Japan
+112,'400,Jordan
+108,'398,Kazakhstan
+114,'404,Kenya
+118,'414,Kuwait
+113,'417,Kyrgyzstan
+5802,'432,Land Locked Developing Countries (LLDCs)
+120,'418,Lao People's Democratic Republic
+119,'428,Latvia
+5801,'199,Least Developed Countries (LDCs)
+121,'422,Lebanon
+122,'426,Lesotho
+123,'430,Liberia
+124,'434,Libya
+126,'440,Lithuania
+5815,'901,Low Income Food Deficit Countries (LIFDCs)
+256,'442,Luxembourg
+129,'450,Madagascar
+130,'454,Malawi
+131,'458,Malaysia
+132,'462,Maldives
+133,'466,Mali
+134,'470,Malta
+135,'474,Martinique
+136,'478,Mauritania
+137,'480,Mauritius
+5502,'054,Melanesia
+138,'484,Mexico
+5503,'057,Micronesia
+5102,'017,Middle Africa
+141,'496,Mongolia
+143,'504,Morocco
+144,'508,Mozambique
+28,'104,Myanmar
+147,'516,Namibia
+149,'524,Nepal
+5817,'902,Net Food Importing Developing Countries (NFIDCs)
+150,'528,Netherlands (Kingdom of the)
+151,'530,Netherlands Antilles (former)
+153,'540,New Caledonia
+156,'554,New Zealand
+157,'558,Nicaragua
+158,'562,Niger
+159,'566,Nigeria
+154,'807,North Macedonia
+5103,'015,Northern Africa
+5203,'021,Northern America
+5402,'154,Northern Europe
+162,'578,Norway
+5500,'009,Oceania
+221,'512,Oman
+165,'586,Pakistan
+299,'275,Palestine
+166,'591,Panama
+168,'598,Papua New Guinea
+169,'600,Paraguay
+170,'604,Peru
+171,'608,Philippines
+173,'616,Poland
+5504,'061,Polynesia
+174,'620,Portugal
+177,'630,Puerto Rico
+179,'634,Qatar
+117,'410,Republic of Korea
+146,'498,Republic of Moldova
+182,'638,Réunion
+183,'642,Romania
+185,'643,Russian Federation
+184,'646,Rwanda
+188,'659,Saint Kitts and Nevis
+189,'662,Saint Lucia
+191,'670,Saint Vincent and the Grenadines
+244,'882,Samoa
+193,'678,Sao Tome and Principe
+194,'682,Saudi Arabia
+195,'686,Senegal
+272,'688,Serbia
+186,'891,Serbia and Montenegro
+196,'690,Seychelles
+197,'694,Sierra Leone
+200,'702,Singapore
+199,'703,Slovakia
+198,'705,Slovenia
+5803,'722,Small Island Developing States (SIDS)
+25,'090,Solomon Islands
+201,'706,Somalia
+202,'710,South Africa
+5207,'005,South America
+277,'728,South Sudan
+5304,'035,South-eastern Asia
+5104,'018,Southern Africa
+5303,'034,Southern Asia
+5403,'039,Southern Europe
+203,'724,Spain
+38,'144,Sri Lanka
+276,'729,Sudan
+206,'736,Sudan (former)
+207,'740,Suriname
+210,'752,Sweden
+211,'756,Switzerland
+212,'760,Syrian Arab Republic
+208,'762,Tajikistan
+216,'764,Thailand
+176,'626,Timor-Leste
+217,'768,Togo
+219,'776,Tonga
+220,'780,Trinidad and Tobago
+222,'788,Tunisia
+223,'792,Türkiye
+213,'795,Turkmenistan
+226,'800,Uganda
+230,'804,Ukraine
+229,'826,United Kingdom of Great Britain and Northern Ireland
+215,'834,United Republic of Tanzania
+231,'840,United States of America
+234,'858,Uruguay
+228,'810,USSR
+235,'860,Uzbekistan
+155,'548,Vanuatu
+236,'862,Venezuela (Bolivarian Republic of)
+237,'704,Viet Nam
+5105,'011,Western Africa
+5305,'145,Western Asia
+5404,'155,Western Europe
+5000,'001,World
+249,'887,Yemen
+248,'890,Yugoslav SFR
+251,'894,Zambia
+181,'716,Zimbabwe

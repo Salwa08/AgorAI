@@ -80,7 +80,6 @@ results_df = pd.DataFrame([
         'Config': name,
         'SHARED Yield': f"{v['avg_yield_shared']:.3f}",
         'INDIVIDUAL Yield': f"{v['avg_yield_individual']:.3f}",
-        'Advantage': f"{v['advantage']:+.3f}",
         'Timesteps': v['params']['n_timesteps'],
         'Shared Weight': f"{v['params']['shared_weight']:.1f}"
     }

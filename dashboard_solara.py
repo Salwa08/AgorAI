@@ -210,7 +210,7 @@ def build_map(df):
             f"<span style='color:#4caf50'>\u25cf SHARED</span><br>"
             f"Zone: {zone_label}<br>"
             f"Yield: {row['mean_yield']:.2f} t/ha<br>"
-            f"Profit: {row['mean_profit']:.1f}"
+            f"Profit: {row.get('mean_profit_mad', row.get('mean_profit', 0)):.0f} MAD"
         )
 
     fig.add_trace(go.Scattergeo(
@@ -242,7 +242,7 @@ def build_map(df):
             f"<span style='color:#ef5350'>\u25cf INDIVIDUAL</span><br>"
             f"Zone: {zone_label}<br>"
             f"Yield: {row['mean_yield']:.2f} t/ha<br>"
-            f"Profit: {row['mean_profit']:.1f}"
+            f"Profit: {row.get('mean_profit_mad', row.get('mean_profit', 0)):.0f} MAD"
         )
 
     fig.add_trace(go.Scattergeo(
@@ -386,11 +386,12 @@ def build_profit_scatter(df):
     """Scatter plot of yield vs profit colored by strategy."""
     fig = go.Figure()
 
+    profit_col = "mean_profit_mad" if "mean_profit_mad" in df.columns else "mean_profit"
     for strat, color in [("SHARED", "#2e7d32"), ("INDIVIDUAL", "#1565c0")]:
         sdf = df[df["strategy"] == strat]
         fig.add_trace(go.Scatter(
             x=sdf["mean_yield"],
-            y=sdf["mean_profit"],
+            y=sdf[profit_col],
             mode="markers",
             name=strat,
             marker=dict(color=color, size=8, opacity=0.7, line=dict(width=1, color="white")),
@@ -563,10 +564,10 @@ def DataTab(df):
             "total": len(zdf),
             "s_count": len(shared),
             "s_yield": shared["mean_yield"].mean() if len(shared) > 0 else 0,
-            "s_profit": shared["mean_profit"].mean() if len(shared) > 0 else 0,
+            "s_profit": shared["mean_profit_mad"].mean() if "mean_profit_mad" in shared.columns and len(shared) > 0 else (shared["mean_profit"].mean() if "mean_profit" in shared.columns and len(shared) > 0 else 0),
             "i_count": len(indiv),
             "i_yield": indiv["mean_yield"].mean() if len(indiv) > 0 else 0,
-            "i_profit": indiv["mean_profit"].mean() if len(indiv) > 0 else 0,
+            "i_profit": indiv["mean_profit_mad"].mean() if "mean_profit_mad" in indiv.columns and len(indiv) > 0 else (indiv["mean_profit"].mean() if "mean_profit" in indiv.columns and len(indiv) > 0 else 0),
         })
 
     # Styled HTML comparison table
@@ -618,26 +619,29 @@ def DataTab(df):
             <td><span class="count-badge">{z['total']}</span></td>
             <td><span class="count-badge s-badge">{z['s_count']}</span></td>
             <td class="s-val">{'<b>' if best_yield=='s' else ''}{z['s_yield']:.2f}{'</b> ⭐' if best_yield=='s' else ''}</td>
-            <td class="s-val">{z['s_profit']:.1f}</td>
+            <td class="s-val">{z['s_profit']:,.0f}</td>
             <td><span class="count-badge i-badge">{z['i_count']}</span></td>
             <td class="i-val">{'<b>' if best_yield=='i' else ''}{z['i_yield']:.2f}{'</b> ⭐' if best_yield=='i' else ''}</td>
-            <td class="i-val">{z['i_profit']:.1f}</td>
+            <td class="i-val">{z['i_profit']:,.0f}</td>
         </tr>
         """
 
     # Totals row
     t_shared = df[df["strategy"] == "SHARED"]
     t_indiv = df[df["strategy"] == "INDIVIDUAL"]
+    _pcol = "mean_profit_mad" if "mean_profit_mad" in df.columns else "mean_profit"
+    _s_profit_avg = t_shared[_pcol].mean() if len(t_shared) > 0 else 0
+    _i_profit_avg = t_indiv[_pcol].mean() if len(t_indiv) > 0 else 0
     table_html += f"""
     <tr style="background:linear-gradient(90deg,#f5f5f5,#e8f5e9); font-weight:700; border-top:2px solid #ddd;">
         <td class="zone-name" style="font-size:13px;">📊 OVERALL AVERAGE</td>
         <td><span class="count-badge">{len(df)}</span></td>
         <td><span class="count-badge s-badge">{len(t_shared)}</span></td>
         <td class="s-val">{t_shared['mean_yield'].mean():.2f}</td>
-        <td class="s-val">{t_shared['mean_profit'].mean():.1f}</td>
+        <td class="s-val">{_s_profit_avg:,.0f}</td>
         <td><span class="count-badge i-badge">{len(t_indiv)}</span></td>
         <td class="i-val">{t_indiv['mean_yield'].mean():.2f}</td>
-        <td class="i-val">{t_indiv['mean_profit'].mean():.1f}</td>
+        <td class="i-val">{_i_profit_avg:,.0f}</td>
     </tr>
     """
     table_html += "</tbody></table>"
@@ -670,11 +674,12 @@ def DataTab(df):
     if filter_zone != "All":
         display_df = display_df[display_df["zone"] == filter_zone]
 
-    cols = ["unique_id", "strategy", "zone", "mean_yield", "mean_profit"]
+    profit_col = "mean_profit_mad" if "mean_profit_mad" in display_df.columns else "mean_profit"
+    cols = ["unique_id", "strategy", "zone", "mean_yield", profit_col]
     display_df = display_df[cols].copy()
     display_df["mean_yield"] = display_df["mean_yield"].round(3)
-    display_df["mean_profit"] = display_df["mean_profit"].round(2)
-    display_df.columns = ["ID", "Strategy", "Zone", "Yield (t/ha)", "Profit"]
+    display_df[profit_col] = display_df[profit_col].round(0)
+    display_df.columns = ["ID", "Strategy", "Zone", "Yield (t/ha)", "Profit (MAD)"]
 
     solara.Markdown(f"Showing **{len(display_df)}** of {len(df)} farmers")
     solara.DataFrame(display_df, items_per_page=10)
@@ -774,16 +779,16 @@ def Dashboard():
     shared = len(df[df["strategy"] == "SHARED"])
     individual = total - shared
     avg_yield = df["mean_yield"].mean()
-    avg_profit = df["mean_profit"].mean()
-    yield_adv = metrics.get("yield_advantage_shared", 0)
-    profit_adv = metrics.get("profit_advantage_shared", 0)
+    avg_profit = df["mean_profit_mad"].mean() if "mean_profit_mad" in df.columns else df["mean_profit"].mean()
+    yield_adv = metrics.get("yield_advantage_shared_t_ha", metrics.get("yield_advantage_shared", 0))
+    profit_adv = metrics.get("profit_advantage_shared_mad", metrics.get("profit_advantage_shared", 0))
 
     with solara.Row(gap="16px", justify="center"):
         MetricCard(str(total), "Total Farmers")
         MetricCard(f"{shared}", "Shared Strategy", css_class="blue")
         MetricCard(f"{avg_yield:.2f}", "Avg Yield (t/ha)", css_class="orange")
         MetricCard(f"{yield_adv:+.3f}", "Yield Advantage", css_class="purple")
-        MetricCard(f"{profit_adv:+.1f}", "Profit Advantage", css_class="green")
+        MetricCard(f"{profit_adv:+,.0f} MAD", "Profit Advantage", css_class="green")
 
     solara.HTML(tag="div", unsafe_innerHTML='<div style="height:16px"></div>')
 
