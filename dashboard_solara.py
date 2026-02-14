@@ -109,6 +109,7 @@ CUSTOM_CSS = """
 # REACTIVE STATE
 # ============================================================================
 df_state = solara.reactive(None)
+hist_state = solara.reactive(None)
 metrics_state = solara.reactive({})
 tab_index = solara.reactive(0)
 loop_step = solara.reactive(0)
@@ -127,6 +128,10 @@ def load_data():
         if csv_path.exists():
             df = pd.read_csv(csv_path)
             df_state.set(df)
+
+            hist_path = results_dir / "season_history.csv"
+            if hist_path.exists():
+                hist_state.set(pd.read_csv(hist_path))
 
             if json_path.exists():
                 with open(json_path) as f:
@@ -164,151 +169,113 @@ ZONE_COLORS = {
 # CHART BUILDERS
 # ============================================================================
 def build_map(df):
-    """Geographic map with farmer agents on Morocco zones — realistic terrain style."""
+    """Interactive map with farmer agents on Morocco zones using Mapbox (OSM tiles)."""
     fig = go.Figure()
 
-    # ── Zone shading circles (colored translucent areas for each zone) ──
-    zone_radius = {
-        "IRRIGATED_SOUSS": 0.7, "SUB_HUMID": 0.8, "SEMI_ARID_WARM": 0.8,
-        "SEMI_ARID_COOL": 0.7, "ARID": 0.9, "SAHARAN": 0.9,
-    }
-    zone_bg_colors = {
-        "IRRIGATED_SOUSS": "rgba(33,150,243,0.12)",
-        "SUB_HUMID": "rgba(76,175,80,0.12)",
-        "SEMI_ARID_WARM": "rgba(255,152,0,0.12)",
-        "SEMI_ARID_COOL": "rgba(0,188,212,0.12)",
-        "ARID": "rgba(244,67,54,0.10)",
-        "SAHARAN": "rgba(161,136,127,0.10)",
-    }
     import numpy as np
+    random.seed(42)  # stable jitter across reloads
+
+    # ── Zone boundary circles ──
+    zone_radius = {
+        "IRRIGATED_SOUSS": 0.6, "SUB_HUMID": 0.7, "SEMI_ARID_WARM": 0.7,
+        "SEMI_ARID_COOL": 0.6, "ARID": 0.8, "SAHARAN": 0.8,
+    }
     for zone_id, (clat, clon, _) in ZONE_COORDS.items():
         r = zone_radius.get(zone_id, 0.7)
-        angles = np.linspace(0, 2 * np.pi, 40)
-        ring_lats = [clat + r * np.sin(a) for a in angles]
-        ring_lons = [clon + r * np.cos(a) for a in angles]
-        fig.add_trace(go.Scattergeo(
+        angles = np.linspace(0, 2 * np.pi, 60)
+        ring_lats = [clat + r * np.sin(a) for a in angles] + [clat + r * np.sin(angles[0])]
+        ring_lons = [clon + r * np.cos(a) for a in angles] + [clon + r * np.cos(angles[0])]
+        fig.add_trace(go.Scattermapbox(
             lon=ring_lons, lat=ring_lats,
             mode="lines",
             line=dict(width=2.5, color=ZONE_COLORS[zone_id]),
             fill="toself",
-            fillcolor=zone_bg_colors.get(zone_id, "rgba(100,100,100,0.08)"),
+            fillcolor=ZONE_COLORS[zone_id].replace(")", ",0.08)").replace("rgb", "rgba") if "rgb" in ZONE_COLORS[zone_id] else f"rgba(150,150,150,0.06)",
             showlegend=False,
             hoverinfo="skip",
         ))
 
     # ── SHARED agents ──
     shared_df = df[df["strategy"] == "SHARED"]
-    s_lats, s_lons, s_texts, s_sizes, s_yields = [], [], [], [], []
+    s_lats, s_lons, s_texts, s_sizes = [], [], [], []
     for _, row in shared_df.iterrows():
         base_lat, base_lon, zone_label = ZONE_COORDS.get(row["zone"], (31, -5, row["zone"]))
         s_lats.append(base_lat + random.uniform(-0.45, 0.45))
         s_lons.append(base_lon + random.uniform(-0.45, 0.45))
-        s_sizes.append(max(8, min(18, row["mean_yield"] * 1.5)))
-        s_yields.append(row["mean_yield"])
+        s_sizes.append(max(8, min(22, row["mean_yield"] * 1.2 + 5)))
         s_texts.append(
             f"<b>Farmer #{int(row['unique_id'])}</b><br>"
-            f"<span style='color:#4caf50'>\u25cf SHARED</span><br>"
+            f"<span style='color:#4caf50'>● SHARED</span><br>"
             f"Zone: {zone_label}<br>"
             f"Yield: {row['mean_yield']:.2f} t/ha<br>"
             f"Profit: {row['mean_profit']:.1f}"
         )
 
-    fig.add_trace(go.Scattergeo(
+    fig.add_trace(go.Scattermapbox(
         lon=s_lons, lat=s_lats, mode="markers",
-        name=f"\ud83e\udd1d SHARED ({len(shared_df)})",
+        name=f"SHARED ({len(shared_df)})",
         text=s_texts,
         hovertemplate="%{text}<extra></extra>",
         marker=dict(
             size=s_sizes,
             color="#2e7d32",
-            showscale=False,
-            opacity=0.88,
-            line=dict(width=1.5, color="white"),
-            symbol="circle",
+            opacity=0.85,
         ),
     ))
 
     # ── INDIVIDUAL agents ──
     indiv_df = df[df["strategy"] == "INDIVIDUAL"]
-    i_lats, i_lons, i_texts, i_sizes, i_yields = [], [], [], [], []
+    i_lats, i_lons, i_texts, i_sizes = [], [], [], []
     for _, row in indiv_df.iterrows():
         base_lat, base_lon, zone_label = ZONE_COORDS.get(row["zone"], (31, -5, row["zone"]))
         i_lats.append(base_lat + random.uniform(-0.45, 0.45))
         i_lons.append(base_lon + random.uniform(-0.45, 0.45))
-        i_sizes.append(max(8, min(18, row["mean_yield"] * 1.5)))
-        i_yields.append(row["mean_yield"])
+        i_sizes.append(max(8, min(22, row["mean_yield"] * 1.2 + 5)))
         i_texts.append(
             f"<b>Farmer #{int(row['unique_id'])}</b><br>"
-            f"<span style='color:#ef5350'>\u25cf INDIVIDUAL</span><br>"
+            f"<span style='color:#ef5350'>● INDIVIDUAL</span><br>"
             f"Zone: {zone_label}<br>"
             f"Yield: {row['mean_yield']:.2f} t/ha<br>"
             f"Profit: {row['mean_profit']:.1f}"
         )
 
-    fig.add_trace(go.Scattergeo(
+    fig.add_trace(go.Scattermapbox(
         lon=i_lons, lat=i_lats, mode="markers",
-        name=f"\ud83d\udc64 INDIVIDUAL ({len(indiv_df)})",
+        name=f"INDIVIDUAL ({len(indiv_df)})",
         text=i_texts,
         hovertemplate="%{text}<extra></extra>",
         marker=dict(
             size=i_sizes,
             color="#d32f2f",
-            showscale=False,
-            opacity=0.88,
-            line=dict(width=1.5, color="white"),
-            symbol="diamond",
+            opacity=0.85,
         ),
     ))
 
-    # ── Zone labels with colored backgrounds ──
+    # ── Zone label markers ──
     for zone_id, (lat, lon, label) in ZONE_COORDS.items():
-        zc = ZONE_COLORS[zone_id]
-        fig.add_trace(go.Scattergeo(
-            lon=[lon], lat=[lat + 0.85],
-            mode="markers+text",
-            text=[f"  {label}  "],
-            textfont=dict(size=11, color=zc, family="Arial", weight="bold"),
-            textposition="top center",
-            marker=dict(size=0, color="rgba(0,0,0,0)"),
+        fig.add_trace(go.Scattermapbox(
+            lon=[lon], lat=[lat + 0.75],
+            mode="text",
+            text=[label],
+            textfont=dict(size=11, color=ZONE_COLORS[zone_id], family="Arial Black"),
             showlegend=False,
             hoverinfo="skip",
         ))
 
-    # ── Layout — realistic terrain style ──
+    # ── Layout with OpenStreetMap (no API key needed) ──
     fig.update_layout(
         title=dict(
             text="<b>Farmer Agents Across Morocco</b>",
             font=dict(size=18, color="#333"),
             x=0.5, xanchor="center",
         ),
-        geo=dict(
-            projection_type="natural earth",
-            showland=True,
-            landcolor="#e8e0d4",
-            coastlinecolor="#8d6e63",
-            coastlinewidth=1.5,
-            countrycolor="#a1887f",
-            countrywidth=1,
-            showocean=True,
-            oceancolor="#b3d9e8",
-            showlakes=True,
-            lakecolor="#90caf9",
-            showrivers=True,
-            rivercolor="#90caf9",
-            riverwidth=1,
-            showcountries=True,
-            showsubunits=True,
-            subunitcolor="#bcaaa4",
-            center=dict(lat=31.5, lon=-6),
-            projection_scale=12,
-            lataxis=dict(range=[27, 36]),
-            lonaxis=dict(range=[-13, 0]),
-            bgcolor="#f5f0eb",
-            framecolor="#8d6e63",
-            framewidth=2,
+        mapbox=dict(
+            style="open-street-map",
+            center=dict(lat=31.5, lon=-6.5),
+            zoom=4.8,
         ),
         height=620,
-        margin=dict(l=0, r=60, t=55, b=0),
+        margin=dict(l=0, r=0, t=55, b=0),
         legend=dict(
             yanchor="top", y=0.95,
             xanchor="left", x=0.01,
@@ -382,6 +349,68 @@ def build_zone_chart(df):
     return fig
 
 
+def build_learning_curves(hist_df):
+    """Line chart showing yield and profit evolution over seasons."""
+    fig = go.Figure()
+
+    if hist_df is not None and "season" in hist_df.columns:
+        for col, name, color, dash in [
+            ("shared_mean_yield", "SHARED Yield", "#2e7d32", "solid"),
+            ("indiv_mean_yield", "INDIV Yield", "#1565c0", "solid"),
+        ]:
+            if col in hist_df.columns:
+                fig.add_trace(go.Scatter(
+                    x=hist_df["season"], y=hist_df[col],
+                    mode="lines+markers", name=name,
+                    line=dict(color=color, width=2.5, dash=dash),
+                    marker=dict(size=6),
+                ))
+
+    fig.update_layout(
+        title=dict(text="<b>Yield Over Seasons (Learning Curves)</b>", font=dict(size=16)),
+        xaxis_title="Season",
+        yaxis_title="Mean Yield (t/ha)",
+        height=420,
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="#fafafa",
+        xaxis=dict(gridcolor="#eee"),
+        yaxis=dict(gridcolor="#eee"),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="center", x=0.5),
+    )
+    return fig
+
+
+def build_profit_curves(hist_df):
+    """Line chart showing profit evolution over seasons."""
+    fig = go.Figure()
+
+    if hist_df is not None and "season" in hist_df.columns:
+        for col, name, color in [
+            ("shared_mean_profit", "SHARED Profit", "#2e7d32"),
+            ("indiv_mean_profit", "INDIV Profit", "#1565c0"),
+        ]:
+            if col in hist_df.columns:
+                fig.add_trace(go.Scatter(
+                    x=hist_df["season"], y=hist_df[col],
+                    mode="lines+markers", name=name,
+                    line=dict(color=color, width=2.5),
+                    marker=dict(size=6),
+                ))
+
+    fig.update_layout(
+        title=dict(text="<b>Profit Over Seasons</b>", font=dict(size=16)),
+        xaxis_title="Season",
+        yaxis_title="Mean Profit",
+        height=420,
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="#fafafa",
+        xaxis=dict(gridcolor="#eee"),
+        yaxis=dict(gridcolor="#eee"),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="center", x=0.5),
+    )
+    return fig
+
+
 def build_profit_scatter(df):
     """Scatter plot of yield vs profit colored by strategy."""
     fig = go.Figure()
@@ -419,32 +448,36 @@ LOOP_STEPS = [
     {
         "icon": "🌱",
         "title": "Step 1: Farmers Evaluate Crops",
-        "detail": "Each farmer scores all viable crops using zone compatibility, soil match, and climate fit. "
-                  "Suitability = 0.4×zone + 0.25×soil + 0.25×climate.",
+        "detail": "Each farmer scores all viable crops using ecological suitability: "
+                  "zone fit, soil match, climate compatibility, and soil moisture. "
+                  "SHARED farmers add bonus signals from zone knowledge and neighbor experience.",
     },
     {
         "icon": "🌾",
         "title": "Step 2: Crop Selection",
-        "detail": "INDIVIDUAL farmers pick the top-scoring crop. "
-                  "SHARED farmers blend their score with community knowledge (60% shared, 40% individual).",
+        "detail": "INDIVIDUAL farmers pick the top-scoring crop based on suitability alone. "
+                  "SHARED farmers add zone-level and neighbor-based knowledge bonuses to their scores, "
+                  "then choose the highest-scoring crop.",
     },
     {
         "icon": "📊",
-        "title": "Step 3: Yield Calculation",
-        "detail": "yield = base_yield × suitability × variability. "
-                  "Variability is random between 0.8–1.2 to simulate real conditions.",
+        "title": "Step 3: Season Outcome",
+        "detail": "Each farmer's yield, cost, and water use are calculated via calculate_season_outcome(). "
+                  "SHARED farmers benefit from cooperative economics: better prices, bulk cost savings, "
+                  "and lower post-harvest losses.",
     },
     {
         "icon": "🤝",
         "title": "Step 4: Knowledge Sharing",
-        "detail": "SHARED farmers within each zone pool their results. "
-                  "The community average yield per crop is computed and stored.",
+        "detail": "SHARED farmers pool results at the zone level (shared_crop_yield, shared_crop_profit). "
+                  "Neighbor-based propagation also spreads knowledge via a social network graph "
+                  "filtered to same-zone neighbors.",
     },
     {
         "icon": "🔄",
         "title": "Step 5: Update & Repeat",
-        "detail": "Community knowledge is updated. Next timestep begins. "
-                  "Over time, SHARED farmers converge on the best crop for their zone.",
+        "detail": "Community knowledge and individual knowledge bases are updated. Next season begins. "
+                  "Over time, SHARED farmers converge on optimal crops and gain cooperative advantages.",
     },
 ]
 
@@ -529,6 +562,7 @@ def MapTab(df):
 def ChartsTab(df):
     """Charts visualization tab."""
     solara.Markdown("### 📊 Performance Analysis")
+    hist_df = hist_state.value
 
     with solara.Columns([6, 6]):
         with solara.Card("Yield by Strategy", elevation=1, style={"border-radius": "12px"}):
@@ -539,6 +573,15 @@ def ChartsTab(df):
 
     with solara.Card("Yield vs Profit Correlation", elevation=1, style={"border-radius": "12px"}):
         solara.FigurePlotly(build_profit_scatter(df))
+
+    if hist_df is not None:
+        solara.Markdown("### 📈 Learning Curves (Season-by-Season)")
+        with solara.Columns([6, 6]):
+            with solara.Card("Yield Over Seasons", elevation=1, style={"border-radius": "12px"}):
+                solara.FigurePlotly(build_learning_curves(hist_df))
+
+            with solara.Card("Profit Over Seasons", elevation=1, style={"border-radius": "12px"}):
+                solara.FigurePlotly(build_profit_curves(hist_df))
 
 
 @solara.component
@@ -690,10 +733,12 @@ def InfoTab(metrics):
 This is an **Agent-Based Model (ABM)** of Moroccan agriculture using the **Mesa** framework.
 
 **100 farmer agents** are distributed across **6 agricultural zones** of Morocco.
-Each farmer chooses a crop every season based on ecological suitability and either:
+Each farmer chooses a crop every season based on ecological suitability, goal profiles, and either:
 
-- **INDIVIDUAL** strategy: Decides alone based on zone, soil, and climate scores
-- **SHARED** strategy: Blends personal assessment with community knowledge
+- **INDIVIDUAL** strategy: Decides alone based on zone, soil, climate, and moisture scores
+- **SHARED** strategy: Adds zone-level and neighbor-based knowledge bonuses to suitability, and benefits from cooperative economics (better prices, lower costs, reduced post-harvest loss)
+
+The simulation tracks yield, cost, water use, and profit over multiple seasons with realistic weather variability, drought response, and social learning through a NetworkX graph.
         """)
 
     with solara.Columns([6, 6]):
@@ -707,12 +752,12 @@ Each farmer chooses a crop every season based on ecological suitability and eith
 
         with solara.Card("Loop Explanation", elevation=1, style={"border-radius": "12px"}):
             solara.Markdown("""
-Each simulation timestep follows 5 phases:
-1. Farmers evaluate crop suitability
-2. Select optimal crop
-3. Calculate yield with variability
-4. SHARED farmers pool knowledge
-5. Community knowledge updates
+Each simulation season follows 5 phases:
+1. Farmers evaluate crop suitability (ecological + knowledge bonuses)
+2. Select optimal crop (SHARED adds social signals)
+3. Calculate yield, cost, water; apply cooperative economics
+4. SHARED farmers pool zone knowledge + neighbor propagation
+5. Knowledge bases update; next season begins
             """)
 
     if metrics:
