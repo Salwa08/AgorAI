@@ -2590,3 +2590,337 @@ ID    Strategy     Zone            Yield (t/ha)    Profit
 2026-02-14 20:09:12,487 - agroai_sim - INFO -    4. Re-run this notebook to compare results
 2026-02-14 20:09:12,488 - agroai_sim - INFO - 
 2026-02-14 20:09:12,489 - agroai_sim - INFO - ============================================================
+2026-02-14 23:16:11,188 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 23:16:11,200 - agroai_sim - INFO - ============================================================
+2026-02-14 23:16:11,201 - agroai_sim - INFO - AgroAI — Unified Agricultural Agent-Based Simulation
+2026-02-14 23:16:11,204 - agroai_sim - INFO - Agents: 200  |  Seasons: 10  |  Seed: 42
+2026-02-14 23:16:11,206 - agroai_sim - INFO - ============================================================
+2026-02-14 23:16:11,253 - agroai_sim - INFO - Loaded 6 zones: SUB_HUMID, SEMI_ARID_WARM, SEMI_ARID_COOL, ARID, SAHARAN, IRRIGATED_SOUSS
+2026-02-14 23:16:11,253 - agroai_sim - INFO - Loaded 24 crops from FAOSTAT/EcoCrop database
+2026-02-14 23:16:11,261 - agroai_sim - INFO - Climate source: NASA POWER API v2.0 (https://power.larc.nasa.gov/)
+2026-02-14 23:16:11,265 - agroai_sim - INFO - Soil moisture source: morocco_soilmoisture.csv
+2026-02-14 23:16:11,267 - agroai_sim - INFO - Cost model: SMAG=84.37 MAD/day
+2026-02-14 23:16:32,544 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 23:16:32,563 - agroai_sim - INFO - ============================================================
+2026-02-14 23:16:32,568 - agroai_sim - INFO - AgroAI — Unified Agricultural Agent-Based Simulation
+2026-02-14 23:16:32,574 - agroai_sim - INFO - Agents: 200  |  Seasons: 10  |  Seed: 42
+2026-02-14 23:16:32,579 - agroai_sim - INFO - ============================================================
+2026-02-14 23:16:32,671 - agroai_sim - INFO - Loaded 6 zones: SUB_HUMID, SEMI_ARID_WARM, SEMI_ARID_COOL, ARID, SAHARAN, IRRIGATED_SOUSS
+2026-02-14 23:16:32,676 - agroai_sim - INFO - Loaded 24 crops from FAOSTAT/EcoCrop database
+2026-02-14 23:16:32,682 - agroai_sim - INFO - Climate source: NASA POWER API v2.0 (https://power.larc.nasa.gov/)
+2026-02-14 23:16:32,683 - agroai_sim - INFO - Soil moisture source: morocco_soilmoisture.csv
+2026-02-14 23:16:32,688 - agroai_sim - INFO - Cost model: SMAG=84.37 MAD/day
+2026-02-14 23:18:39,847 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 23:18:39,858 - agroai_sim - INFO - ============================================================
+2026-02-14 23:18:39,863 - agroai_sim - INFO - AgroAI — Unified Agricultural Agent-Based Simulation
+2026-02-14 23:18:39,866 - agroai_sim - INFO - Agents: 200  |  Seasons: 10  |  Seed: 42
+2026-02-14 23:18:39,866 - agroai_sim - INFO - ============================================================
+2026-02-14 23:18:59,368 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 23:18:59,388 - agroai_sim - INFO - ============================================================
+2026-02-14 23:18:59,398 - agroai_sim - INFO - AgroAI — Unified Agricultural Agent-Based Simulation
+2026-02-14 23:18:59,400 - agroai_sim - INFO - Agents: 200  |  Seasons: 10  |  Seed: 42
+2026-02-14 23:18:59,410 - agroai_sim - INFO - ============================================================
+2026-02-14 23:18:59,499 - agroai_sim - INFO - Loaded 6 zones: SUB_HUMID, SEMI_ARID_WARM, SEMI_ARID_COOL, ARID, SAHARAN, IRRIGATED_SOUSS
+2026-02-14 23:18:59,504 - agroai_sim - INFO - Loaded 24 crops from FAOSTAT/EcoCrop database
+2026-02-14 23:18:59,508 - agroai_sim - INFO - Climate source: NASA POWER API v2.0 (https://power.larc.nasa.gov/)
+2026-02-14 23:18:59,515 - agroai_sim - INFO - Soil moisture source: morocco_soilmoisture.csv
+2026-02-14 23:18:59,517 - agroai_sim - INFO - Cost model: SMAG=84.37 MAD/day
+2026-02-14 23:18:59,977 - agroai_sim - INFO - Running: topology=small_world, seed=42
+2026-02-14 23:20:52,931 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 23:20:52,939 - agroai_sim - INFO - ============================================================
+2026-02-14 23:20:52,939 - agroai_sim - INFO - AgroAI — Unified Agricultural Agent-Based Simulation
+2026-02-14 23:20:52,939 - agroai_sim - INFO - Agents: 200  |  Seasons: 10  |  Seed: 42
+2026-02-14 23:20:52,945 - agroai_sim - INFO - ============================================================
+2026-02-14 23:20:52,977 - agroai_sim - INFO - Loaded 6 zones: SUB_HUMID, SEMI_ARID_WARM, SEMI_ARID_COOL, ARID, SAHARAN, IRRIGATED_SOUSS
+2026-02-14 23:20:52,984 - agroai_sim - INFO - Loaded 24 crops from FAOSTAT/EcoCrop database
+2026-02-14 23:20:52,986 - agroai_sim - INFO - Climate source: NASA POWER API v2.0 (https://power.larc.nasa.gov/)
+2026-02-14 23:20:52,987 - agroai_sim - INFO - Soil moisture source: morocco_soilmoisture.csv
+2026-02-14 23:20:52,989 - agroai_sim - INFO - Cost model: SMAG=84.37 MAD/day
+2026-02-14 23:20:53,263 - agroai_sim - INFO - Running: topology=small_world, seed=42
+2026-02-14 23:20:53,400 - agroai_sim - INFO - Model created: 200 pairs × 2 = 400 agents, topology=small_world
+2026-02-14 23:20:53,514 - agroai_sim - INFO - Timestep 1: SHARED avg profit = 128256 MAD
+2026-02-14 23:20:53,949 - agroai_sim - INFO - Timestep 2: SHARED avg profit = 234684 MAD
+2026-02-14 23:20:54,548 - agroai_sim - INFO - Timestep 3: SHARED avg profit = 388155 MAD
+2026-02-14 23:20:55,120 - agroai_sim - INFO - Timestep 4: SHARED avg profit = 324977 MAD
+2026-02-14 23:20:55,685 - agroai_sim - INFO - Timestep 5: SHARED avg profit = 358898 MAD
+2026-02-14 23:20:56,785 - agroai_sim - INFO - Timestep 6: SHARED avg profit = 449652 MAD
+2026-02-14 23:20:57,770 - agroai_sim - INFO - Timestep 7: SHARED avg profit = 388681 MAD
+2026-02-14 23:20:58,692 - agroai_sim - INFO - Timestep 8: SHARED avg profit = 440956 MAD
+2026-02-14 23:20:59,811 - agroai_sim - INFO - Timestep 9: SHARED avg profit = 436182 MAD
+2026-02-14 23:21:00,779 - agroai_sim - INFO - Timestep 10: SHARED avg profit = 416560 MAD
+2026-02-14 23:21:00,877 - agroai_sim - INFO - Running: topology=random, seed=42
+2026-02-14 23:21:01,082 - agroai_sim - INFO - Model created: 200 pairs × 2 = 400 agents, topology=random
+2026-02-14 23:21:01,212 - agroai_sim - INFO - Timestep 1: SHARED avg profit = 133656 MAD
+2026-02-14 23:21:01,721 - agroai_sim - INFO - Timestep 2: SHARED avg profit = 232149 MAD
+2026-02-14 23:21:02,281 - agroai_sim - INFO - Timestep 3: SHARED avg profit = 429487 MAD
+2026-02-14 23:21:02,741 - agroai_sim - INFO - Timestep 4: SHARED avg profit = 355891 MAD
+2026-02-14 23:21:03,240 - agroai_sim - INFO - Timestep 5: SHARED avg profit = 373163 MAD
+2026-02-14 23:21:03,711 - agroai_sim - INFO - Timestep 6: SHARED avg profit = 484257 MAD
+2026-02-14 23:21:04,225 - agroai_sim - INFO - Timestep 7: SHARED avg profit = 406853 MAD
+2026-02-14 23:21:04,929 - agroai_sim - INFO - Timestep 8: SHARED avg profit = 478180 MAD
+2026-02-14 23:21:05,894 - agroai_sim - INFO - Timestep 9: SHARED avg profit = 491230 MAD
+2026-02-14 23:21:06,806 - agroai_sim - INFO - Timestep 10: SHARED avg profit = 424230 MAD
+2026-02-14 23:21:06,872 - agroai_sim - INFO - Running: topology=scale_free, seed=42
+2026-02-14 23:21:06,994 - agroai_sim - INFO - Model created: 200 pairs × 2 = 400 agents, topology=scale_free
+2026-02-14 23:21:07,111 - agroai_sim - INFO - Timestep 1: SHARED avg profit = 124452 MAD
+2026-02-14 23:21:07,656 - agroai_sim - INFO - Timestep 2: SHARED avg profit = 227031 MAD
+2026-02-14 23:21:08,454 - agroai_sim - INFO - Timestep 3: SHARED avg profit = 389483 MAD
+2026-02-14 23:21:09,278 - agroai_sim - INFO - Timestep 4: SHARED avg profit = 343930 MAD
+2026-02-14 23:21:09,805 - agroai_sim - INFO - Timestep 5: SHARED avg profit = 345178 MAD
+2026-02-14 23:21:10,373 - agroai_sim - INFO - Timestep 6: SHARED avg profit = 406934 MAD
+2026-02-14 23:21:10,873 - agroai_sim - INFO - Timestep 7: SHARED avg profit = 374842 MAD
+2026-02-14 23:21:11,374 - agroai_sim - INFO - Timestep 8: SHARED avg profit = 433478 MAD
+2026-02-14 23:21:11,889 - agroai_sim - INFO - Timestep 9: SHARED avg profit = 422676 MAD
+2026-02-14 23:21:12,399 - agroai_sim - INFO - Timestep 10: SHARED avg profit = 398817 MAD
+2026-02-14 23:31:36,166 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 23:31:36,173 - agroai_sim - INFO - ============================================================
+2026-02-14 23:31:36,173 - agroai_sim - INFO - AgroAI — Unified Agricultural Agent-Based Simulation
+2026-02-14 23:31:36,179 - agroai_sim - INFO - Agents: 100  |  Seasons: 10  |  Seed: 42
+2026-02-14 23:31:36,181 - agroai_sim - INFO - ============================================================
+2026-02-14 23:31:36,238 - agroai_sim - INFO - Loaded 6 zones: SUB_HUMID, SEMI_ARID_WARM, SEMI_ARID_COOL, ARID, SAHARAN, IRRIGATED_SOUSS
+2026-02-14 23:31:36,240 - agroai_sim - INFO - Loaded 24 crops from FAOSTAT/EcoCrop database
+2026-02-14 23:31:36,240 - agroai_sim - INFO - Climate source: NASA POWER API v2.0 (https://power.larc.nasa.gov/)
+2026-02-14 23:31:36,248 - agroai_sim - INFO - Soil moisture source: morocco_soilmoisture.csv
+2026-02-14 23:31:36,252 - agroai_sim - INFO - Cost model: SMAG=84.37 MAD/day
+2026-02-14 23:31:36,555 - agroai_sim - INFO - Running: topology=small_world, seed=42
+2026-02-14 23:31:36,622 - agroai_sim - INFO - Model created: 100 pairs × 2 = 200 agents, topology=small_world
+2026-02-14 23:31:36,673 - agroai_sim - INFO - Timestep 1: SHARED avg profit = 144792 MAD
+2026-02-14 23:31:37,098 - agroai_sim - INFO - Timestep 2: SHARED avg profit = 355934 MAD
+2026-02-14 23:31:37,379 - agroai_sim - INFO - Timestep 3: SHARED avg profit = 603123 MAD
+2026-02-14 23:31:37,667 - agroai_sim - INFO - Timestep 4: SHARED avg profit = 514486 MAD
+2026-02-14 23:31:38,032 - agroai_sim - INFO - Timestep 5: SHARED avg profit = 572600 MAD
+2026-02-14 23:31:38,239 - agroai_sim - INFO - Timestep 6: SHARED avg profit = 729462 MAD
+2026-02-14 23:31:38,519 - agroai_sim - INFO - Timestep 7: SHARED avg profit = 664457 MAD
+2026-02-14 23:31:38,838 - agroai_sim - INFO - Timestep 8: SHARED avg profit = 756538 MAD
+2026-02-14 23:31:39,354 - agroai_sim - INFO - Timestep 9: SHARED avg profit = 716224 MAD
+2026-02-14 23:31:39,891 - agroai_sim - INFO - Timestep 10: SHARED avg profit = 711529 MAD
+2026-02-14 23:31:39,934 - agroai_sim - INFO - Running: topology=random, seed=42
+2026-02-14 23:31:40,039 - agroai_sim - INFO - Model created: 100 pairs × 2 = 200 agents, topology=random
+2026-02-14 23:31:40,150 - agroai_sim - INFO - Timestep 1: SHARED avg profit = 174575 MAD
+2026-02-14 23:31:40,449 - agroai_sim - INFO - Timestep 2: SHARED avg profit = 270633 MAD
+2026-02-14 23:31:40,960 - agroai_sim - INFO - Timestep 3: SHARED avg profit = 508075 MAD
+2026-02-14 23:31:41,230 - agroai_sim - INFO - Timestep 4: SHARED avg profit = 510016 MAD
+2026-02-14 23:31:41,451 - agroai_sim - INFO - Timestep 5: SHARED avg profit = 518062 MAD
+2026-02-14 23:31:41,733 - agroai_sim - INFO - Timestep 6: SHARED avg profit = 667037 MAD
+2026-02-14 23:31:41,938 - agroai_sim - INFO - Timestep 7: SHARED avg profit = 602455 MAD
+2026-02-14 23:31:42,124 - agroai_sim - INFO - Timestep 8: SHARED avg profit = 649600 MAD
+2026-02-14 23:31:42,354 - agroai_sim - INFO - Timestep 9: SHARED avg profit = 677351 MAD
+2026-02-14 23:31:42,567 - agroai_sim - INFO - Timestep 10: SHARED avg profit = 632926 MAD
+2026-02-14 23:31:42,582 - agroai_sim - INFO - Running: topology=scale_free, seed=42
+2026-02-14 23:31:42,622 - agroai_sim - INFO - Model created: 100 pairs × 2 = 200 agents, topology=scale_free
+2026-02-14 23:31:42,670 - agroai_sim - INFO - Timestep 1: SHARED avg profit = 157500 MAD
+2026-02-14 23:31:42,886 - agroai_sim - INFO - Timestep 2: SHARED avg profit = 331801 MAD
+2026-02-14 23:31:43,407 - agroai_sim - INFO - Timestep 3: SHARED avg profit = 631447 MAD
+2026-02-14 23:31:43,611 - agroai_sim - INFO - Timestep 4: SHARED avg profit = 547286 MAD
+2026-02-14 23:31:44,190 - agroai_sim - INFO - Timestep 5: SHARED avg profit = 566022 MAD
+2026-02-14 23:31:44,522 - agroai_sim - INFO - Timestep 6: SHARED avg profit = 739334 MAD
+2026-02-14 23:31:44,821 - agroai_sim - INFO - Timestep 7: SHARED avg profit = 633970 MAD
+2026-02-14 23:31:45,421 - agroai_sim - INFO - Timestep 8: SHARED avg profit = 711629 MAD
+2026-02-14 23:31:45,937 - agroai_sim - INFO - Timestep 9: SHARED avg profit = 716474 MAD
+2026-02-14 23:31:46,453 - agroai_sim - INFO - Timestep 10: SHARED avg profit = 700212 MAD
+2026-02-14 23:32:31,534 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 23:32:31,546 - agroai_sim - INFO - ============================================================
+2026-02-14 23:32:31,546 - agroai_sim - INFO - AgroAI — Unified Agricultural Agent-Based Simulation
+2026-02-14 23:32:31,546 - agroai_sim - INFO - Agents: 100  |  Seasons: 10  |  Seed: 42
+2026-02-14 23:32:31,551 - agroai_sim - INFO - ============================================================
+2026-02-14 23:32:31,600 - agroai_sim - INFO - Loaded 6 zones: SUB_HUMID, SEMI_ARID_WARM, SEMI_ARID_COOL, ARID, SAHARAN, IRRIGATED_SOUSS
+2026-02-14 23:32:31,604 - agroai_sim - INFO - Loaded 24 crops from FAOSTAT/EcoCrop database
+2026-02-14 23:32:31,607 - agroai_sim - INFO - Climate source: NASA POWER API v2.0 (https://power.larc.nasa.gov/)
+2026-02-14 23:32:31,611 - agroai_sim - INFO - Soil moisture source: morocco_soilmoisture.csv
+2026-02-14 23:32:31,612 - agroai_sim - INFO - Cost model: SMAG=84.37 MAD/day
+2026-02-14 23:32:31,908 - agroai_sim - INFO - Running: topology=small_world, seed=42
+2026-02-14 23:32:31,972 - agroai_sim - INFO - Model created: 100 pairs × 2 = 200 agents, topology=small_world
+2026-02-14 23:32:32,025 - agroai_sim - INFO - Timestep 1: SHARED avg profit = 119824 MAD
+2026-02-14 23:32:32,426 - agroai_sim - INFO - Timestep 2: SHARED avg profit = 269287 MAD
+2026-02-14 23:32:32,818 - agroai_sim - INFO - Timestep 3: SHARED avg profit = 331034 MAD
+2026-02-14 23:32:33,399 - agroai_sim - INFO - Timestep 4: SHARED avg profit = 235209 MAD
+2026-02-14 23:32:33,992 - agroai_sim - INFO - Timestep 5: SHARED avg profit = 255173 MAD
+2026-02-14 23:32:34,319 - agroai_sim - INFO - Timestep 6: SHARED avg profit = 352195 MAD
+2026-02-14 23:32:34,657 - agroai_sim - INFO - Timestep 7: SHARED avg profit = 301581 MAD
+2026-02-14 23:32:34,977 - agroai_sim - INFO - Timestep 8: SHARED avg profit = 373721 MAD
+2026-02-14 23:32:35,292 - agroai_sim - INFO - Timestep 9: SHARED avg profit = 352988 MAD
+2026-02-14 23:32:35,608 - agroai_sim - INFO - Timestep 10: SHARED avg profit = 324747 MAD
+2026-02-14 23:32:35,627 - agroai_sim - INFO - Running: topology=random, seed=42
+2026-02-14 23:32:35,688 - agroai_sim - INFO - Model created: 100 pairs × 2 = 200 agents, topology=random
+2026-02-14 23:32:35,737 - agroai_sim - INFO - Timestep 1: SHARED avg profit = 140858 MAD
+2026-02-14 23:32:35,869 - agroai_sim - INFO - Timestep 2: SHARED avg profit = 201318 MAD
+2026-02-14 23:32:36,082 - agroai_sim - INFO - Timestep 3: SHARED avg profit = 283604 MAD
+2026-02-14 23:32:36,327 - agroai_sim - INFO - Timestep 4: SHARED avg profit = 245549 MAD
+2026-02-14 23:32:36,547 - agroai_sim - INFO - Timestep 5: SHARED avg profit = 245187 MAD
+2026-02-14 23:32:36,815 - agroai_sim - INFO - Timestep 6: SHARED avg profit = 326974 MAD
+2026-02-14 23:32:37,028 - agroai_sim - INFO - Timestep 7: SHARED avg profit = 275099 MAD
+2026-02-14 23:32:37,245 - agroai_sim - INFO - Timestep 8: SHARED avg profit = 328200 MAD
+2026-02-14 23:32:37,450 - agroai_sim - INFO - Timestep 9: SHARED avg profit = 335197 MAD
+2026-02-14 23:32:37,709 - agroai_sim - INFO - Timestep 10: SHARED avg profit = 297793 MAD
+2026-02-14 23:32:37,731 - agroai_sim - INFO - Running: topology=scale_free, seed=42
+2026-02-14 23:32:37,796 - agroai_sim - INFO - Model created: 100 pairs × 2 = 200 agents, topology=scale_free
+2026-02-14 23:32:37,853 - agroai_sim - INFO - Timestep 1: SHARED avg profit = 125614 MAD
+2026-02-14 23:32:38,098 - agroai_sim - INFO - Timestep 2: SHARED avg profit = 250505 MAD
+2026-02-14 23:32:38,316 - agroai_sim - INFO - Timestep 3: SHARED avg profit = 365156 MAD
+2026-02-14 23:32:38,501 - agroai_sim - INFO - Timestep 4: SHARED avg profit = 278917 MAD
+2026-02-14 23:32:38,727 - agroai_sim - INFO - Timestep 5: SHARED avg profit = 258714 MAD
+2026-02-14 23:32:38,903 - agroai_sim - INFO - Timestep 6: SHARED avg profit = 369629 MAD
+2026-02-14 23:32:39,135 - agroai_sim - INFO - Timestep 7: SHARED avg profit = 311038 MAD
+2026-02-14 23:32:39,365 - agroai_sim - INFO - Timestep 8: SHARED avg profit = 364130 MAD
+2026-02-14 23:32:39,595 - agroai_sim - INFO - Timestep 9: SHARED avg profit = 334142 MAD
+2026-02-14 23:32:39,800 - agroai_sim - INFO - Timestep 10: SHARED avg profit = 369416 MAD
+2026-02-14 23:36:02,111 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 23:36:02,123 - agroai_sim - INFO - ============================================================
+2026-02-14 23:36:02,127 - agroai_sim - INFO - AgroAI — Unified Agricultural Agent-Based Simulation
+2026-02-14 23:36:02,129 - agroai_sim - INFO - Agents: 100  |  Seasons: 10  |  Seed: 42
+2026-02-14 23:36:02,136 - agroai_sim - INFO - ============================================================
+2026-02-14 23:36:02,215 - agroai_sim - INFO - Loaded 6 zones: SUB_HUMID, SEMI_ARID_WARM, SEMI_ARID_COOL, ARID, SAHARAN, IRRIGATED_SOUSS
+2026-02-14 23:36:02,219 - agroai_sim - INFO - Loaded 24 crops from FAOSTAT/EcoCrop database
+2026-02-14 23:36:02,221 - agroai_sim - INFO - Climate source: NASA POWER API v2.0 (https://power.larc.nasa.gov/)
+2026-02-14 23:36:02,223 - agroai_sim - INFO - Soil moisture source: morocco_soilmoisture.csv
+2026-02-14 23:36:02,227 - agroai_sim - INFO - Cost model: SMAG=84.37 MAD/day
+2026-02-14 23:36:02,565 - agroai_sim - INFO - Running: topology=small_world, seed=42
+2026-02-14 23:36:02,645 - agroai_sim - INFO - Model created: 100 pairs × 2 = 200 agents, topology=small_world
+2026-02-14 23:36:02,709 - agroai_sim - INFO - Timestep 1: SHARED avg profit = 119824 MAD
+2026-02-14 23:36:02,980 - agroai_sim - INFO - Timestep 2: SHARED avg profit = 269287 MAD
+2026-02-14 23:36:03,571 - agroai_sim - INFO - Timestep 3: SHARED avg profit = 331034 MAD
+2026-02-14 23:36:03,828 - agroai_sim - INFO - Timestep 4: SHARED avg profit = 235209 MAD
+2026-02-14 23:36:04,155 - agroai_sim - INFO - Timestep 5: SHARED avg profit = 255173 MAD
+2026-02-14 23:36:04,593 - agroai_sim - INFO - Timestep 6: SHARED avg profit = 352195 MAD
+2026-02-14 23:36:04,908 - agroai_sim - INFO - Timestep 7: SHARED avg profit = 301581 MAD
+2026-02-14 23:36:05,392 - agroai_sim - INFO - Timestep 8: SHARED avg profit = 373721 MAD
+2026-02-14 23:36:05,628 - agroai_sim - INFO - Timestep 9: SHARED avg profit = 352988 MAD
+2026-02-14 23:36:06,036 - agroai_sim - INFO - Timestep 10: SHARED avg profit = 324747 MAD
+2026-02-14 23:36:06,050 - agroai_sim - INFO - Running: topology=random, seed=42
+2026-02-14 23:36:06,097 - agroai_sim - INFO - Model created: 100 pairs × 2 = 200 agents, topology=random
+2026-02-14 23:36:06,137 - agroai_sim - INFO - Timestep 1: SHARED avg profit = 140858 MAD
+2026-02-14 23:36:06,289 - agroai_sim - INFO - Timestep 2: SHARED avg profit = 201318 MAD
+2026-02-14 23:36:06,512 - agroai_sim - INFO - Timestep 3: SHARED avg profit = 283604 MAD
+2026-02-14 23:36:06,779 - agroai_sim - INFO - Timestep 4: SHARED avg profit = 245549 MAD
+2026-02-14 23:36:07,008 - agroai_sim - INFO - Timestep 5: SHARED avg profit = 245187 MAD
+2026-02-14 23:36:07,527 - agroai_sim - INFO - Timestep 6: SHARED avg profit = 326974 MAD
+2026-02-14 23:36:07,951 - agroai_sim - INFO - Timestep 7: SHARED avg profit = 275099 MAD
+2026-02-14 23:36:08,439 - agroai_sim - INFO - Timestep 8: SHARED avg profit = 328200 MAD
+2026-02-14 23:36:08,783 - agroai_sim - INFO - Timestep 9: SHARED avg profit = 335197 MAD
+2026-02-14 23:36:09,071 - agroai_sim - INFO - Timestep 10: SHARED avg profit = 297793 MAD
+2026-02-14 23:36:09,092 - agroai_sim - INFO - Running: topology=scale_free, seed=42
+2026-02-14 23:36:09,145 - agroai_sim - INFO - Model created: 100 pairs × 2 = 200 agents, topology=scale_free
+2026-02-14 23:36:09,195 - agroai_sim - INFO - Timestep 1: SHARED avg profit = 125614 MAD
+2026-02-14 23:36:09,581 - agroai_sim - INFO - Timestep 2: SHARED avg profit = 250505 MAD
+2026-02-14 23:36:09,901 - agroai_sim - INFO - Timestep 3: SHARED avg profit = 365156 MAD
+2026-02-14 23:36:10,202 - agroai_sim - INFO - Timestep 4: SHARED avg profit = 278917 MAD
+2026-02-14 23:36:10,493 - agroai_sim - INFO - Timestep 5: SHARED avg profit = 258714 MAD
+2026-02-14 23:36:10,877 - agroai_sim - INFO - Timestep 6: SHARED avg profit = 369629 MAD
+2026-02-14 23:36:11,205 - agroai_sim - INFO - Timestep 7: SHARED avg profit = 311038 MAD
+2026-02-14 23:36:11,606 - agroai_sim - INFO - Timestep 8: SHARED avg profit = 364130 MAD
+2026-02-14 23:36:11,899 - agroai_sim - INFO - Timestep 9: SHARED avg profit = 334142 MAD
+2026-02-14 23:36:12,175 - agroai_sim - INFO - Timestep 10: SHARED avg profit = 369416 MAD
+2026-02-14 23:56:31,555 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 23:56:31,673 - agroai_sim - INFO - Loaded 6 zones: SUB_HUMID, SEMI_ARID_WARM, SEMI_ARID_COOL, ARID, SAHARAN, IRRIGATED_SOUSS
+2026-02-14 23:56:31,673 - agroai_sim - INFO - Loaded 24 crops from FAOSTAT/EcoCrop database
+2026-02-14 23:56:31,679 - agroai_sim - INFO - Cost model: SMAG=84.37 MAD/day
+2026-02-14 23:56:31,709 - agroai_sim - INFO - Model: 100 agents (50 SHARED, 50 INDIVIDUAL), graph=yes
+2026-02-14 23:56:31,735 - agroai_sim - INFO -   Season 2/10: SHARED profit=269,827 MAD
+2026-02-14 23:56:31,764 - agroai_sim - INFO -   Season 4/10: SHARED profit=296,897 MAD
+2026-02-14 23:56:31,791 - agroai_sim - INFO -   Season 6/10: SHARED profit=318,228 MAD
+2026-02-14 23:56:31,818 - agroai_sim - INFO -   Season 8/10: SHARED profit=260,861 MAD
+2026-02-14 23:56:31,829 - agroai_sim - INFO -   Season 10/10: SHARED profit=294,422 MAD
+2026-02-14 23:56:31,888 - agroai_sim - INFO - Model: 100 agents (50 SHARED, 50 INDIVIDUAL), graph=no
+2026-02-14 23:56:31,962 - agroai_sim - INFO -   Season 2/10: SHARED profit=254,906 MAD
+2026-02-14 23:56:31,978 - agroai_sim - INFO -   Season 4/10: SHARED profit=247,765 MAD
+2026-02-14 23:56:32,022 - agroai_sim - INFO -   Season 6/10: SHARED profit=267,150 MAD
+2026-02-14 23:56:32,050 - agroai_sim - INFO -   Season 8/10: SHARED profit=218,843 MAD
+2026-02-14 23:56:32,070 - agroai_sim - INFO -   Season 10/10: SHARED profit=250,672 MAD
+2026-02-14 23:56:32,080 - agroai_sim - INFO - Model: 100 agents (50 SHARED, 50 INDIVIDUAL), graph=yes
+2026-02-14 23:56:32,102 - agroai_sim - INFO -   Season 2/10: SHARED profit=269,827 MAD
+2026-02-14 23:56:32,123 - agroai_sim - INFO -   Season 4/10: SHARED profit=296,897 MAD
+2026-02-14 23:56:32,145 - agroai_sim - INFO -   Season 6/10: SHARED profit=318,228 MAD
+2026-02-14 23:56:32,161 - agroai_sim - INFO -   Season 8/10: SHARED profit=260,861 MAD
+2026-02-14 23:56:32,191 - agroai_sim - INFO -   Season 10/10: SHARED profit=294,422 MAD
+2026-02-14 23:56:32,204 - agroai_sim - INFO - Model: 100 agents (50 SHARED, 50 INDIVIDUAL), graph=yes
+2026-02-14 23:56:32,226 - agroai_sim - INFO -   Season 2/10: SHARED profit=269,827 MAD
+2026-02-14 23:56:32,246 - agroai_sim - INFO -   Season 4/10: SHARED profit=296,897 MAD
+2026-02-14 23:56:32,270 - agroai_sim - INFO -   Season 6/10: SHARED profit=318,228 MAD
+2026-02-14 23:56:32,298 - agroai_sim - INFO -   Season 8/10: SHARED profit=260,861 MAD
+2026-02-14 23:56:32,313 - agroai_sim - INFO -   Season 10/10: SHARED profit=294,422 MAD
+2026-02-14 23:57:48,428 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-14 23:57:54,150 - agroai_sim - INFO - Loaded 6 zones: SUB_HUMID, SEMI_ARID_WARM, SEMI_ARID_COOL, ARID, SAHARAN, IRRIGATED_SOUSS
+2026-02-14 23:57:54,154 - agroai_sim - INFO - Loaded 24 crops from FAOSTAT/EcoCrop database
+2026-02-14 23:57:54,155 - agroai_sim - INFO - Cost model: SMAG=84.37 MAD/day
+2026-02-14 23:57:58,634 - agroai_sim - INFO - Model: 100 agents (50 SHARED, 50 INDIVIDUAL), graph=yes
+2026-02-14 23:57:58,666 - agroai_sim - INFO -   Season 2/10: SHARED profit=269,827 MAD
+2026-02-14 23:57:58,686 - agroai_sim - INFO -   Season 4/10: SHARED profit=296,897 MAD
+2026-02-14 23:57:58,709 - agroai_sim - INFO -   Season 6/10: SHARED profit=318,228 MAD
+2026-02-14 23:57:58,731 - agroai_sim - INFO -   Season 8/10: SHARED profit=260,861 MAD
+2026-02-14 23:57:58,752 - agroai_sim - INFO -   Season 10/10: SHARED profit=294,422 MAD
+2026-02-14 23:57:58,782 - agroai_sim - INFO - Model: 100 agents (50 SHARED, 50 INDIVIDUAL), graph=no
+2026-02-14 23:57:58,808 - agroai_sim - INFO -   Season 2/10: SHARED profit=254,906 MAD
+2026-02-14 23:57:58,832 - agroai_sim - INFO -   Season 4/10: SHARED profit=247,765 MAD
+2026-02-14 23:57:58,854 - agroai_sim - INFO -   Season 6/10: SHARED profit=267,150 MAD
+2026-02-14 23:57:58,874 - agroai_sim - INFO -   Season 8/10: SHARED profit=218,843 MAD
+2026-02-14 23:57:58,897 - agroai_sim - INFO -   Season 10/10: SHARED profit=250,672 MAD
+2026-02-14 23:57:58,900 - agroai_sim - INFO - Model: 100 agents (50 SHARED, 50 INDIVIDUAL), graph=yes
+2026-02-14 23:57:58,922 - agroai_sim - INFO -   Season 2/10: SHARED profit=269,827 MAD
+2026-02-14 23:57:58,947 - agroai_sim - INFO -   Season 4/10: SHARED profit=296,897 MAD
+2026-02-14 23:57:58,973 - agroai_sim - INFO -   Season 6/10: SHARED profit=318,228 MAD
+2026-02-14 23:57:58,997 - agroai_sim - INFO -   Season 8/10: SHARED profit=260,861 MAD
+2026-02-14 23:57:59,017 - agroai_sim - INFO -   Season 10/10: SHARED profit=294,422 MAD
+2026-02-14 23:57:59,030 - agroai_sim - INFO - Model: 100 agents (50 SHARED, 50 INDIVIDUAL), graph=yes
+2026-02-14 23:57:59,049 - agroai_sim - INFO -   Season 2/10: SHARED profit=269,827 MAD
+2026-02-14 23:57:59,066 - agroai_sim - INFO -   Season 4/10: SHARED profit=296,897 MAD
+2026-02-14 23:57:59,100 - agroai_sim - INFO -   Season 6/10: SHARED profit=318,228 MAD
+2026-02-14 23:57:59,113 - agroai_sim - INFO -   Season 8/10: SHARED profit=260,861 MAD
+2026-02-14 23:57:59,147 - agroai_sim - INFO -   Season 10/10: SHARED profit=294,422 MAD
+2026-02-15 00:15:13,944 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-15 00:15:14,597 - agroai_sim - INFO - Loaded 6 zones: SUB_HUMID, SEMI_ARID_WARM, SEMI_ARID_COOL, ARID, SAHARAN, IRRIGATED_SOUSS
+2026-02-15 00:15:14,597 - agroai_sim - INFO - Loaded 24 crops from FAOSTAT/EcoCrop database
+2026-02-15 00:15:14,613 - agroai_sim - INFO - Cost model: SMAG=84.37 MAD/day
+2026-02-15 00:15:14,754 - agroai_sim - INFO - Model: 100 agents (50 SHARED, 50 INDIVIDUAL), graph=yes
+2026-02-15 00:15:14,863 - agroai_sim - INFO -   Season 2/10: SHARED profit=269,827 MAD
+2026-02-15 00:15:14,921 - agroai_sim - INFO -   Season 4/10: SHARED profit=296,897 MAD
+2026-02-15 00:15:14,986 - agroai_sim - INFO -   Season 6/10: SHARED profit=318,228 MAD
+2026-02-15 00:15:15,045 - agroai_sim - INFO -   Season 8/10: SHARED profit=260,861 MAD
+2026-02-15 00:15:15,096 - agroai_sim - INFO -   Season 10/10: SHARED profit=294,422 MAD
+2026-02-15 00:15:15,201 - agroai_sim - INFO - Model: 100 agents (50 SHARED, 50 INDIVIDUAL), graph=no
+2026-02-15 00:15:15,297 - agroai_sim - INFO -   Season 2/10: SHARED profit=254,906 MAD
+2026-02-15 00:15:15,409 - agroai_sim - INFO -   Season 4/10: SHARED profit=247,765 MAD
+2026-02-15 00:15:15,543 - agroai_sim - INFO -   Season 6/10: SHARED profit=267,150 MAD
+2026-02-15 00:15:15,673 - agroai_sim - INFO -   Season 8/10: SHARED profit=218,843 MAD
+2026-02-15 00:15:15,750 - agroai_sim - INFO -   Season 10/10: SHARED profit=250,672 MAD
+2026-02-15 00:15:15,833 - agroai_sim - INFO - Model: 100 agents (50 SHARED, 50 INDIVIDUAL), graph=yes
+2026-02-15 00:15:15,909 - agroai_sim - INFO -   Season 2/10: SHARED profit=269,827 MAD
+2026-02-15 00:15:15,965 - agroai_sim - INFO -   Season 4/10: SHARED profit=296,897 MAD
+2026-02-15 00:15:16,021 - agroai_sim - INFO -   Season 6/10: SHARED profit=318,228 MAD
+2026-02-15 00:15:16,080 - agroai_sim - INFO -   Season 8/10: SHARED profit=260,861 MAD
+2026-02-15 00:15:16,133 - agroai_sim - INFO -   Season 10/10: SHARED profit=294,422 MAD
+2026-02-15 00:15:16,153 - agroai_sim - INFO - Model: 100 agents (50 SHARED, 50 INDIVIDUAL), graph=yes
+2026-02-15 00:15:16,194 - agroai_sim - INFO -   Season 2/10: SHARED profit=269,827 MAD
+2026-02-15 00:15:16,244 - agroai_sim - INFO -   Season 4/10: SHARED profit=296,897 MAD
+2026-02-15 00:15:16,298 - agroai_sim - INFO -   Season 6/10: SHARED profit=318,228 MAD
+2026-02-15 00:15:16,371 - agroai_sim - INFO -   Season 8/10: SHARED profit=260,861 MAD
+2026-02-15 00:15:16,445 - agroai_sim - INFO -   Season 10/10: SHARED profit=294,422 MAD
+2026-02-15 00:35:12,059 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-15 00:35:12,247 - agroai_sim - INFO - Loaded 6 zones: SUB_HUMID, SEMI_ARID_WARM, SEMI_ARID_COOL, ARID, SAHARAN, IRRIGATED_SOUSS
+2026-02-15 00:35:12,255 - agroai_sim - INFO - Loaded 24 crops from FAOSTAT/EcoCrop database
+2026-02-15 00:35:12,258 - agroai_sim - INFO - Cost model: SMAG=84.37 MAD/day
+2026-02-15 00:35:12,323 - agroai_sim - INFO - Model: 200 agents (100 SHARED, 100 INDIVIDUAL), graph=yes
+2026-02-15 00:35:12,430 - agroai_sim - INFO -   Season 2/10: SHARED profit=207,678 MAD
+2026-02-15 00:35:12,538 - agroai_sim - INFO -   Season 4/10: SHARED profit=199,829 MAD
+2026-02-15 00:35:12,673 - agroai_sim - INFO -   Season 6/10: SHARED profit=220,709 MAD
+2026-02-15 00:35:12,800 - agroai_sim - INFO -   Season 8/10: SHARED profit=192,569 MAD
+2026-02-15 00:35:12,918 - agroai_sim - INFO -   Season 10/10: SHARED profit=182,544 MAD
+2026-02-15 00:35:12,991 - agroai_sim - INFO - Model: 200 agents (100 SHARED, 100 INDIVIDUAL), graph=no
+2026-02-15 00:35:13,076 - agroai_sim - INFO -   Season 2/10: SHARED profit=209,178 MAD
+2026-02-15 00:35:13,168 - agroai_sim - INFO -   Season 4/10: SHARED profit=204,478 MAD
+2026-02-15 00:35:13,268 - agroai_sim - INFO -   Season 6/10: SHARED profit=211,437 MAD
+2026-02-15 00:35:13,382 - agroai_sim - INFO -   Season 8/10: SHARED profit=190,757 MAD
+2026-02-15 00:35:13,471 - agroai_sim - INFO -   Season 10/10: SHARED profit=178,441 MAD
+2026-02-15 00:35:13,506 - agroai_sim - INFO - Model: 200 agents (100 SHARED, 100 INDIVIDUAL), graph=yes
+2026-02-15 00:35:13,632 - agroai_sim - INFO -   Season 2/10: SHARED profit=207,678 MAD
+2026-02-15 00:35:13,738 - agroai_sim - INFO -   Season 4/10: SHARED profit=199,829 MAD
+2026-02-15 00:35:13,851 - agroai_sim - INFO -   Season 6/10: SHARED profit=220,709 MAD
+2026-02-15 00:35:13,951 - agroai_sim - INFO -   Season 8/10: SHARED profit=192,569 MAD
+2026-02-15 00:35:14,055 - agroai_sim - INFO -   Season 10/10: SHARED profit=182,544 MAD
+2026-02-15 00:35:14,084 - agroai_sim - INFO - Model: 200 agents (100 SHARED, 100 INDIVIDUAL), graph=yes
+2026-02-15 00:35:14,178 - agroai_sim - INFO -   Season 2/10: SHARED profit=207,678 MAD
+2026-02-15 00:35:14,274 - agroai_sim - INFO -   Season 4/10: SHARED profit=199,829 MAD
+2026-02-15 00:35:14,384 - agroai_sim - INFO -   Season 6/10: SHARED profit=220,709 MAD
+2026-02-15 00:35:14,486 - agroai_sim - INFO -   Season 8/10: SHARED profit=192,569 MAD
+2026-02-15 00:35:14,591 - agroai_sim - INFO -   Season 10/10: SHARED profit=182,544 MAD
+2026-02-15 00:41:00,137 - agroai_sim - INFO - Logging to logs\simulation.log
+2026-02-15 00:41:34,369 - agroai_sim - INFO - Logging to logs\simulation.log
