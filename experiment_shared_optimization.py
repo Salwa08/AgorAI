@@ -39,7 +39,7 @@ configs = {
 results = {}
 
 for config_name, params in configs.items():
-    print(f"\n🔄 Running {config_name}...")
+    print(f"\n[*] Running {config_name}...")
     
     # Load current config
     with open("config.yaml", "r") as f:
@@ -56,7 +56,7 @@ for config_name, params in configs.items():
         yaml.dump(config, f)
     
     # Run simulation notebook (would need to adapt for notebook execution)
-    print(f"  ✓ Config: {params}")
+    print(f"  [OK] Config: {params}")
     
     # After simulation, load results
     if (Path("results") / "metrics.json").exists():
@@ -92,7 +92,7 @@ print("="*70)
 
 # Recommendation
 best = max(results.items(), key=lambda x: x[1]['avg_yield_shared'])
-print(f"\n✅ BEST CONFIGURATION: {best[0]}")
+print(f"\n[OK] BEST CONFIGURATION: {best[0]}")
 print(f"   SHARED Yield: {best[1]['avg_yield_shared']:.3f} t/ha")
 print(f"   Settings:")
 for param, value in best[1]['params'].items():
