@@ -11,9 +11,7 @@ import random
 from pathlib import Path
 import plotly.graph_objects as go
 
-# ============================================================================
-# CUSTOM CSS
-# ============================================================================
+
 CUSTOM_CSS = """
 .dashboard-header {
     background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #43a047 100%);
@@ -105,9 +103,7 @@ CUSTOM_CSS = """
 }
 """
 
-# ============================================================================
 # REACTIVE STATE
-# ============================================================================
 df_state = solara.reactive(None)
 hist_state = solara.reactive(None)
 metrics_state = solara.reactive({})
@@ -115,9 +111,7 @@ tab_index = solara.reactive(0)
 loop_step = solara.reactive(0)
 data_loaded = solara.reactive(False)
 
-# ============================================================================
 # DATA LOADING
-# ============================================================================
 def load_data():
     """Load simulation results from files."""
     try:
@@ -144,9 +138,7 @@ def load_data():
     return False
 
 
-# ============================================================================
 # MOROCCO ZONE COORDINATES
-# ============================================================================
 ZONE_COORDS = {
     "IRRIGATED_SOUSS": (30.4, -9.0, "Souss-Massa (Irrigated)"),
     "SUB_HUMID": (34.0, -6.5, "Gharb-Loukkos (Sub-Humid)"),
@@ -165,9 +157,7 @@ ZONE_COLORS = {
     "SAHARAN": "#4e342e",
 }
 
-# ============================================================================
 # CHART BUILDERS
-# ============================================================================
 def build_map(df):
     """Interactive map with farmer agents on Morocco zones using Mapbox (OSM tiles)."""
     fig = go.Figure()

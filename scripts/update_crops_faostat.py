@@ -105,9 +105,9 @@ COST_MODEL_PARAMS = {
 # These are used to compute water costs dynamically
 WATER_NEED_MM = {
     "very_low": 200,
-    "low": 350,
+    "low": 300,
     "medium": 500,
-    "high": 700,
+    "high": 800,
     "very_high": 900,
 }
 

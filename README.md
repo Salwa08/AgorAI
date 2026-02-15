@@ -2,6 +2,8 @@
 
 An agent-based model (ABM) built with [Mesa](https://mesa.readthedocs.io/) that simulates farmer decision-making across Morocco's agro-ecological zones. The simulation compares **cooperative (SHARED)** and **individual (INDIVIDUAL)** farming strategies using real-world data from FAO, Copernicus, and NASA POWER.
 
+![Morocco Agricultural Zones](assets/Dashboard.png)
+
 ## Research Question
 
 > Does cooperative knowledge-sharing between farmers improve crop yields and profitability compared to individual decision-making?
@@ -9,8 +11,8 @@ An agent-based model (ABM) built with [Mesa](https://mesa.readthedocs.io/) that 
 ## Key Features
 
 - **100 paired agents** (50 SHARED + 50 INDIVIDUAL) across 6 agro-ecological zones
-- **24 crops** with FAO EcoCrop suitability and category-based pricing
-- **Real cost model**: zone-specific water tariffs, crop water needs, labor
+- **24 crops** with FAO EcoCrop suitability and FAOSTAT pricing
+- **Real cost model**: labor (SMAG × days/ha) + fertilizers (NPK by category) + seeds (by category) + mechanization (by category) + water (zone-specific tariffs × crop needs)
 - **Climate data**: NASA POWER temperature and precipitation per zone
 - **Soil moisture**: Copernicus C3S root-zone soil moisture
 - **Social network**: NetworkX-based knowledge propagation (small-world, random, scale-free)
@@ -22,18 +24,34 @@ An agent-based model (ABM) built with [Mesa](https://mesa.readthedocs.io/) that 
 pip install -r requirements.txt
 ```
 
-Open `simulation.ipynb` in Jupyter or VS Code and run all cells:
 
-| Cell | Purpose |
-|------|---------|
-| 0 | Imports |
-| 1 | SIM_CONFIG, data loading, model classes (Zone, FarmerAgent, FarmModel) |
-| 2 | Run simulation and print results |
-| 3 | Visualization and CSV export |
+Open `simulation.ipynb` in Jupyter or VS Code. The main simulation parameters are set in the `SIM_CONFIG` dataclass (see the first code cell):
 
-Optional — launch the interactive dashboard:
+```python
+from dataclasses import dataclass
+
+@dataclass
+class SIM_CONFIG:
+	n_agents: int = 100        # Number of agents (farmers)
+	n_seasons: int = 30        # Number of seasons to simulate
+	shared_strategy: str = "both"  # 'zone', 'neighbor', or 'both'
+	use_neighbor_graph: bool = True
+	# ... other parameters ...
+```
+
+To change the number of agents, update `n_agents` in the config cell. For example, to run with 200 agents:
+
+```python
+cfg = SIM_CONFIG(n_agents=200)
+model, df, hist_df = run_sim(cfg)
+```
+
+Run all cells to execute the simulation and export results.
+
+Optional — launch the interactive dashboard (from the folder containing `dashboard_solara.py`):
 
 ```bash
+cd AgorAI
 solara run dashboard_solara.py
 ```
 
@@ -41,7 +59,6 @@ solara run dashboard_solara.py
 
 ```
 ├── simulation.ipynb              # Main simulation notebook
-├── simulation_v2.ipynb           # Extended version (same core logic)
 ├── dashboard_solara.py           # Solara web dashboard
 ├── requirements.txt
 │
@@ -72,7 +89,14 @@ Each farmer scores viable crops using ecological suitability (zone, soil, climat
 
 ### Economics
 
-SHARED farmers get +20% price premium, 30% cost reduction, and 5% post-harvest loss vs 15% for individuals. Profit = `(yield × price − cost) × land_size`.
+Production costs are calculated per hectare using real Moroccan agricultural data:
+- **Labor**: SMAG minimum wage × crop-specific labor days per hectare
+- **Fertilizer**: NPK costs by crop category (cereals, legumes, vegetables, etc.)
+- **Seeds**: Seed costs by crop category
+- **Mechanization**: Equipment costs by crop category
+- **Water**: Zone-specific tariffs × crop water requirements
+
+SHARED farmers get +20% price premium, 30% cost reduction, and 5% post-harvest loss vs 15% for individuals. Profit = `(yield × price − total_cost) × land_size`.
 
 ### Learning
 
@@ -86,10 +110,16 @@ Parameters are defined in the `SIM_CONFIG` dataclass inside the notebook. Key se
 
 | Dataset | Source |
 |---------|--------|
-| Crop suitability | FAO EcoCrop |
-| Climate | NASA POWER |
-| Soil moisture | Copernicus C3S |
-| Zones, water tariffs | Morocco agricultural data |
+| Crop suitability & ecological requirements | FAO EcoCrop Database |
+| Crop prices | FAOSTAT Producer Prices (Morocco, 2024) |
+| Labor costs | Morocco SMAG (Minimum Agricultural Wage, Decree 2.23.993) |
+| Fertilizer costs | OCP Group domestic prices |
+| Seed costs | SONACOS Morocco seed market prices |
+| Mechanization costs | Regional agricultural cooperatives survey data |
+| Water tariffs | ORMVA (Offices Régionaux de Mise en Valeur Agricole) |
+| Climate data | NASA POWER temperature and precipitation |
+| Soil moisture | Copernicus C3S root-zone soil moisture |
+| Zones & agricultural data | Morocco agricultural ministry data |
 
 ## References
 

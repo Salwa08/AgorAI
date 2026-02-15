@@ -1,1 +1,15 @@
-{"total_agents": 100, "shared_agents": 50, "individual_agents": 50, "n_seasons": 30, "shared_strategy": "both", "use_neighbor_graph": true, "avg_yield_shared": 16.36, "avg_yield_individual": 6.54, "yield_advantage_shared": 9.82, "avg_profit_shared": 430691.87, "avg_profit_individual": 112303.26, "profit_advantage_shared": 318388.61, "profit_advantage_pct": 283.51}
+{
+  "total_agents": 100,
+  "shared_agents": 50,
+  "individual_agents": 50,
+  "n_seasons": 30,
+  "shared_strategy": "both",
+  "use_neighbor_graph": true,
+  "avg_yield_shared": 12.054272768972934,
+  "avg_yield_individual": 4.1403809459588965,
+  "yield_advantage_shared": 7.9139,
+  "avg_profit_shared": 184781.84655492927,
+  "avg_profit_individual": 87095.5233373401,
+  "profit_advantage_shared": 97686.32,
+  "profit_advantage_pct": 112.16
+}
