@@ -1,4 +1,4 @@
-# AgroAI — Agent-Based Agricultural Simulation for Morocco
+# FarmSwarm: Network-Based Collective Intelligence for Smart Agriculture
 
 An agent-based model (ABM) built with [Mesa](https://mesa.readthedocs.io/) that simulates farmer decision-making across Morocco's agro-ecological zones. The simulation compares **cooperative (SHARED)** and **individual (INDIVIDUAL)** farming strategies using real-world data from FAO, Copernicus, and NASA POWER.
 
@@ -91,6 +91,18 @@ Parameters are defined in the `SIM_CONFIG` dataclass inside the notebook. Key se
 | Soil moisture | Copernicus C3S |
 | Zones, water tariffs | Morocco agricultural data |
 
+## References
+
+**Framework**
+
+- Mesa: Kazil, J., Masad, D., & Crooks, A. (2015). Mesa: An Agent-Based Modeling Framework. *SciPy Proceedings*. https://doi.org/10.25080/Majora-7b98e3ed-009
+
+**Data**
+
+- FAO EcoCrop: Ecocrop Database, FAO. http://ecocrop.fao.org/ecocrop/srv/en/home
+- NASA POWER: NASA Langley Research Center, Prediction Of Worldwide Energy Resources (POWER) Project. https://power.larc.nasa.gov/
+- Copernicus C3S Soil Moisture: Soil moisture gridded data from 1978 to present. Climate Data Store. https://cds.climate.copernicus.eu/datasets/satellite-soil-moisture
+
 ## Data Preparation
 
 Scripts in `scripts/` were used to build the JSON files in `data/`. Re-run only when updating source data:
@@ -112,4 +124,4 @@ Copernicus soil moisture: see `Extract_morocco_data.ipynb`.
 
 ## License
 
-Research and educational use.
+See [LICENSE](LICENSE).
