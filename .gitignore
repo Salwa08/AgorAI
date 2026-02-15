@@ -1,4 +1,4 @@
-﻿# Python
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -27,6 +27,12 @@ Thumbs.db
 # Jupyter
 .ipynb_checkpoints/
 
+# Generated outputs
+results/
+logs/
+
 # Poster output
 poster/figures/*.png
 poster/figures/*.pdf
+
+simulation_v2.ipynb
