@@ -138,6 +138,15 @@ def load_data():
     return False
 
 
+def force_refresh():
+    """Clear cache and reload data from disk."""
+    data_loaded.set(False)
+    df_state.set(None)
+    hist_state.set(None)
+    metrics_state.set({})
+    load_data()
+
+
 # MOROCCO ZONE COORDINATES
 ZONE_COORDS = {
     "IRRIGATED_SOUSS": (30.4, -9.0, "Souss-Massa (Irrigated)"),
@@ -305,6 +314,35 @@ def build_yield_comparison(df):
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="#fafafa",
         yaxis=dict(gridcolor="#eee"),
+    )
+    return fig
+
+
+def build_profit_comparison(df):
+    """Box plot comparing profit by strategy."""
+    fig = go.Figure()
+    profit_col = "mean_profit_mad" if "mean_profit_mad" in df.columns else "mean_profit"
+
+    for strat, color, symbol in [("SHARED", "#2e7d32", "🤝"), ("INDIVIDUAL", "#1565c0", "👤")]:
+        data = df[df["strategy"] == strat]
+        fig.add_trace(go.Box(
+            y=data[profit_col],
+            name=f"{symbol} {strat}",
+            marker_color=color,
+            boxmean="sd",
+            jitter=0.3,
+            pointpos=-1.5,
+            boxpoints="all",
+        ))
+
+    fig.update_layout(
+        title=dict(text="<b>Profit Distribution by Strategy</b>", font=dict(size=16)),
+        yaxis_title="Mean Profit (MAD)",
+        height=420,
+        showlegend=False,
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="#fafafa",
+        yaxis=dict(gridcolor="#eee", tickformat=",.0f"),
     )
     return fig
 
@@ -559,11 +597,15 @@ def ChartsTab(df):
         with solara.Card("Yield by Strategy", elevation=1, style={"border-radius": "12px"}):
             solara.FigurePlotly(build_yield_comparison(df))
 
+        with solara.Card("Profit by Strategy", elevation=1, style={"border-radius": "12px"}):
+            solara.FigurePlotly(build_profit_comparison(df))
+
+    with solara.Columns([6, 6]):
         with solara.Card("Zone Performance", elevation=1, style={"border-radius": "12px"}):
             solara.FigurePlotly(build_zone_chart(df))
 
-    with solara.Card("Yield vs Profit Correlation", elevation=1, style={"border-radius": "12px"}):
-        solara.FigurePlotly(build_profit_scatter(df))
+        with solara.Card("Yield vs Profit Correlation", elevation=1, style={"border-radius": "12px"}):
+            solara.FigurePlotly(build_profit_scatter(df))
 
     if hist_df is not None:
         solara.Markdown("### 📈 Learning Curves (Season-by-Season)")
@@ -719,6 +761,38 @@ def DataTab(df):
 
 
 @solara.component
+def AnalysisTab():
+    """Analysis tab: ablation study, sensitivity, KPI panel from notebook."""
+    import base64
+    results_dir = Path("results")
+
+    solara.Markdown("### 📈 Advanced Analysis")
+    solara.Info(
+        label="Charts from the simulation notebook: ablation study, sensitivity analysis, and KPI panel. Re-run the notebook to refresh these.",
+        dense=True,
+    )
+
+    def render_image(path: Path, title: str):
+        if path.exists():
+            b64 = base64.b64encode(path.read_bytes()).decode()
+            solara.HTML(
+                unsafe_innerHTML=f'<img src="data:image/png;base64,{b64}" alt="{title}" style="max-width:100%; width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />'
+            )
+        else:
+            solara.Warning(label=f"Run the notebook to generate {path.name}", dense=True)
+
+    with solara.Columns([6, 6]):
+        with solara.Card("Ablation Study", elevation=1, style={"border-radius": "12px"}):
+            render_image(results_dir / "ablation_study.png", "Knowledge vs Economics")
+
+        with solara.Card("Sensitivity Analysis", elevation=1, style={"border-radius": "12px"}):
+            render_image(results_dir / "sensitivity_analysis.png", "Parameter Sensitivity")
+
+    with solara.Card("KPI Panel", elevation=1, style={"border-radius": "12px"}):
+        render_image(results_dir / "kpi_panel.png", "Key Performance Indicators")
+
+
+@solara.component
 def InfoTab(metrics):
     """Info and documentation tab."""
     solara.Markdown("### ℹ️ About This Simulation")
@@ -759,8 +833,9 @@ Each simulation season follows 5 phases:
         with solara.Card("Current Metrics", elevation=1, style={"border-radius": "12px"}):
             yield_adv = metrics.get("yield_advantage_shared", 0)
             profit_adv = metrics.get("profit_advantage_shared", 0)
+            profit_adv_pct = metrics.get("profit_advantage_pct", 0)
             if yield_adv > 0 and profit_adv > 0:
-                solara.Success(label=f"SHARED outperforms: +{yield_adv:.3f} t/ha yield, +{profit_adv:.1f} profit", dense=True)
+                solara.Success(label=f"SHARED outperforms: +{yield_adv:.3f} t/ha yield, +{profit_adv_pct:.1f}% profit", dense=True)
             elif yield_adv > 0:
                 solara.Info(label=f"SHARED has +{yield_adv:.3f} t/ha yield advantage", dense=True)
             else:
@@ -770,9 +845,10 @@ Each simulation season follows 5 phases:
 | Metric | SHARED | INDIVIDUAL |
 |--------|--------|------------|
 | Avg Yield (t/ha) | **{metrics.get('avg_yield_shared', 0):.3f}** | {metrics.get('avg_yield_individual', 0):.3f} |
-| Avg Profit | **{metrics.get('avg_profit_shared', 0):.1f}** | {metrics.get('avg_profit_individual', 0):.1f} |
-| Yield Advantage | **+{yield_adv:.3f}** | — |
-| Profit Advantage | **+{profit_adv:.1f}** | — |
+| Avg Profit | **{metrics.get('avg_profit_shared', 0):,.0f}** | {metrics.get('avg_profit_individual', 0):,.0f} |
+| Yield Advantage | **+{yield_adv:.3f} t/ha** | — |
+| Profit Advantage | **+{profit_adv:,.0f} MAD** | — |
+| Profit Advantage % | **+{profit_adv_pct:.1f}%** | — |
 | Agents | {metrics.get('shared_agents', 0)} | {metrics.get('individual_agents', 0)} |
 | Total | **{metrics.get('total_agents', 0)}** | |
             """)
@@ -817,13 +893,17 @@ def Dashboard():
     avg_profit = df["mean_profit_mad"].mean() if "mean_profit_mad" in df.columns else df["mean_profit"].mean()
     yield_adv = metrics.get("yield_advantage_shared_t_ha", metrics.get("yield_advantage_shared", 0))
     profit_adv = metrics.get("profit_advantage_shared_mad", metrics.get("profit_advantage_shared", 0))
+    profit_adv_pct = metrics.get("profit_advantage_pct", 0)
 
-    with solara.Row(gap="16px", justify="center"):
-        MetricCard(str(total), "Total Farmers")
-        MetricCard(f"{shared}", "Shared Strategy", css_class="blue")
-        MetricCard(f"{avg_yield:.2f}", "Avg Yield (t/ha)", css_class="orange")
-        MetricCard(f"{yield_adv:+.3f}", "Yield Advantage", css_class="purple")
-        MetricCard(f"{profit_adv:+,.0f} MAD", "Profit Advantage", css_class="green")
+    with solara.Row(gap="12px", justify="space-between"):
+        with solara.Row(gap="16px", justify="center"):
+            MetricCard(str(total), "Total Farmers")
+            MetricCard(f"{shared}", "Shared Strategy", css_class="blue")
+            MetricCard(f"{avg_yield:.2f}", "Avg Yield (t/ha)", css_class="orange")
+            MetricCard(f"{yield_adv:+.3f}", "Yield Advantage", css_class="purple")
+            MetricCard(f"{profit_adv:+,.0f}", "Profit Adv (MAD)", css_class="green")
+            MetricCard(f"{profit_adv_pct:+.1f}%", "Profit Adv %", css_class="green")
+        solara.Button("🔄 Refresh", on_click=force_refresh, outlined=True, color="green")
 
     solara.HTML(tag="div", unsafe_innerHTML='<div style="height:16px"></div>')
 
@@ -849,6 +929,10 @@ def Dashboard():
         with solara.lab.Tab("📋 Data", icon_name="mdi-table"):
             with solara.Card(elevation=1, style={"border-radius": "12px", "padding": "16px"}):
                 DataTab(df)
+
+        with solara.lab.Tab("📈 Analysis", icon_name="mdi-chart-line"):
+            with solara.Card(elevation=1, style={"border-radius": "12px", "padding": "16px"}):
+                AnalysisTab()
 
         with solara.lab.Tab("ℹ️ Info", icon_name="mdi-information"):
             with solara.Card(elevation=1, style={"border-radius": "12px", "padding": "16px"}):

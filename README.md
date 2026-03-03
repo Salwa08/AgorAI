@@ -2,7 +2,7 @@
 
 An agent-based model (ABM) built with [Mesa](https://mesa.readthedocs.io/) that simulates farmer decision-making across Morocco's agro-ecological zones. The simulation compares **cooperative (SHARED)** and **individual (INDIVIDUAL)** farming strategies using real-world data from FAO, Copernicus, and NASA POWER.
 
-![Morocco Agricultural Zones](assets/Dashboard.png)
+![Morocco Agricultural Zones](assets/DashboardLastV.png)
 
 ## Research Question
 

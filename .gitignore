@@ -34,5 +34,11 @@ logs/
 # Poster output
 poster/figures/*.png
 poster/figures/*.pdf
+poster_assets/
+scripts/generate_poster_assets.py
+
+# Dashboard / generated assets
+assets/
+strategy_yield_profit_boxplots.png
 
 simulation_v2.ipynb
