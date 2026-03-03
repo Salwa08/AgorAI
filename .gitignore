@@ -37,8 +37,9 @@ poster/figures/*.pdf
 poster_assets/
 scripts/generate_poster_assets.py
 
-# Dashboard / generated assets
-assets/
+# Dashboard / generated assets (keep DashboardLastV.png for README)
+assets/*
+!assets/DashboardLastV.png
 strategy_yield_profit_boxplots.png
 
 simulation_v2.ipynb
