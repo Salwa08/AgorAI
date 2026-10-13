@@ -1,2 +1,3 @@
 *.py text eol=lf
 results/** -text whitespace=cr-at-eol
+RESULTS.md -text whitespace=cr-at-eol

@@ -14,7 +14,7 @@ python -m experiments.exp004.runner --config experiments/exp004/configs/pilot.js
 python -m experiments.exp004.report --results experiments/exp004/results/replay/pilot
 ```
 
-Use fresh output directories: the runner refuses to overwrite an existing experiment. Pilot defaults are 20 agents, three actions/dimensions/contexts, 100 rounds, seeds 0–19, three scenarios and two noise levels. Four policies share every evaluation world; three cost levels are postprocessing, not additional independent simulations. Configuration can change these counts, seeds, scenarios and noise/cost settings. No policy optimization uses pilot outcomes.
+Use fresh output directories: the runner refuses to overwrite an existing experiment. Pilot defaults are 20 agents, three actions/dimensions/contexts, 100 rounds, seeds 0â€“19, three scenarios and two noise levels. Four policies share every evaluation world; three cost levels are postprocessing, not additional independent simulations. Configuration can change these counts, seeds, scenarios and noise/cost settings. No policy optimization uses pilot outcomes.
 
 ## Modules and artifacts
 
@@ -24,8 +24,12 @@ Use fresh output directories: the runner refuses to overwrite an existing experi
 - runner.py executes the config, saves raw audit evidence, agent/seed summaries and paired contrasts.
 - report.py verifies recorded hashes and numerical controls before regenerating RESULTS.md.
 
-Raw compressed message ledgers retain every observation's origin, round, context, action and measurement variance. Raw counterfactual NPZ files retain all action outcomes and choices, enabling paired comparisons. These evaluation arrays must never be passed to deployable policies. Large raw files are ignored by Git. Committed machine-readable summaries include config.json, metadata.json, manifest.json, levels.json, contrasts.json, seed_metrics.csv, paired_seed_metrics.csv and agents.csv. metadata.json records source/output hashes, exact environment, commit and dirty state. Compression headers are not guaranteed byte-identical; decompressed evidence and numerical results are deterministic on the recorded stack.
+Raw compressed message ledgers retain every observation's origin, round, context, action and measurement variance. Raw counterfactual NPZ files retain all action outcomes and choices, enabling paired comparisons. These evaluation arrays must never be passed to deployable policies. Large raw files are ignored by Git. The committed lossless `results/pilot/pilot_summary.zip` artifact contains machine-readable summaries including config.json, metadata.json, manifest.json, levels.json, contrasts.json, seed_metrics.csv, paired_seed_metrics.csv and agents.csv. metadata.json records source/output hashes, exact environment, commit and dirty state. Compression headers are not guaranteed byte-identical; decompressed evidence and numerical results are deterministic on the recorded stack.
 
 B3 uses exactly B2's evidence/estimator, so equal decisions are required. Its lower cost in some regimes comes from upload-and-reply topology, not a proven architectural intelligence advantage. Costs are abstract utility units per payload-equivalent; all policies ignore costs when choosing actions because they are fixed communication baselines.
 
 Inference uses independent seed summaries. Agents and rounds are not independent replicates. All intervals are exploratory and unadjusted. Public S0 duplicate evidence deliberately gives no information gain; it is not a realistic universal communication model. No agricultural outcome is modeled.
+
+The narrative report requires the exact prespecified pilot configuration; arbitrary valid runner configurations still produce machine-readable summaries and contrasts. Subgroup seed counts may be smaller when a randomly drawn objective group is absent.
+
+Inspect the committed evidence without rerunning by extracting `results/pilot/pilot_summary.zip` to a new directory (for example `python -m zipfile -e experiments/exp004/results/pilot/pilot_summary.zip experiments/exp004/results/review`). The archive includes all agent and seed summaries, paired contrasts, configuration, execution metadata and verification; raw ledgers/counterfactuals require rerunning. Report generation deliberately verifies raw outputs and therefore requires a completed local run.
