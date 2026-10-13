@@ -1,0 +1,26 @@
+{
+  "agents": 20,
+  "actions": 3,
+  "dimensions": 3,
+  "contexts": 3,
+  "rounds": 3,
+  "seeds": [
+    0,
+    1
+  ],
+  "scenarios": [
+    "S1",
+    "S2",
+    "S0"
+  ],
+  "noise": [
+    0.5,
+    1.5
+  ],
+  "costs": [
+    0,
+    0.01,
+    0.1
+  ],
+  "evaluation_noise": 0.2
+}

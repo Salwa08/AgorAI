@@ -1,0 +1,8 @@
+{
+  "command": "python -m pytest experiments/exp004/tests -q",
+  "passed": 25,
+  "failed": 0,
+  "seconds": 9.98,
+  "date": "2026-10-13",
+  "warning": "Pre-existing requests dependency warning in Anaconda; benchmark does not use requests."
+}
