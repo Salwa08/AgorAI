@@ -1,0 +1,16 @@
+{
+  "command": "python -m pytest experiments/exp001/tests experiments/exp002/tests -q",
+  "passed": 52,
+  "failed": 0,
+  "duration_seconds": 23.9,
+  "date": "2026-10-13",
+  "warnings": [
+    "Requests dependency-version warning at pytest startup; no failures."
+  ],
+  "exp001_committed_seed_zero_exact": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ]
+}

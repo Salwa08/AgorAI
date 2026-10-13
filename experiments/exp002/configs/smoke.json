@@ -1,0 +1,26 @@
+{
+  "seeds": [
+    0,
+    1
+  ],
+  "n_agents": 6,
+  "n_seasons": 3,
+  "arms": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "A_e02",
+    "A_e05",
+    "A_e10",
+    "A_e20",
+    "zone_only",
+    "neighbor_only",
+    "dedup",
+    "own_memory_only",
+    "profit_per_ha",
+    "unrestricted",
+    "ecological",
+    "zone_profit_only"
+  ]
+}

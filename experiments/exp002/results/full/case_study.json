@@ -1,0 +1,2662 @@
+{
+  "selection": "Post-hoc illustration: first negative ARID B row in seed 0 with A crop almonds, ordered by season then agent. Not representative or a statistical test.",
+  "seed": 0,
+  "agent": 83,
+  "season": 2,
+  "arms": {
+    "A": {
+      "seed": 0,
+      "season": 2,
+      "agent": 83,
+      "zone": "ARID",
+      "crop": "almonds",
+      "previous_crop": "almonds",
+      "switched": false,
+      "explored": false,
+      "greedy_crop": "almonds",
+      "chosen_score": 0.992282706616939,
+      "candidates": {
+        "barley": {
+          "suitability": 0.9409120563227092,
+          "zone": 0.0,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.9409120563227092,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -11765.86836748282
+        },
+        "sorghum": {
+          "suitability": 0.8171078071578247,
+          "zone": 0.0,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.8171078071578247,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -24527.603112047207
+        },
+        "almonds": {
+          "suitability": 0.992282706616939,
+          "zone": 0.0,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.992282706616939,
+          "experience_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 4.20073021537036
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 22868.503984754418
+        },
+        "date_palms": {
+          "suitability": 0.7664652553267363,
+          "zone": 0.0,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.7664652553267363,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 218659.41356568935
+        },
+        "watermelon": {
+          "suitability": 0.5258394304079561,
+          "zone": 0.0,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.5258394304079561,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 19233.78022170702
+        },
+        "cumin": {
+          "suitability": 0.762849171899325,
+          "zone": 0.0,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.762849171899325,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -5481.17729851856
+        }
+      },
+      "experience_info": {
+        "count": 1,
+        "unique": 1,
+        "duplicates": 0,
+        "received": 0,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 1
+        },
+        "origin_farmers": [
+          83
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 4.20073021537036
+      },
+      "neighbor_info": {
+        "count": 0,
+        "unique": 0,
+        "duplicates": 0,
+        "received": 0,
+        "cross_zone": 0,
+        "origin_zones": {},
+        "origin_farmers": [],
+        "age_min": null,
+        "age_max": null,
+        "age_mean": null,
+        "source_land_mean": null
+      },
+      "zone_info": {
+        "count": 0,
+        "unique": 0,
+        "duplicates": 0,
+        "received": 0,
+        "cross_zone": 0,
+        "origin_zones": {},
+        "origin_farmers": [],
+        "age_min": null,
+        "age_max": null,
+        "age_mean": null,
+        "source_land_mean": null
+      },
+      "all_channels_info": {
+        "count": 1,
+        "unique": 1,
+        "duplicates": 0,
+        "received": 0,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 1
+        },
+        "origin_farmers": [
+          83
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 4.20073021537036
+      },
+      "goal": {
+        "yield": 0.5,
+        "budget": 0.3,
+        "water": 0.2
+      },
+      "land_ha": 4.20073021537036,
+      "weather": "wet",
+      "yield_t_ha": 0.6648849201819158,
+      "effective_yield_t_ha": 0.5850987297600859,
+      "production_t": 2.7930021739522837,
+      "cost_mad_ha": 6872.392847297486,
+      "price_mad_t": 21050,
+      "water_proxy_mm": 450.0,
+      "profit_mad": 22868.503984754418,
+      "profit_mad_ha": 5443.935414152324,
+      "cost_noise": 0.06659106087268378,
+      "analyst_only_profit_regret": 195790.90958093494,
+      "analyst_only_best_profit_crop": "date_palms",
+      "paired_A": {
+        "crop": "almonds",
+        "profit_mad": 22868.503984754418,
+        "delta_profit_mad": 0.0,
+        "delta_yield_t_ha": 0.0
+      }
+    },
+    "B": {
+      "seed": 0,
+      "season": 2,
+      "agent": 83,
+      "zone": "ARID",
+      "crop": "barley",
+      "previous_crop": "almonds",
+      "switched": true,
+      "explored": false,
+      "greedy_crop": "barley",
+      "chosen_score": 1.4609120563227092,
+      "candidates": {
+        "barley": {
+          "suitability": 0.9409120563227092,
+          "zone": 0.2699999999999999,
+          "neighbor": 0.0,
+          "experience": 0.25,
+          "total_score": 1.4609120563227092,
+          "experience_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 1,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              82
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 7.842931093056064
+          },
+          "neighbor_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 1,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              82
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 7.842931093056064
+          },
+          "zone_info": {
+            "count": 12,
+            "unique": 12,
+            "duplicates": 0,
+            "received": 12,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 12
+            },
+            "origin_farmers": [
+              2,
+              16,
+              27,
+              33,
+              44,
+              64,
+              71,
+              82,
+              87,
+              88,
+              95,
+              97
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 5.417816848358211
+          },
+          "analyst_only_same_shock_profit": -11765.86836748282
+        },
+        "sorghum": {
+          "suitability": 0.8171078071578247,
+          "zone": -0.11030955396630637,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.7067982531915183,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -24527.603112047207
+        },
+        "almonds": {
+          "suitability": 0.992282706616939,
+          "zone": 0.3324854860809462,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 1.3247681926978851,
+          "experience_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 4.20073021537036
+          },
+          "neighbor_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 4.20073021537036
+          },
+          "zone_info": {
+            "count": 3,
+            "unique": 3,
+            "duplicates": 0,
+            "received": 2,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 3
+            },
+            "origin_farmers": [
+              26,
+              54,
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 3.984441006022769
+          },
+          "analyst_only_same_shock_profit": 22868.503984754418
+        },
+        "date_palms": {
+          "suitability": 0.7664652553267363,
+          "zone": -0.10347280946910942,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.6629924458576268,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 218659.41356568935
+        },
+        "watermelon": {
+          "suitability": 0.5258394304079561,
+          "zone": -0.07098832310507408,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.45485110730288203,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 19233.78022170702
+        },
+        "cumin": {
+          "suitability": 0.762849171899325,
+          "zone": -0.10298463820640891,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.6598645336929161,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -5481.17729851856
+        }
+      },
+      "experience_info": {
+        "count": 2,
+        "unique": 2,
+        "duplicates": 0,
+        "received": 1,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 2
+        },
+        "origin_farmers": [
+          82,
+          83
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 6.021830654213212
+      },
+      "neighbor_info": {
+        "count": 2,
+        "unique": 2,
+        "duplicates": 0,
+        "received": 1,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 2
+        },
+        "origin_farmers": [
+          82,
+          83
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 6.021830654213212
+      },
+      "zone_info": {
+        "count": 15,
+        "unique": 15,
+        "duplicates": 0,
+        "received": 14,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 15
+        },
+        "origin_farmers": [
+          2,
+          16,
+          26,
+          27,
+          33,
+          44,
+          54,
+          64,
+          71,
+          82,
+          83,
+          87,
+          88,
+          95,
+          97
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 5.131141679891123
+      },
+      "all_channels_info": {
+        "count": 19,
+        "unique": 15,
+        "duplicates": 4,
+        "received": 16,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 19
+        },
+        "origin_farmers": [
+          2,
+          16,
+          26,
+          27,
+          33,
+          44,
+          54,
+          64,
+          71,
+          82,
+          83,
+          87,
+          88,
+          95,
+          97
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 5.318655148169458
+      },
+      "goal": {
+        "yield": 0.5,
+        "budget": 0.3,
+        "water": 0.2
+      },
+      "land_ha": 4.20073021537036,
+      "weather": "wet",
+      "yield_t_ha": 0.9973273802728737,
+      "effective_yield_t_ha": 0.8776480946401288,
+      "production_t": 4.189503260928426,
+      "cost_mad_ha": 6785.432611513475,
+      "price_mad_t": 4540,
+      "water_proxy_mm": 450.0,
+      "profit_mad": -11765.86836748282,
+      "profit_mad_ha": -2800.9102618472907,
+      "cost_noise": 0.06659106087268378,
+      "analyst_only_profit_regret": 230425.28193317217,
+      "analyst_only_best_profit_crop": "date_palms",
+      "paired_A": {
+        "crop": "almonds",
+        "profit_mad": 22868.503984754418,
+        "delta_profit_mad": -34634.37235223724,
+        "delta_yield_t_ha": 0.3324424600909579
+      }
+    },
+    "dedup": {
+      "seed": 0,
+      "season": 2,
+      "agent": 83,
+      "zone": "ARID",
+      "crop": "barley",
+      "previous_crop": "almonds",
+      "switched": true,
+      "explored": false,
+      "greedy_crop": "barley",
+      "chosen_score": 1.4609120563227092,
+      "candidates": {
+        "barley": {
+          "suitability": 0.9409120563227092,
+          "zone": 0.2699999999999999,
+          "neighbor": 0.0,
+          "experience": 0.25,
+          "total_score": 1.4609120563227092,
+          "experience_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 1,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              82
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 7.842931093056064
+          },
+          "neighbor_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 1,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              82
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 7.842931093056064
+          },
+          "zone_info": {
+            "count": 12,
+            "unique": 12,
+            "duplicates": 0,
+            "received": 12,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 12
+            },
+            "origin_farmers": [
+              2,
+              16,
+              27,
+              33,
+              44,
+              64,
+              71,
+              82,
+              87,
+              88,
+              95,
+              97
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 5.417816848358211
+          },
+          "analyst_only_same_shock_profit": -11765.86836748282
+        },
+        "sorghum": {
+          "suitability": 0.8171078071578247,
+          "zone": -0.11030955396630637,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.7067982531915183,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -24527.603112047207
+        },
+        "almonds": {
+          "suitability": 0.992282706616939,
+          "zone": 0.3324854860809462,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 1.3247681926978851,
+          "experience_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 4.20073021537036
+          },
+          "neighbor_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 4.20073021537036
+          },
+          "zone_info": {
+            "count": 3,
+            "unique": 3,
+            "duplicates": 0,
+            "received": 2,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 3
+            },
+            "origin_farmers": [
+              26,
+              54,
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 3.984441006022769
+          },
+          "analyst_only_same_shock_profit": 22868.503984754418
+        },
+        "date_palms": {
+          "suitability": 0.7664652553267363,
+          "zone": -0.10347280946910942,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.6629924458576268,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 218659.41356568935
+        },
+        "watermelon": {
+          "suitability": 0.5258394304079561,
+          "zone": -0.07098832310507408,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.45485110730288203,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 19233.78022170702
+        },
+        "cumin": {
+          "suitability": 0.762849171899325,
+          "zone": -0.10298463820640891,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.6598645336929161,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -5481.17729851856
+        }
+      },
+      "experience_info": {
+        "count": 2,
+        "unique": 2,
+        "duplicates": 0,
+        "received": 1,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 2
+        },
+        "origin_farmers": [
+          82,
+          83
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 6.021830654213212
+      },
+      "neighbor_info": {
+        "count": 2,
+        "unique": 2,
+        "duplicates": 0,
+        "received": 1,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 2
+        },
+        "origin_farmers": [
+          82,
+          83
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 6.021830654213212
+      },
+      "zone_info": {
+        "count": 15,
+        "unique": 15,
+        "duplicates": 0,
+        "received": 14,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 15
+        },
+        "origin_farmers": [
+          2,
+          16,
+          26,
+          27,
+          33,
+          44,
+          54,
+          64,
+          71,
+          82,
+          83,
+          87,
+          88,
+          95,
+          97
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 5.131141679891123
+      },
+      "all_channels_info": {
+        "count": 19,
+        "unique": 15,
+        "duplicates": 4,
+        "received": 16,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 19
+        },
+        "origin_farmers": [
+          2,
+          16,
+          26,
+          27,
+          33,
+          44,
+          54,
+          64,
+          71,
+          82,
+          83,
+          87,
+          88,
+          95,
+          97
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 5.318655148169458
+      },
+      "goal": {
+        "yield": 0.5,
+        "budget": 0.3,
+        "water": 0.2
+      },
+      "land_ha": 4.20073021537036,
+      "weather": "wet",
+      "yield_t_ha": 0.9973273802728737,
+      "effective_yield_t_ha": 0.8776480946401288,
+      "production_t": 4.189503260928426,
+      "cost_mad_ha": 6785.432611513475,
+      "price_mad_t": 4540,
+      "water_proxy_mm": 450.0,
+      "profit_mad": -11765.86836748282,
+      "profit_mad_ha": -2800.9102618472907,
+      "cost_noise": 0.06659106087268378,
+      "analyst_only_profit_regret": 230425.28193317217,
+      "analyst_only_best_profit_crop": "date_palms",
+      "paired_A": {
+        "crop": "almonds",
+        "profit_mad": 22868.503984754418,
+        "delta_profit_mad": -34634.37235223724,
+        "delta_yield_t_ha": 0.3324424600909579
+      }
+    },
+    "own_memory_only": {
+      "seed": 0,
+      "season": 2,
+      "agent": 83,
+      "zone": "ARID",
+      "crop": "almonds",
+      "previous_crop": "almonds",
+      "switched": false,
+      "explored": false,
+      "greedy_crop": "almonds",
+      "chosen_score": 1.3247681926978851,
+      "candidates": {
+        "barley": {
+          "suitability": 0.9409120563227092,
+          "zone": 0.2699999999999999,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 1.2109120563227092,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 1,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              82
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 7.842931093056064
+          },
+          "zone_info": {
+            "count": 12,
+            "unique": 12,
+            "duplicates": 0,
+            "received": 12,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 12
+            },
+            "origin_farmers": [
+              2,
+              16,
+              27,
+              33,
+              44,
+              64,
+              71,
+              82,
+              87,
+              88,
+              95,
+              97
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 5.417816848358211
+          },
+          "analyst_only_same_shock_profit": -11765.86836748282
+        },
+        "sorghum": {
+          "suitability": 0.8171078071578247,
+          "zone": -0.11030955396630637,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.7067982531915183,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -24527.603112047207
+        },
+        "almonds": {
+          "suitability": 0.992282706616939,
+          "zone": 0.3324854860809462,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 1.3247681926978851,
+          "experience_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 4.20073021537036
+          },
+          "neighbor_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 4.20073021537036
+          },
+          "zone_info": {
+            "count": 3,
+            "unique": 3,
+            "duplicates": 0,
+            "received": 2,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 3
+            },
+            "origin_farmers": [
+              26,
+              54,
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 3.984441006022769
+          },
+          "analyst_only_same_shock_profit": 22868.503984754418
+        },
+        "date_palms": {
+          "suitability": 0.7664652553267363,
+          "zone": -0.10347280946910942,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.6629924458576268,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 218659.41356568935
+        },
+        "watermelon": {
+          "suitability": 0.5258394304079561,
+          "zone": -0.07098832310507408,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.45485110730288203,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 19233.78022170702
+        },
+        "cumin": {
+          "suitability": 0.762849171899325,
+          "zone": -0.10298463820640891,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.6598645336929161,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -5481.17729851856
+        }
+      },
+      "experience_info": {
+        "count": 1,
+        "unique": 1,
+        "duplicates": 0,
+        "received": 0,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 1
+        },
+        "origin_farmers": [
+          83
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 4.20073021537036
+      },
+      "neighbor_info": {
+        "count": 2,
+        "unique": 2,
+        "duplicates": 0,
+        "received": 1,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 2
+        },
+        "origin_farmers": [
+          82,
+          83
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 6.021830654213212
+      },
+      "zone_info": {
+        "count": 15,
+        "unique": 15,
+        "duplicates": 0,
+        "received": 14,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 15
+        },
+        "origin_farmers": [
+          2,
+          16,
+          26,
+          27,
+          33,
+          44,
+          54,
+          64,
+          71,
+          82,
+          83,
+          87,
+          88,
+          95,
+          97
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 5.131141679891123
+      },
+      "all_channels_info": {
+        "count": 18,
+        "unique": 15,
+        "duplicates": 3,
+        "received": 15,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 18
+        },
+        "origin_farmers": [
+          2,
+          16,
+          26,
+          27,
+          33,
+          44,
+          54,
+          64,
+          71,
+          82,
+          83,
+          87,
+          88,
+          95,
+          97
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 5.178417595675757
+      },
+      "goal": {
+        "yield": 0.5,
+        "budget": 0.3,
+        "water": 0.2
+      },
+      "land_ha": 4.20073021537036,
+      "weather": "wet",
+      "yield_t_ha": 0.6648849201819158,
+      "effective_yield_t_ha": 0.5850987297600859,
+      "production_t": 2.7930021739522837,
+      "cost_mad_ha": 6872.392847297486,
+      "price_mad_t": 21050,
+      "water_proxy_mm": 450.0,
+      "profit_mad": 22868.503984754418,
+      "profit_mad_ha": 5443.935414152324,
+      "cost_noise": 0.06659106087268378,
+      "analyst_only_profit_regret": 195790.90958093494,
+      "analyst_only_best_profit_crop": "date_palms",
+      "paired_A": {
+        "crop": "almonds",
+        "profit_mad": 22868.503984754418,
+        "delta_profit_mad": 0.0,
+        "delta_yield_t_ha": 0.0
+      }
+    },
+    "profit_per_ha": {
+      "seed": 0,
+      "season": 2,
+      "agent": 83,
+      "zone": "ARID",
+      "crop": "barley",
+      "previous_crop": "almonds",
+      "switched": true,
+      "explored": false,
+      "greedy_crop": "barley",
+      "chosen_score": 1.4609120563227092,
+      "candidates": {
+        "barley": {
+          "suitability": 0.9409120563227092,
+          "zone": 0.2699999999999999,
+          "neighbor": 0.0,
+          "experience": 0.25,
+          "total_score": 1.4609120563227092,
+          "experience_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 1,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              82
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 7.842931093056064
+          },
+          "neighbor_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 1,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              82
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 7.842931093056064
+          },
+          "zone_info": {
+            "count": 12,
+            "unique": 12,
+            "duplicates": 0,
+            "received": 12,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 12
+            },
+            "origin_farmers": [
+              2,
+              16,
+              27,
+              33,
+              44,
+              64,
+              71,
+              82,
+              87,
+              88,
+              95,
+              97
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 5.417816848358211
+          },
+          "analyst_only_same_shock_profit": -11765.86836748282
+        },
+        "sorghum": {
+          "suitability": 0.8171078071578247,
+          "zone": -0.11030955396630637,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.7067982531915183,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -24527.603112047207
+        },
+        "almonds": {
+          "suitability": 0.992282706616939,
+          "zone": 0.3408873643377993,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 1.3331700709547383,
+          "experience_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 4.20073021537036
+          },
+          "neighbor_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 4.20073021537036
+          },
+          "zone_info": {
+            "count": 3,
+            "unique": 3,
+            "duplicates": 0,
+            "received": 2,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 3
+            },
+            "origin_farmers": [
+              26,
+              54,
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 3.984441006022769
+          },
+          "analyst_only_same_shock_profit": 22868.503984754418
+        },
+        "date_palms": {
+          "suitability": 0.7664652553267363,
+          "zone": -0.10347280946910942,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.6629924458576268,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 218659.41356568935
+        },
+        "watermelon": {
+          "suitability": 0.5258394304079561,
+          "zone": -0.07098832310507408,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.45485110730288203,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 19233.78022170702
+        },
+        "cumin": {
+          "suitability": 0.762849171899325,
+          "zone": -0.10298463820640891,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.6598645336929161,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -5481.17729851856
+        }
+      },
+      "experience_info": {
+        "count": 2,
+        "unique": 2,
+        "duplicates": 0,
+        "received": 1,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 2
+        },
+        "origin_farmers": [
+          82,
+          83
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 6.021830654213212
+      },
+      "neighbor_info": {
+        "count": 2,
+        "unique": 2,
+        "duplicates": 0,
+        "received": 1,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 2
+        },
+        "origin_farmers": [
+          82,
+          83
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 6.021830654213212
+      },
+      "zone_info": {
+        "count": 15,
+        "unique": 15,
+        "duplicates": 0,
+        "received": 14,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 15
+        },
+        "origin_farmers": [
+          2,
+          16,
+          26,
+          27,
+          33,
+          44,
+          54,
+          64,
+          71,
+          82,
+          83,
+          87,
+          88,
+          95,
+          97
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 5.131141679891123
+      },
+      "all_channels_info": {
+        "count": 19,
+        "unique": 15,
+        "duplicates": 4,
+        "received": 16,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 19
+        },
+        "origin_farmers": [
+          2,
+          16,
+          26,
+          27,
+          33,
+          44,
+          54,
+          64,
+          71,
+          82,
+          83,
+          87,
+          88,
+          95,
+          97
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 5.318655148169458
+      },
+      "goal": {
+        "yield": 0.5,
+        "budget": 0.3,
+        "water": 0.2
+      },
+      "land_ha": 4.20073021537036,
+      "weather": "wet",
+      "yield_t_ha": 0.9973273802728737,
+      "effective_yield_t_ha": 0.8776480946401288,
+      "production_t": 4.189503260928426,
+      "cost_mad_ha": 6785.432611513475,
+      "price_mad_t": 4540,
+      "water_proxy_mm": 450.0,
+      "profit_mad": -11765.86836748282,
+      "profit_mad_ha": -2800.9102618472907,
+      "cost_noise": 0.06659106087268378,
+      "analyst_only_profit_regret": 230425.28193317217,
+      "analyst_only_best_profit_crop": "date_palms",
+      "paired_A": {
+        "crop": "almonds",
+        "profit_mad": 22868.503984754418,
+        "delta_profit_mad": -34634.37235223724,
+        "delta_yield_t_ha": 0.3324424600909579
+      }
+    },
+    "zone_profit_only": {
+      "seed": 0,
+      "season": 2,
+      "agent": 83,
+      "zone": "ARID",
+      "crop": "almonds",
+      "previous_crop": "almonds",
+      "switched": false,
+      "explored": false,
+      "greedy_crop": "almonds",
+      "chosen_score": 1.387915616679551,
+      "candidates": {
+        "barley": {
+          "suitability": 0.9409120563227092,
+          "zone": 0.0,
+          "neighbor": 0.0,
+          "experience": 0.2499999999999999,
+          "total_score": 1.1909120563227091,
+          "experience_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 1,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              82
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 7.842931093056064
+          },
+          "neighbor_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 1,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              82
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 7.842931093056064
+          },
+          "zone_info": {
+            "count": 12,
+            "unique": 12,
+            "duplicates": 0,
+            "received": 12,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 12
+            },
+            "origin_farmers": [
+              2,
+              16,
+              27,
+              33,
+              44,
+              64,
+              71,
+              82,
+              87,
+              88,
+              95,
+              97
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 5.417816848358211
+          },
+          "analyst_only_same_shock_profit": -11765.86836748282
+        },
+        "sorghum": {
+          "suitability": 0.8171078071578247,
+          "zone": -0.11030955396630637,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.7067982531915183,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -24527.603112047207
+        },
+        "almonds": {
+          "suitability": 0.992282706616939,
+          "zone": 0.39563291006261203,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 1.387915616679551,
+          "experience_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 4.20073021537036
+          },
+          "neighbor_info": {
+            "count": 1,
+            "unique": 1,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 1
+            },
+            "origin_farmers": [
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 4.20073021537036
+          },
+          "zone_info": {
+            "count": 3,
+            "unique": 3,
+            "duplicates": 0,
+            "received": 2,
+            "cross_zone": 0,
+            "origin_zones": {
+              "ARID": 3
+            },
+            "origin_farmers": [
+              26,
+              54,
+              83
+            ],
+            "age_min": 1,
+            "age_max": 1,
+            "age_mean": 1.0,
+            "source_land_mean": 3.984441006022769
+          },
+          "analyst_only_same_shock_profit": 22868.503984754418
+        },
+        "date_palms": {
+          "suitability": 0.7664652553267363,
+          "zone": -0.10347280946910942,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.6629924458576268,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 218659.41356568935
+        },
+        "watermelon": {
+          "suitability": 0.5258394304079561,
+          "zone": -0.07098832310507408,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.45485110730288203,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": 19233.78022170702
+        },
+        "cumin": {
+          "suitability": 0.762849171899325,
+          "zone": -0.10298463820640891,
+          "neighbor": 0.0,
+          "experience": 0.0,
+          "total_score": 0.6598645336929161,
+          "experience_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "neighbor_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "zone_info": {
+            "count": 0,
+            "unique": 0,
+            "duplicates": 0,
+            "received": 0,
+            "cross_zone": 0,
+            "origin_zones": {},
+            "origin_farmers": [],
+            "age_min": null,
+            "age_max": null,
+            "age_mean": null,
+            "source_land_mean": null
+          },
+          "analyst_only_same_shock_profit": -5481.17729851856
+        }
+      },
+      "experience_info": {
+        "count": 2,
+        "unique": 2,
+        "duplicates": 0,
+        "received": 1,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 2
+        },
+        "origin_farmers": [
+          82,
+          83
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 6.021830654213212
+      },
+      "neighbor_info": {
+        "count": 2,
+        "unique": 2,
+        "duplicates": 0,
+        "received": 1,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 2
+        },
+        "origin_farmers": [
+          82,
+          83
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 6.021830654213212
+      },
+      "zone_info": {
+        "count": 15,
+        "unique": 15,
+        "duplicates": 0,
+        "received": 14,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 15
+        },
+        "origin_farmers": [
+          2,
+          16,
+          26,
+          27,
+          33,
+          44,
+          54,
+          64,
+          71,
+          82,
+          83,
+          87,
+          88,
+          95,
+          97
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 5.131141679891123
+      },
+      "all_channels_info": {
+        "count": 19,
+        "unique": 15,
+        "duplicates": 4,
+        "received": 16,
+        "cross_zone": 0,
+        "origin_zones": {
+          "ARID": 19
+        },
+        "origin_farmers": [
+          2,
+          16,
+          26,
+          27,
+          33,
+          44,
+          54,
+          64,
+          71,
+          82,
+          83,
+          87,
+          88,
+          95,
+          97
+        ],
+        "age_min": 1,
+        "age_max": 1,
+        "age_mean": 1.0,
+        "source_land_mean": 5.318655148169458
+      },
+      "goal": {
+        "yield": 0.5,
+        "budget": 0.3,
+        "water": 0.2
+      },
+      "land_ha": 4.20073021537036,
+      "weather": "wet",
+      "yield_t_ha": 0.6648849201819158,
+      "effective_yield_t_ha": 0.5850987297600859,
+      "production_t": 2.7930021739522837,
+      "cost_mad_ha": 6872.392847297486,
+      "price_mad_t": 21050,
+      "water_proxy_mm": 450.0,
+      "profit_mad": 22868.503984754418,
+      "profit_mad_ha": 5443.935414152324,
+      "cost_noise": 0.06659106087268378,
+      "analyst_only_profit_regret": 195790.90958093494,
+      "analyst_only_best_profit_crop": "date_palms",
+      "paired_A": {
+        "crop": "almonds",
+        "profit_mad": 22868.503984754418,
+        "delta_profit_mad": 0.0,
+        "delta_yield_t_ha": 0.0
+      }
+    }
+  }
+}

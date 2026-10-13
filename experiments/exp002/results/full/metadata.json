@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-10-13T14:48:20.509755+00:00",
+  "command": [
+    "C:\\Users\\Salwa Khattami\\.codex\\worktrees\\exp001-ablation\\AgorAI\\experiments\\exp002\\runner.py",
+    "--config",
+    "experiments/exp002/configs/full.json",
+    "--output",
+    "experiments/exp002/results/full"
+  ],
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "mesa": "3.4.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "networkx": "3.2.1",
+    "pytest": "9.0.2"
+  },
+  "git_commit": "d3c5102d9776758f41e326876de6d26c3a2e9ed0",
+  "git_status": "?? experiments/exp002/.gitattributes\n?? experiments/exp002/METHODOLOGY.md\n?? experiments/exp002/README.md\n?? experiments/exp002/__init__.py\n?? experiments/exp002/analysis.py\n?? experiments/exp002/configs/\n?? experiments/exp002/diagnose.py\n?? experiments/exp002/model.py\n?? experiments/exp002/report.py\n?? experiments/exp002/runner.py\n?? experiments/exp002/test_results.json\n?? experiments/exp002/tests/\n",
+  "input_sha256": {
+    "data\\climate_profiles.json": "ed9b9b88026bcf3efc1546c1ecdd6df8d9db58b769b5110f3d481a9a6717a0d0",
+    "data\\crops.json": "f628dc6d6ec18642be3206d23910b57e241657399172d2fda6a6e6cdf5a38bf1",
+    "data\\soil_moisture_profiles.json": "9c911bcd8dc862712661892146f25e27acd2c7748711ce08aa82fdbeb2bd3edc",
+    "data\\zones.json": "5e323e64b19184c16636e2878eb1fddd80005247efea04662032c2ae0da64a2f"
+  },
+  "source_sha256": {
+    "experiments\\exp002\\analysis.py": "2dc7769ed7e338b86e0f0fff3f74a4c71bea63468d4e59bc4d080dabad2a0562",
+    "experiments\\exp002\\diagnose.py": "a2bde18663b4fcf1ccccabb93100cc108ba2c23f0cb3dfd46cb81e9a7e4392a0",
+    "experiments\\exp002\\model.py": "baa6b1ee54489148758f392745f685fc171395ed3a67508df69ed468b7beae2d",
+    "experiments\\exp002\\report.py": "2ba6f13a0a8d253f3db6830344e5d46dec9ec3821a3a06e6e259f6b632048006",
+    "experiments\\exp002\\runner.py": "030a20a82af34b3b3e2765d24ab83def668a4baa7af9bc24c46c0ba8dee0edee",
+    "experiments\\exp002\\__init__.py": "c128f0e56dbdc3a9b189a3f1294cbae1d3852c355928ba02592bbf811200cebd",
+    "experiments\\exp001\\analysis.py": "54c02562c408587fb58dd3d7c66f7a688dd869b3bceee879b93c147241d4672f",
+    "experiments\\exp001\\model.py": "0a19f6ceeb6a1273d51658df294fbc8316a593de2d836a4aaf843a0ab221c5e9",
+    "experiments\\exp001\\report.py": "ecb7503bfea727295c7714a1454a6a53bc50cbe4101203872927db9159eb870f",
+    "experiments\\exp001\\runner.py": "043bf2ca79524273276189265b7cb76891625663f1d6ffa7caa421692170d436",
+    "experiments\\exp001\\__init__.py": "12cff3bbc8cf537c847cf230908488360f6f69b8ee983690011cd439b4be1d1d"
+  },
+  "output_sha256": {
+    "agents.csv": "9b7e0b5e82fd8696bb2b96ba88627412aa815420a81728cb55772507d17adb55",
+    "config.json": "26d4fac0beedea1acb63fcf2d7932770cd8b8a9444bd6ae9281bdcf9061fa2da",
+    "contrasts.csv": "8fd0896c0d712507c49156e333f2e17db9ca3fe1e8e778e22f460a1e9c544303",
+    "crop_pairs.csv": "24c35bd3a7481db9220b95898262db17ce089b477330862f121fd36b0a2001c9",
+    "exp001_reproduction.csv": "6cc5c1fd289cd35e3eece3e5e387e1ca8683c7ffcd17926f5319b7ac35f533e6",
+    "harm_groups.csv": "29f7fef71e6bb7fa72abd5ea05c18348bbf3b414cc4134cb37ee71ec0538e52f",
+    "levels.csv": "b70c2871f2a90894652a264436e690531e6acc05d269e1ffca2d52e243a8705b",
+    "resolved_configs.json": "36b211eae4070ba68f4346f7627fee35b7f9090167a3d1a84fa9c9daab4da25b",
+    "run_manifest.json": "f945b1c0d24f42186e9efceb97adb27530b8a348983d04695d177e41bb3f29ae",
+    "season_zone.csv": "2ef6cb7ec0517b361eb62ec28c903dbb34919903624afc9b5fcc7a16d8699eea",
+    "seed_summary.csv": "8c67384db92bbb2aa24997c97b2bfffe286156824c76e3afbd79be6300e3cebb",
+    "switch_transitions.csv": "7294b1af6a12bbf25d33b76fbbbdd6fbd995edcf686e946f16aecb07247d7c8d"
+  },
+  "n_seeds": 20,
+  "n_arms": 16,
+  "n_records": 960000
+}
