@@ -1,0 +1,64 @@
+# EXP004.1 prespecified protocol: robustness and stronger baselines
+
+## Status, source audit, preservation
+
+Written before extension algorithms or exploratory outcomes. Base EXP004 research commit c871764 (draft PR #3), independent extension branch; target PR base is research/exp004-collective-knowledge-benchmark. Inspected environment.py, policies.py, evaluation.py, runner.py and tests. Reuse immutable Message/View, validated deduplication/posterior routines, RNG/population conventions, evaluation and seed interval utilities by import. Do not edit any original file, configuration, report or result. No dependency on agricultural V1/EXP001/EXP002. EXP003 remains outside scope.
+
+EXP004 uses rho=0/1, one randomly chosen action observation, Gaussian prior mean 0/variance 1, calibrated heteroscedastic measurement noise and recipient-specific linear utility. B2/B3 differ only in transmission accounting. The extension preserves those assumptions while varying context correlation and local coverage. Posterior code receives evidence only, never latent means, realized evaluation outcomes or scenario labels. Known rho is supplied ONLY to the explicitly labeled oracle-parameter diagnostic.
+
+## Questions and hypotheses
+
+H1: compatible pooling can retain decision value after every local action has been observed; its magnitude may shrink as local coverage increases. H2: correctly specified partial pooling has no greater integrated expected regret than the misspecified limiting estimators under matched observations; finite-seed and plug-in estimates may contradict a universal winner. H3: adding cross-context observations through unconditional pooling can harm when heterogeneity is high, especially against stronger local evidence; the rho threshold is empirical, not hard-coded. H4: concentrating the same acquisition budget locally can close or reverse pooling's advantage for one focal recipient. H5: deployable rho selection may underperform the oracle-parameter posterior because current evidence is limited. Report all directions, not only expected ones.
+
+## Design and latent process
+
+N=20 agents, C=3 balanced categorical contexts, K=3 actions, D=3 benefit dimensions, T=100 rounds. Population weights w_i ~ Dirichlet(1,1,1), contexts and quality multipliers q_i in {.5,1.5} follow EXP004 and remain fixed within seed. Mean outcome in round t is mu_tcad = sqrt(1-rho^2) g_tad + rho h_tcad, with independent standard-normal g and h. Thus Var(mu)=1 for every rho and Cov(mu_c,mu_c')=1-rho^2 for distinct contexts. Test rho in {0,.25,.5,.75,1}. Large rho means LESS context similarity. Dimensions/actions/round draws are independent conditional on population.
+
+Measurement noise base sigma=.5, unchanged quality multipliers; evaluated outcomes add independent .2 Gaussian noise as in EXP004. All policies use the same complete potential outcome table for all actions. Reuse semantic streams 1/2/3 for population, 10/11 for g/h, 12 for evaluation noise, 13 for first sampled action, 14 for first measurement error. Additional observation s uses noise stream 14+100*s. Observation actions cycle from each agent's random first action: a_is=(a_i0+s) mod K. Coverage m in {1,3}; m=3 covers every action once, but is not noise-free or necessarily sufficient for optimal decisions. Evidence is nested across m; latent/evaluation worlds are identical across m. Across rho, primitive g/h/noise/weights/action schedules match but latent outcomes intentionally change. No adaptive sampling or learning across rounds.
+
+Exploratory seeds 100..119, disjoint from original 0..19. Smoke seeds 90,91, three rounds. Confirmation seeds 200..219 are RESERVED and must not be generated or evaluated; runner rejects them. No tuning from exploratory winners. Alternative values require a documented later protocol rather than changing this run.
+
+## Information boundaries, provenance and budgets
+
+Messages retain (seed, round, source, sample) identity, source context, action, raw outcome vector and calibrated variance. IDs are scoped to the enclosing rho/coverage environment; combining worlds requires those keys. Exact repeated IDs are deduplicated; conflicting payloads fail. Every deployable decision uses its own objective and only current-round messages. Public assumptions are Gaussian mean zero, unit marginal variance, known sensor variance, independent dimensions/actions, and observed exact context labels. Hidden g/h/mu and independent evaluation targets are not public. No policy receives true rho except H_known.
+
+The main multi-agent panel uses exactly N*m acquired observations for EVERY policy, including B0; observations unavailable to a recipient remain local to their owners. Thus system acquisition is held constant, but recipient evidence access differs. Increasing m changes total acquisition for ALL methods. Acquisition prices are not modeled; count them explicitly rather than silently treating differing budgets as equal. Local versus shared decision-value comparisons do not demonstrate an architectural advantage.
+
+## Baselines
+
+B0 local-only: own m observations and EXP004 independent N(0,1) update per action/dimension.
+B1 always-share: unconditional pooling of all N*m observations using the same independent prior, ignoring context labels (rho=0 model).
+B2 exact-context: pool only the recipient context (rho=1 model), distributed routing.
+B3 centralized context-conditioned: identical estimator/evidence/decisions to B2; central upload/reply cost model. Test against the original B3 implementation on fixtures.
+H_known: centralized correctly specified Gaussian partial pooling supplied the declared true rho; oracle-PARAMETER diagnostic, not an oracle with outcome access.
+H_fit: centralized empirical-Bayes plug-in posterior. Select rho on a FIXED grid {0,.05,...,1} by marginal likelihood of permitted current-round raw observations, then use the corresponding Gaussian posterior. No evaluation targets, previous/future round evidence, or true rho are inputs. Ties choose the smallest grid value. It is deployable under the public model assumptions, but its plug-in posterior ignores rho uncertainty and may overfit a small number of independent latent action/dimension draws. Selection is performed separately for each round and coverage; no validation tuning on evaluation worlds.
+
+## Gaussian calculations
+
+For each action, combine observations within context c into precision P_c=sum_j 1/v_j and precision-weighted mean z_c=sum_j y_j/v_j / P_c. Omit contexts with no observations. v_j is the known measurement variance. For a candidate rho define K = rho^2 I_C + (1-rho^2) 11^T. With observed context index set O, S=K_OO+diag(1/P_O). Posterior mean for all contexts is K_:O S^-1 z_O, and covariance K-K_:O S^-1 K_O:. This remains valid at the singular prior limit rho=0 because measurement noise makes S positive definite. No observations return prior mean zero and K. Choose argmax_a w_i dot posterior_mean_c_i,a, with smallest-action ties.
+
+For H_fit, sum the Gaussian log likelihood over actions and independent outcome dimensions: -.5 [D logdet(S) + sum_d z_d^T S^-1 z_d], ignoring constants and within-context residual terms that do not depend on rho. Precision compression is sufficient for rho inference here. The noise and marginal scale are public fixed assumptions, not fit from targets. Validate against a separate observation-level multivariate-normal calculation, not just a second implementation of the same compression.
+
+## Acquisition-budget-matched focal diagnostic
+
+L_budget is a separate COUNTERFACTUAL single-recipient experiment, not a jointly feasible policy giving everyone free extra sensing. For each focal agent i, compare the N*m distributed observations available to H_known/H_fit/B1 with N*m acquisitions all at i's own context. Preserve the distributed sample action schedule, sensor variance multiset and standardized noise draws; only sample locations move. Thus count, precision and action coverage match exactly, and the focal's own original observations are included. Each focal experiment has the SAME TOTAL acquisition budget N*m on both sides. It estimates the value of allocating sensing locally versus across contexts, assuming sensors can be relocated at no cost. It does not estimate the cost of deploying N*m local samples for every agent simultaneously (that would be N^2*m). Evidence identities use distinct counterfactual namespaces in stored files; no messages cross these worlds.
+
+Compare L_budget and shared policies on expected regret/utility, with matched focal worlds. Do not compare its zero communication to the main panel's per-agent amortized costs as if they were the same system. A focused service accounting diagnostic charges shared central acquisition uploads plus one reply (N*m+1 packets) for a single recipient; local acquisition has no transmission. Report focused net values separately from multi-recipient amortized net values. Acquisition count remains equal; geographic acquisition cost and feasibility are unmodeled.
+
+## Communication and outcomes
+
+Preserve EXP004 packet accounting: B0 zero; B1 m*(N-1) deliveries per recipient; B2 m*(n_c-1); B3/H_known/H_fit total N*m uploads plus N replies, amortized m+1 packets/recipient. Metadata, context routing, compute and coordination remain free. All policies are fixed communication strategies, not cost-optimized selectors. Lambda in {0,.01,.1} utility units/packet, postprocess identical decisions. Explicitly distinguish algorithm and topology effects.
+
+Primary: expected regret max_a w_i dot mu_i,a minus chosen expected utility. Secondary: expected/realized utility and realized hindsight regret; agent harm relative to matched B0 at SAME coverage; q10 of agent round-average utility; round-level harm; selected rho histogram/error (error evaluator-only); unique evidence, acquisition/communication counts and costs; net expected utility and net harm. Report contexts and dominant-objective groups. Coverage contrasts compare each method at m=3 vs m=1; distinguish these from sharing contrasts at fixed m. Cross-context harm is assessed both B1-B0 and B1-B2, at each rho/coverage, without asserting a universal threshold.
+
+## Inference and reproducibility
+
+Average rounds within agent, then agents within seed (or predeclared context/objective subgroup). Harm uses agent round-mean paired utility difference < -1e-12. Seeds are independent replicates; rounds and agents are not. Report paired seed differences and 95% Student t intervals (n-1 degrees of freedom, sample SD/sqrt(n)). All intervals exploratory/unadjusted; no confirmatory significance claims or p-value-based tuning. Primary contrasts: B1/B2/B3/H_known/H_fit versus B0; H_known/H_fit versus B1 and B2; H_fit versus H_known; B3 versus B2; separate focal L_budget versus shared estimators; and coverage effects for each policy. Known-rho Bayes optimality is integrated over the generative prior, not guaranteed for every realized dataset or finite sample.
+
+Commit protocol before implementation. Test then smoke then full exploratory execution. Store configuration/seeds/versions/source hashes/commit/dirty state, per-agent and per-seed summaries, paired contrasts, raw observations, selected rho and potential outcomes. Preserve originals byte-for-byte; audit Git diff scope and hashes. Compress large artifacts; commit compact lossless summaries and readable reports. Compression containers need not replay byte-for-byte, but numerical outcomes and evidence must replay deterministically on the recorded stack.
+
+## Scientific controls, failures and limitations
+
+Stop scientific interpretation on reproducibility/pairing/leakage failure, unequal claimed budgets, invalid marginal variance, failed rho endpoint identities, posterior mismatch against independent numerical checks, incorrect costs or broken provenance. Test no observations, duplicate/conflicting IDs, unavailable contexts and numerical finite outputs. Test strong local coverage includes every action, m=1 endpoint parity with original EXP004, B2/B3 equality, H_known limiting behavior, and evidence-only H_fit invariance to hidden-state changes. Check reserve seeds are not executed.
+
+Unexpected performance directions are results, not failure criteria. The small Gaussian benchmark has known noise/scale, exact contexts, linear objectives, ideal routing, independent rounds and no agriculture. Strong local coverage is still noisy. H_fit estimates correlation from few latent draws, uses a discrete grid and ignores model uncertainty. Focal budget reallocation assumes free sensor relocation; system architecture and sensing geography are not experimentally interchangeable. More faithful priors, miscalibration, biased evidence, continuous contexts, stronger local acquisition and held-out confirmation remain necessary before a new adaptive selector. No claim of agricultural validity or algorithmic novelty.
