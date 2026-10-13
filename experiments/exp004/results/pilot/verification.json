@@ -1,0 +1,10 @@
+{
+  "decisions": 960000,
+  "worlds": 120,
+  "hashes": true,
+  "matched_noise_worlds": true,
+  "central_distributed_decision_parity": true,
+  "duplicate_control_no_gain": true,
+  "raw_regret_accounting": true,
+  "agent_summary_reproduction": true
+}
