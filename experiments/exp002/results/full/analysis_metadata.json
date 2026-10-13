@@ -1,0 +1,18 @@
+{
+  "stage": "Post-execution diagnostics; separate from simulation execution metadata",
+  "source_sha256": {
+    "diagnose.py": "bfc1912120563bf10daa4acdf14b2b918e8a863b30635c6bb1001bb7700dd6a6",
+    "report.py": "120f3551f2194a90c4b1ec195c473073f1977583dcd651802065b9478a03ca51"
+  },
+  "output_sha256": {
+    "exploration_seed_comparisons.csv": "1e1ed42e0d5af11a827777147ff37ab81765de7e18c184448e4cf949dbaa6d15",
+    "exploration_comparisons.csv": "0e5ca024cfd318b780ff506821e676c53ac0985ecbcac5683ba4421948dfed4d",
+    "rescue_seed.csv": "aac819c099908719cf494cebec6f8a18aeb31b90051a97058fe3a46e22f254bf",
+    "rescue_summary.csv": "badae267c20b2f8b623fbde8154fb321f39abe82c805291e807e9c8a40fa8d23",
+    "B_diagnostic_seeds.csv": "5265b7b72cee986a53919e91d995bae7d57d431adb9aeab586fa2b24609074e4",
+    "B_diagnostics.csv": "50b9f97717683307b65b962f17649ea7503d5aa13672b8275a9716627e03897e",
+    "B_crop_contributions.csv": "d5bad5535ae28ff683a9157b7bf69d5c0a7408956fcc25832a29de810adf0c84",
+    "verification.json": "98b5baac921b3f3113c33bea8a7340046fe7b7c0f8af0d8ac4f22eaed089dc2b",
+    "case_study.json": "7f7125ce1f987e37a69c7f8bd4ec11c54402cf6cf228364a9f50b1adc40daff4"
+  }
+}

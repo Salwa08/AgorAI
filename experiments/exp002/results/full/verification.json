@@ -1,0 +1,9 @@
+{
+  "exp001_seed_summaries_exact": true,
+  "matched_seed_arms": 320,
+  "verified_outcome_rows": 960000,
+  "exogenous_pairing": true,
+  "B_cross_zone_observations": 0,
+  "primary_holm_tests": 48,
+  "source_input_output_hashes": true
+}
