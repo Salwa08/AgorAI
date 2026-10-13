@@ -1,0 +1,33 @@
+{
+  "scenario": "readme_economics",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "model": {
+    "n_agents": 100,
+    "n_seasons": 30,
+    "shared_price_premium": 0.2,
+    "shared_cost_efficiency": 0.63,
+    "shared_post_harvest_loss": 0.05,
+    "indiv_post_harvest_loss": 0.15
+  }
+}

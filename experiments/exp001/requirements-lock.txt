@@ -1,0 +1,7 @@
+# Direct dependencies tested for EXP001; full environment in environment-freeze.txt
+mesa==3.4.2
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+networkx==3.2.1
+pytest==9.0.2

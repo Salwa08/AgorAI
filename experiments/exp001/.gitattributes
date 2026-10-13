@@ -1,0 +1,3 @@
+# Preserve execution-source and evidence bytes for SHA-256 provenance.
+*.py text eol=lf
+results/** -text whitespace=cr-at-eol

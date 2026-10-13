@@ -1,0 +1,55 @@
+{
+  "command": "python -m pytest experiments/exp001/tests -q",
+  "passed": 25,
+  "failed": 0,
+  "duration_seconds": 18.94,
+  "date": "2026-10-13",
+  "notes": "Initial expanded neutral-economics tests had dtype-only assertion failures; exact numeric assertions corrected. Requests version warning at pytest startup.",
+  "byte_identical_replay": {
+    "smoke": {
+      "agents.csv": true,
+      "agent_season.csv": true,
+      "condition_summary.csv": true,
+      "effects.csv": true,
+      "harm_summary.csv": true,
+      "paired_harm.csv": true,
+      "paired_seed_contrasts.csv": true,
+      "seasons.csv": true,
+      "seed_summary.csv": true,
+      "zone_effects.csv": true,
+      "zone_paired_seed_contrasts.csv": true,
+      "zone_seasons.csv": true,
+      "zone_seed_summary.csv": true
+    },
+    "primary": {
+      "agents.csv": true,
+      "agent_season.csv": true,
+      "condition_summary.csv": true,
+      "effects.csv": true,
+      "harm_summary.csv": true,
+      "paired_harm.csv": true,
+      "paired_seed_contrasts.csv": true,
+      "seasons.csv": true,
+      "seed_summary.csv": true,
+      "zone_effects.csv": true,
+      "zone_paired_seed_contrasts.csv": true,
+      "zone_seasons.csv": true,
+      "zone_seed_summary.csv": true
+    },
+    "readme_economics": {
+      "agents.csv": true,
+      "agent_season.csv": true,
+      "condition_summary.csv": true,
+      "effects.csv": true,
+      "harm_summary.csv": true,
+      "paired_harm.csv": true,
+      "paired_seed_contrasts.csv": true,
+      "seasons.csv": true,
+      "seed_summary.csv": true,
+      "zone_effects.csv": true,
+      "zone_paired_seed_contrasts.csv": true,
+      "zone_seasons.csv": true,
+      "zone_seed_summary.csv": true
+    }
+  }
+}
