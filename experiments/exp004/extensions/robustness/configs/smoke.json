@@ -1,0 +1,29 @@
+{
+  "agents": 20,
+  "actions": 3,
+  "dimensions": 3,
+  "contexts": 3,
+  "rounds": 3,
+  "seeds": [
+    90,
+    91
+  ],
+  "rhos": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "coverage": [
+    1,
+    3
+  ],
+  "noise": 0.5,
+  "evaluation_noise": 0.2,
+  "costs": [
+    0,
+    0.01,
+    0.1
+  ]
+}

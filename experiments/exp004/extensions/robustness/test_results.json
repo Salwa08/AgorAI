@@ -1,0 +1,8 @@
+{
+  "command": "python -m pytest experiments/exp004/tests experiments/exp004/extensions/robustness/tests -q",
+  "passed": 45,
+  "failed": 0,
+  "seconds": 16.76,
+  "date": "2026-10-13",
+  "warning": "Pre-existing Anaconda requests dependency warning; computation uses NumPy/SciPy."
+}
