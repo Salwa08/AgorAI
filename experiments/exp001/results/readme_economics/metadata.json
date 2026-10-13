@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-10-13T09:55:49.411344+00:00",
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "executable": "C:\\ProgramData\\anaconda3\\python.exe",
+  "command": [
+    "C:\\Users\\Salwa Khattami\\.codex\\worktrees\\exp001-ablation\\AgorAI\\experiments\\exp001\\runner.py",
+    "--config",
+    "experiments/exp001/configs/readme_economics.json",
+    "--output",
+    "experiments/exp001/results/readme_economics"
+  ],
+  "git_commit": "51ef5fa3bc52d8feec49cd8de93d4efb9010e0ac",
+  "git_status": "A  experiments/__init__.py\nA  experiments/exp001/AUDIT.md\nA  experiments/exp001/METHODOLOGY.md\nA  experiments/exp001/README.md\nA  experiments/exp001/RESULTS.md\nAM experiments/exp001/__init__.py\nAM experiments/exp001/analysis.py\nA  experiments/exp001/configs/primary.json\nA  experiments/exp001/configs/readme_economics.json\nA  experiments/exp001/configs/smoke.json\nA  experiments/exp001/diagnostics.json\nA  experiments/exp001/environment-freeze.txt\nAM experiments/exp001/model.py\nAM experiments/exp001/report.py\nA  experiments/exp001/requirements-lock.txt\nAM experiments/exp001/results/primary/condition_summary.csv\nAM experiments/exp001/results/primary/config.json\nAM experiments/exp001/results/primary/effects.csv\nAM experiments/exp001/results/primary/harm_summary.csv\nAM experiments/exp001/results/primary/metadata.json\nAM experiments/exp001/results/primary/paired_harm.csv\nAM experiments/exp001/results/primary/resolved_configs.json\nAM experiments/exp001/results/primary/seed_summary.csv\nAM experiments/exp001/results/primary/zone_effects.csv\nAM experiments/exp001/results/primary/zone_seed_summary.csv\nAM experiments/exp001/results/readme_economics/condition_summary.csv\nAM experiments/exp001/results/readme_economics/config.json\nAM experiments/exp001/results/readme_economics/effects.csv\nAM experiments/exp001/results/readme_economics/harm_summary.csv\nAD experiments/exp001/results/readme_economics/metadata.json\nAM experiments/exp001/results/readme_economics/paired_harm.csv\nAM experiments/exp001/results/readme_economics/resolved_configs.json\nAM experiments/exp001/results/readme_economics/seed_summary.csv\nAM experiments/exp001/results/readme_economics/zone_effects.csv\nAM experiments/exp001/results/readme_economics/zone_seed_summary.csv\nAM experiments/exp001/results/smoke/condition_summary.csv\nAM experiments/exp001/results/smoke/config.json\nAM experiments/exp001/results/smoke/effects.csv\nAM experiments/exp001/results/smoke/harm_summary.csv\nAM experiments/exp001/results/smoke/metadata.json\nAM experiments/exp001/results/smoke/paired_harm.csv\nAM experiments/exp001/results/smoke/resolved_configs.json\nAM experiments/exp001/results/smoke/seed_summary.csv\nAM experiments/exp001/results/smoke/zone_effects.csv\nAM experiments/exp001/results/smoke/zone_seed_summary.csv\nAM experiments/exp001/runner.py\nAM experiments/exp001/tests/test_experiment.py\nA  experiments/exp001/verification.json\n?? experiments/exp001/.gitattributes",
+  "packages": {
+    "mesa": "3.4.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "networkx": "3.2.1",
+    "pytest": "9.0.2"
+  },
+  "input_sha256": {
+    "climate_profiles.json": "ed9b9b88026bcf3efc1546c1ecdd6df8d9db58b769b5110f3d481a9a6717a0d0",
+    "crops.json": "f628dc6d6ec18642be3206d23910b57e241657399172d2fda6a6e6cdf5a38bf1",
+    "soil_moisture_profiles.json": "9c911bcd8dc862712661892146f25e27acd2c7748711ce08aa82fdbeb2bd3edc",
+    "zones.json": "5e323e64b19184c16636e2878eb1fddd80005247efea04662032c2ae0da64a2f"
+  },
+  "source_sha256": {
+    "experiments\\exp001\\__init__.py": "12cff3bbc8cf537c847cf230908488360f6f69b8ee983690011cd439b4be1d1d",
+    "experiments\\exp001\\analysis.py": "54c02562c408587fb58dd3d7c66f7a688dd869b3bceee879b93c147241d4672f",
+    "experiments\\exp001\\model.py": "0a19f6ceeb6a1273d51658df294fbc8316a593de2d836a4aaf843a0ab221c5e9",
+    "experiments\\exp001\\report.py": "ecb7503bfea727295c7714a1454a6a53bc50cbe4101203872927db9159eb870f",
+    "experiments\\exp001\\runner.py": "043bf2ca79524273276189265b7cb76891625663f1d6ffa7caa421692170d436"
+  },
+  "notebook_sha256": "e7f3770dc948a67b60b22d48ba41be0f2b757b42564b8fe0bf0cd060e310125f",
+  "exogenous_pairing_verified": true,
+  "n_seed_replicates": 20,
+  "n_agent_season_records": 240000,
+  "output_sha256": {
+    "agent_season.csv": "c8519742afb9b227cb968a29b4b60787de342f80013392881cfa010d09064548",
+    "agents.csv": "eed6e46615dce387e31e36df516423d10562b5c3039bbdd112bfa67bdeb9f1a7",
+    "condition_summary.csv": "8e70b50c1267daf9310a41231ed0360bd878bfb4d0921acb94e0c8984f00c123",
+    "config.json": "5cbea22a87d7e1cf112ba97c82305e1083b6e0bbbaef09572701411e59e72a9c",
+    "effects.csv": "7c1df5143b617d709b0b934375c281ff4fff5f54a0177d85cbaa4a9f6c792ed8",
+    "exogenous.json": "fba63636d35089cab83d8a70e8b2df6c208838f706462fb8df3a90adb0b90c71",
+    "harm_summary.csv": "1fda966054571437b1ba960d66a75519228c6e5578e4911e8e6c6ef3a1ca4297",
+    "paired_harm.csv": "31044219482e35619c561cbd47da6b75c91a89c87706363759a775bb95fdc96e",
+    "paired_seed_contrasts.csv": "279c63397f5663e220a1be539ab1f066fe2767b87e63df99d34b0445ce1bde68",
+    "resolved_configs.json": "6bdce39c0b6d3f30f3c443e9e6e1c4dfbb489cc5be7f47197405c7de476e8d47",
+    "seasons.csv": "1e1601087f1fb0207294cfdf284e26c6a99eaae4751e0ea0cfcc22fbedc43ab8",
+    "seed_summary.csv": "0f7e09c62675b4d3c949923980489a8924d1bf96e3cd9a93185bf10e8cf63a92",
+    "zone_effects.csv": "888234ec416260a29c986a7e391241519d848694fc3c0192249f3e306dcf9588",
+    "zone_paired_seed_contrasts.csv": "f0096394025bca8fe5654ebf98908efbaca985acc4b1715fb2b0256639fd6e31",
+    "zone_seasons.csv": "52530d53eded828fb0296b719ea241385b923640c120956472d98e9d0f1242a0",
+    "zone_seed_summary.csv": "ff922d4390a84c535d938e58dcf4678a76222ed69af489af1a42e5eb93097d3a"
+  }
+}

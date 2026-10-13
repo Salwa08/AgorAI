@@ -1,0 +1,11 @@
+{
+  "scenario": "smoke",
+  "seeds": [
+    0,
+    1
+  ],
+  "model": {
+    "n_agents": 6,
+    "n_seasons": 2
+  }
+}

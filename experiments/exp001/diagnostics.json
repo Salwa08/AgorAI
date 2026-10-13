@@ -1,0 +1,22 @@
+{
+  "primary": {
+    "records": 240000,
+    "seeds": 20,
+    "first_season_pairing": true,
+    "hashes_verified": true,
+    "ac_crop_disagreements": 0,
+    "bd_crop_disagreements": 3150,
+    "unique_crops": 23,
+    "absent_zone_seed_pairs": 0
+  },
+  "readme_economics": {
+    "records": 240000,
+    "seeds": 20,
+    "first_season_pairing": true,
+    "hashes_verified": true,
+    "ac_crop_disagreements": 0,
+    "bd_crop_disagreements": 5637,
+    "unique_crops": 23,
+    "absent_zone_seed_pairs": 0
+  }
+}
