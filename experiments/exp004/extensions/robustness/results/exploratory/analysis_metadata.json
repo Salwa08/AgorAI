@@ -1,0 +1,18 @@
+{
+  "source_sha256": "27d8138223bfa11109513df4b87b2666599d43a263378b2df7247cd1513632e9",
+  "report_sha256": "9e64203c2e1529dd125f2520cd235229274d62ac84eaf3d883637de495d07f9d",
+  "verification": {
+    "main_decisions": 2400000,
+    "focal_decisions": 400000,
+    "worlds": 200,
+    "hashes": true,
+    "originals_unchanged": true,
+    "coverage_worlds_matched": true,
+    "posterior_endpoints": true,
+    "architecture_parity": true,
+    "raw_regret_and_agent_means": true,
+    "focal_budgets_and_costs": true,
+    "focal_provenance_snapshots": true,
+    "confirmation_seeds_executed": false
+  }
+}
